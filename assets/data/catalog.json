@@ -1,0 +1,3608 @@
+{
+  "asOf": "2026-10",
+  "narration": "Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.",
+  "counts": {
+    "notes": 130,
+    "diagrams": 24,
+    "flows": 14,
+    "cards": 36
+  },
+  "items": [
+    {
+      "id": "f-what",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "What business analysis is",
+      "summary": "Business analysis is the work of understanding a need and recommending a change that has value. The BABOK Guide is IIBA's published standard for that practice. This lab summarizes the public structure. It does not replace the guide.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-who",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Who does the work",
+      "summary": "The guide's contents include a section on who a business analyst is. In practice the title varies: business analyst, business systems analyst, product owner, or consultant. The title is less important than whether someone is accountable for the need, the stakeholders, and the change.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-baccm",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Core concept model",
+      "summary": "The knowledge hub lists the Business Analysis Core Concept Model. Study it as six linked ideas: change, need, solution, stakeholder, value, and context. A sentence that names a solution but not the need is incomplete.",
+      "points": [
+        "Change: the act of transformation.",
+        "Need: a problem or opportunity.",
+        "Solution: a specific way of satisfying a need.",
+        "Stakeholder: a person or group with a relationship to the change.",
+        "Value: the worth of something to a stakeholder in a context.",
+        "Context: the circumstances that influence the change."
+      ],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-req-design",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Requirements and designs",
+      "summary": "The guide treats requirements and designs as related, not as two sealed boxes. A requirement states a condition or capability. A design describes a solution. The same statement can be read as either, depending on who consumes it. Say which reading you intend.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-classes",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Requirements classification",
+      "summary": "A useful study split, following the guide's classification schema, is business, stakeholder, solution, and transition. Solution requirements are often split again into functional behavior and non-functional quality. Label the class so reviewers know what 'done' means.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-ba-pm",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Business analyst and project manager",
+      "summary": "A project manager is accountable for the delivery plan: time, cost, and coordination. A business analyst is accountable for whether the change is worth making and whether the result meets the need. Teams combine the roles. They should not pretend the roles are the same decision.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-ba-po",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Business analyst and product owner",
+      "summary": "The 2020 Scrum Guide places a Product Owner on the Scrum Team with Developers and a Scrum Master, and it lists the Product Backlog as an artifact. A business analyst may support that backlog or, in some teams, hold the Product Owner accountability. Holding both without saying so hides the decision rights.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-need",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Need before solution",
+      "summary": "Start from the outcome a stakeholder can observe. A tool name, a screen, or a vendor is a solution hypothesis. Write the need in a sentence that would still make sense if the tool changed.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-stake",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Stakeholders",
+      "summary": "The guide lists stakeholders as a core topic. Map who is affected, who decides, who pays, and who can block. A person with high influence and low interest still needs a plan. Update the map when the change moves.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-scope",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Scope in one paragraph",
+      "summary": "Scope is the boundary of the change: what is in, what is out, and what is unknown. Write the out-of-scope list. It prevents a later argument from being treated as a surprise.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-assume",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Assumptions and constraints",
+      "summary": "An assumption is something you proceed with while it remains unproven. A constraint is a limit you do not get to choose, such as a law, a date, or a system you must keep. Review assumptions on a cadence. A false assumption is a risk.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "f-value",
+      "section": "foundations",
+      "level": "foundation",
+      "title": "Value is contextual",
+      "summary": "Value is not a single number. It depends on which stakeholder and which context you name. A faster call handling time can be value for an operations lead and a loss of care for a customer. State both.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-map",
+      "section": "ecosystem",
+      "level": "foundation",
+      "title": "Where the practice sits",
+      "summary": "Business analysis touches product ownership, project delivery, process improvement, data analysis, architecture, and change management. The BABOK Guide is the core reference in this lab. Neighboring guides are cited only where a page opened.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-sisters",
+      "section": "ecosystem",
+      "level": "foundation",
+      "title": "Sister roles",
+      "summary": "Product manager, product owner, project manager, process analyst, data analyst, business architect, and quality analyst share techniques with business analysis. Ask which decisions each role owns on this initiative. Shared techniques do not mean shared authority.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-bridges",
+      "section": "ecosystem",
+      "level": "intermediate",
+      "title": "Bridges to other labs",
+      "summary": "Contact-center work needs the same elicitation and acceptance habits, plus queue, channel, and quality measures. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-future",
+      "section": "ecosystem",
+      "level": "advanced",
+      "title": "Future hooks",
+      "summary": "Useful next studies are decision modeling, process mining, and evaluation of AI-assisted analysis. Each is introduced here only as far as a public source opened. Deeper vendor features stay marked to be confirmed.",
+      "points": [],
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-plan",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Planning and monitoring",
+      "summary": "This knowledge area covers how the analysis itself will be run: the approach, stakeholder engagement, governance, information management, and how you will know the analysis work is performing. It is the plan for the analysis, not the plan for the whole project.",
+      "points": [
+        "Plan the business analysis approach.",
+        "Plan stakeholder engagement.",
+        "Plan governance.",
+        "Plan information management.",
+        "Identify performance improvements."
+      ],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-elic",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Elicitation and collaboration",
+      "summary": "Prepare, conduct, confirm, communicate, and keep collaboration going. Elicitation is not a single workshop. Confirmation is a separate task so that notes are not mistaken for agreement.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-life",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Requirements life cycle management",
+      "summary": "Trace, maintain, prioritize, assess changes, and approve. A requirement without a trace to a need and to a test is a rumor. Approval is a recorded decision, not a silent meeting.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-strat",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Strategy analysis",
+      "summary": "Analyze the current state, define a future state, assess risks, and define a change strategy. Strategy work answers why this change, and what we are willing to risk, before the team debates screens.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-radd",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Requirements analysis and design definition",
+      "summary": "Specify and model, verify, validate, define the requirements architecture, define design options, and recommend a solution based on potential value. Verification asks whether the requirement is fit to use. Validation asks whether it is the right requirement.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-eval",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Solution evaluation",
+      "summary": "Measure performance, analyze those measures, assess solution limits, assess enterprise limits, and recommend actions that increase value. Evaluation continues after go-live. The CBAP sample material on the public page makes the same point: limitation assessment happens when the solution is in use in some form.",
+      "points": [],
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-comp",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Underlying competencies",
+      "summary": "The guide lists analytical thinking, behavioral characteristics, business knowledge, communication, interaction, and tools and technology. Tools are last on purpose. A diagramming product does not supply the judgment.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-tech-list",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Technique list",
+      "summary": "The public contents list fifty techniques, from acceptance criteria and backlog management through workshops. Learn the name, the question it answers, and one way it fails. Do not memorize a vendor's menu as if it were the technique.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-interview",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Interviews",
+      "summary": "An interview is a prepared conversation with a purpose, questions, and a written confirmation. Send the notes back. Unconfirmed notes are your memory, not the stakeholder's agreement.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-workshop",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Workshops",
+      "summary": "A workshop gathers people who can decide or inform, with an agenda and a record. If the decision maker is absent, record the outcome as a draft.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-observe",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Observation",
+      "summary": "Watch the work. People skip steps they no longer notice. Observation checks what an interview smooths over. Tell people you are observing, unless a formal study design says otherwise and ethics allow it.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-doc",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Document analysis",
+      "summary": "Read the policy, the contract, the ticket history, and the old specification before you ask people to repeat them. Mark the date of each document. Old documents describe a world that may have changed.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-proto",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Prototyping",
+      "summary": "A prototype is a learning tool. Label its fidelity. A polished picture can be mistaken for a promise. Capture which comments changed the requirement.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-stories",
+      "section": "babok",
+      "level": "foundation",
+      "title": "User stories",
+      "summary": "The technique list includes user stories. A common study form is: as a role, I want a capability, so that an outcome. The outcome is the part teams skip. Atlassian publishes a user-story explanation that matches this shape.",
+      "points": [],
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-use",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Use cases and scenarios",
+      "summary": "A use case names an actor and a goal, then the main path and the exceptions. Scenarios are concrete passes through that path. They become tests more easily than a paragraph of features.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-process",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Process modelling and analysis",
+      "summary": "Process modelling draws how work moves. Process analysis asks where it waits, loops, or fails. Draw the current state before you draw the wish.",
+      "points": [],
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-data",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Data modelling and dictionary",
+      "summary": "A data model names things the business cares about and how they relate. A data dictionary defines each field, including what 'blank' means. Skip the dictionary and two teams will load different meanings into the same column.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-nfr",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Non-functional requirements",
+      "summary": "Quality attributes include performance, security, availability, accessibility, and retention. Write a measure. 'Fast' is not a requirement. 'The search returns in under two seconds for the agreed test' can be tested.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-rules",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Business rules",
+      "summary": "A business rule is a decision the organization enforces, such as who may approve a refund. Keep rules separate from process steps so a policy change does not require redrawing every flow.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-swot",
+      "section": "babok",
+      "level": "foundation",
+      "title": "SWOT",
+      "summary": "Strengths, weaknesses, opportunities, and threats are a snapshot. Strengths and weaknesses are internal. Opportunities and threats are external. A SWOT without a decision attached is a poster.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-risk",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Risk analysis",
+      "summary": "A risk is an uncertain event that would matter if it happened. Write the event, the consequence, and the response you will actually take. A risk register that nobody reviews is a filing exercise.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-kpi",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Metrics and KPIs",
+      "summary": "The technique list names metrics and key performance indicators. A KPI needs a definition, a source, a cadence, and a person who acts when it moves. A number without an owner is a dashboard decoration.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-vendor",
+      "section": "babok",
+      "level": "advanced",
+      "title": "Vendor assessment",
+      "summary": "Vendor assessment compares options against the need, not against the loudest demo. Separate must-have constraints from scored wishes. Record who scored and when.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-case",
+      "section": "babok",
+      "level": "intermediate",
+      "title": "Business cases",
+      "summary": "A business case recommends a course of action with costs, benefits, risks, and assumptions. If you do not know a figure, mark it unknown. Do not invent a return to make the page look finished.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-root",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Root cause analysis",
+      "summary": "Ask why the problem happens, more than once, until you reach something the team can change. Stopping at the first cause usually names a person instead of a system.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-pri",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Prioritization",
+      "summary": "Prioritization is a decision about sequence and sacrifice. Name the rule: value, risk, dependency, or compliance. A list where everything is high priority has not been prioritized.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "k-backlog",
+      "section": "babok",
+      "level": "foundation",
+      "title": "Backlog management",
+      "summary": "A backlog is an ordered list of options, not a warehouse of every idea. The Scrum Guide describes a Product Backlog as an artifact. Ordering it is ongoing work.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-elic",
+      "section": "requirements",
+      "level": "foundation",
+      "title": "Elicitation methods",
+      "summary": "Choose a method for the question. Interviews go deep with one person. Workshops align a group. Observation checks real work. Surveys reach many people with thin answers. Document analysis starts from what is already written. Say why you picked the method.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-power",
+      "section": "requirements",
+      "level": "foundation",
+      "title": "Stakeholder grid",
+      "summary": "A simple grid places influence on one axis and interest on the other. High influence and high interest people need close work. High influence and low interest people need concise updates. The grid is a hypothesis. Test it.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-story",
+      "section": "requirements",
+      "level": "foundation",
+      "title": "Story and outcome",
+      "summary": "Write the role, the capability, and the outcome. Then add acceptance criteria. Atlassian's user-story material is a public explanation of this shape. A story without a test is a wish.",
+      "points": [],
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-gherkin",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "Acceptance criteria in Gherkin",
+      "summary": "Cucumber's Gherkin reference describes scenarios with Given, When, and Then. Given is context. When is the action. Then is the observable result. One scenario, one behavior. Keep the language in the business's words.",
+      "points": [],
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-trace",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "Traceability",
+      "summary": "Trace a requirement to the need it serves, the design that satisfies it, and the test that demonstrates it. The life-cycle tasks include tracing and assessing change. When a rule changes, the trace tells you what else moves.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-rtm",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "Traceability matrix",
+      "summary": "A requirements traceability matrix is a table of those links. Columns that help: identifier, statement, source, owner, priority, design reference, test reference, status. A matrix that is not updated is a historical document. Say so.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-uat",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "User acceptance",
+      "summary": "Acceptance is a decision by the people who will live with the result, against criteria written earlier. It is not the first time anyone sees the system. Defects found here are either missed criteria or a changed need. Record which.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-test",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "From criteria to tests",
+      "summary": "Each acceptance criterion should suggest at least one test, including the unhappy path. A business analyst does not have to execute every test. They do have to notice when a criterion cannot be tested.",
+      "points": [],
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-moscow",
+      "section": "requirements",
+      "level": "foundation",
+      "title": "Must, should, could, won't",
+      "summary": "Must, should, could, and won't are priority words. Must means the change fails its purpose without it. Won't means not in this scope, on purpose. The DSDM page that documents MoSCoW did not open in the October 2026 check, so it is not linked.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": "A live DSDM or Agile Business Consortium page for the MoSCoW definition."
+    },
+    {
+      "id": "r-nfr",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "Quality requirements you can test",
+      "summary": "Pair every quality word with a threshold, a method, and a context. Accessibility can point at WCAG 2.2's quick reference. Do not write 'secure' and walk away.",
+      "points": [],
+      "source": "WCAG 2.2 quick reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-change",
+      "section": "requirements",
+      "level": "advanced",
+      "title": "Change control",
+      "summary": "A change request names what moved, why, the impact on scope and tests, and who approved. Assess requirements changes is a life-cycle task. Verbal agreement in a hallway is not a baseline.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "r-baseline",
+      "section": "requirements",
+      "level": "intermediate",
+      "title": "Baseline and versions",
+      "summary": "A baseline is an agreed version you can compare against later. Keep the previous version. Diff the words. Teams lose arguments when the only copy is the latest edit.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-bpmn",
+      "section": "modeling",
+      "level": "foundation",
+      "title": "BPMN in brief",
+      "summary": "Object Management Group publishes BPMN 2.0. For study, learn events, activities, gateways, and sequence flow. A gateway is a decision, not a task. Label the outgoing paths with conditions a stranger can test.",
+      "points": [],
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-bpmn-now",
+      "section": "modeling",
+      "level": "intermediate",
+      "title": "Current state, then future",
+      "summary": "Draw how the work happens this week, including the spreadsheet and the rework. Then draw the proposed state. If you only draw the future, you will miss the step that actually takes the time.",
+      "points": [],
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-uml",
+      "section": "modeling",
+      "level": "foundation",
+      "title": "UML, used sparingly",
+      "summary": "OMG publishes UML. Use the diagram that answers the question in the room. A use case diagram shows who wants what. An activity diagram shows flow. A sequence diagram shows messages over time. A class diagram shows structure. One diagram, one question.",
+      "points": [],
+      "source": "OMG UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-erd",
+      "section": "modeling",
+      "level": "intermediate",
+      "title": "Entity relationships",
+      "summary": "An entity is a thing you store. A relationship states how many of one relate to how many of another. Name the relationship from both directions. 'Customer places order' is clearer than a line with no verb.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-c4",
+      "section": "modeling",
+      "level": "intermediate",
+      "title": "C4, four levels",
+      "summary": "The C4 model site describes four abstractions: software system, container, component, and code. Start with a system context diagram: the system, the people, and the other systems. Go deeper only where the audience needs it.",
+      "points": [],
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-sipoc",
+      "section": "modeling",
+      "level": "foundation",
+      "title": "SIPOC",
+      "summary": "Supplier, input, process, output, customer is a one-page boundary. It is enough to see whether you are looking at the right process before you draw thirty boxes. This is a study scaffold, not a claimed standard text.",
+      "points": [],
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-state",
+      "section": "modeling",
+      "level": "advanced",
+      "title": "States",
+      "summary": "State models help when a thing has a life: draft, submitted, approved, rejected. Name the event that causes each move and who may cause it. The technique list includes state modelling.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-decision",
+      "section": "modeling",
+      "level": "advanced",
+      "title": "Decisions apart from flow",
+      "summary": "If a gateway contains a policy, lift the policy into a decision with inputs and outputs. The process then stays stable when the policy changes. Decision modelling is on the technique list.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-iface",
+      "section": "modeling",
+      "level": "intermediate",
+      "title": "Interfaces",
+      "summary": "Interface analysis asks what crosses a boundary: data, a document, or a handoff. For each crossing, name the producer, the consumer, the trigger, and what happens when it fails.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "m-storymap",
+      "section": "modeling",
+      "level": "intermediate",
+      "title": "Story map",
+      "summary": "A story map places user activities across the top and breaks releases downward. The first horizontal slice should be a thin outcome someone can use, not a layer of database tables.",
+      "points": [],
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-scrum",
+      "section": "agile",
+      "level": "foundation",
+      "title": "Scrum, from the 2020 guide",
+      "summary": "The Scrum Guide lists three pillars: transparency, inspection, and adaptation. The team accountabilities are Developers, Product Owner, and Scrum Master. Events are the Sprint, Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective. Artifacts are the Product Backlog, the Sprint Backlog, and the Increment.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-po",
+      "section": "agile",
+      "level": "foundation",
+      "title": "Product owner accountability",
+      "summary": "Treat the Product Owner as the person who orders the Product Backlog toward value. A business analyst can prepare options and evidence. If several people reorder the backlog, the team does not have a single accountability.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-psm",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "PSM and PSPO",
+      "summary": "Scrum.org publishes Professional Scrum assessments. The assessment pages did not open in the 16 October 2026 check, so this lab does not link them and does not state a fee.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": "Current PSM and PSPO fees and the exact assessment rules on scrum.org."
+    },
+    {
+      "id": "a-cspo",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "CSPO",
+      "summary": "Scrum Alliance lists Certified Scrum Product Owner on its product owner track, alongside advanced and professional levels. The page opened, but the fee and the course-hour rules did not render in the static check. Do not budget from this lab.",
+      "points": [],
+      "source": "Scrum Alliance CSPO page",
+      "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+      "asOf": "2026-10",
+      "tbd": "CSPO course price and the eligibility rules shown after the page's scripts run."
+    },
+    {
+      "id": "a-safe",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "SAFe POPM",
+      "summary": "Scaled Agile's site opened. The Product Owner / Product Manager course page returned HTTP 429 on 16 October 2026, so it is not linked and no price is copied. SAFe distinguishes product ownership at team level from product management across a larger train. Confirm the current split on their site.",
+      "points": [],
+      "source": "Scaled Agile",
+      "url": "https://scaledagile.com/",
+      "asOf": "2026-10",
+      "tbd": "POPM price, duration, and exam rules."
+    },
+    {
+      "id": "a-kanban",
+      "section": "agile",
+      "level": "foundation",
+      "title": "Kanban",
+      "summary": "A kanban board makes work visible and limits how much is in progress. Miro publishes a Kanban page that opened. Kanban University's page responded but did not render course content in this check, so certification fees are not shown and that site is not linked.",
+      "points": [],
+      "source": "Miro Kanban",
+      "url": "https://miro.com/kanban/",
+      "asOf": "2026-10",
+      "tbd": "Kanban University course names and fees."
+    },
+    {
+      "id": "a-dt",
+      "section": "agile",
+      "level": "foundation",
+      "title": "Design thinking",
+      "summary": "IDEO's design thinking site opened. Use it as a reminder to spend time with the people who have the problem before you converge on a solution. It is a practice, not a certificate this lab can price.",
+      "points": [],
+      "source": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-sprint",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "Design sprint",
+      "summary": "Google's Design Sprint Kit opened. A design sprint is a short, structured cycle of understanding, sketching, deciding, prototyping, and testing. It is not the same thing as a Scrum sprint. Say which one you mean.",
+      "points": [],
+      "source": "Google Design Sprint Kit",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-jtbd",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "Jobs to be done",
+      "summary": "The Christensen Institute describes Jobs to Be Done as the progress a person is trying to make in a circumstance. Interview for the circumstance and the struggle, not for a feature list. A job story is a study form: when this situation, I want to make this progress, so I can reach this outcome.",
+      "points": [],
+      "source": "Christensen Institute, Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "a-okr",
+      "section": "agile",
+      "level": "intermediate",
+      "title": "OKRs",
+      "summary": "Google's re:Work guide introduces objectives and key results. An objective is the direction. Key results are measurable outcomes, not a task list. A business analyst can help a team tell an output from an outcome.",
+      "points": [],
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-sql",
+      "section": "data",
+      "level": "foundation",
+      "title": "SQL for a question",
+      "summary": "PostgreSQL's tutorial introduces SQL as the way to ask a database a question. Learn SELECT, filter, join, and group. You do not need to be the database administrator. You do need to know whether the column you were promised actually exists.",
+      "points": [],
+      "source": "PostgreSQL SQL introduction",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql-intro.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-excel",
+      "section": "data",
+      "level": "foundation",
+      "title": "Spreadsheets",
+      "summary": "A spreadsheet is often the current system. Before you replace it, learn its formulas, its hidden columns, and who repairs it on Fridays. This note is practice advice. A specific product manual is not cited because none was required for the habit.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-model",
+      "section": "data",
+      "level": "intermediate",
+      "title": "Conceptual, logical, physical",
+      "summary": "A conceptual model uses business words. A logical model adds keys and cardinality. A physical model adds types and indexes for one database. Do not start at the physical model with stakeholders who came to talk about orders.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-kpi",
+      "section": "data",
+      "level": "intermediate",
+      "title": "KPI definition sheet",
+      "summary": "For each indicator write the question it answers, the formula, the grain, the source system, the refresh, the owner, and the threshold for action. HEART, from the Google Research paper on user-centered metrics, is one way to group product measures: happiness, engagement, adoption, retention, and task success.",
+      "points": [],
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-heart",
+      "section": "data",
+      "level": "intermediate",
+      "title": "HEART",
+      "summary": "The paper 'Measuring the User Experience on a Large Scale: User-Centered Metrics for Web Applications' is the public source for the HEART categories. Use the categories as a checklist. Do not invent a benchmark number this lab did not measure.",
+      "points": [],
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-okr",
+      "section": "data",
+      "level": "foundation",
+      "title": "Measures and OKRs",
+      "summary": "A key result that counts tasks completed is usually an output. Prefer a result a customer or the operation can feel. Tie the measure back to the need in the business case.",
+      "points": [],
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-pbi",
+      "section": "data",
+      "level": "foundation",
+      "title": "Power BI, as a study topic",
+      "summary": "Microsoft Learn has a page titled What is Power BI. On 16 October 2026 the readable body asked for authorization, so this lab does not describe product features from it. Lucky's notes do not claim Power BI experience.",
+      "points": [],
+      "source": "Microsoft Learn, What is Power BI?",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview",
+      "asOf": "2026-10",
+      "tbd": "A publicly readable feature description of Power BI."
+    },
+    {
+      "id": "d-tableau",
+      "section": "data",
+      "level": "foundation",
+      "title": "Tableau, not linked",
+      "summary": "Tableau is a visual analytics product teams use for dashboards. Its public page did not open in the 16 October 2026 check, so it is not linked and no feature is described. This lab does not claim Tableau experience for Lucky.",
+      "points": [],
+      "source": "Checked 16 October 2026. No page is linked.",
+      "url": "",
+      "asOf": "2026-10",
+      "tbd": "A Tableau page that opens and can be cited."
+    },
+    {
+      "id": "d-mine",
+      "section": "data",
+      "level": "advanced",
+      "title": "Process mining",
+      "summary": "The IEEE Task Force on Process Mining site opened. Process mining uses event logs to reconstruct how work actually flowed. It is evidence about the current state. It still needs a person to decide whether the flow is acceptable.",
+      "points": [],
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "d-dash",
+      "section": "data",
+      "level": "intermediate",
+      "title": "Dashboards",
+      "summary": "A dashboard is a decision surface. Lead with the question, then the number, then the breakdown. If a chart does not change a decision, leave it off. Cite the definition of every figure.",
+      "points": [],
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-jira",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Jira",
+      "summary": "Atlassian's getting-started guide for Jira opened. Use it to keep work visible: items, states, and owners. The workflow should match the real approval path. Do not add states nobody will use.",
+      "points": [],
+      "source": "Jira getting started",
+      "url": "https://www.atlassian.com/software/jira/guides/getting-started/introduction",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-conf",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Confluence",
+      "summary": "Confluence is Atlassian's space for longer pages. A requirement page needs an owner, a status, and a link to the backlog item. A page without a status looks current long after it is not.",
+      "points": [],
+      "source": "Confluence",
+      "url": "https://www.atlassian.com/software/confluence",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-ado",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Azure DevOps boards",
+      "summary": "Microsoft's Azure DevOps backlogs documentation opened. Boards are another place teams order work. The analysis habits are the same as in Jira: one backlog, clear states, and acceptance criteria on the item.",
+      "points": [],
+      "source": "Azure DevOps backlogs",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-visio",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Visio",
+      "summary": "Microsoft's Visio support home opened. Visio is a diagramming product teams use for process and system drawings. The drawing is only as good as the labels. Export a copy stakeholders can open.",
+      "points": [],
+      "source": "Microsoft Visio support",
+      "url": "https://support.microsoft.com/en-us/visio",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-lucid",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Lucid and BPMN",
+      "summary": "Lucid's BPMN tutorial opened. Use a shared diagram when more than one person must edit. Agree on a small stencil so the file does not become a clip-art board.",
+      "points": [],
+      "source": "Lucid BPMN tutorial",
+      "url": "https://lucid.co/diagram/bpmn/tutorial",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-miro",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Miro",
+      "summary": "Miro's Kanban page opened. A board is useful in a workshop because people can move notes. After the workshop, copy the decisions into the system of record. A board that is the only copy will be lost.",
+      "points": [],
+      "source": "Miro Kanban",
+      "url": "https://miro.com/kanban/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-figma",
+      "section": "tools",
+      "level": "foundation",
+      "title": "Figma",
+      "summary": "Figma's home page opened. It is a collaborative design surface teams use for interfaces. Treat a frame as a prototype at a stated fidelity. Comments on a frame are not approved requirements until someone records them as such.",
+      "points": [],
+      "source": "Figma",
+      "url": "https://www.figma.com/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "t-pp",
+      "section": "tools",
+      "level": "intermediate",
+      "title": "Power Platform and Dynamics",
+      "summary": "Microsoft's Power Platform ALM overview and the Dynamics 365 implementation guide both opened. They are relevant when a solution will be configured rather than only described. The business analyst still writes the need, the roles, and the acceptance checks. This is study context, not a claim of delivery experience.",
+      "points": [],
+      "source": "Power Platform ALM",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-prompt",
+      "section": "ai",
+      "level": "foundation",
+      "title": "Prompt for a draft",
+      "summary": "Ask a model for a draft you can edit: a question list, a stakeholder map, or a first pass at acceptance criteria. Give it the need, the constraint, and the audience. Read every line before it reaches a stakeholder.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-review",
+      "section": "ai",
+      "level": "foundation",
+      "title": "Human review",
+      "summary": "The analyst remains accountable for the requirement. Check names, numbers, and rules against a source. A fluent paragraph can still be wrong. Keep the source next to the draft.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-hallu",
+      "section": "ai",
+      "level": "intermediate",
+      "title": "Invented facts",
+      "summary": "Models fill gaps. If the source does not state a fee, a law, or a metric, the draft must say unknown. This lab follows that rule. You should too when you use a model on a real initiative.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-agent",
+      "section": "ai",
+      "level": "advanced",
+      "title": "Agents and omni-channel",
+      "summary": "An agent that talks to a customer is a solution with requirements: what it may say, what it must hand to a person, how it is measured, and how a mistake is reversed. The SRE book's introduction is a public reminder that operations, including handoff, is part of the system.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-resp",
+      "section": "ai",
+      "level": "advanced",
+      "title": "Responsible use",
+      "summary": "Do not paste secrets, customer data, or unpublished financials into a tool whose terms you have not read. Say when a stakeholder is talking to a model. Accessibility and appeal paths still apply.",
+      "points": [],
+      "source": "WCAG 2.2 quick reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-eval",
+      "section": "ai",
+      "level": "advanced",
+      "title": "Evaluate the assistant",
+      "summary": "Write a small set of cases before you trust a drafting assistant: a normal case, an edge case, and a case it should refuse. Score it. A demo is not an evaluation.",
+      "points": [],
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-trace",
+      "section": "ai",
+      "level": "intermediate",
+      "title": "Trace the draft",
+      "summary": "Tag sentences that came from a model until a person checks them. In a traceability matrix, 'model draft, unreviewed' is an honest status.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ai-cc",
+      "section": "ai",
+      "level": "advanced",
+      "title": "Contact center handoff",
+      "summary": "For a voice or chat agent, specify the moment a person takes over, what context moves with the conversation, and how the customer is not asked to start again. That handoff is a requirement, not a model parameter.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "dom-health",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "Healthcare",
+      "summary": "Healthcare changes often involve privacy, consent, and clinical safety. The HHS HIPAA pages did not open in this check, so they are not linked and the rule text is not paraphrased. HL7's FHIR overview did open. FHIR is a published interoperability standard. Confirm every privacy rule with the organization's compliance owner.",
+      "points": [],
+      "source": "HL7 FHIR overview",
+      "url": "https://www.hl7.org/fhir/overview.html",
+      "asOf": "2026-10",
+      "tbd": "A public HIPAA page that opens, for any privacy paraphrase."
+    },
+    {
+      "id": "dom-bank",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "Banking",
+      "summary": "Banking analysis pays attention to identity, audit trails, segregation of duties, and retention. This lab does not cite a regulator because no regulator page was opened in the check. Do not invent a control number. Ask the compliance owner which rule applies.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": "A regulator page for the specific banking control you are studying."
+    },
+    {
+      "id": "dom-ins",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "Insurance",
+      "summary": "Insurance work turns on the policy, the claim, and the exception. Model those entities before you design a screen. Rating and reserve rules are specialist knowledge. Mark them as sourced from the carrier, not from this lab.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "dom-retail",
+      "section": "domains",
+      "level": "foundation",
+      "title": "Retail",
+      "summary": "Retail changes often involve item, price, inventory, and the path from interest to purchase. Define the grain of 'a sale'. Online and store paths diverge. Write both if both are in scope.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "dom-tel",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "Telecom",
+      "summary": "Telecom analysis meets orders, service activation, and faults. Separate the customer-facing promise from the network task. A public TM Forum page was not opened in this check, so it is not linked.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": "A TM Forum or similar public page for the framework you want to cite."
+    },
+    {
+      "id": "dom-cc",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "Contact center and CCaaS",
+      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data a agent or a person needs at the start of the conversation. Vendor product claims stay out unless a page was opened.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "dom-erp",
+      "section": "domains",
+      "level": "intermediate",
+      "title": "ERP and CRM",
+      "summary": "Salesforce's CRM page opened. Dynamics 365's implementation guide opened. Both are examples of systems that already contain processes. Fit-gap analysis asks what the product does, what you will configure, and what you will not change. A gap is not automatically a customization.",
+      "points": [],
+      "source": "Salesforce CRM",
+      "url": "https://www.salesforce.com/crm/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "dom-reg",
+      "section": "domains",
+      "level": "advanced",
+      "title": "Regulation as a source",
+      "summary": "When a requirement comes from a rule, cite the rule and the version. If you cannot open the text, write 'source not yet attached' rather than a guessed clause. This lab would rather show a gap than a false citation.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-disc",
+      "section": "product",
+      "level": "foundation",
+      "title": "Discovery",
+      "summary": "Discovery is the work of testing whether you understand the problem. Use interviews, observation, and a small experiment. A discovery output is a clearer need, a rejected idea, or a decision to stop. All three are success.",
+      "points": [],
+      "source": "Christensen Institute, Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-case",
+      "section": "product",
+      "level": "intermediate",
+      "title": "Business case and return",
+      "summary": "List costs, benefits, the timing of each, and the assumptions. If you compute a return, show the formula and the inputs. Unknown inputs stay blank. The technique list includes business cases and financial analysis. This lab states no sample return.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-adkar",
+      "section": "product",
+      "level": "intermediate",
+      "title": "Change and ADKAR",
+      "summary": "Prosci's ADKAR page opened and names Awareness, Desire, Knowledge, Ability, and Reinforcement. A requirement can be built and still fail if people do not know why it exists or cannot perform the new work. Plan the enablement with the solution, not after the outage.",
+      "points": [],
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-ethics",
+      "section": "product",
+      "level": "foundation",
+      "title": "Ethics",
+      "summary": "IIBA's certification FAQ says candidates agree to a code of ethical conduct. In daily work that means you do not hide a risk, you do not invent a number, and you say when you are unsure. This lab is not legal advice.",
+      "points": [],
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-est",
+      "section": "product",
+      "level": "intermediate",
+      "title": "Estimation",
+      "summary": "Estimation is on the technique list. Estimate analysis work separately from build work. Give a range and what would change it. A single point estimate pretends certainty you do not have.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-risk",
+      "section": "product",
+      "level": "intermediate",
+      "title": "Risk and response",
+      "summary": "Write probability only if you have a basis. Otherwise use a simple high, medium, or low and say it is a judgment. Assign a response: avoid, reduce, transfer, or accept. Accepted risks need an owner.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-rfp",
+      "section": "product",
+      "level": "advanced",
+      "title": "RFP and vendor selection",
+      "summary": "A request for proposal should be traceable to requirements. Weight the criteria before you see the responses. Keep a record of questions and answers sent to every bidder. Vendor assessment is the related technique.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-buy",
+      "section": "product",
+      "level": "advanced",
+      "title": "Build, buy, or configure",
+      "summary": "The design-options task asks you to compare ways to satisfy the need. Include doing nothing. A demo is an input, not a decision. Record why the other options lost.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-metrics",
+      "section": "product",
+      "level": "intermediate",
+      "title": "Success measures",
+      "summary": "Define measures before build, so the team cannot move the goal after the result is known. Include a measure that would tell you to roll back.",
+      "points": [],
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "p-amazon",
+      "section": "product",
+      "level": "advanced",
+      "title": "Working backwards",
+      "summary": "Amazon's leadership principles page opened. A press-release-and-FAQ habit is associated with Amazon in public writing, but the book and the internal template were not opened in this check, so the steps are not copied. Use the principles page for what Amazon publishes, and mark any PR/FAQ outline you did not read as unknown.",
+      "points": [],
+      "source": "Amazon leadership principles",
+      "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+      "asOf": "2026-10",
+      "tbd": "A primary source for the PR/FAQ template that this check can quote."
+    },
+    {
+      "id": "p-sre",
+      "section": "product",
+      "level": "advanced",
+      "title": "Operational requirements",
+      "summary": "The Google SRE book introduction treats running the system as part of the engineering problem. Availability, on-call, and failure communication are requirements when a person depends on the service. Write them with the functional behavior.",
+      "points": [],
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-roles",
+      "section": "careers",
+      "level": "foundation",
+      "title": "Role names",
+      "summary": "Titles you will see include business analyst, junior or senior business analyst, lead, product owner, and business systems analyst. A title is not a promise of scope. Read the decisions the role owns.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-levels",
+      "section": "careers",
+      "level": "foundation",
+      "title": "Levels, without pay",
+      "summary": "A foundation level practices elicitation and clear writing with support. A working level runs a workstream. A senior level sets the analysis approach and coaches others. This lab states no salaries and no 'typical' pay.",
+      "points": [],
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-star",
+      "section": "careers",
+      "level": "foundation",
+      "title": "STAR, as a structure",
+      "summary": "Situation, task, action, result is a way to answer a behavioral question without wandering. The result should be something you can point to: a decision, a reduced defect, a baseline. Do not invent a metric for the story.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-bank",
+      "section": "careers",
+      "level": "intermediate",
+      "title": "Question bank",
+      "summary": "Practice questions: tell us about a stakeholder who disagreed; how you traced a change; how you knew a requirement was testable; how you handled a missing data source. Answer from work you did. Mark practice stories as practice.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-case",
+      "section": "careers",
+      "level": "intermediate",
+      "title": "Case interview",
+      "summary": "A case gives you a short brief and too little time. Restate the need, name stakeholders, ask two clarifying questions, then outline scope, risks, and a first model. Say what you are assuming.",
+      "points": [],
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-port",
+      "section": "careers",
+      "level": "foundation",
+      "title": "Portfolio pieces",
+      "summary": "Three honest pieces beat a large invented program. A requirement set with acceptance criteria, a process model of a public or personal workflow, and a traceability sample are enough. Remove any private data.",
+      "points": [],
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-resume",
+      "section": "careers",
+      "level": "foundation",
+      "title": "Resume words",
+      "summary": "Use words you can defend in the interview: elicitation, stakeholder map, user story, acceptance criteria, BPMN, traceability, UAT, workshop. Do not list a tool you have not opened.",
+      "points": [],
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-c2c",
+      "section": "careers",
+      "level": "advanced",
+      "title": "Contracting notes",
+      "summary": "Corp-to-corp and similar arrangements are commercial structures. The IRS page on independent contractor status opened. Classification is a facts-and-circumstances question. This note is not tax or legal advice.",
+      "points": [],
+      "source": "IRS, independent contractor defined",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "c-h1b",
+      "section": "careers",
+      "level": "advanced",
+      "title": "Sponsorship",
+      "summary": "Whether an employer will sponsor a work visa is the employer's decision and a legal question. The public H-1B page did not open in the 16 October 2026 check, so it is not linked. Nothing in this lab promises sponsorship or a visa outcome.",
+      "points": [],
+      "source": "Checked 16 October 2026. No visa page is linked.",
+      "url": "",
+      "asOf": "2026-10",
+      "tbd": "A USCIS H-1B page that opens, if you need the current official rules."
+    },
+    {
+      "id": "c-cpo",
+      "section": "careers",
+      "level": "advanced",
+      "title": "Toward product ownership",
+      "summary": "A path some analysts take is deeper discovery, outcome metrics, and backlog accountability. The Scrum Guide and the CSPO page are the public anchors in this lab. Course fees that did not render stay unknown.",
+      "points": [],
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    }
+  ],
+  "glossary": [
+    {
+      "term": "Business analysis",
+      "meaning": "The practice of understanding a need and shaping a valuable change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Business analyst",
+      "meaning": "A person who performs business analysis, whatever the job title.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Need",
+      "meaning": "A problem or opportunity to be addressed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Stakeholder",
+      "meaning": "A person or group with a relationship to the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Requirement",
+      "meaning": "A usable representation of a need, ready for further work.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Design",
+      "meaning": "A usable representation of a solution.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Constraint",
+      "meaning": "A limit on the solution that the team does not choose.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Assumption",
+      "meaning": "A belief treated as true for now, still to be confirmed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Scope",
+      "meaning": "The boundary of what is in and out of the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Elicitation",
+      "meaning": "Drawing out information from stakeholders and other sources.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Workshop",
+      "meaning": "A facilitated session with a purpose and a record.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Baseline",
+      "meaning": "An agreed version used for later comparison.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Traceability",
+      "meaning": "A link from a need to requirements, designs, and tests.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "RTM",
+      "meaning": "A requirements traceability matrix: a table of those links.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "UAT",
+      "meaning": "User acceptance testing: a decision against agreed criteria.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "User story",
+      "meaning": "A short statement of role, capability, and outcome.",
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Acceptance criteria",
+      "meaning": "The conditions that show a story or requirement is met.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Gherkin",
+      "meaning": "A language for scenarios using Given, When, and Then.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "BPMN",
+      "meaning": "Business Process Model and Notation, published by OMG.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Gateway",
+      "meaning": "A BPMN decision point that splits or joins flow.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "UML",
+      "meaning": "Unified Modeling Language, published by OMG.",
+      "source": "OMG UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "ERD",
+      "meaning": "A drawing of entities and the relationships between them.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "C4",
+      "meaning": "A model with system, container, component, and code views.",
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "KPI",
+      "meaning": "A key performance indicator tied to a decision.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "HEART",
+      "meaning": "Happiness, engagement, adoption, retention, and task success.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "OKR",
+      "meaning": "An objective plus measurable key results.",
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Product backlog",
+      "meaning": "The ordered list of what is known to be needed in the product.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Increment",
+      "meaning": "A concrete step toward the product goal, in Scrum.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Product owner",
+      "meaning": "An accountability on the Scrum Team for the backlog and value.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "RACI",
+      "meaning": "A matrix of responsible, accountable, consulted, and informed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "SWOT",
+      "meaning": "Strengths, weaknesses, opportunities, and threats.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "ADKAR",
+      "meaning": "Awareness, desire, knowledge, ability, and reinforcement.",
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Business case",
+      "meaning": "A recommendation that shows why a course of action is worth it.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Fit-gap",
+      "meaning": "A comparison of what a product already does and what the need still requires.",
+      "source": "Dynamics 365 implementation guide",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Process mining",
+      "meaning": "Reconstructing a process from event logs.",
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Non-functional requirement",
+      "meaning": "A quality attribute such as speed, security, or availability.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "CBAP",
+      "meaning": "Certified Business Analysis Professional, an IIBA credential.",
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "ECBA",
+      "meaning": "Entry Certificate in Business Analysis, an IIBA credential.",
+      "source": "IIBA ECBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "PMI-PBA",
+      "meaning": "PMI's Professional in Business Analysis credential.",
+      "source": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "BACCM",
+      "meaning": "The Business Analysis Core Concept Model in the BABOK Guide.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    }
+  ],
+  "flashcards": [
+    {
+      "front": "Business analysis",
+      "back": "The practice of understanding a need and shaping a valuable change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Business analyst",
+      "back": "A person who performs business analysis, whatever the job title.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Need",
+      "back": "A problem or opportunity to be addressed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Stakeholder",
+      "back": "A person or group with a relationship to the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Requirement",
+      "back": "A usable representation of a need, ready for further work.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Design",
+      "back": "A usable representation of a solution.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Constraint",
+      "back": "A limit on the solution that the team does not choose.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Assumption",
+      "back": "A belief treated as true for now, still to be confirmed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Scope",
+      "back": "The boundary of what is in and out of the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Elicitation",
+      "back": "Drawing out information from stakeholders and other sources.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Workshop",
+      "back": "A facilitated session with a purpose and a record.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Baseline",
+      "back": "An agreed version used for later comparison.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Traceability",
+      "back": "A link from a need to requirements, designs, and tests.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "RTM",
+      "back": "A requirements traceability matrix: a table of those links.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "UAT",
+      "back": "User acceptance testing: a decision against agreed criteria.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "User story",
+      "back": "A short statement of role, capability, and outcome.",
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Acceptance criteria",
+      "back": "The conditions that show a story or requirement is met.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Gherkin",
+      "back": "A language for scenarios using Given, When, and Then.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "BPMN",
+      "back": "Business Process Model and Notation, published by OMG.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Gateway",
+      "back": "A BPMN decision point that splits or joins flow.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "UML",
+      "back": "Unified Modeling Language, published by OMG.",
+      "source": "OMG UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "ERD",
+      "back": "A drawing of entities and the relationships between them.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "C4",
+      "back": "A model with system, container, component, and code views.",
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "KPI",
+      "back": "A key performance indicator tied to a decision.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "HEART",
+      "back": "Happiness, engagement, adoption, retention, and task success.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "OKR",
+      "back": "An objective plus measurable key results.",
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Product backlog",
+      "back": "The ordered list of what is known to be needed in the product.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Increment",
+      "back": "A concrete step toward the product goal, in Scrum.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Product owner",
+      "back": "An accountability on the Scrum Team for the backlog and value.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "RACI",
+      "back": "A matrix of responsible, accountable, consulted, and informed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "SWOT",
+      "back": "Strengths, weaknesses, opportunities, and threats.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "ADKAR",
+      "back": "Awareness, desire, knowledge, ability, and reinforcement.",
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Business case",
+      "back": "A recommendation that shows why a course of action is worth it.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Fit-gap",
+      "back": "A comparison of what a product already does and what the need still requires.",
+      "source": "Dynamics 365 implementation guide",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Process mining",
+      "back": "Reconstructing a process from event logs.",
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Non-functional requirement",
+      "back": "A quality attribute such as speed, security, or availability.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "The public BABOK contents list how many knowledge areas before underlying competencies?",
+      "choices": [
+        "Four",
+        "Six",
+        "Eight",
+        "Ten"
+      ],
+      "answer": 1,
+      "why": "Planning, elicitation, life cycle, strategy, requirements analysis and design, and solution evaluation.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "IIBA's FAQ says which of these about ECBA eligibility?",
+      "choices": [
+        "Five years of experience are required",
+        "There are no specific eligibility requirements to sit the exam",
+        "A degree is mandatory",
+        "CBAP must come first"
+      ],
+      "answer": 1,
+      "why": "The FAQ says there are no specific eligibility requirements, and candidates must agree to the code of conduct and the certification terms.",
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "The CCBA work-history minimum on the FAQ is:",
+      "choices": [
+        "1,000 hours",
+        "3,750 hours in the last seven years",
+        "7,500 hours",
+        "No hours, like ECBA"
+      ],
+      "answer": 1,
+      "why": "The FAQ states 3,750 hours within the last seven years, plus 21 professional-development hours.",
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "The CBAP exam page states the exam is:",
+      "choices": [
+        "60 questions in 90 minutes",
+        "120 questions in 210 minutes",
+        "200 questions in 240 minutes",
+        "130 questions in 180 minutes"
+      ],
+      "answer": 1,
+      "why": "The CBAP page says 120 questions and 210 minutes. The 130/180 figure on this list matches the CCBA page instead.",
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "On the fees page opened in October 2026, the ECBA exam column shows:",
+      "choices": [
+        "$145",
+        "$395, with student rates available",
+        "$1,200",
+        "A fee was not printed"
+      ],
+      "answer": 1,
+      "why": "The exam cell shows $395 and notes that student rates are available. The product page also says $395 or less.",
+      "source": "IIBA certification fees",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "PMI-PBA maintenance, as stated on the PMI page, is:",
+      "choices": [
+        "No renewal",
+        "60 PDUs each three-year cycle",
+        "Annual retake of the exam",
+        "A fee only, with no learning"
+      ],
+      "answer": 1,
+      "why": "The page says holders need 60 professional development units in each three-year cycle.",
+      "source": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "Given, When, and Then come from:",
+      "choices": [
+        "BPMN gateways",
+        "The Gherkin reference",
+        "A Scrum event",
+        "An ERD cardinality"
+      ],
+      "answer": 1,
+      "why": "Cucumber's Gherkin reference uses Given, When, and Then for scenarios.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "C4's four levels, as the C4 site lists them, start with:",
+      "choices": [
+        "Code, then container",
+        "Software system, container, component, code",
+        "Only a sequence diagram",
+        "SWOT"
+      ],
+      "answer": 1,
+      "why": "The C4 site names software system, container, component, and code.",
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "The 2020 Scrum Guide's artifacts include:",
+      "choices": [
+        "Only a Gantt chart",
+        "Product Backlog, Sprint Backlog, and Increment",
+        "A RACI and a SWOT",
+        "A business case only"
+      ],
+      "answer": 1,
+      "why": "Those three artifacts are in the guide's contents.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "HEART, from the cited Google Research paper, includes:",
+      "choices": [
+        "Hiring, equity, audit, risk, tax",
+        "Happiness, engagement, adoption, retention, task success",
+        "Hardware, ethernet, access, routing, telephony",
+        "Only revenue"
+      ],
+      "answer": 1,
+      "why": "Those are the user-centered categories associated with that paper.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "ADKAR, on the Prosci page, stands for words that include:",
+      "choices": [
+        "Audit, deploy, keep, archive, report",
+        "Awareness, desire, knowledge, ability, reinforcement",
+        "Agile, daily, kanban, and retro",
+        "Only awareness"
+      ],
+      "answer": 1,
+      "why": "The Prosci page uses those five words.",
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "A requirement with no test and no source is best marked:",
+      "choices": [
+        "Approved",
+        "Unknown until it is traced and made testable",
+        "Must",
+        "Done"
+      ],
+      "answer": 1,
+      "why": "Traceability and testable acceptance are the habits this lab teaches. Do not approve a gap.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "This lab's rule on salaries is:",
+      "choices": [
+        "Publish average pay",
+        "State no pay figures",
+        "Estimate from the cert fee",
+        "Copy marketing claims"
+      ],
+      "answer": 1,
+      "why": "The lab states no salaries and does not repeat vendor pay claims.",
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "Power BI features are:",
+      "choices": [
+        "Fully described from the opened article",
+        "Not described, because the readable body asked for authorization",
+        "Identical to Tableau",
+        "Claimed as Lucky's experience"
+      ],
+      "answer": 1,
+      "why": "The Learn page opened but the body required authorization, and the lab claims no Power BI experience.",
+      "source": "Microsoft Learn, What is Power BI?",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "Process mining, per the task-force site, is based on:",
+      "choices": [
+        "Only interviews",
+        "Event logs",
+        "A SWOT poster",
+        "A certification fee"
+      ],
+      "answer": 1,
+      "why": "The IEEE Task Force on Process Mining is the public pointer used here. Mining reconstructs flow from logs.",
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "When a model drafts a requirement, the accountable person is:",
+      "choices": [
+        "The model",
+        "The business analyst who accepts the text",
+        "Nobody",
+        "The font setting"
+      ],
+      "answer": 1,
+      "why": "The analyst owns the requirement. A draft is not an approval.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "The CCBA exam page states:",
+      "choices": [
+        "130 questions and 180 minutes",
+        "120 questions and 210 minutes",
+        "An untimed oral exam",
+        "No exam"
+      ],
+      "answer": 1,
+      "why": "The CCBA page says 130 multiple-choice questions and 180 minutes.",
+      "source": "IIBA CCBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+      "asOf": "2026-10"
+    },
+    {
+      "q": "A baseline is:",
+      "choices": [
+        "The newest unreviewed edit",
+        "An agreed version you can compare later",
+        "A salary band",
+        "A theme color"
+      ],
+      "answer": 1,
+      "why": "Without an agreed version, change control has nothing to diff.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    }
+  ],
+  "diagrams": [
+    {
+      "id": "baccm",
+      "title": "Core concept model",
+      "file": "assets/diagrams/baccm.svg",
+      "alt": "Core concept model. Six ideas from the BABOK core concept model. Study links, not a copy of the guide's figure.",
+      "caption": "Six ideas from the BABOK core concept model. Study links, not a copy of the guide's figure.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "areas",
+      "title": "Six knowledge areas",
+      "file": "assets/diagrams/areas.svg",
+      "alt": "Six knowledge areas. The six areas in the public contents.",
+      "caption": "The six areas in the public contents.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "classes",
+      "title": "Requirement classes",
+      "file": "assets/diagrams/classes.svg",
+      "alt": "Requirement classes. A study split of the classification schema.",
+      "caption": "A study split of the classification schema.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "elicitation",
+      "title": "Elicitation loop",
+      "file": "assets/diagrams/elicitation.svg",
+      "alt": "Elicitation loop. Tasks listed under elicitation and collaboration.",
+      "caption": "Tasks listed under elicitation and collaboration.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "trace",
+      "title": "Trace chain",
+      "file": "assets/diagrams/trace.svg",
+      "alt": "Trace chain. If a box has no arrow in your real work, the chain is broken.",
+      "caption": "If a box has no arrow in your real work, the chain is broken.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "grid",
+      "title": "Stakeholder grid",
+      "file": "assets/diagrams/grid.svg",
+      "alt": "Stakeholder grid. A hypothesis, not a fact about a person.",
+      "caption": "A hypothesis, not a fact about a person.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "bpmn",
+      "title": "BPMN pieces",
+      "file": "assets/diagrams/bpmn.svg",
+      "alt": "BPMN pieces. Labels a beginner needs before a large diagram.",
+      "caption": "Labels a beginner needs before a large diagram.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "storymap",
+      "title": "Story map",
+      "file": "assets/diagrams/storymap.svg",
+      "alt": "Story map. A slice is an outcome, not a technical layer.",
+      "caption": "A slice is an outcome, not a technical layer.",
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "c4",
+      "title": "C4 levels",
+      "file": "assets/diagrams/c4.svg",
+      "alt": "C4 levels. Stop at the level the audience can use.",
+      "caption": "Stop at the level the audience can use.",
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "erd",
+      "title": "Small order model",
+      "file": "assets/diagrams/erd.svg",
+      "alt": "Small order model. Name the relationship. Cardinality still needs a conversation.",
+      "caption": "Name the relationship. Cardinality still needs a conversation.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "raci",
+      "title": "RACI roles",
+      "file": "assets/diagrams/raci.svg",
+      "alt": "RACI roles. Two accountables means the decision is unclear.",
+      "caption": "Two accountables means the decision is unclear.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "swot",
+      "title": "SWOT quadrants",
+      "file": "assets/diagrams/swot.svg",
+      "alt": "SWOT quadrants. End with a decision, or the poster is unfinished.",
+      "caption": "End with a decision, or the poster is unfinished.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "heart",
+      "title": "HEART categories",
+      "file": "assets/diagrams/heart.svg",
+      "alt": "HEART categories. Categories from the cited metrics paper. No benchmark numbers.",
+      "caption": "Categories from the cited metrics paper. No benchmark numbers.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "okr",
+      "title": "OKR shape",
+      "file": "assets/diagrams/okr.svg",
+      "alt": "OKR shape. From the re:Work introduction.",
+      "caption": "From the re:Work introduction.",
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "dt",
+      "title": "Discover before converge",
+      "file": "assets/diagrams/dt.svg",
+      "alt": "Discover before converge. IDEO's site is the public pointer. This drawing is ours.",
+      "caption": "IDEO's site is the public pointer. This drawing is ours.",
+      "source": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "jtbd",
+      "title": "Job story",
+      "file": "assets/diagrams/jtbd.svg",
+      "alt": "Job story. Circumstance first. Feature second.",
+      "caption": "Circumstance first. Feature second.",
+      "source": "Christensen Institute, Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "adkar",
+      "title": "ADKAR",
+      "file": "assets/diagrams/adkar.svg",
+      "alt": "ADKAR. Words from the Prosci page. The drawing is a study aid.",
+      "caption": "Words from the Prosci page. The drawing is a study aid.",
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "case",
+      "title": "Business case parts",
+      "file": "assets/diagrams/case.svg",
+      "alt": "Business case parts. Blank cells stay blank.",
+      "caption": "Blank cells stay blank.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "rtm",
+      "title": "Matrix columns",
+      "file": "assets/diagrams/rtm.svg",
+      "alt": "Matrix columns. Status may be unreviewed. Say so.",
+      "caption": "Status may be unreviewed. Say so.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "domains",
+      "title": "Domain lenses",
+      "file": "assets/diagrams/domains.svg",
+      "alt": "Domain lenses. Same analysis moves. Different constraints. Uncited rules stay unmarked.",
+      "caption": "Same analysis moves. Different constraints. Uncited rules stay unmarked.",
+      "source": "HL7 FHIR overview",
+      "url": "https://www.hl7.org/fhir/overview.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "career",
+      "title": "Career evidence",
+      "file": "assets/diagrams/career.svg",
+      "alt": "Career evidence. No pay bands on this drawing.",
+      "caption": "No pay bands on this drawing.",
+      "source": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "ecosystem",
+      "title": "Ecosystem map",
+      "file": "assets/diagrams/ecosystem.svg",
+      "alt": "Ecosystem map. Sister topics. Authority still has to be named.",
+      "caption": "Sister topics. Authority still has to be named.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "sprint",
+      "title": "Scrum events",
+      "file": "assets/diagrams/sprint.svg",
+      "alt": "Scrum events. Names from the 2020 Scrum Guide contents.",
+      "caption": "Names from the 2020 Scrum Guide contents.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "ai",
+      "title": "AI draft loop",
+      "file": "assets/diagrams/ai.svg",
+      "alt": "AI draft loop. Unreviewed model text is not a requirement.",
+      "caption": "Unreviewed model text is not a requirement.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    }
+  ],
+  "flows": [
+    {
+      "id": "elicit-flow",
+      "title": "From question to baseline",
+      "steps": [
+        "Prepare the questions",
+        "Hold the conversation",
+        "Send notes back",
+        "Edit from the reply",
+        "Baseline the agreed lines"
+      ],
+      "caption": "Confirmation is a step, not a mood.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "story-flow",
+      "title": "Story to scenario",
+      "steps": [
+        "Name the role and outcome",
+        "Write Given, When, Then",
+        "Add one unhappy path",
+        "Link a test",
+        "Put it on the backlog"
+      ],
+      "caption": "A story without Then is not ready.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "change-flow",
+      "title": "A change request",
+      "steps": [
+        "Name what moved",
+        "Find the traces",
+        "Estimate impact",
+        "Record the decision",
+        "Update the baseline"
+      ],
+      "caption": "A hallway yes is not a decision record.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "uat-flow",
+      "title": "Acceptance cycle",
+      "steps": [
+        "Criteria exist first",
+        "People try the result",
+        "Gaps are classified",
+        "Need-change or defect",
+        "Decision is recorded"
+      ],
+      "caption": "The first viewing should not be acceptance.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "discover-flow",
+      "title": "Discovery",
+      "steps": [
+        "Observe or interview",
+        "Restate the job",
+        "Sketch two options",
+        "Test the smaller one",
+        "Keep, change, or stop"
+      ],
+      "caption": "Stopping is an allowed outcome.",
+      "source": "Christensen Institute, Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "sprint-flow",
+      "title": "A Scrum sprint",
+      "steps": [
+        "Order the backlog",
+        "Plan the sprint",
+        "Build an increment",
+        "Review with stakeholders",
+        "Retrospect the way of working"
+      ],
+      "caption": "Event names follow the 2020 guide. Durations are not copied here.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "kanban-flow",
+      "title": "Kanban movement",
+      "steps": [
+        "Options",
+        "Ready",
+        "In progress, with a limit",
+        "Review",
+        "Done"
+      ],
+      "caption": "The limit is the point. A board with no limit is a to-do list.",
+      "source": "Miro Kanban",
+      "url": "https://miro.com/kanban/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "design-sprint-flow",
+      "title": "Design sprint sequence",
+      "steps": [
+        "Understand",
+        "Sketch",
+        "Decide",
+        "Prototype",
+        "Test with people"
+      ],
+      "caption": "This follows the design-sprint shape, not a Scrum sprint.",
+      "source": "Google Design Sprint Kit",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "vendor-flow",
+      "title": "Vendor selection",
+      "steps": [
+        "Must-have constraints",
+        "Weighted wishes, scored before demos",
+        "Same questions to each bidder",
+        "Evidence against each criterion",
+        "Decision and why the others lost"
+      ],
+      "caption": "Weight the criteria first.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "mining-flow",
+      "title": "Process mining loop",
+      "steps": [
+        "Define the question",
+        "Get an event log you are allowed to use",
+        "See the actual paths",
+        "Compare with the official flow",
+        "Decide what to change"
+      ],
+      "caption": "A log is personal data until someone says otherwise.",
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "ai-flow",
+      "title": "Assisted requirements",
+      "steps": [
+        "Provide source and constraint",
+        "Ask for a draft",
+        "Check every fact",
+        "Mark unreviewed lines",
+        "Only then show stakeholders"
+      ],
+      "caption": "Fluent is not the same as sourced.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "cc-flow",
+      "title": "Contact reason to requirement",
+      "steps": [
+        "Why people contact",
+        "Channel they use",
+        "Data needed at the start",
+        "When a person must take over",
+        "How you will know it improved"
+      ],
+      "caption": "The handoff is a requirement.",
+      "source": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "kpi-flow",
+      "title": "Measure loop",
+      "steps": [
+        "Question the number answers",
+        "Formula and source",
+        "Owner and cadence",
+        "Threshold for action",
+        "Review after release"
+      ],
+      "caption": "A chart without an owner waits forever.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "case-flow",
+      "title": "Business case path",
+      "steps": [
+        "Need",
+        "Options",
+        "Sourced costs and benefits",
+        "Risks",
+        "Recommend or say unknown"
+      ],
+      "caption": "Unknown is a permitted recommendation.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    }
+  ],
+  "charts": [
+    {
+      "title": "CBAP exam blueprint",
+      "unit": "%",
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10",
+      "rows": [
+        {
+          "label": "Planning",
+          "value": 14
+        },
+        {
+          "label": "Elicitation",
+          "value": 12
+        },
+        {
+          "label": "Life cycle",
+          "value": 15
+        },
+        {
+          "label": "Strategy",
+          "value": 15
+        },
+        {
+          "label": "Analysis and design",
+          "value": 30
+        },
+        {
+          "label": "Evaluation",
+          "value": 14
+        }
+      ]
+    },
+    {
+      "title": "CCBA exam blueprint",
+      "unit": "%",
+      "source": "IIBA CCBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+      "asOf": "2026-10",
+      "rows": [
+        {
+          "label": "Planning",
+          "value": 12
+        },
+        {
+          "label": "Elicitation",
+          "value": 20
+        },
+        {
+          "label": "Life cycle",
+          "value": 18
+        },
+        {
+          "label": "Strategy",
+          "value": 12
+        },
+        {
+          "label": "Analysis and design",
+          "value": 32
+        },
+        {
+          "label": "Evaluation",
+          "value": 6
+        }
+      ]
+    },
+    {
+      "title": "PMI-PBA domains",
+      "unit": "%",
+      "source": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "asOf": "2026-10",
+      "rows": [
+        {
+          "label": "Needs assessment",
+          "value": 18
+        },
+        {
+          "label": "Planning",
+          "value": 22
+        },
+        {
+          "label": "Analysis",
+          "value": 35
+        },
+        {
+          "label": "Traceability",
+          "value": 15
+        },
+        {
+          "label": "Evaluation",
+          "value": 10
+        }
+      ]
+    },
+    {
+      "title": "CBDA domains",
+      "unit": "%",
+      "source": "IIBA CBDA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+      "asOf": "2026-10",
+      "rows": [
+        {
+          "label": "Research questions",
+          "value": 20
+        },
+        {
+          "label": "Source data",
+          "value": 15
+        },
+        {
+          "label": "Analyze",
+          "value": 16
+        },
+        {
+          "label": "Interpret",
+          "value": 20
+        },
+        {
+          "label": "Influence decisions",
+          "value": 20
+        },
+        {
+          "label": "Org strategy",
+          "value": 9
+        }
+      ]
+    },
+    {
+      "title": "This repository",
+      "unit": "",
+      "source": "Counted from this lab's catalog",
+      "url": "",
+      "asOf": "2026-10",
+      "rows": [
+        {
+          "label": "Notes",
+          "value": 130
+        },
+        {
+          "label": "Diagrams",
+          "value": 24
+        },
+        {
+          "label": "Flows",
+          "value": 14
+        },
+        {
+          "label": "Flashcards",
+          "value": 36
+        }
+      ]
+    }
+  ],
+  "resources": [
+    {
+      "title": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "note": "Public contents of the BABOK Guide, including knowledge areas and the technique list.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA certification fees",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+      "note": "Fee table transcribed in the certifications room.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "note": "Eligibility answers for ECBA, CCBA, CBAP, AAC, and CBDA.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA ECBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+      "note": "ECBA bundle price and positioning.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA CCBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+      "note": "CCBA exam length and blueprint.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "note": "CBAP exam length and blueprint.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA Agile Analysis Certification",
+      "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+      "note": "AAC bundle description.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IIBA CBDA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+      "note": "CBDA domains.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "note": "PMI-PBA eligibility, exam shape, and PDUs. Fee not shown.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "note": "2020 Scrum Guide.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Scrum Alliance CSPO page",
+      "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+      "note": "CSPO is listed. Fee did not render.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Scaled Agile",
+      "url": "https://scaledagile.com/",
+      "note": "Organization home. POPM course page did not open.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "note": "BPMN 2.0 specification about-page.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "OMG UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "note": "UML 2.5.1 about-page.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "C4 model",
+      "url": "https://c4model.com/",
+      "note": "Four-level architecture model.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "note": "Given, When, Then.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "note": "User-centered metrics paper.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "note": "Objectives and key results introduction.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Google Design Sprint Kit",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "note": "Design sprint kit.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Christensen Institute, Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "note": "Jobs to Be Done.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "note": "Design thinking home.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "note": "Change model. The five words appear on the page.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Amazon leadership principles",
+      "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+      "note": "Leadership principles. The PR/FAQ practice is not an official page on this site, so it is not described as Amazon policy.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Google SRE book introduction",
+      "url": "https://sre.google/sre-book/introduction/",
+      "note": "Operations as part of the system.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Azure DevOps backlogs",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops",
+      "note": "Backlogs in Azure DevOps.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Power Platform ALM",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+      "note": "Application lifecycle management for Power Platform.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Dynamics 365 implementation guide",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+      "note": "Dynamics 365 implementation guide overview.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Microsoft Learn, What is Power BI?",
+      "url": "https://learn.microsoft.com/en-us/power-bi/fundamentals/power-bi-overview",
+      "note": "Title page only. Body asked for authorization.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Jira getting started",
+      "url": "https://www.atlassian.com/software/jira/guides/getting-started/introduction",
+      "note": "Jira introduction.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "note": "User stories.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Atlassian Agile",
+      "url": "https://www.atlassian.com/agile",
+      "note": "Atlassian agile overview.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Confluence",
+      "url": "https://www.atlassian.com/software/confluence",
+      "note": "Confluence product page.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "PostgreSQL SQL introduction",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql-intro.html",
+      "note": "SQL tutorial.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "note": "Process mining task force.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Lucid BPMN tutorial",
+      "url": "https://lucid.co/diagram/bpmn/tutorial",
+      "note": "BPMN tutorial.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Miro Kanban",
+      "url": "https://miro.com/kanban/",
+      "note": "Kanban page.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Figma",
+      "url": "https://www.figma.com/",
+      "note": "Product home. Feature list not quoted.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Microsoft Visio support",
+      "url": "https://support.microsoft.com/en-us/visio",
+      "note": "Visio support home.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Salesforce CRM",
+      "url": "https://www.salesforce.com/crm/",
+      "note": "CRM overview.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "HL7 FHIR overview",
+      "url": "https://www.hl7.org/fhir/overview.html",
+      "note": "Healthcare interoperability overview.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IRS, independent contractor defined",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined",
+      "note": "Independent contractor definition. Not tax advice.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "WCAG 2.2 quick reference",
+      "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+      "note": "Accessibility quick reference.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "CypherMonkey Labs",
+      "url": "https://cyphermonkeylabs.com/#contact",
+      "note": "Contact for a correction. No email is published in this lab.",
+      "asOf": "2026-10"
+    }
+  ],
+  "downloads": [
+    {
+      "file": "downloads/brd-outline.pdf",
+      "title": "Business requirements outline",
+      "kind": "PDF",
+      "bytes": 3998
+    },
+    {
+      "file": "downloads/html/brd-outline.html",
+      "title": "Business requirements outline (HTML)",
+      "kind": "HTML",
+      "bytes": 1911
+    },
+    {
+      "file": "downloads/frd-outline.pdf",
+      "title": "Functional requirements outline",
+      "kind": "PDF",
+      "bytes": 3906
+    },
+    {
+      "file": "downloads/html/frd-outline.html",
+      "title": "Functional requirements outline (HTML)",
+      "kind": "HTML",
+      "bytes": 1807
+    },
+    {
+      "file": "downloads/srs-outline.pdf",
+      "title": "Software requirements outline",
+      "kind": "PDF",
+      "bytes": 3911
+    },
+    {
+      "file": "downloads/html/srs-outline.html",
+      "title": "Software requirements outline (HTML)",
+      "kind": "HTML",
+      "bytes": 1791
+    },
+    {
+      "file": "downloads/user-story-card.pdf",
+      "title": "User story card",
+      "kind": "PDF",
+      "bytes": 3849
+    },
+    {
+      "file": "downloads/html/user-story-card.html",
+      "title": "User story card (HTML)",
+      "kind": "HTML",
+      "bytes": 1731
+    },
+    {
+      "file": "downloads/raci-sheet.pdf",
+      "title": "RACI sheet",
+      "kind": "PDF",
+      "bytes": 3880
+    },
+    {
+      "file": "downloads/html/raci-sheet.html",
+      "title": "RACI sheet (HTML)",
+      "kind": "HTML",
+      "bytes": 1770
+    },
+    {
+      "file": "downloads/swot-sheet.pdf",
+      "title": "SWOT sheet",
+      "kind": "PDF",
+      "bytes": 3840
+    },
+    {
+      "file": "downloads/html/swot-sheet.html",
+      "title": "SWOT sheet (HTML)",
+      "kind": "HTML",
+      "bytes": 1732
+    },
+    {
+      "file": "downloads/process-map-sheet.pdf",
+      "title": "Process map checklist",
+      "kind": "PDF",
+      "bytes": 3901
+    },
+    {
+      "file": "downloads/html/process-map-sheet.html",
+      "title": "Process map checklist (HTML)",
+      "kind": "HTML",
+      "bytes": 1795
+    },
+    {
+      "file": "downloads/cert-fee-notes.pdf",
+      "title": "Certification fee notes",
+      "kind": "PDF",
+      "bytes": 4167
+    },
+    {
+      "file": "downloads/ba-templates.docx",
+      "title": "Template workbook",
+      "kind": "DOCX",
+      "bytes": 39292
+    },
+    {
+      "file": "downloads/ba-study-deck.pptx",
+      "title": "Study deck",
+      "kind": "PPTX",
+      "bytes": 38102
+    },
+    {
+      "file": "downloads/ba-html-sheets.zip",
+      "title": "HTML sheets, zipped",
+      "kind": "ZIP",
+      "bytes": 7776
+    }
+  ],
+  "templates": [
+    {
+      "title": "Business requirements outline",
+      "summary": "Why the change exists, for a sponsor.",
+      "lines": [
+        "Problem or opportunity in one paragraph.",
+        "Stakeholders and the decision maker.",
+        "Outcomes and how they will be measured.",
+        "Scope in and scope out.",
+        "Constraints, assumptions, and risks.",
+        "Recommendation, or a clear statement that more discovery is required."
+      ]
+    },
+    {
+      "title": "Functional requirements outline",
+      "summary": "What the solution must do, in testable statements.",
+      "lines": [
+        "Identifier and statement.",
+        "Source and owner.",
+        "Related business requirement.",
+        "Acceptance criteria.",
+        "Data needed.",
+        "Exception behavior."
+      ]
+    },
+    {
+      "title": "Software requirements outline",
+      "summary": "A study SRS skeleton. Not an ISO reproduction.",
+      "lines": [
+        "Purpose and audience.",
+        "Definitions.",
+        "Interfaces.",
+        "Functions.",
+        "Quality attributes with measures.",
+        "Open issues marked unknown."
+      ]
+    },
+    {
+      "title": "User story card",
+      "summary": "Role, capability, outcome, and scenarios.",
+      "lines": [
+        "As a \u2026 I want \u2026 so that \u2026",
+        "Given, When, Then for the main path.",
+        "One unhappy path.",
+        "Notes and out of scope."
+      ]
+    },
+    {
+      "title": "RACI",
+      "summary": "One accountable person per decision.",
+      "lines": [
+        "Rows are decisions or deliverables, not vague topics.",
+        "Exactly one A.",
+        "R does the work. C is asked. I is told.",
+        "If two people both claim A, the matrix is not finished."
+      ]
+    },
+    {
+      "title": "SWOT",
+      "summary": "A snapshot that ends in a choice.",
+      "lines": [
+        "Internal strengths and weaknesses.",
+        "External opportunities and threats.",
+        "One decision the snapshot supports.",
+        "Date and participants."
+      ]
+    },
+    {
+      "title": "Process map checklist",
+      "summary": "Before you call a drawing finished.",
+      "lines": [
+        "Start and end are events.",
+        "Every gateway path is labeled.",
+        "Rework is visible.",
+        "The current state is labeled current.",
+        "A stakeholder has confirmed the unhappy path."
+      ]
+    }
+  ],
+  "certs": [
+    {
+      "id": "ecba",
+      "title": "ECBA",
+      "summary": "Entry Certificate in Business Analysis. The product page describes a bundle at $395 or less that includes membership, the exam, a practice exam, and a learning journey. Student rates are described as $315 or less, depending on region.",
+      "facts": [
+        "FAQ: no specific eligibility requirements to sit the exam. Candidates must agree to the code of ethical conduct and the certification terms.",
+        "Fees table, application column: Not required.",
+        "Fees table, exam column: $395 (student rates available). Product page: $395 or less.",
+        "Fees table, rewrite column: $95, and the same cell says Non-Members $250.",
+        "Fees table, recertification column: Not required.",
+        "Figures are US dollars from the IIBA fees page on 16 October 2026. IIBA says prices can change. Where a cell contains both a large figure and a 'Members' or 'Non-Members' line, both are copied as printed. Confirm which line applies to you before you pay."
+      ],
+      "source": "IIBA ECBA, fees, and FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "ccba",
+      "title": "CCBA",
+      "summary": "Certification of Capability in Business Analysis, aimed at practitioners with a few years of experience.",
+      "facts": [
+        "FAQ: 21 professional-development hours in the last four years.",
+        "FAQ: 3,750 hours of business analysis work in the last seven years, aligned to the knowledge areas, with minimums across areas as the FAQ details.",
+        "Two references are required on the CCBA page's application list.",
+        "Exam page: 130 scenario-based questions, 180 minutes.",
+        "Blueprint on the CCBA page: planning 12%, elicitation 20%, life cycle 18%, strategy 12%, requirements analysis and design 32%, solution evaluation 6%.",
+        "Fees table: application $145. Exam cell $405 with the line Members $250. Rewrite cell $195 with the line Non-Members $350. Recertification cell $85 with the line Non-Members $120.",
+        "Figures are US dollars from the IIBA fees page on 16 October 2026. IIBA says prices can change. Where a cell contains both a large figure and a 'Members' or 'Non-Members' line, both are copied as printed. Confirm which line applies to you before you pay."
+      ],
+      "source": "IIBA CCBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "cbap",
+      "title": "CBAP",
+      "summary": "Certified Business Analysis Professional, for experienced practitioners.",
+      "facts": [
+        "FAQ and CBAP page: 7,500 hours in the last 10 years, and 35 professional-development hours in the last four years.",
+        "FAQ: at least 900 hours in each of four of the six knowledge areas, at least 3,600 of the 7,500.",
+        "Two references. Application fee is separate from the exam fee. The page says the application expires within 12 months and is non-refundable.",
+        "Exam: 120 questions, 210 minutes.",
+        "Blueprint: planning 14%, elicitation 12%, life cycle 15%, strategy 15%, requirements analysis and design 30%, solution evaluation 14%.",
+        "Fees table: application $145. Exam cell $505 with the line Members $350. Rewrite cell $295 with the line Non-Members $450. Recertification cell $85 with the line Non-Members $120.",
+        "Figures are US dollars from the IIBA fees page on 16 October 2026. IIBA says prices can change. Where a cell contains both a large figure and a 'Members' or 'Non-Members' line, both are copied as printed. Confirm which line applies to you before you pay."
+      ],
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "aac",
+      "title": "AAC",
+      "summary": "IIBA Agile Analysis Certification. The product page says $405 or less, including membership and the exam.",
+      "facts": [
+        "FAQ: no prerequisites for the specialty certifications. Two years in the specialty are recommended, not required.",
+        "Fees table: application not required. Exam cell $405 with the line Members $250. Rewrite cell $195 with the line Non-Members $350. Recertification cell $30 with the line Non-Members $50.",
+        "Figures are US dollars from the IIBA fees page on 16 October 2026. IIBA says prices can change. Where a cell contains both a large figure and a 'Members' or 'Non-Members' line, both are copied as printed. Confirm which line applies to you before you pay."
+      ],
+      "source": "IIBA Agile Analysis Certification",
+      "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+      "asOf": "2026-10",
+      "tbd": "A public AAC exam outline with domain percentages, if you need the blueprint. It was not copied because it was not read on the opened page."
+    },
+    {
+      "id": "cbda",
+      "title": "CBDA",
+      "summary": "Certification in Business Data Analytics. The page lists six blueprint domains.",
+      "facts": [
+        "Domains on the CBDA page: research questions 20%, source data 15%, analyze data 16%, interpret and report 20%, influence decisions 20%, guide organization strategy 9%.",
+        "FAQ: no prerequisites. Two years in the specialty are recommended, not required.",
+        "Fees table matches the AAC row: application not required; exam cell $405 with Members $250; rewrite cell $195 with Non-Members $350; recertification cell $30 with Non-Members $50.",
+        "Figures are US dollars from the IIBA fees page on 16 October 2026. IIBA says prices can change. Where a cell contains both a large figure and a 'Members' or 'Non-Members' line, both are copied as printed. Confirm which line applies to you before you pay."
+      ],
+      "source": "IIBA CBDA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "pmi",
+      "title": "PMI-PBA",
+      "summary": "PMI Professional in Business Analysis. The page describes experience paths and the exam shape. It does not show an exam fee in the text that loaded.",
+      "facts": [
+        "Set A: secondary degree, 60 months of business analysis in the last 8 years, 35 contact hours.",
+        "Set B: bachelor's degree or higher, 36 months in the last 8 years, 35 contact hours.",
+        "Set C: GAC-accredited bachelor's or postgraduate degree, 24 months, 35 contact hours.",
+        "Exam: 200 questions, 240 minutes. Domains: needs assessment 18%, planning 22%, analysis 35%, traceability and monitoring 15%, evaluation 10%.",
+        "Maintenance: 60 PDUs each three-year cycle."
+      ],
+      "source": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "asOf": "2026-10",
+      "tbd": "The PMI-PBA exam fee. It was not on the page text that loaded."
+    },
+    {
+      "id": "scrum-certs",
+      "title": "PSM, PSPO, and CSPO",
+      "summary": "Scrum.org assessment pages did not open. Scrum Alliance's CSPO page opened, without a readable fee.",
+      "facts": [
+        "Use the 2020 Scrum Guide for the framework itself.",
+        "Do not copy a fee from memory."
+      ],
+      "source": "Scrum Alliance CSPO page",
+      "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+      "asOf": "2026-10",
+      "tbd": "PSM, PSPO, and CSPO prices and prerequisites."
+    },
+    {
+      "id": "popm",
+      "title": "SAFe POPM",
+      "summary": "Scaled Agile's home page opened. The POPM course URL returned HTTP 429, so no price is copied.",
+      "facts": [
+        "Confirm the current course on scaledagile.com before you pay or plan time off."
+      ],
+      "source": "Scaled Agile",
+      "url": "https://scaledagile.com/",
+      "asOf": "2026-10",
+      "tbd": "POPM price, length, and exam rules."
+    }
+  ],
+  "course": [
+    {
+      "minutes": "6",
+      "title": "What this lab is",
+      "href": "start.html",
+      "text": "Set the display the way you want to read. The lab is free, cited, and silent about pay."
+    },
+    {
+      "minutes": "8",
+      "title": "Need, value, and roles",
+      "href": "foundations.html",
+      "text": "Read the core concept model and the difference between analyst, project manager, and product owner."
+    },
+    {
+      "minutes": "10",
+      "title": "Six knowledge areas",
+      "href": "babok.html",
+      "text": "Skim the six areas and three techniques you have not used."
+    },
+    {
+      "minutes": "8",
+      "title": "A testable requirement",
+      "href": "requirements.html",
+      "text": "Write one story and one Given-When-Then scenario in your own notes."
+    },
+    {
+      "minutes": "8",
+      "title": "One picture",
+      "href": "modeling.html",
+      "text": "Pick BPMN or C4 and name the question the picture answers."
+    },
+    {
+      "minutes": "6",
+      "title": "Delivery frame",
+      "href": "agile.html",
+      "text": "Match the words you use to the Scrum Guide or to a design sprint, and do not mix them."
+    },
+    {
+      "minutes": "6",
+      "title": "A measure",
+      "href": "data.html",
+      "text": "Define one KPI with a source and an owner. Leave unknown numbers blank."
+    },
+    {
+      "minutes": "8",
+      "title": "Credentials and practice",
+      "href": "certs.html",
+      "text": "Read the fee cells, then take the quiz or the sort game. Confirm any fee before you pay."
+    }
+  ]
+}
