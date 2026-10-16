@@ -375,4 +375,20 @@
     localStorage.setItem(key, JSON.stringify(data));
   } catch (err) { /* ignore */ }
   window.BA_FRAME = { sections: SECTIONS, socials: SOCIALS, icon: svg };
+  var root = document.documentElement;
+  function motionOff() {
+    if (root.dataset.motion === "reduce") return true;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+  if (!motionOff()) {
+    var pending = false;
+    window.addEventListener("scroll", function () {
+      if (pending || motionOff()) return;
+      pending = true;
+      requestAnimationFrame(function () {
+        pending = false;
+        root.style.setProperty("--shift", Math.round((window.scrollY || 0) * 0.14) + "px");
+      });
+    }, { passive: true });
+  }
 })();

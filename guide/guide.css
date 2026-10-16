@@ -96,6 +96,8 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8);
 }
 .ba-panel h2 { margin: 0; font-size: 1rem; }
+.ba-pick { display: flex; align-items: center; gap: 0.35rem; margin: 0.15rem 0 0; font-size: 0.78rem; font-weight: 700; }
+.ba-pick select { min-height: 36px; max-width: 11rem; border-radius: 999px; border: 1px solid #d6d3d1; background: #fff; color: #1c1917; }
 .ba-panel header button, .ba-form button, .ba-chips button, .ba-nudge button, .ba-voice button {
   min-height: 44px;
   min-width: 44px;
@@ -158,12 +160,17 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 .sent.is-on, .read-sent.is-spoken { background: #fde68a; border-radius: 4px; }
 .is-reading {
   outline: 3px solid #f59e0b;
-  box-shadow: 0 0 0 6px rgba(251, 191, 36, 0.35);
+  border-radius: 16px;
+  box-shadow: 0 0 0 6px rgba(251, 191, 36, 0.45), 0 0 28px rgba(167, 139, 250, 0.9);
+  animation: ba-read-glow 1.3s ease-in-out infinite;
+}
+@keyframes ba-read-glow {
+  50% { box-shadow: 0 0 0 8px rgba(253, 224, 71, 0.55), 0 0 36px rgba(34, 211, 238, 0.85); }
 }
 .chip.is-live, .menu-link.is-live { box-shadow: 0 0 0 3px #f59e0b; }
 @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.12); } }
 @media (max-width: 800px) {
-  .ba-guide { top: auto; bottom: 4.6rem; width: 200px; height: 236px; }
+  .ba-guide { top: auto; bottom: 5.7rem; width: 200px; height: 236px; }
   .ba-monkey, .ba-monkey svg { width: 200px; height: 236px; }
   .ba-guide.is-greeting { width: 220px; height: 260px; }
   .ba-guide.is-greeting .ba-monkey,
@@ -175,44 +182,47 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
     left: 0.45rem;
     right: 0.45rem;
     top: auto;
-    bottom: 4.5rem;
+    bottom: 5.35rem;
     width: auto;
     height: auto;
     max-height: 30vh;
     border-radius: 16px 16px 0 0;
     z-index: 37;
   }
-  .ba-panel header { padding: 0.28rem 0.45rem; }
+  .ba-panel header { padding: 0.2rem 0.4rem; }
   .ba-panel h2 { font-size: 0.95rem; }
-  .ba-status { margin: 0; font-size: 0.8rem; line-height: 1.15; }
-  .ba-scroll { overflow: auto; flex: 0 0 auto; max-height: 3.15rem; }
+  .ba-status { display: none; }
+  .ba-pick { font-size: 0.72rem; }
+  .ba-pick select { min-height: 32px; max-width: 8.2rem; }
+  .ba-scroll { overflow: auto; flex: 0 0 auto; max-height: 2.7rem; }
   .ba-log { max-height: none; overflow: visible; padding: 0.12rem 0.35rem 0; gap: 0; }
   .ba-bubble { padding: 0.12rem 0.4rem; font-size: 0.7rem; line-height: 1.15; }
-  .ba-panel { max-height: 32vh; }
   .ba-choices {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0.28rem;
     padding: 0.15rem 0.4rem 0.28rem;
   }
-  .ba-choices button { padding: 0.1rem 0.45rem; font-size: 0.82rem; }
-  .ba-form { padding: 0.22rem 0.3rem; }
+  .ba-choices button { min-height: 38px; padding: 0.05rem 0.4rem; font-size: 0.8rem; }
+  .ba-panel header button, .ba-form input, .ba-form button { min-height: 38px; }
+  .ba-form { padding: 0.15rem 0.3rem; }
   .ba-guide:not(.is-greeting) .ba-nudge {
     position: fixed;
     top: auto;
     right: auto;
     left: 0.45rem;
-    bottom: 5.4rem;
+    bottom: 6.3rem;
     width: min(16rem, calc(100vw - 13.5rem));
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ba-float, .ba-eye, .ba-arm, .ba-head, .ba-soft { animation: none; }
+  .ba-float, .ba-eye, .ba-arm, .ba-head, .ba-soft, .is-reading { animation: none; }
   .is-reading { box-shadow: none; }
 }
 html[data-motion="reduce"] .ba-float,
 html[data-motion="reduce"] .ba-eye,
 html[data-motion="reduce"] .ba-arm,
 html[data-motion="reduce"] .ba-head,
-html[data-motion="reduce"] .ba-soft { animation: none; }
+html[data-motion="reduce"] .ba-soft,
+html[data-motion="reduce"] .is-reading { animation: none; }
 html[data-motion="reduce"] .is-reading { box-shadow: none; }

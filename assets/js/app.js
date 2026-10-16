@@ -41,6 +41,10 @@
     if (!btn) return;
     var utter = null;
     btn.addEventListener("click", function () {
+      if (window.BA_READ_ALONG) {
+        window.BA_READ_ALONG();
+        return;
+      }
       if (!window.speechSynthesis) {
         btn.textContent = "Speech is not available in this browser";
         return;
@@ -718,6 +722,10 @@
       window.BA_CATALOG = data;
       if (window.BA_SET_COUNTS && data.counts) window.BA_SET_COUNTS(data.counts);
       window.BA_SPEAK = function () {
+        if (window.BA_READ_ALONG) {
+          window.BA_READ_ALONG();
+          return;
+        }
         var text = data.narration || "";
         if (!window.speechSynthesis) return;
         if (speechSynthesis.speaking) {

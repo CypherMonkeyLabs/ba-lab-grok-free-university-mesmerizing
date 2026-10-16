@@ -35,12 +35,12 @@ host.innerHTML =
   '<button type="button" class="ba-monkey" aria-expanded="false" aria-controls="ba-guide-panel" aria-label="BA guide">' +
   monkeySvg() + "</button>" +
   '<section class="ba-panel" id="ba-guide-panel" hidden role="dialog" aria-modal="false" aria-labelledby="ba-guide-title">' +
-  '<header><div><h2 id="ba-guide-title">BA guide</h2><p class="ba-status">Voice is off</p></div>' +
+  '<header><div><h2 id="ba-guide-title">BA guide</h2><p class="ba-status">Voice is off</p>' +
+  '<label class="ba-pick">Voice <select data-voice-pick aria-label="Voice"></select></label></div>' +
   '<div class="ba-actions"><button type="button" data-hide>Hide</button><button type="button" data-close>Close</button></div></header>' +
   '<div class="ba-scroll">' +
   '<div class="ba-log" role="log" aria-live="polite"></div>' +
   '<div class="ba-voice">' +
-  '<label>Voice <select data-voice-pick aria-label="Voice"></select></label>' +
   '<label>Rate <input data-rate type="range" min="0.7" max="1.15" step="0.05" value="0.9"></label>' +
   '<label>Pitch <input data-pitch type="range" min="0.8" max="1.2" step="0.05" value="0.96"></label>' +
   '<button type="button" data-sound>Soft sound off</button>' +
@@ -625,6 +625,11 @@ function readStep() {
   var sentences = ensureSentences(block);
   speakSentences(sentences, 0);
 }
+window.BA_READ_ALONG = function () {
+  openPanel(true);
+  setVoice(true);
+  startReadAlong(0);
+};
 function startReadAlong(index) {
   var blocks = document.querySelectorAll("main [data-read]");
   if (!blocks.length) {
