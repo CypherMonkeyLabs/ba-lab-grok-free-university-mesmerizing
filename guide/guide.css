@@ -51,9 +51,9 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 @keyframes ba-float { 50% { transform: translateY(-6px); } }
 .ba-nudge {
   position: absolute;
-  right: 112px;
-  bottom: 8px;
-  width: min(18rem, 70vw);
+  right: calc(100% + 12px);
+  bottom: 12px;
+  width: min(18rem, 36vw);
   background: #fff;
   color: #1c1917;
   border: 2px solid #c4b5fd;

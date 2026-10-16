@@ -835,7 +835,7 @@ body[data-menu="open"] .drawer { transform: translateX(0); }
   .chip svg { width: 0.95rem; height: 0.95rem; }
   .banner-row { gap: 0.12rem; }
   .site-footer { padding-right: 0.6rem; padding-bottom: calc(236px + 5.5rem); }
-  .footer-inner { padding-right: 11.5rem; }
+  .footer-inner { padding-right: 0.6rem; }
   td { padding-right: 0; }
   .wheel-tab { display: none; }
   .phone-bar {
