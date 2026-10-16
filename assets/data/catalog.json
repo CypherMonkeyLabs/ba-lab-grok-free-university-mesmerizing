@@ -4226,19 +4226,19 @@
       "file": "downloads/ba-templates.docx",
       "title": "Template workbook",
       "kind": "DOCX",
-      "bytes": 39148
+      "bytes": 39152
     },
     {
       "file": "downloads/ba-study-deck.pptx",
       "title": "Study deck",
       "kind": "PPTX",
-      "bytes": 37385
+      "bytes": 37406
     },
     {
       "file": "downloads/ba-html-sheets.zip",
       "title": "HTML sheets, zipped",
       "kind": "ZIP",
-      "bytes": 11985
+      "bytes": 12001
     },
     {
       "file": "downloads/diagrams/baccm.svg",
@@ -5060,13 +5060,13 @@
       "file": "downloads/rooms/home.docx",
       "title": "Business Analyst Free University DOCX",
       "kind": "DOCX",
-      "bytes": 37295
+      "bytes": 37296
     },
     {
       "file": "downloads/rooms/home.pptx",
       "title": "Business Analyst Free University PPTX",
       "kind": "PPTX",
-      "bytes": 31772
+      "bytes": 31781
     },
     {
       "file": "downloads/rooms/start.json",
@@ -5090,13 +5090,13 @@
       "file": "downloads/rooms/start.docx",
       "title": "Start here DOCX",
       "kind": "DOCX",
-      "bytes": 37266
+      "bytes": 37267
     },
     {
       "file": "downloads/rooms/start.pptx",
       "title": "Start here PPTX",
       "kind": "PPTX",
-      "bytes": 31772
+      "bytes": 31781
     },
     {
       "file": "downloads/rooms/foundations.json",
@@ -5120,13 +5120,13 @@
       "file": "downloads/rooms/foundations.docx",
       "title": "Foundations DOCX",
       "kind": "DOCX",
-      "bytes": 38722
+      "bytes": 38723
     },
     {
       "file": "downloads/rooms/foundations.pptx",
       "title": "Foundations PPTX",
       "kind": "PPTX",
-      "bytes": 31814
+      "bytes": 31823
     },
     {
       "file": "downloads/rooms/ecosystem.json",
@@ -5150,13 +5150,13 @@
       "file": "downloads/rooms/ecosystem.docx",
       "title": "Ecosystem DOCX",
       "kind": "DOCX",
-      "bytes": 37808
+      "bytes": 37809
     },
     {
       "file": "downloads/rooms/ecosystem.pptx",
       "title": "Ecosystem PPTX",
       "kind": "PPTX",
-      "bytes": 31812
+      "bytes": 31821
     },
     {
       "file": "downloads/rooms/babok.json",
@@ -5180,13 +5180,13 @@
       "file": "downloads/rooms/babok.docx",
       "title": "BABOK DOCX",
       "kind": "DOCX",
-      "bytes": 39916
+      "bytes": 39917
     },
     {
       "file": "downloads/rooms/babok.pptx",
       "title": "BABOK PPTX",
       "kind": "PPTX",
-      "bytes": 31845
+      "bytes": 31854
     },
     {
       "file": "downloads/rooms/requirements.json",
@@ -5210,13 +5210,13 @@
       "file": "downloads/rooms/requirements.docx",
       "title": "Requirements DOCX",
       "kind": "DOCX",
-      "bytes": 38645
+      "bytes": 38646
     },
     {
       "file": "downloads/rooms/requirements.pptx",
       "title": "Requirements PPTX",
       "kind": "PPTX",
-      "bytes": 31805
+      "bytes": 31814
     },
     {
       "file": "downloads/rooms/modeling.json",
@@ -5240,13 +5240,13 @@
       "file": "downloads/rooms/modeling.docx",
       "title": "Modeling DOCX",
       "kind": "DOCX",
-      "bytes": 38378
+      "bytes": 38379
     },
     {
       "file": "downloads/rooms/modeling.pptx",
       "title": "Modeling PPTX",
       "kind": "PPTX",
-      "bytes": 31806
+      "bytes": 31815
     },
     {
       "file": "downloads/rooms/agile.json",
@@ -5270,13 +5270,13 @@
       "file": "downloads/rooms/agile.docx",
       "title": "Agile DOCX",
       "kind": "DOCX",
-      "bytes": 38526
+      "bytes": 38527
     },
     {
       "file": "downloads/rooms/agile.pptx",
       "title": "Agile PPTX",
       "kind": "PPTX",
-      "bytes": 31845
+      "bytes": 31854
     },
     {
       "file": "downloads/rooms/data.json",
@@ -5300,13 +5300,13 @@
       "file": "downloads/rooms/data.docx",
       "title": "Data DOCX",
       "kind": "DOCX",
-      "bytes": 38549
+      "bytes": 38550
     },
     {
       "file": "downloads/rooms/data.pptx",
       "title": "Data PPTX",
       "kind": "PPTX",
-      "bytes": 31843
+      "bytes": 31852
     },
     {
       "file": "downloads/rooms/tools.json",
@@ -5330,13 +5330,13 @@
       "file": "downloads/rooms/tools.docx",
       "title": "Tools DOCX",
       "kind": "DOCX",
-      "bytes": 38163
+      "bytes": 38164
     },
     {
       "file": "downloads/rooms/tools.pptx",
       "title": "Tools PPTX",
       "kind": "PPTX",
-      "bytes": 31796
+      "bytes": 31805
     },
     {
       "file": "downloads/rooms/ai.json",
@@ -5360,13 +5360,13 @@
       "file": "downloads/rooms/ai.docx",
       "title": "AI for business analysts DOCX",
       "kind": "DOCX",
-      "bytes": 38178
+      "bytes": 38179
     },
     {
       "file": "downloads/rooms/ai.pptx",
       "title": "AI for business analysts PPTX",
       "kind": "PPTX",
-      "bytes": 31826
+      "bytes": 31835
     },
     {
       "file": "downloads/rooms/domains.json",
@@ -5390,13 +5390,13 @@
       "file": "downloads/rooms/domains.docx",
       "title": "Domains DOCX",
       "kind": "DOCX",
-      "bytes": 38313
+      "bytes": 38314
     },
     {
       "file": "downloads/rooms/domains.pptx",
       "title": "Domains PPTX",
       "kind": "PPTX",
-      "bytes": 31820
+      "bytes": 31829
     },
     {
       "file": "downloads/rooms/product.json",
@@ -5420,13 +5420,13 @@
       "file": "downloads/rooms/product.docx",
       "title": "Product craft DOCX",
       "kind": "DOCX",
-      "bytes": 38627
+      "bytes": 38628
     },
     {
       "file": "downloads/rooms/product.pptx",
       "title": "Product craft PPTX",
       "kind": "PPTX",
-      "bytes": 31820
+      "bytes": 31829
     },
     {
       "file": "downloads/rooms/certs.json",
@@ -5450,13 +5450,13 @@
       "file": "downloads/rooms/certs.docx",
       "title": "Certifications DOCX",
       "kind": "DOCX",
-      "bytes": 37405
+      "bytes": 37406
     },
     {
       "file": "downloads/rooms/certs.pptx",
       "title": "Certifications PPTX",
       "kind": "PPTX",
-      "bytes": 31888
+      "bytes": 31897
     },
     {
       "file": "downloads/rooms/careers.json",
@@ -5480,13 +5480,13 @@
       "file": "downloads/rooms/careers.docx",
       "title": "Careers DOCX",
       "kind": "DOCX",
-      "bytes": 38697
+      "bytes": 38698
     },
     {
       "file": "downloads/rooms/careers.pptx",
       "title": "Careers PPTX",
       "kind": "PPTX",
-      "bytes": 31848
+      "bytes": 31857
     },
     {
       "file": "downloads/rooms/practice.json",
@@ -5510,13 +5510,13 @@
       "file": "downloads/rooms/practice.docx",
       "title": "Practice DOCX",
       "kind": "DOCX",
-      "bytes": 37199
+      "bytes": 37200
     },
     {
       "file": "downloads/rooms/practice.pptx",
       "title": "Practice PPTX",
       "kind": "PPTX",
-      "bytes": 31746
+      "bytes": 31755
     },
     {
       "file": "downloads/rooms/diagrams.json",
@@ -5540,13 +5540,13 @@
       "file": "downloads/rooms/diagrams.docx",
       "title": "Diagrams DOCX",
       "kind": "DOCX",
-      "bytes": 37177
+      "bytes": 37178
     },
     {
       "file": "downloads/rooms/diagrams.pptx",
       "title": "Diagrams PPTX",
       "kind": "PPTX",
-      "bytes": 31718
+      "bytes": 31727
     },
     {
       "file": "downloads/rooms/flows.json",
@@ -5570,13 +5570,13 @@
       "file": "downloads/rooms/flows.docx",
       "title": "Flows DOCX",
       "kind": "DOCX",
-      "bytes": 37199
+      "bytes": 37200
     },
     {
       "file": "downloads/rooms/flows.pptx",
       "title": "Flows PPTX",
       "kind": "PPTX",
-      "bytes": 31736
+      "bytes": 31745
     },
     {
       "file": "downloads/rooms/charts.json",
@@ -5600,13 +5600,13 @@
       "file": "downloads/rooms/charts.docx",
       "title": "Charts DOCX",
       "kind": "DOCX",
-      "bytes": 37191
+      "bytes": 37192
     },
     {
       "file": "downloads/rooms/charts.pptx",
       "title": "Charts PPTX",
       "kind": "PPTX",
-      "bytes": 31715
+      "bytes": 31724
     },
     {
       "file": "downloads/rooms/glossary.json",
@@ -5630,13 +5630,13 @@
       "file": "downloads/rooms/glossary.docx",
       "title": "Glossary DOCX",
       "kind": "DOCX",
-      "bytes": 37187
+      "bytes": 37188
     },
     {
       "file": "downloads/rooms/glossary.pptx",
       "title": "Glossary PPTX",
       "kind": "PPTX",
-      "bytes": 31721
+      "bytes": 31730
     },
     {
       "file": "downloads/rooms/resources.json",
@@ -5660,13 +5660,13 @@
       "file": "downloads/rooms/resources.docx",
       "title": "Resources DOCX",
       "kind": "DOCX",
-      "bytes": 37193
+      "bytes": 37194
     },
     {
       "file": "downloads/rooms/resources.pptx",
       "title": "Resources PPTX",
       "kind": "PPTX",
-      "bytes": 31727
+      "bytes": 31736
     },
     {
       "file": "downloads/rooms/templates.json",
@@ -5690,13 +5690,13 @@
       "file": "downloads/rooms/templates.docx",
       "title": "Templates DOCX",
       "kind": "DOCX",
-      "bytes": 37187
+      "bytes": 37188
     },
     {
       "file": "downloads/rooms/templates.pptx",
       "title": "Templates PPTX",
       "kind": "PPTX",
-      "bytes": 31720
+      "bytes": 31729
     },
     {
       "file": "downloads/rooms/downloads.json",
@@ -5720,13 +5720,13 @@
       "file": "downloads/rooms/downloads.docx",
       "title": "Downloads DOCX",
       "kind": "DOCX",
-      "bytes": 37237
+      "bytes": 37238
     },
     {
       "file": "downloads/rooms/downloads.pptx",
       "title": "Downloads PPTX",
       "kind": "PPTX",
-      "bytes": 31780
+      "bytes": 31789
     },
     {
       "file": "downloads/rooms/search.json",
@@ -5750,13 +5750,13 @@
       "file": "downloads/rooms/search.docx",
       "title": "Search DOCX",
       "kind": "DOCX",
-      "bytes": 37142
+      "bytes": 37143
     },
     {
       "file": "downloads/rooms/search.pptx",
       "title": "Search PPTX",
       "kind": "PPTX",
-      "bytes": 31679
+      "bytes": 31688
     },
     {
       "file": "downloads/rooms/credits.json",
@@ -5780,13 +5780,13 @@
       "file": "downloads/rooms/credits.docx",
       "title": "Legal and credits DOCX",
       "kind": "DOCX",
-      "bytes": 37281
+      "bytes": 37282
     },
     {
       "file": "downloads/rooms/credits.pptx",
       "title": "Legal and credits PPTX",
       "kind": "PPTX",
-      "bytes": 31851
+      "bytes": 31860
     },
     {
       "file": "downloads/rooms/help.json",
@@ -5810,13 +5810,13 @@
       "file": "downloads/rooms/help.docx",
       "title": "Help DOCX",
       "kind": "DOCX",
-      "bytes": 37202
+      "bytes": 37203
     },
     {
       "file": "downloads/rooms/help.pptx",
       "title": "Help PPTX",
       "kind": "PPTX",
-      "bytes": 31758
+      "bytes": 31767
     },
     {
       "file": "downloads/diagrams/baccm.png",
@@ -6224,7 +6224,7 @@
       "file": "downloads/ba-everything.zip",
       "title": "Download everything",
       "kind": "ZIP",
-      "bytes": 5576577
+      "bytes": 5576788
     }
   ],
   "templates": [
@@ -6268,7 +6268,7 @@
       "title": "User story card",
       "summary": "Role, capability, outcome, and scenarios.",
       "lines": [
-        "As a … I want … so that …",
+        "As a \u2026 I want \u2026 so that \u2026",
         "Given, When, Then for the main path.",
         "One unhappy path.",
         "Notes and out of scope."

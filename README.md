@@ -8,7 +8,7 @@ A free study lab for business analysis. Open the app, then the rooms. Lucky is a
 <a href="index.html"><img alt="" src="assets/diagrams/baccm.svg" width="88" height="52"> Open the app</a>
 &nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com">Website</a>
 &nbsp;·&nbsp; <a href="https://github.com/CypherMonkeyLabs">GitHub</a>
-&nbsp;·&nbsp; <a href="https://linktr.ee/cyphermonkey">Profile</a>
+&nbsp;·&nbsp; <a href="https://linktr.ee/cypherMonkey">Profile</a>
 </p>
 
 ## Run it
@@ -187,4 +187,4 @@ Independent, free, learning-only student project. Respects every company and ven
 
 © 2026 CypherMonkeyLabs 🐒
 
-[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cyphermonkey)
+[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cypherMonkey)

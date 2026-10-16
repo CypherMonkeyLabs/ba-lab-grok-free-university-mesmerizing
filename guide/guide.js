@@ -39,7 +39,6 @@ host.innerHTML =
   '<div class="ba-actions"><button type="button" data-hide>Hide</button><button type="button" data-close>Close</button></div></header>' +
   '<div class="ba-scroll">' +
   '<div class="ba-log" role="log" aria-live="polite"></div>' +
-  '<div class="ba-choices"></div>' +
   '<div class="ba-voice">' +
   '<label>Voice <select data-voice-pick aria-label="Voice"></select></label>' +
   '<label>Rate <input data-rate type="range" min="0.7" max="1.15" step="0.05" value="0.9"></label>' +
@@ -50,6 +49,7 @@ host.innerHTML =
   '<button type="button" data-next-section>Next section</button>' +
   '<button type="button" data-stop>Stop</button>' +
   "</div></div>" +
+  '<div class="ba-choices"></div>' +
   '<form class="ba-form"><input type="text" aria-label="Ask about this room" placeholder="Ask, or say take me to a room" autocomplete="off">' +
   '<button type="button" data-mic aria-label="Speak a question">Mic</button><button type="submit">Send</button></form>' +
   "</section>";
@@ -842,6 +842,9 @@ function storedFlag(key) {
 }
 function pokeOff() { return storedFlag("ba-poke-off") === "1"; }
 function pokeCount() { return Number(storedFlag("ba-poke-count") || "0") || 0; }
+function shotMode() {
+  try { return new URLSearchParams(location.search).get("shot") || ""; } catch (err) { return ""; }
+}
 function hideNudge() {
   nudge.hidden = true;
   nudge.innerHTML = "";
@@ -861,11 +864,14 @@ function endGreet() {
   schedulePoke();
 }
 function beginGreet() {
-  if (storedFlag("ba-greet-done") === "1") {
+  var force = shotMode() === "greet";
+  if (!force && storedFlag("ba-greet-done") === "1") {
     schedulePoke();
     return;
   }
-  try { localStorage.setItem("ba-greet-done", "1"); } catch (err) { return; }
+  if (!force) {
+    try { localStorage.setItem("ba-greet-done", "1"); } catch (err) { return; }
+  }
   greetClosed = false;
   host.classList.add("is-greeting");
   host.style.right = "auto";
@@ -877,21 +883,28 @@ function beginGreet() {
   nudge.hidden = false;
   nudge.innerHTML = "<p>Welcome to CypherMonkey Labs. I am your BA guide. I only repeat the notes in this lab.</p>" +
     '<div class="ba-nudge-actions"><button type="button" data-hear>Hear it</button><button type="button" data-dock>Dock on the right</button></div>';
-  window.setTimeout(function () { if (!greetClosed) endGreet(); }, 8000);
+  if (!force) window.setTimeout(function () { if (!greetClosed) endGreet(); }, 8000);
 }
 function schedulePoke() {
-  if (pokeOff() || pokeCount() >= 3) return;
+  if (shotMode() === "poke") {
+    showPoke();
+    return;
+  }
+  if (shotMode() === "greet" || pokeOff() || pokeCount() >= 3) return;
   window.clearTimeout(pokeTimer);
   var wait = 120000 + Math.floor(Math.random() * 180000);
   pokeTimer = window.setTimeout(showPoke, wait);
 }
 function showPoke() {
-  if (pokeOff() || pokeCount() >= 3) return;
-  if (document.body.dataset.tour === "open" || document.body.dataset.menu === "open" || !panel.hidden || host.classList.contains("is-greeting")) {
+  var force = shotMode() === "poke";
+  if (!force && (pokeOff() || pokeCount() >= 3)) return;
+  if (!force && (document.body.dataset.tour === "open" || document.body.dataset.menu === "open" || !panel.hidden || host.classList.contains("is-greeting"))) {
     pokeTimer = window.setTimeout(showPoke, 20000);
     return;
   }
-  try { localStorage.setItem("ba-poke-count", String(pokeCount() + 1)); } catch (err) { return; }
+  if (!force) {
+    try { localStorage.setItem("ba-poke-count", String(pokeCount() + 1)); } catch (err) { return; }
+  }
   pose("encourage");
   nudge.hidden = false;
   nudge.innerHTML = "<p>I can read this page with you, or stay quiet.</p>" +
@@ -934,7 +947,9 @@ nudge.addEventListener("click", function (event) {
 });
 document.addEventListener("canon-tour-finished", beginGreet);
 document.addEventListener("canon-tour-skipped", schedulePoke);
-if (storedFlag("canon-tour-done") === "1" && storedFlag("ba-greet-done") !== "1") beginGreet();
+if (shotMode() === "greet") beginGreet();
+else if (shotMode() === "poke") showPoke();
+else if (storedFlag("canon-tour-done") === "1" && storedFlag("ba-greet-done") !== "1") beginGreet();
 else if (storedFlag("canon-tour-done")) schedulePoke();
 try {
   if (localStorage.getItem("ba-sound") === "on") {

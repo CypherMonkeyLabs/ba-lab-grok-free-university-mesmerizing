@@ -10,7 +10,7 @@ const problems = [];
 function fail(message) { problems.push(message); }
 
 const email = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
-const banned = [/mailto:/i, /dev\.to/i, /linktr\.ee\/(?!cyphermonkey\b)/i];
+const banned = [/mailto:/i, /dev\.to/i, /linktr\.ee\/(?!cypherMonkey\b)/];
 const bannedHosts = new Set(["x.com", "www.x.com", "twitter.com", "www.twitter.com", "linkedin.com", "www.linkedin.com", "huggingface.co", "www.huggingface.co"]);
 const namespaces = new Set([
   "http://www.w3.org/2000/svg",
@@ -62,7 +62,7 @@ const footerNeedles = ["CypherMonkey Labs", "cyphermonkeylabs.com/#contact", "©
 const sampleHtml = readFileSync(join(root, "downloads/html/brd-outline.html"), "utf8");
 for (const needle of footerNeedles) if (!sampleHtml.includes(needle)) fail("HTML sheet missing " + needle);
 const readme = readFileSync(join(root, "README.md"), "utf8");
-for (const needle of ["github.com/CypherMonkeyLabs", "https://cyphermonkeylabs.com", "linktr.ee/cyphermonkey", "Not affiliated"]) {
+for (const needle of ["github.com/CypherMonkeyLabs", "https://cyphermonkeylabs.com", "linktr.ee/cypherMonkey", "Not affiliated"]) {
   if (!readme.includes(needle)) fail("README missing " + needle);
 }
 if (/huggingface\.co|linkedin\.com|x\.com/i.test(readme)) fail("README still has a removed social host");
@@ -87,7 +87,7 @@ function hostAllowed(raw) {
   if (bannedHosts.has(host)) return false;
   if (host === "127.0.0.1" || host === "localhost") return true;
   if (host === "cyphermonkeylabs.com" || host === "www.cyphermonkeylabs.com") return true;
-  if (host === "linktr.ee" || host === "www.linktr.ee") return parsed.pathname === "/cyphermonkey" || parsed.pathname === "/cyphermonkey/";
+  if (host === "linktr.ee" || host === "www.linktr.ee") return parsed.pathname === "/cypherMonkey" || parsed.pathname === "/cypherMonkey/";
   if (host === "github.com" || host === "www.github.com") return parsed.pathname === "/CypherMonkeyLabs" || parsed.pathname.startsWith("/CypherMonkeyLabs/");
   if (cited.has(cleaned) || cited.has(cleaned.replace(/\/$/, ""))) return true;
   return false;

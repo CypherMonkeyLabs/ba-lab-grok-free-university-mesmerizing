@@ -28,7 +28,7 @@
     ["help", "Help", "help.html", "book", "Menu, course, guide, and downloads, including the tour.", "Start"],
     ["search", "Search", "search.html", "link", "Find a note by words you remember.", "Start"]
   ];
-  var BANNER = ["home", "start", "foundations", "babok", "requirements", "modeling", "agile", "practice", "diagrams", "downloads"];
+  var BANNER = ["home", "downloads", "start", "foundations", "babok", "requirements", "modeling", "agile", "practice", "diagrams"];
   var GLOW = { diagrams: 1, practice: 1, downloads: 1 };
   var ICONS = {
     home: '<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/>',
@@ -55,7 +55,7 @@
   var SOCIALS = [
     { id: "site", label: "CypherMonkey Labs website", href: "https://cyphermonkeylabs.com" },
     { id: "github", label: "GitHub organization", href: "https://github.com/CypherMonkeyLabs" },
-    { id: "profile", label: "Profile links", href: "https://linktr.ee/cyphermonkey", iconOnly: true }
+    { id: "profile", label: "Profile links", href: "https://linktr.ee/cypherMonkey", iconOnly: true }
   ];
   var THEMES = [
     ["aurora", "Aurora"],
@@ -336,7 +336,7 @@
     var icons =
       '<a class="brand-icon brand-web" href="https://cyphermonkeylabs.com" aria-label="CypherMonkey Labs website">' + brandArt(marks.monkey, "ft") + "</a>" +
       '<a class="brand-icon brand-gh" href="https://github.com/CypherMonkeyLabs" aria-label="GitHub organization">' + brandArt(marks.github, "gh") + "</a>" +
-      '<a class="brand-icon brand-lt" href="https://linktr.ee/cyphermonkey" aria-label="Linktree">' + brandArt(marks.linktree, "lt") + "</a>";
+      '<a class="brand-icon brand-lt" href="https://linktr.ee/cypherMonkey" aria-label="Linktree">' + brandArt(marks.linktree, "lt") + "</a>";
     footer.innerHTML =
       '<div class="footer-inner">' +
       '<div class="disclaimer-box"><p><span class="shield" aria-hidden="true">🛡️</span> ' + esc(DISCLAIMER).replace(

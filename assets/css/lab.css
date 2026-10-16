@@ -269,18 +269,20 @@ a:hover { text-decoration-thickness: 3px; }
 }
 .chip-rail {
   display: flex;
-  gap: 0.45rem;
+  gap: 0.28rem;
   overflow-x: auto;
   overscroll-behavior-x: contain;
-  padding-bottom: 0.35rem;
+  padding-bottom: 0.15rem;
   max-width: 100%;
+  min-width: 0;
 }
 .chip {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
-  padding: 0.35rem 0.8rem;
+  gap: 0.28rem;
+  padding: 0.28rem 0.5rem;
+  font-size: 0.92rem;
   border-radius: 999px;
   text-decoration: none;
   color: var(--ink);
@@ -745,6 +747,10 @@ body[data-menu="open"] .drawer { transform: translateX(0); }
 .choice-grid, .game-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 @media (max-width: 800px) {
   main { width: min(1120px, calc(100% - 1rem)); margin-left: auto; margin-right: auto; padding-right: 6.2rem; padding-bottom: 1.5rem; }
+  body:has(.ba-panel:not([hidden])) main { padding-bottom: calc(50vh + 4.2rem); }
+  .chip { padding: 0.22rem 0.38rem; font-size: 0.78rem; gap: 0.2rem; }
+  .chip svg { width: 0.95rem; height: 0.95rem; }
+  .banner-row { gap: 0.12rem; }
   .site-footer { padding-right: 6.2rem; padding-bottom: 5.6rem; }
   td { padding-right: 0; }
   .wheel-tab { display: none; }

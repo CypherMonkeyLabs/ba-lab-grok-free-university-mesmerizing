@@ -31,7 +31,7 @@ DISCLAIMER = (
 LINKS = [
     ("Website", "https://cyphermonkeylabs.com"),
     ("GitHub", "https://github.com/CypherMonkeyLabs"),
-    ("Profile", "https://linktr.ee/cyphermonkey"),
+    ("Profile", "https://linktr.ee/cypherMonkey"),
 ]
 BABOK = ("BABOK Guide knowledge hub", "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/")
 FEES = ("IIBA certification fees", "https://www.iiba.org/business-analysis-certifications/certification-fees/")
@@ -1452,7 +1452,7 @@ A free study lab for business analysis. Open the app, then the rooms. Lucky is a
 <a href="index.html"><img alt="" src="assets/diagrams/baccm.svg" width="88" height="52"> Open the app</a>
 &nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com">Website</a>
 &nbsp;·&nbsp; <a href="https://github.com/CypherMonkeyLabs">GitHub</a>
-&nbsp;·&nbsp; <a href="https://linktr.ee/cyphermonkey">Profile</a>
+&nbsp;·&nbsp; <a href="https://linktr.ee/cypherMonkey">Profile</a>
 </p>
 
 ## Run it
@@ -1481,7 +1481,7 @@ Publishing notes, including what is built and what is only prepared, are in `doc
 
 © 2026 CypherMonkeyLabs 🐒
 
-[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cyphermonkey)
+[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cypherMonkey)
 """
     (ROOT / "README.md").write_text(text, encoding="utf-8")
 
@@ -1541,7 +1541,7 @@ def main():
     (data / "socials.json").write_text(json.dumps([
         {"id": "site", "label": "Website", "href": "https://cyphermonkeylabs.com"},
         {"id": "github", "label": "GitHub", "href": "https://github.com/CypherMonkeyLabs"},
-        {"id": "profile", "label": "Profile", "href": "https://linktr.ee/cyphermonkey"},
+        {"id": "profile", "label": "Profile", "href": "https://linktr.ee/cypherMonkey"},
     ], indent=2), encoding="utf-8")
     write_pages()
     write_readme(downloads, counts)

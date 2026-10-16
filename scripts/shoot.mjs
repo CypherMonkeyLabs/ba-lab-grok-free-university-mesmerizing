@@ -15,7 +15,9 @@ const shots = [
   ["menu", "/", true, false, false],
   ["guide", "/", false, true, false],
   ["tour", "/?tour=1", false, false, true],
-  ["footer", "/", false, false, false]
+  ["footer", "/", false, false, false],
+  ["greet", "/?shot=greet", false, false, false],
+  ["poke", "/?shot=poke", false, false, false]
 ];
 const sizes = [[1440, 900], [390, 844]];
 
@@ -42,6 +44,10 @@ for (const [width, height] of sizes) {
       await page.click(".ba-monkey");
       await new Promise((resolve) => setTimeout(resolve, 400));
     }
+    if (name === "greet" || name === "poke") {
+      await page.waitForSelector(".ba-guide.is-greeting, .ba-nudge:not([hidden])");
+      await new Promise((resolve) => setTimeout(resolve, 300));
+    }
     if (name === "footer") {
       await page.evaluate(() => document.querySelector(".site-footer").scrollIntoView());
       await new Promise((resolve) => setTimeout(resolve, 300));
@@ -65,6 +71,9 @@ for (const [width, height] of sizes) {
       const bar = document.getElementById("phone-bar");
       const tourCard = document.querySelector(".ba-tour-card");
       const badges = document.querySelectorAll(".brand-icons a");
+      const downloads = document.querySelector("a.chip[href='downloads.html']");
+      const rail = document.querySelector(".chip-rail");
+      const more = Array.from(document.querySelectorAll(".ba-choices button")).find((node) => node.textContent.trim() === "More");
       const h1r = box(h1);
       const mr = box(menuBtn);
       const monkeyBox = box(monkey);
@@ -83,6 +92,10 @@ for (const [width, height] of sizes) {
         copy: box(copy),
         bar: box(bar),
         badges: badges.length,
+        linktree: document.querySelector(".brand-lt") ? document.querySelector(".brand-lt").getAttribute("href") : "",
+        downloads: box(downloads),
+        rail: box(rail),
+        more: box(more),
         exports: document.querySelectorAll(".export-btn").length,
         tourCard: box(tourCard),
         guideHidden: document.querySelector(".ba-guide") ? getComputedStyle(document.querySelector(".ba-guide")).visibility : ""
