@@ -64,5 +64,147 @@
       ],
       "answer": 1
     }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Prosci ADKAR",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Amazon leadership principles",
+      "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Design Sprint community",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Research, user-centered metrics",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "re:Work OKRs guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Objectives and key results",
+      "url": "https://en.wikipedia.org/wiki/OKR",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
   ]
 }

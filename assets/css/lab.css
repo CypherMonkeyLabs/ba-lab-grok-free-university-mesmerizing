@@ -1210,3 +1210,16 @@ html[data-motion="reduce"] .tone-a:hover,
 html[data-motion="reduce"] .tone-b:hover,
 html[data-motion="reduce"] .tone-c:hover,
 html[data-motion="reduce"] .tone-d:hover { transform: none; }
+.sources-deeper {
+  margin: 1.4rem 0 0.4rem;
+  padding: 1rem 1.1rem 1.15rem;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--bg2) 86%, transparent);
+}
+.sources-deeper h2 { margin: 0 0 0.35rem; }
+.sources-deeper li { margin: 0.4rem 0; }
+.sources-deeper a { font-weight: 700; }
+@media (max-width: 800px) {
+  .sources-deeper { margin-right: calc(200px + 0.45rem); }
+}

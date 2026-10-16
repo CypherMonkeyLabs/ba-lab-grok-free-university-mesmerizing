@@ -52,5 +52,189 @@
       ],
       "answer": 1
     }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Jira getting started",
+      "url": "https://www.atlassian.com/software/jira/guides/getting-started/introduction",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Confluence",
+      "url": "https://www.atlassian.com/software/confluence",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Azure DevOps backlogs",
+      "url": "https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Power Platform ALM",
+      "url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Dynamics 365 implementation guide",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Microsoft Visio support",
+      "url": "https://support.microsoft.com/en-us/visio",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Miro Kanban",
+      "url": "https://miro.com/kanban/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Figma",
+      "url": "https://www.figma.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Lucid BPMN tutorial",
+      "url": "https://lucid.co/diagram/bpmn/tutorial",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Community",
+      "url": "https://community.atlassian.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Microsoft Learn, What is Power BI?",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Microsoft Power BI",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Tableau, Get Started",
+      "url": "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
   ]
 }

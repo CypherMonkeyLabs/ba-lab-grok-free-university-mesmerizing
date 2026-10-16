@@ -1,0 +1,161 @@
+{
+  "page": "data",
+  "title": "Sources and go deeper",
+  "checked": "2026-10",
+  "entries": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "PostgreSQL, SQL introduction",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql-intro.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "PostgreSQL, the SQL language",
+      "url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "CBDA",
+      "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Research, user-centered metrics",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Microsoft Learn, What is Power BI?",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Microsoft Power BI",
+      "url": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Tableau, Get Started",
+      "url": "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "re:Work OKRs guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Objectives and key results",
+      "url": "https://en.wikipedia.org/wiki/OKR",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

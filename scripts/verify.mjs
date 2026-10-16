@@ -105,6 +105,33 @@ const tests = JSON.parse(readFileSync(join(root, "assets/data/download-tests.jso
 const failedTests = (tests.rows || []).filter((row) => !row.pass);
 if (failedTests.length) fail("download checks failed: " + failedTests.length);
 
+const sourcePages = ["home", "start", "foundations", "ecosystem", "babok", "requirements", "modeling", "agile", "data", "tools", "ai", "domains", "product", "certs", "careers", "practice", "diagrams", "flows", "charts", "glossary", "resources", "templates", "downloads", "search", "credits", "help"];
+for (const page of sourcePages) {
+  const sourcePath = join(root, "assets/data/sources", page + ".json");
+  if (!existsSync(sourcePath)) {
+    fail("missing sources " + page);
+    continue;
+  }
+  const sourceDoc = JSON.parse(readFileSync(sourcePath, "utf8"));
+  if (sourceDoc.title !== "Sources and go deeper") fail("sources title " + page);
+  if (!Array.isArray(sourceDoc.entries) || !sourceDoc.entries.length) fail("empty sources " + page);
+  for (const entry of sourceDoc.entries) {
+    if (!/^\d{4}-\d{2}$/.test(entry.checked || "")) fail("checked date " + page + " " + entry.label);
+    if (entry.status === "open" && !entry.url) fail("open source missing url " + page + " " + entry.label);
+    if (entry.status === "confirm" && entry.url) fail("confirm source has a url " + page + " " + entry.label);
+    if (entry.status !== "open" && entry.status !== "confirm") fail("bad source status " + page);
+  }
+}
+for (const sample of ["downloads/html/brd-outline.html", "downloads/html/user-story-card.html", "downloads/html/flashcards.html", "downloads/html/cheat-sheet.html", "downloads/rooms/foundations.html", "downloads/rooms/babok.html"]) {
+  const text = readFileSync(join(root, sample), "utf8");
+  if (!text.includes("Sources and go deeper")) fail("missing sources block " + sample);
+  if (!text.includes("last checked 2026-10")) fail("missing last checked " + sample);
+}
+const roomPack = JSON.parse(readFileSync(join(root, "downloads/rooms/modeling.json"), "utf8"));
+if (!roomPack.sources || !roomPack.sources.length) fail("room json missing sources");
+const cardPack = JSON.parse(readFileSync(join(root, "downloads/flashcards.json"), "utf8"));
+if (!cardPack.sources || !cardPack.cards || !cardPack.cards.every((card) => card.sources && card.sources.length)) fail("flashcard sources missing");
+
 const kb = JSON.parse(readFileSync(join(root, "guide/kb/index.json"), "utf8"));
 const hit = answerQuestion("What is an RTM?", kb, "glossary");
 if (!hit.matched) fail("guide did not match RTM");

@@ -652,6 +652,25 @@
     wrap.appendChild(menu);
     return wrap;
   }
+  function renderSources(payload) {
+    if (!main || !payload || main.querySelector(".sources-deeper")) return;
+    var entries = payload.entries || [];
+    if (!entries.length) return;
+    var checked = payload.checked || "";
+    var items = entries.map(function (entry) {
+      var kind = esc(entry.kind || "");
+      var when = "last checked " + esc(entry.checked || checked);
+      if (entry.status === "open" && entry.url) {
+        return "<li><a href=\"" + esc(entry.url) + "\">" + esc(entry.label) + "</a> <span class=\"meta\">(" + kind + ", " + when + ")</span></li>";
+      }
+      return "<li>" + esc(entry.label) + " <span class=\"meta\">(" + kind + ", confirm, " + when + ")</span></li>";
+    }).join("");
+    var section = document.createElement("section");
+    section.className = "sources-deeper";
+    section.setAttribute("data-read", "true");
+    section.innerHTML = "<h2>Sources and go deeper</h2><p>Last checked " + esc(checked) + ". A line marked confirm did not open, so it is not linked.</p><ul>" + items + "</ul>";
+    main.appendChild(section);
+  }
   function decorate(data) {
     if (!main || !data) return;
     var id = document.body.dataset.page || "home";
@@ -752,6 +771,13 @@
       else main.innerHTML = "<h1>This room is not in the catalog.</h1>";
       decorate(data);
       document.dispatchEvent(new CustomEvent("ba-ready"));
+      fetch("assets/data/sources/" + page + ".json")
+        .then(function (response) {
+          if (!response.ok) throw new Error("sources");
+          return response.json();
+        })
+        .then(renderSources)
+        .catch(function () { /* the room still reads without the deeper list */ });
     })
     .catch(function () {
       main.innerHTML = "<h1>The catalog did not load.</h1><p>Check that assets/data/catalog.json sits next to this page.</p>";

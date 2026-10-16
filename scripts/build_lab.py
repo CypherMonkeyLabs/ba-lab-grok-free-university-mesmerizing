@@ -998,6 +998,239 @@ PAGES = [
 ]
 
 
+def source_entry(label, url, kind, status="open"):
+    opened = status == "open" and bool(url)
+    return {
+        "label": label,
+        "url": url if opened else "",
+        "kind": kind,
+        "status": "open" if opened else "confirm",
+        "checked": AS_OF,
+    }
+
+
+def pack_sources(*groups):
+    seen = set()
+    packed = []
+    for group in groups:
+        for entry in group:
+            key = (entry["label"], entry["url"], entry["status"], entry["kind"])
+            if key in seen:
+                continue
+            seen.add(key)
+            packed.append(entry)
+    return packed
+
+
+def build_room_sources():
+    """Links opened in October 2026. A failed open is status confirm and has no URL."""
+    def S(label, url, kind, status="open"):
+        return source_entry(label, url, kind, status)
+
+    core = [
+        S("IIBA KnowledgeHub, including the BABOK Guide contents", "https://www.iiba.org/knowledgehub/", "standard"),
+        S("BABOK Guide article on the IIBA knowledge hub", "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/", "standard", "confirm"),
+        S("IIBA home", "https://www.iiba.org/", "official"),
+        S("Manifesto for Agile Software Development", "https://agilemanifesto.org/", "standard"),
+        S("Principles behind the Agile Manifesto", "https://agilemanifesto.org/principles.html", "standard"),
+        S("OMG, about BPMN 2.0", "https://www.omg.org/spec/BPMN/2.0/About-BPMN", "standard"),
+        S("BPMN 2.0 specification PDF", "https://www.omg.org/spec/BPMN/2.0/PDF", "standard"),
+        S("OMG, about BPMN 2.0.2", "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN", "standard"),
+        S("OMG, about UML 2.5.1", "https://www.omg.org/spec/UML/2.5.1/About-UML", "standard"),
+        S("UML 2.5.1 specification PDF", "https://www.omg.org/spec/UML/2.5.1/PDF", "standard"),
+        S("IIBA membership", "https://www.iiba.org/membership/", "community"),
+        S("OMG managed communities", "https://www.omg.org/communities/", "community"),
+    ]
+    about = [S("About IIBA", "https://www.iiba.org/about-iiba/", "official")]
+    wcag = [
+        S("WCAG 2.2 recommendation", "https://www.w3.org/TR/WCAG22/", "standard"),
+        S("How to Meet WCAG, quick reference", "https://www.w3.org/WAI/WCAG22/quickref/", "official"),
+    ]
+    certs = [
+        S("IIBA certification fees", FEES[1], "official"),
+        S("IIBA certification FAQ", FAQ[1], "official"),
+        S("ECBA", ECBA[1], "official"),
+        S("CCBA", CCBA[1], "official"),
+        S("CBAP", CBAP[1], "official"),
+        S("IIBA Agile Analysis Certification", AAC[1], "official"),
+        S("CBDA", CBDA[1], "official"),
+        S("PMI-PBA certification page", PMI[1], "official", "confirm"),
+        S("Project Management Institute", "https://en.wikipedia.org/wiki/Project_Management_Institute", "wikipedia"),
+    ]
+    agile = [
+        S("The 2020 Scrum Guide", SCRUM[1], "standard"),
+        S("Scrum Guides home", "https://scrumguides.org/", "official"),
+        S("Scrum.org copy of the Scrum Guide", "https://www.scrum.org/resources/scrum-guide", "official", "confirm"),
+        S("Certified Scrum Product Owner", CSPO[1], "official"),
+        S("Scaled Agile", SAFE[1], "official"),
+        S("Kanban University", "https://kanban.university/", "community"),
+        S("Atlassian Agile", AGILE[1], "official"),
+        S("Atlassian Community", "https://community.atlassian.com/", "community"),
+        S("Google Design Sprint community", SPRINT[1], "community"),
+        S("IDEO Design Thinking", IDEO[1], "official"),
+        S("Jobs to Be Done", JTBD[1], "official"),
+        S("Prosci ADKAR", ADKAR[1], "official"),
+        S("re:Work OKRs guide", OKR[1], "official", "confirm"),
+        S("Objectives and key results", "https://en.wikipedia.org/wiki/OKR", "wikipedia"),
+    ]
+    requirements = [
+        S("Atlassian, user stories", STORIES[1], "official"),
+        S("Gherkin reference", GHERKIN[1], "official"),
+        S("Gherkin", "https://cucumber.io/docs/gherkin/", "official"),
+        S("Atlassian Agile", AGILE[1], "official"),
+        S("Atlassian Community", "https://community.atlassian.com/", "community"),
+        S("ISO/IEC/IEEE 29148", "https://www.iso.org/standard/72086.html", "standard", "confirm"),
+        S("Software requirements specification", "https://en.wikipedia.org/wiki/Software_requirements_specification", "wikipedia"),
+    ]
+    modeling = [
+        S("C4 model", C4[1], "official"),
+        S("Lucid BPMN tutorial", LUCID[1], "community"),
+    ]
+    data = [
+        S("PostgreSQL, SQL introduction", SQL[1], "official"),
+        S("PostgreSQL, the SQL language", "https://www.postgresql.org/docs/current/tutorial-sql.html", "official"),
+        S("IEEE Task Force on Process Mining", PMINE[1], "official"),
+        S("CBDA", CBDA[1], "official"),
+        S("Google Research, user-centered metrics", HEART[1], "official"),
+        S("Microsoft Learn, What is Power BI?", PBI[1], "official", "confirm"),
+        S("Microsoft Power BI", "https://en.wikipedia.org/wiki/Microsoft_Power_BI", "wikipedia"),
+        S("Tableau, Get Started", "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm", "official"),
+        S("re:Work OKRs guide", OKR[1], "official", "confirm"),
+        S("Objectives and key results", "https://en.wikipedia.org/wiki/OKR", "wikipedia"),
+    ]
+    tools = [
+        S("Jira getting started", JIRA[1], "official"),
+        S("Atlassian, user stories", STORIES[1], "official"),
+        S("Confluence", CONF[1], "official"),
+        S("Azure DevOps backlogs", ADO[1], "official"),
+        S("Power Platform ALM", PP[1], "official"),
+        S("Dynamics 365 implementation guide", D365[1], "official"),
+        S("Microsoft Visio support", VISIO[1], "official"),
+        S("Miro Kanban", MIRO[1], "community"),
+        S("Figma", FIGMA[1], "official"),
+        S("Lucid BPMN tutorial", LUCID[1], "community"),
+        S("Atlassian Community", "https://community.atlassian.com/", "community"),
+        S("Microsoft Learn, What is Power BI?", PBI[1], "official", "confirm"),
+        S("Microsoft Power BI", "https://en.wikipedia.org/wiki/Microsoft_Power_BI", "wikipedia"),
+        S("Tableau, Get Started", "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm", "official"),
+    ]
+    product = [
+        S("IDEO Design Thinking", IDEO[1], "official"),
+        S("Jobs to Be Done", JTBD[1], "official"),
+        S("Prosci ADKAR", ADKAR[1], "official"),
+        S("Amazon leadership principles", AMZN[1], "official"),
+        S("Google Design Sprint community", SPRINT[1], "community"),
+        S("Google Research, user-centered metrics", HEART[1], "official"),
+        S("re:Work OKRs guide", OKR[1], "official", "confirm"),
+        S("Objectives and key results", "https://en.wikipedia.org/wiki/OKR", "wikipedia"),
+    ]
+    domains = [
+        S("HL7 FHIR overview", FHIR[1], "standard"),
+        S("HL7 FHIR index", "https://www.hl7.org/fhir/", "official"),
+        S("Salesforce CRM", SF[1], "official"),
+        S("IRS, independent contractor defined", IRS[1], "official"),
+        S("WCAG 2.2 recommendation", "https://www.w3.org/TR/WCAG22/", "standard"),
+    ]
+    ai = [
+        S("NIST AI Risk Management Framework", "https://www.nist.gov/itl/ai-risk-management-framework", "official"),
+        S("A model-vendor card for drafts in this lab", "", "official", "confirm"),
+    ]
+    careers = [
+        S("USCIS, H-1B specialty occupations", USCIS[1], "official"),
+        S("PMI-PBA certification page", PMI[1], "official", "confirm"),
+        S("Project Management Institute", "https://en.wikipedia.org/wiki/Project_Management_Institute", "wikipedia"),
+    ]
+    extras = {
+        "home": about + wcag,
+        "start": about,
+        "foundations": about,
+        "ecosystem": about,
+        "babok": certs,
+        "requirements": requirements,
+        "modeling": modeling,
+        "agile": agile,
+        "data": data,
+        "tools": tools,
+        "ai": ai,
+        "domains": domains,
+        "product": product,
+        "certs": certs + agile,
+        "careers": careers,
+        "practice": about,
+        "diagrams": modeling,
+        "flows": agile[:4],
+        "charts": certs,
+        "glossary": about,
+        "resources": about,
+        "templates": requirements,
+        "downloads": wcag,
+        "search": about,
+        "credits": wcag,
+        "help": wcag,
+    }
+    rooms = {}
+    opened = set()
+    for page, _filename, _title, _desc in PAGES:
+        entries = pack_sources(core, extras.get(page, []))
+        rooms[page] = entries
+        for entry in entries:
+            if entry["status"] == "open" and entry["url"]:
+                opened.add(entry["url"])
+    return rooms, opened
+
+
+def sources_lines(entries):
+    lines = []
+    for entry in entries or []:
+        kind = entry["kind"]
+        checked = entry["checked"]
+        if entry["status"] == "open" and entry["url"]:
+            lines.append(f"{entry['label']} ({kind}). {entry['url']} last checked {checked}.")
+        else:
+            lines.append(f"{entry['label']} ({kind}). confirm. last checked {checked}.")
+    return lines
+
+
+def sources_html(entries):
+    if not entries:
+        return ""
+    items = []
+    for entry in entries:
+        label = html.escape(entry["label"])
+        kind = html.escape(entry["kind"])
+        checked = html.escape(entry["checked"])
+        if entry["status"] == "open" and entry["url"]:
+            href = html.escape(entry["url"], quote=True)
+            items.append(f'<li><a href="{href}">{label}</a> <span>({kind}, last checked {checked})</span></li>')
+        else:
+            items.append(f"<li>{label} <span>({kind}, confirm, last checked {checked})</span></li>")
+    return (
+        '<section class="sources-deeper"><h2>Sources and go deeper</h2>'
+        f"<p>Last checked {html.escape(AS_OF)}. A line marked confirm did not open, so it is not linked.</p><ul>"
+        + "\n".join(items)
+        + "</ul></section>"
+    )
+
+
+def sources_svg_desc(entries):
+    text = "Sources and go deeper. " + " ".join(sources_lines(entries))
+    return "<desc>" + html.escape(text) + "</desc>"
+
+
+def add_sources_docx(doc, entries):
+    if not entries:
+        return
+    doc.add_heading("Sources and go deeper", level=1)
+    doc.add_paragraph(f"Last checked {AS_OF}. A line marked confirm did not open, so it is not linked.")
+    for entry in entries:
+        paragraph = doc.add_paragraph(style="List Bullet")
+        if entry["status"] == "open" and entry["url"]:
+            add_docx_link(paragraph, entry["label"], entry["url"])
+            paragraph.add_run(f" ({entry['kind']}, last checked {entry['checked']})")
+        else:
+            paragraph.add_run(f"{entry['label']} ({entry['kind']}, confirm, last checked {entry['checked']})")
+
+
 HOME_HERO = """<section class="hero hero-vivid" id="static-hero">
 <div class="hero-copy">
 <p class="kicker">Business analysis · free study lab</p>
@@ -1109,18 +1342,26 @@ def footer_canvas(canvas, doc):
     canvas.restoreState()
 
 
-def write_pdf(path: Path, title: str, paragraphs, bullets):
+def write_pdf(path: Path, title: str, paragraphs, bullets, sources=None):
     styles = getSampleStyleSheet()
     title_style = ParagraphStyle("t", parent=styles["Title"], fontName="Helvetica-Bold", fontSize=18, textColor="#1c1917", spaceAfter=8)
     body = ParagraphStyle("b", parent=styles["BodyText"], fontName="Helvetica", fontSize=11, leading=15, textColor="#1c1917")
+    small = ParagraphStyle("s", parent=body, fontSize=9, leading=12)
     story = [Paragraph(title, title_style), Paragraph("Business Analyst Free University. Study notes, October 2026.", body), Spacer(1, 8)]
     for para in paragraphs:
-        story.append(Paragraph(para, body))
+        story.append(Paragraph(html.escape(para), body))
         story.append(Spacer(1, 6))
     if bullets:
-        story.append(ListFlowable([ListItem(Paragraph(item, body)) for item in bullets], bulletType="bullet", leftIndent=16))
+        story.append(ListFlowable([ListItem(Paragraph(html.escape(item), body)) for item in bullets], bulletType="bullet", leftIndent=16))
     story.append(Spacer(1, 10))
     story.append(Paragraph(DISCLAIMER, ParagraphStyle("d", parent=body, fontSize=8, leading=11, textColor="#44403c")))
+    if sources:
+        story.append(Spacer(1, 12))
+        story.append(Paragraph("Sources and go deeper", title_style))
+        story.append(Paragraph(f"Last checked {AS_OF}. A line marked confirm did not open, so it is not linked.", body))
+        for line in sources_lines(sources):
+            story.append(Paragraph(html.escape(line), small))
+            story.append(Spacer(1, 3))
     doc = SimpleDocTemplate(str(path), pagesize=letter, leftMargin=0.7 * inch, rightMargin=0.7 * inch, topMargin=0.7 * inch, bottomMargin=2.15 * inch, title=title)
     doc.build(story, onFirstPage=footer_canvas, onLaterPages=footer_canvas)
 
@@ -1143,7 +1384,7 @@ def add_docx_link(paragraph, label, url):
     paragraph._p.append(hyperlink)
 
 
-def write_docx(path: Path, templates):
+def write_docx(path: Path, templates, sources=None):
     doc = Document()
     doc.add_heading("Business analysis templates", 0)
     doc.add_paragraph("Study scaffolds for your own notes. Not a company's official form. October 2026.")
@@ -1161,6 +1402,7 @@ def write_docx(path: Path, templates):
         if i:
             p.add_run("   ")
         add_docx_link(p, label, url)
+    add_sources_docx(doc, sources)
     section = doc.sections[0]
     footer = section.footer
     footer.paragraphs[0].text = "CypherMonkey Labs · © 2026 CypherMonkeyLabs · " + DISCLAIMER[:180]
@@ -1172,41 +1414,51 @@ def write_docx(path: Path, templates):
     doc.save(path)
 
 
-def write_pptx(path: Path, slides):
+def _pptx_slide(prs, title, lines, font_size):
+    blank = prs.slide_layouts[6]
+    slide = prs.slides.add_slide(blank)
+    box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12.2), Inches(0.7))
+    box.text_frame.text = title
+    box.text_frame.paragraphs[0].font.size = Pt(28)
+    box.text_frame.paragraphs[0].font.bold = True
+    body = slide.shapes.add_textbox(Inches(0.6), Inches(1.15), Inches(12), Inches(4.7))
+    frame = body.text_frame
+    frame.word_wrap = True
+    for i, line in enumerate(lines):
+        paragraph = frame.paragraphs[0] if i == 0 else frame.add_paragraph()
+        paragraph.text = line
+        paragraph.font.size = Pt(font_size)
+    foot = slide.shapes.add_textbox(Inches(0.5), Inches(6.15), Inches(12.2), Inches(1.1))
+    footer = foot.text_frame
+    footer.word_wrap = True
+    footer.text = "CypherMonkey Labs · © 2026 CypherMonkeyLabs\n" + DISCLAIMER[:220]
+    footer.paragraphs[0].font.size = Pt(10)
+    x = Inches(0.5)
+    for label, url in LINKS:
+        shape = slide.shapes.add_textbox(x, Inches(6.95), Inches(2.2), Inches(0.35))
+        shape.text_frame.text = label
+        shape.text_frame.paragraphs[0].font.size = Pt(12)
+        shape.click_action.hyperlink.address = url
+        x += Inches(2.3)
+
+
+def write_pptx(path: Path, slides, sources=None):
     prs = Presentation()
     prs.slide_width = Inches(13.333)
     prs.slide_height = Inches(7.5)
-    blank = prs.slide_layouts[6]
     for title, lines in slides:
-        slide = prs.slides.add_slide(blank)
-        box = slide.shapes.add_textbox(Inches(0.5), Inches(0.3), Inches(12.2), Inches(0.8))
-        box.text_frame.text = title
-        box.text_frame.paragraphs[0].font.size = Pt(28)
-        box.text_frame.paragraphs[0].font.bold = True
-        body = slide.shapes.add_textbox(Inches(0.6), Inches(1.3), Inches(12), Inches(4.6))
-        frame = body.text_frame
-        frame.word_wrap = True
-        for i, line in enumerate(lines):
-            p = frame.paragraphs[0] if i == 0 else frame.add_paragraph()
-            p.text = line
-            p.font.size = Pt(18)
-        foot = slide.shapes.add_textbox(Inches(0.5), Inches(6.15), Inches(12.2), Inches(1.1))
-        fp = foot.text_frame
-        fp.word_wrap = True
-        fp.text = "CypherMonkey Labs · © 2026 CypherMonkeyLabs\n" + DISCLAIMER[:220]
-        fp.paragraphs[0].font.size = Pt(10)
-        x = Inches(0.5)
-        for label, url in LINKS:
-            shape = slide.shapes.add_textbox(x, Inches(6.95), Inches(2.2), Inches(0.35))
-            shape.text_frame.text = label
-            shape.text_frame.paragraphs[0].font.size = Pt(12)
-            shape.click_action.hyperlink.address = url
-            x += Inches(2.3)
+        _pptx_slide(prs, title, lines, 18)
+    source_lines = sources_lines(sources)
+    chunks = [source_lines[i:i + 7] for i in range(0, len(source_lines), 7)] if source_lines else []
+    for index, chunk in enumerate(chunks):
+        heading = "Sources and go deeper" if index == 0 else "Sources and go deeper, continued"
+        _pptx_slide(prs, heading, chunk, 14)
     prs.save(path)
 
 
-def write_html_sheet(path: Path, title: str, summary: str, lines):
+def write_html_sheet(path: Path, title: str, summary: str, lines, sources=None):
     items = "\n".join(f"<li>{html.escape(line)}</li>" for line in lines)
+    deeper = sources_html(sources)
     badges = "\n".join(
         f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in LINKS
     )
@@ -1225,6 +1477,8 @@ a {{ color: #1d4ed8; }}
 .disclaimer-box a {{ color: #0f766e; }}
 footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }}
 .badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }}
+.sources-deeper {{ width: min(42rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; }}
+.sources-deeper a {{ font-weight: 700; }}
 </style>
 </head>
 <body>
@@ -1242,12 +1496,14 @@ footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #f
 <p class="badges">{badges}</p>
 <p>© 2026 CypherMonkeyLabs 🐒</p>
 </footer>
+{deeper}
 </body>
 </html>
 """, encoding="utf-8")
 
 
-def write_diagram_html(path: Path, title: str, svg_text: str, caption: str):
+def write_diagram_html(path: Path, title: str, svg_text: str, caption: str, sources=None):
+    deeper = sources_html(sources)
     badges = "\n".join(
         f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in LINKS
     )
@@ -1265,6 +1521,8 @@ svg {{ width: 100%; height: auto; }}
 .disclaimer-box a {{ color: #0f766e; }}
 footer {{ padding: 1rem; }}
 .badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; color: #1c1917; border-radius: 12px; font-weight: 700; text-decoration: none; }}
+.sources-deeper {{ width: min(60rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #5eead4; border-radius: 16px; background: #0f172a; color: #f8fafc; }}
+.sources-deeper a {{ color: #93c5fd; font-weight: 700; }}
 </style>
 </head>
 <body>
@@ -1279,12 +1537,13 @@ footer {{ padding: 1rem; }}
 <p class="badges">{badges}</p>
 <p>© 2026 CypherMonkeyLabs 🐒</p>
 </footer>
+{deeper}
 </body>
 </html>
 """, encoding="utf-8")
 
 
-def write_downloads(templates, diagrams=None, cards=None):
+def write_downloads(templates, diagrams=None, cards=None, sources_by_room=None, opened_urls=None):
     folder = ROOT / "downloads"
     html_dir = folder / "html"
     html_dir.mkdir(parents=True, exist_ok=True)
@@ -1298,11 +1557,41 @@ def write_downloads(templates, diagrams=None, cards=None):
         ("swot-sheet.pdf", "SWOT sheet", templates[5]),
         ("process-map-sheet.pdf", "Process map checklist", templates[6]),
     ]
+    rooms = sources_by_room or {}
+    opened = opened_urls or set()
+    sheet_room = {
+        "brd-outline.pdf": "requirements",
+        "frd-outline.pdf": "requirements",
+        "srs-outline.pdf": "requirements",
+        "user-story-card.pdf": "requirements",
+        "raci-sheet.pdf": "product",
+        "swot-sheet.pdf": "product",
+        "process-map-sheet.pdf": "modeling",
+    }
+
+    def room(page):
+        return rooms.get(page, [])
+
+    def diagram_sources(diagram):
+        entries = list(room("diagrams"))
+        url = (diagram.get("url") or "").strip()
+        label = diagram.get("source") or "Diagram source"
+        if not url:
+            return entries
+        if any(entry["url"] == url for entry in entries):
+            return entries
+        if url in opened:
+            entries.append(source_entry(label, url, "official"))
+        else:
+            entries.append(source_entry(label, "", "official", "confirm"))
+        return entries
+
     for filename, title, template in sheets:
-        write_pdf(folder / filename, title, [template["summary"], "Copy the lines into your own document. Leave unknown items blank."], template["lines"])
+        block = room(sheet_room[filename])
+        write_pdf(folder / filename, title, [template["summary"], "Copy the lines into your own document. Leave unknown items blank."], template["lines"], block)
         files.append((f"downloads/{filename}", title, "PDF"))
         html_name = filename.replace(".pdf", ".html")
-        write_html_sheet(html_dir / html_name, title, template["summary"], template["lines"])
+        write_html_sheet(html_dir / html_name, title, template["summary"], template["lines"], block)
         files.append((f"downloads/html/{html_name}", title + " (HTML)", "HTML"))
     write_pdf(
         folder / "cert-fee-notes.pdf",
@@ -1317,9 +1606,10 @@ def write_downloads(templates, diagrams=None, cards=None):
             "PSM, PSPO, CSPO course price, and SAFe POPM price: not copied.",
         ],
         ["This lab states no salaries.", "CypherMonkey Labs. Not sold."],
+        room("certs"),
     )
     files.append(("downloads/cert-fee-notes.pdf", "Certification fee notes", "PDF"))
-    write_docx(folder / "ba-templates.docx", templates)
+    write_docx(folder / "ba-templates.docx", templates, room("templates"))
     files.append(("downloads/ba-templates.docx", "Template workbook", "DOCX"))
     write_pptx(folder / "ba-study-deck.pptx", [
         ("Business Analyst Free University", ["A free study lab.", "Fundamentals through credentials.", "Fees are cited. Unknowns stay unknown."]),
@@ -1329,7 +1619,7 @@ def write_downloads(templates, diagrams=None, cards=None):
         ("Pictures", ["BPMN for flow.", "C4 for system context.", "One question per drawing."]),
         ("Credentials", ["Read the fee cell.", "Confirm on the official page.", "This deck states no salaries."]),
         ("Practice", ["Flashcards and a quiz live in the lab.", "Scores stay in your browser.", "Correct us via the contact form."]),
-    ])
+    ], room("home"))
     files.append(("downloads/ba-study-deck.pptx", "Study deck", "PPTX"))
     zip_path = folder / "ba-html-sheets.zip"
     with zipfile.ZipFile(zip_path, "w", zipfile.ZIP_DEFLATED) as zf:
@@ -1341,19 +1631,35 @@ def write_downloads(templates, diagrams=None, cards=None):
     for diagram in diagrams or []:
         svg_path = ROOT / diagram["file"]
         svg_text = svg_path.read_text(encoding="utf-8")
+        block = diagram_sources(diagram)
+        desc = sources_svg_desc(block)
+        svg_out = svg_text
+        if "</svg>" in svg_text:
+            head, sep, tail = svg_text.rpartition("</svg>")
+            svg_out = head + desc + sep + tail
         svg_copy = diagram_dir / f"{diagram['id']}.svg"
-        svg_copy.write_text(svg_text, encoding="utf-8")
+        svg_copy.write_text(svg_out, encoding="utf-8")
         files.append((f"downloads/diagrams/{diagram['id']}.svg", diagram["title"] + " SVG", "SVG"))
         html_copy = diagram_dir / f"{diagram['id']}.html"
-        write_diagram_html(html_copy, diagram["title"], svg_text, diagram["caption"])
+        write_diagram_html(html_copy, diagram["title"], svg_text, diagram["caption"], block)
         files.append((f"downloads/diagrams/{diagram['id']}.html", diagram["title"] + " HTML", "HTML"))
     card_list = cards or []
-    (folder / "flashcards.json").write_text(json.dumps(card_list, indent=2), encoding="utf-8")
+    glossary_sources = room("glossary")
+    enriched_cards = []
+    for card in card_list:
+        item = dict(card)
+        item["sources"] = glossary_sources
+        enriched_cards.append(item)
+    (folder / "flashcards.json").write_text(json.dumps({
+        "title": "Flashcards",
+        "cards": enriched_cards,
+        "sources": glossary_sources,
+    }, indent=2), encoding="utf-8")
     files.append(("downloads/flashcards.json", "Flashcards", "JSON"))
     card_lines = [f"{card['front']}: {card['back']}" for card in card_list]
-    write_html_sheet(html_dir / "flashcards.html", "Flashcards", "Term on the left, study meaning on the right.", card_lines)
+    write_html_sheet(html_dir / "flashcards.html", "Flashcards", "Term on the left, study meaning on the right.", card_lines, glossary_sources)
     files.append(("downloads/html/flashcards.html", "Flashcards HTML", "HTML"))
-    write_pdf(folder / "flashcards.pdf", "Flashcards", ["Flip these in the lab, or read them here."], card_lines[:80])
+    write_pdf(folder / "flashcards.pdf", "Flashcards", ["Flip these in the lab, or read them here."], card_lines[:80], glossary_sources)
     files.append(("downloads/flashcards.pdf", "Flashcards PDF", "PDF"))
     cheat_lines = [
         "Need before solution.",
@@ -1364,9 +1670,9 @@ def write_downloads(templates, diagrams=None, cards=None):
         "Confirm a fee before you pay.",
         "No salaries in this lab.",
     ]
-    write_html_sheet(html_dir / "cheat-sheet.html", "One-page cheat sheet", "Seven habits from this lab.", cheat_lines)
+    write_html_sheet(html_dir / "cheat-sheet.html", "One-page cheat sheet", "Seven habits from this lab.", cheat_lines, room("foundations"))
     files.append(("downloads/html/cheat-sheet.html", "Cheat sheet HTML", "HTML"))
-    write_pdf(folder / "cheat-sheet.pdf", "One-page cheat sheet", ["Seven habits. The rooms expand them."], cheat_lines)
+    write_pdf(folder / "cheat-sheet.pdf", "One-page cheat sheet", ["Seven habits. The rooms expand them."], cheat_lines, room("foundations"))
     files.append(("downloads/cheat-sheet.pdf", "Cheat sheet PDF", "PDF"))
     downloads = []
     for rel, title, kind in files:
@@ -1374,11 +1680,21 @@ def write_downloads(templates, diagrams=None, cards=None):
     return downloads
 
 
-def write_room_exports(items, quizzes):
+def write_room_exports(items, quizzes, sources_by_room=None):
     folder = ROOT / "downloads" / "rooms"
     folder.mkdir(parents=True, exist_ok=True)
+    source_dir = ROOT / "assets" / "data" / "sources"
+    source_dir.mkdir(parents=True, exist_ok=True)
+    rooms = sources_by_room or {}
     files = []
     for page, filename, title, desc in PAGES:
+        room_sources = rooms.get(page, [])
+        (source_dir / f"{page}.json").write_text(json.dumps({
+            "page": page,
+            "title": "Sources and go deeper",
+            "checked": AS_OF,
+            "entries": room_sources,
+        }, indent=2), encoding="utf-8")
         study = STUDY.get(page, {})
         notes = [note for note in items if note["section"] == page]
         room_quiz = [item for item in quizzes if item.get("section") == page]
@@ -1401,14 +1717,15 @@ def write_room_exports(items, quizzes):
             "example": study.get("example", []),
             "notes": [{"title": note["title"], "summary": note["summary"]} for note in notes],
             "quizzes": [{"q": item["q"], "choices": item["choices"], "answer": item["answer"]} for item in room_quiz],
+            "sources": room_sources,
         }
         json_rel = f"downloads/rooms/{page}.json"
         (ROOT / json_rel).write_text(json.dumps(payload, indent=2), encoding="utf-8")
         files.append((json_rel, title + " JSON", "JSON"))
-        write_html_sheet(folder / f"{page}.html", title, desc, lines[:36])
+        write_html_sheet(folder / f"{page}.html", title, desc, lines[:36], room_sources)
         files.append((f"downloads/rooms/{page}.html", title + " HTML", "HTML"))
         five = study.get("five") or desc
-        write_pdf(folder / f"{page}.pdf", title, [desc, five], lines[:24])
+        write_pdf(folder / f"{page}.pdf", title, [desc, five], lines[:24], room_sources)
         files.append((f"downloads/rooms/{page}.pdf", title + " PDF", "PDF"))
         doc = Document()
         doc.add_heading(title, 0)
@@ -1422,13 +1739,14 @@ def write_room_exports(items, quizzes):
             if index:
                 link_p.add_run("   ")
             add_docx_link(link_p, label, url)
+        add_sources_docx(doc, room_sources)
         doc.save(folder / f"{page}.docx")
         files.append((f"downloads/rooms/{page}.docx", title + " DOCX", "DOCX"))
         write_pptx(folder / f"{page}.pptx", [
             (title, [desc, "Business Analyst Free University"]),
             ("In five minutes", [five[:700]]),
             ("Export this room", ["PDF, HTML, DOCX, PPTX, and JSON sit beside this deck.", "Contact is the form on the lab website."]),
-        ])
+        ], room_sources)
         files.append((f"downloads/rooms/{page}.pptx", title + " PPTX", "PPTX"))
     return files
 
@@ -1465,7 +1783,7 @@ Publishing notes, including what is built and what is only prepared, are in `doc
 
 ## What is inside
 
-{counts['notes']} notes, {counts['diagrams']} diagrams, {counts['flows']} flows, {counts['cards']} flashcards. Each room also has a PDF, HTML, DOCX, PPTX, and JSON pack under `downloads/rooms/` ({room_count} files). Themes, text size, text color, and a guide on the right edge. Contact is the form at https://cyphermonkeylabs.com/#contact.
+{counts['notes']} notes, {counts['diagrams']} diagrams, {counts['flows']} flows, {counts['cards']} flashcards. Each room also has a PDF, HTML, DOCX, PPTX, and JSON pack under `downloads/rooms/` ({room_count} files). Every sheet, card, chapter, and room ends with Sources and go deeper. The same list is in `assets/data/sources/` and on the page. Themes, text size, text color, and a guide on the right edge. Contact is the form at https://cyphermonkeylabs.com/#contact.
 
 | Sheet | Path | Kind | Size |
 | --- | --- | --- | --- |
@@ -1492,8 +1810,9 @@ def main():
     diagrams = write_diagrams()
     flows = build_flows()
     templates = build_templates()
-    downloads = write_downloads(templates, diagrams, cards)
-    for rel, title, kind in write_room_exports(items, quizzes):
+    sources_by_room, opened_urls = build_room_sources()
+    downloads = write_downloads(templates, diagrams, cards, sources_by_room, opened_urls)
+    for rel, title, kind in write_room_exports(items, quizzes, sources_by_room):
         downloads.append({"file": rel, "title": title, "kind": kind, "bytes": (ROOT / rel).stat().st_size})
     counts = {
         "notes": len(items),
@@ -1517,6 +1836,7 @@ def main():
         "diagrams": diagrams,
         "flows": flows,
         "charts": build_charts(items, diagrams, flows, cards),
+        "roomSources": sources_by_room,
         "resources": build_resources(),
         "downloads": downloads,
         "templates": templates,

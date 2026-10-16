@@ -3865,6 +3865,3189 @@
       ]
     }
   ],
+  "roomSources": {
+    "home": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "WCAG 2.2 recommendation",
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "How to Meet WCAG, quick reference",
+        "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "start": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "foundations": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "ecosystem": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "babok": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification fees",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification FAQ",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "ECBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CCBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBAP",
+        "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA Agile Analysis Certification",
+        "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBDA",
+        "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PMI-PBA certification page",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Project Management Institute",
+        "url": "https://en.wikipedia.org/wiki/Project_Management_Institute",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "requirements": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian, user stories",
+        "url": "https://www.atlassian.com/agile/project-management/user-stories",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Gherkin reference",
+        "url": "https://cucumber.io/docs/gherkin/reference/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Gherkin",
+        "url": "https://cucumber.io/docs/gherkin/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Agile",
+        "url": "https://www.atlassian.com/agile",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Community",
+        "url": "https://community.atlassian.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "ISO/IEC/IEEE 29148",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Software requirements specification",
+        "url": "https://en.wikipedia.org/wiki/Software_requirements_specification",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "modeling": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "C4 model",
+        "url": "https://c4model.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Lucid BPMN tutorial",
+        "url": "https://lucid.co/diagram/bpmn/tutorial",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "agile": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "The 2020 Scrum Guide",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum Guides home",
+        "url": "https://scrumguides.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum.org copy of the Scrum Guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Certified Scrum Product Owner",
+        "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scaled Agile",
+        "url": "https://scaledagile.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Kanban University",
+        "url": "https://kanban.university/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Agile",
+        "url": "https://www.atlassian.com/agile",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Community",
+        "url": "https://community.atlassian.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Google Design Sprint community",
+        "url": "https://designsprintkit.withgoogle.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IDEO Design Thinking",
+        "url": "https://designthinking.ideo.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Jobs to Be Done",
+        "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Prosci ADKAR",
+        "url": "https://www.prosci.com/methodology/adkar",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "re:Work OKRs guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Objectives and key results",
+        "url": "https://en.wikipedia.org/wiki/OKR",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "data": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PostgreSQL, SQL introduction",
+        "url": "https://www.postgresql.org/docs/current/tutorial-sql-intro.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PostgreSQL, the SQL language",
+        "url": "https://www.postgresql.org/docs/current/tutorial-sql.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IEEE Task Force on Process Mining",
+        "url": "https://www.tf-pm.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBDA",
+        "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Google Research, user-centered metrics",
+        "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Microsoft Learn, What is Power BI?",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Microsoft Power BI",
+        "url": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Tableau, Get Started",
+        "url": "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "re:Work OKRs guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Objectives and key results",
+        "url": "https://en.wikipedia.org/wiki/OKR",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "tools": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Jira getting started",
+        "url": "https://www.atlassian.com/software/jira/guides/getting-started/introduction",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian, user stories",
+        "url": "https://www.atlassian.com/agile/project-management/user-stories",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Confluence",
+        "url": "https://www.atlassian.com/software/confluence",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Azure DevOps backlogs",
+        "url": "https://learn.microsoft.com/en-us/azure/devops/boards/backlogs/backlogs-overview?view=azure-devops",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Power Platform ALM",
+        "url": "https://learn.microsoft.com/en-us/power-platform/alm/overview-alm",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Dynamics 365 implementation guide",
+        "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Microsoft Visio support",
+        "url": "https://support.microsoft.com/en-us/visio",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Miro Kanban",
+        "url": "https://miro.com/kanban/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Figma",
+        "url": "https://www.figma.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Lucid BPMN tutorial",
+        "url": "https://lucid.co/diagram/bpmn/tutorial",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Community",
+        "url": "https://community.atlassian.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Microsoft Learn, What is Power BI?",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Microsoft Power BI",
+        "url": "https://en.wikipedia.org/wiki/Microsoft_Power_BI",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Tableau, Get Started",
+        "url": "https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "ai": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "A model-vendor card for drafts in this lab",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      }
+    ],
+    "domains": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "HL7 FHIR overview",
+        "url": "https://www.hl7.org/fhir/overview.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "HL7 FHIR index",
+        "url": "https://www.hl7.org/fhir/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Salesforce CRM",
+        "url": "https://www.salesforce.com/crm/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IRS, independent contractor defined",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "WCAG 2.2 recommendation",
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "product": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IDEO Design Thinking",
+        "url": "https://designthinking.ideo.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Jobs to Be Done",
+        "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Prosci ADKAR",
+        "url": "https://www.prosci.com/methodology/adkar",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Amazon leadership principles",
+        "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Google Design Sprint community",
+        "url": "https://designsprintkit.withgoogle.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Google Research, user-centered metrics",
+        "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "re:Work OKRs guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Objectives and key results",
+        "url": "https://en.wikipedia.org/wiki/OKR",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "certs": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification fees",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification FAQ",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "ECBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CCBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBAP",
+        "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA Agile Analysis Certification",
+        "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBDA",
+        "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PMI-PBA certification page",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Project Management Institute",
+        "url": "https://en.wikipedia.org/wiki/Project_Management_Institute",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "The 2020 Scrum Guide",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum Guides home",
+        "url": "https://scrumguides.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum.org copy of the Scrum Guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Certified Scrum Product Owner",
+        "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scaled Agile",
+        "url": "https://scaledagile.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Kanban University",
+        "url": "https://kanban.university/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Agile",
+        "url": "https://www.atlassian.com/agile",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Community",
+        "url": "https://community.atlassian.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Google Design Sprint community",
+        "url": "https://designsprintkit.withgoogle.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IDEO Design Thinking",
+        "url": "https://designthinking.ideo.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Jobs to Be Done",
+        "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Prosci ADKAR",
+        "url": "https://www.prosci.com/methodology/adkar",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "re:Work OKRs guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Objectives and key results",
+        "url": "https://en.wikipedia.org/wiki/OKR",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "careers": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "USCIS, H-1B specialty occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PMI-PBA certification page",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Project Management Institute",
+        "url": "https://en.wikipedia.org/wiki/Project_Management_Institute",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "practice": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "diagrams": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "C4 model",
+        "url": "https://c4model.com/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Lucid BPMN tutorial",
+        "url": "https://lucid.co/diagram/bpmn/tutorial",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "flows": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "The 2020 Scrum Guide",
+        "url": "https://scrumguides.org/scrum-guide.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum Guides home",
+        "url": "https://scrumguides.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Scrum.org copy of the Scrum Guide",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Certified Scrum Product Owner",
+        "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "charts": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification fees",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA certification FAQ",
+        "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "ECBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CCBA",
+        "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBAP",
+        "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA Agile Analysis Certification",
+        "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "CBDA",
+        "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "PMI-PBA certification page",
+        "url": "",
+        "kind": "official",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Project Management Institute",
+        "url": "https://en.wikipedia.org/wiki/Project_Management_Institute",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "glossary": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "resources": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "templates": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian, user stories",
+        "url": "https://www.atlassian.com/agile/project-management/user-stories",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Gherkin reference",
+        "url": "https://cucumber.io/docs/gherkin/reference/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Gherkin",
+        "url": "https://cucumber.io/docs/gherkin/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Agile",
+        "url": "https://www.atlassian.com/agile",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Atlassian Community",
+        "url": "https://community.atlassian.com/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "ISO/IEC/IEEE 29148",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Software requirements specification",
+        "url": "https://en.wikipedia.org/wiki/Software_requirements_specification",
+        "kind": "wikipedia",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "downloads": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "WCAG 2.2 recommendation",
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "How to Meet WCAG, quick reference",
+        "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "search": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "About IIBA",
+        "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "credits": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "WCAG 2.2 recommendation",
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "How to Meet WCAG, quick reference",
+        "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "help": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "WCAG 2.2 recommendation",
+        "url": "https://www.w3.org/TR/WCAG22/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "How to Meet WCAG, quick reference",
+        "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ]
+  },
   "resources": [
     {
       "title": "BABOK Guide knowledge hub",
@@ -4136,1687 +7319,1687 @@
       "file": "downloads/brd-outline.pdf",
       "title": "Business requirements outline",
       "kind": "PDF",
-      "bytes": 3624
+      "bytes": 6625
     },
     {
       "file": "downloads/html/brd-outline.html",
       "title": "Business requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 2086
+      "bytes": 4926
     },
     {
       "file": "downloads/frd-outline.pdf",
       "title": "Functional requirements outline",
       "kind": "PDF",
-      "bytes": 3536
+      "bytes": 6533
     },
     {
       "file": "downloads/html/frd-outline.html",
       "title": "Functional requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 1982
+      "bytes": 4822
     },
     {
       "file": "downloads/srs-outline.pdf",
       "title": "Software requirements outline",
       "kind": "PDF",
-      "bytes": 3539
+      "bytes": 6528
     },
     {
       "file": "downloads/html/srs-outline.html",
       "title": "Software requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 1966
+      "bytes": 4806
     },
     {
       "file": "downloads/user-story-card.pdf",
       "title": "User story card",
       "kind": "PDF",
-      "bytes": 3473
+      "bytes": 6478
     },
     {
       "file": "downloads/html/user-story-card.html",
       "title": "User story card (HTML)",
       "kind": "HTML",
-      "bytes": 1906
+      "bytes": 4746
     },
     {
       "file": "downloads/raci-sheet.pdf",
       "title": "RACI sheet",
       "kind": "PDF",
-      "bytes": 3509
+      "bytes": 6740
     },
     {
       "file": "downloads/html/raci-sheet.html",
       "title": "RACI sheet (HTML)",
       "kind": "HTML",
-      "bytes": 1945
+      "bytes": 5035
     },
     {
       "file": "downloads/swot-sheet.pdf",
       "title": "SWOT sheet",
       "kind": "PDF",
-      "bytes": 3466
+      "bytes": 6692
     },
     {
       "file": "downloads/html/swot-sheet.html",
       "title": "SWOT sheet (HTML)",
       "kind": "HTML",
-      "bytes": 1907
+      "bytes": 4997
     },
     {
       "file": "downloads/process-map-sheet.pdf",
       "title": "Process map checklist",
       "kind": "PDF",
-      "bytes": 3527
+      "bytes": 6284
     },
     {
       "file": "downloads/html/process-map-sheet.html",
       "title": "Process map checklist (HTML)",
       "kind": "HTML",
-      "bytes": 1970
+      "bytes": 4144
     },
     {
       "file": "downloads/cert-fee-notes.pdf",
       "title": "Certification fee notes",
       "kind": "PDF",
-      "bytes": 3798
+      "bytes": 9489
     },
     {
       "file": "downloads/ba-templates.docx",
       "title": "Template workbook",
       "kind": "DOCX",
-      "bytes": 39152
+      "bytes": 39913
     },
     {
       "file": "downloads/ba-study-deck.pptx",
       "title": "Study deck",
       "kind": "PPTX",
-      "bytes": 37406
+      "bytes": 42127
     },
     {
       "file": "downloads/ba-html-sheets.zip",
       "title": "HTML sheets, zipped",
       "kind": "ZIP",
-      "bytes": 12001
+      "bytes": 16364
     },
     {
       "file": "downloads/diagrams/baccm.svg",
       "title": "Core concept model SVG",
       "kind": "SVG",
-      "bytes": 1997
+      "bytes": 3433
     },
     {
       "file": "downloads/diagrams/baccm.html",
       "title": "Core concept model HTML",
       "kind": "HTML",
-      "bytes": 3693
+      "bytes": 5992
     },
     {
       "file": "downloads/diagrams/areas.svg",
       "title": "Six knowledge areas SVG",
       "kind": "SVG",
-      "bytes": 2128
+      "bytes": 3564
     },
     {
       "file": "downloads/diagrams/areas.html",
       "title": "Six knowledge areas HTML",
       "kind": "HTML",
-      "bytes": 3767
+      "bytes": 6066
     },
     {
       "file": "downloads/diagrams/classes.svg",
       "title": "Requirement classes SVG",
       "kind": "SVG",
-      "bytes": 1793
+      "bytes": 3229
     },
     {
       "file": "downloads/diagrams/classes.html",
       "title": "Requirement classes HTML",
       "kind": "HTML",
-      "bytes": 3438
+      "bytes": 5737
     },
     {
       "file": "downloads/diagrams/elicitation.svg",
       "title": "Elicitation loop SVG",
       "kind": "SVG",
-      "bytes": 1770
+      "bytes": 3206
     },
     {
       "file": "downloads/diagrams/elicitation.html",
       "title": "Elicitation loop HTML",
       "kind": "HTML",
-      "bytes": 3415
+      "bytes": 5714
     },
     {
       "file": "downloads/diagrams/trace.svg",
       "title": "Trace chain SVG",
       "kind": "SVG",
-      "bytes": 1766
+      "bytes": 3202
     },
     {
       "file": "downloads/diagrams/trace.html",
       "title": "Trace chain HTML",
       "kind": "HTML",
-      "bytes": 3413
+      "bytes": 5712
     },
     {
       "file": "downloads/diagrams/grid.svg",
       "title": "Stakeholder grid SVG",
       "kind": "SVG",
-      "bytes": 2082
+      "bytes": 3518
     },
     {
       "file": "downloads/diagrams/grid.html",
       "title": "Stakeholder grid HTML",
       "kind": "HTML",
-      "bytes": 3718
+      "bytes": 6017
     },
     {
       "file": "downloads/diagrams/bpmn.svg",
       "title": "BPMN pieces SVG",
       "kind": "SVG",
-      "bytes": 1763
+      "bytes": 3130
     },
     {
       "file": "downloads/diagrams/bpmn.html",
       "title": "BPMN pieces HTML",
       "kind": "HTML",
-      "bytes": 3396
+      "bytes": 5605
     },
     {
       "file": "downloads/diagrams/storymap.svg",
       "title": "Story map SVG",
       "kind": "SVG",
-      "bytes": 1723
+      "bytes": 3212
     },
     {
       "file": "downloads/diagrams/storymap.html",
       "title": "Story map HTML",
       "kind": "HTML",
-      "bytes": 3350
+      "bytes": 5716
     },
     {
       "file": "downloads/diagrams/c4.svg",
       "title": "C4 levels SVG",
       "kind": "SVG",
-      "bytes": 1557
+      "bytes": 2924
     },
     {
       "file": "downloads/diagrams/c4.html",
       "title": "C4 levels HTML",
       "kind": "HTML",
-      "bytes": 3178
+      "bytes": 5387
     },
     {
       "file": "downloads/diagrams/erd.svg",
       "title": "Small order model SVG",
       "kind": "SVG",
-      "bytes": 1773
+      "bytes": 3209
     },
     {
       "file": "downloads/diagrams/erd.html",
       "title": "Small order model HTML",
       "kind": "HTML",
-      "bytes": 3433
+      "bytes": 5732
     },
     {
       "file": "downloads/diagrams/raci.svg",
       "title": "RACI roles SVG",
       "kind": "SVG",
-      "bytes": 1622
+      "bytes": 3058
     },
     {
       "file": "downloads/diagrams/raci.html",
       "title": "RACI roles HTML",
       "kind": "HTML",
-      "bytes": 3253
+      "bytes": 5552
     },
     {
       "file": "downloads/diagrams/swot.svg",
       "title": "SWOT quadrants SVG",
       "kind": "SVG",
-      "bytes": 1620
+      "bytes": 3056
     },
     {
       "file": "downloads/diagrams/swot.html",
       "title": "SWOT quadrants HTML",
       "kind": "HTML",
-      "bytes": 3261
+      "bytes": 5560
     },
     {
       "file": "downloads/diagrams/heart.svg",
       "title": "HEART categories SVG",
       "kind": "SVG",
-      "bytes": 1788
+      "bytes": 3354
     },
     {
       "file": "downloads/diagrams/heart.html",
       "title": "HEART categories HTML",
       "kind": "HTML",
-      "bytes": 3446
+      "bytes": 5889
     },
     {
       "file": "downloads/diagrams/okr.svg",
       "title": "OKR shape SVG",
       "kind": "SVG",
-      "bytes": 1590
+      "bytes": 3019
     },
     {
       "file": "downloads/diagrams/okr.html",
       "title": "OKR shape HTML",
       "kind": "HTML",
-      "bytes": 3202
+      "bytes": 5494
     },
     {
       "file": "downloads/diagrams/dt.svg",
       "title": "Discover before converge SVG",
       "kind": "SVG",
-      "bytes": 1639
+      "bytes": 3094
     },
     {
       "file": "downloads/diagrams/dt.html",
       "title": "Discover before converge HTML",
       "kind": "HTML",
-      "bytes": 3312
+      "bytes": 5644
     },
     {
       "file": "downloads/diagrams/jtbd.svg",
       "title": "Job story SVG",
       "kind": "SVG",
-      "bytes": 1803
+      "bytes": 3304
     },
     {
       "file": "downloads/diagrams/jtbd.html",
       "title": "Job story HTML",
       "kind": "HTML",
-      "bytes": 3420
+      "bytes": 5798
     },
     {
       "file": "downloads/diagrams/adkar.svg",
       "title": "ADKAR SVG",
       "kind": "SVG",
-      "bytes": 1755
+      "bytes": 3216
     },
     {
       "file": "downloads/diagrams/adkar.html",
       "title": "ADKAR HTML",
       "kind": "HTML",
-      "bytes": 3384
+      "bytes": 5722
     },
     {
       "file": "downloads/diagrams/case.svg",
       "title": "Business case parts SVG",
       "kind": "SVG",
-      "bytes": 2108
+      "bytes": 3544
     },
     {
       "file": "downloads/diagrams/case.html",
       "title": "Business case parts HTML",
       "kind": "HTML",
-      "bytes": 3733
+      "bytes": 6032
     },
     {
       "file": "downloads/diagrams/rtm.svg",
       "title": "Matrix columns SVG",
       "kind": "SVG",
-      "bytes": 1933
+      "bytes": 3369
     },
     {
       "file": "downloads/diagrams/rtm.html",
       "title": "Matrix columns HTML",
       "kind": "HTML",
-      "bytes": 3558
+      "bytes": 5857
     },
     {
       "file": "downloads/diagrams/domains.svg",
       "title": "Domain lenses SVG",
       "kind": "SVG",
-      "bytes": 2172
+      "bytes": 3630
     },
     {
       "file": "downloads/diagrams/domains.html",
       "title": "Domain lenses HTML",
       "kind": "HTML",
-      "bytes": 3834
+      "bytes": 6169
     },
     {
       "file": "downloads/diagrams/career.svg",
       "title": "Career evidence SVG",
       "kind": "SVG",
-      "bytes": 1800
+      "bytes": 3296
     },
     {
       "file": "downloads/diagrams/career.html",
       "title": "Career evidence HTML",
       "kind": "HTML",
-      "bytes": 3423
+      "bytes": 5796
     },
     {
       "file": "downloads/diagrams/ecosystem.svg",
       "title": "Ecosystem map SVG",
       "kind": "SVG",
-      "bytes": 2171
+      "bytes": 3634
     },
     {
       "file": "downloads/diagrams/ecosystem.html",
       "title": "Ecosystem map HTML",
       "kind": "HTML",
-      "bytes": 3808
+      "bytes": 6148
     },
     {
       "file": "downloads/diagrams/sprint.svg",
       "title": "Scrum events SVG",
       "kind": "SVG",
-      "bytes": 1755
+      "bytes": 3218
     },
     {
       "file": "downloads/diagrams/sprint.html",
       "title": "Scrum events HTML",
       "kind": "HTML",
-      "bytes": 3384
+      "bytes": 5724
     },
     {
       "file": "downloads/diagrams/ai.svg",
       "title": "AI draft loop SVG",
       "kind": "SVG",
-      "bytes": 1782
+      "bytes": 3218
     },
     {
       "file": "downloads/diagrams/ai.html",
       "title": "AI draft loop HTML",
       "kind": "HTML",
-      "bytes": 3415
+      "bytes": 5714
     },
     {
       "file": "downloads/diagrams/verify-validate.svg",
       "title": "Verify then validate SVG",
       "kind": "SVG",
-      "bytes": 1823
+      "bytes": 3259
     },
     {
       "file": "downloads/diagrams/verify-validate.html",
       "title": "Verify then validate HTML",
       "kind": "HTML",
-      "bytes": 3461
+      "bytes": 5760
     },
     {
       "file": "downloads/diagrams/priority.svg",
       "title": "Priority words SVG",
       "kind": "SVG",
-      "bytes": 1855
+      "bytes": 3291
     },
     {
       "file": "downloads/diagrams/priority.html",
       "title": "Priority words HTML",
       "kind": "HTML",
-      "bytes": 3510
+      "bytes": 5809
     },
     {
       "file": "downloads/diagrams/accept.svg",
       "title": "Acceptance shape SVG",
       "kind": "SVG",
-      "bytes": 1612
+      "bytes": 3075
     },
     {
       "file": "downloads/diagrams/accept.html",
       "title": "Acceptance shape HTML",
       "kind": "HTML",
-      "bytes": 3235
+      "bytes": 5575
     },
     {
       "file": "downloads/diagrams/states.svg",
       "title": "Requirement states SVG",
       "kind": "SVG",
-      "bytes": 1755
+      "bytes": 3191
     },
     {
       "file": "downloads/diagrams/states.html",
       "title": "Requirement states HTML",
       "kind": "HTML",
-      "bytes": 3391
+      "bytes": 5690
     },
     {
       "file": "downloads/diagrams/workshop.svg",
       "title": "Workshop roles SVG",
       "kind": "SVG",
-      "bytes": 1790
+      "bytes": 3226
     },
     {
       "file": "downloads/diagrams/workshop.html",
       "title": "Workshop roles HTML",
       "kind": "HTML",
-      "bytes": 3430
+      "bytes": 5729
     },
     {
       "file": "downloads/diagrams/interview.svg",
       "title": "Interview shape SVG",
       "kind": "SVG",
-      "bytes": 1793
+      "bytes": 3229
     },
     {
       "file": "downloads/diagrams/interview.html",
       "title": "Interview shape HTML",
       "kind": "HTML",
-      "bytes": 3421
+      "bytes": 5720
     },
     {
       "file": "downloads/diagrams/observe.svg",
       "title": "Observation SVG",
       "kind": "SVG",
-      "bytes": 1908
+      "bytes": 3344
     },
     {
       "file": "downloads/diagrams/observe.html",
       "title": "Observation HTML",
       "kind": "HTML",
-      "bytes": 3534
+      "bytes": 5833
     },
     {
       "file": "downloads/diagrams/rules.svg",
       "title": "Rules beside flow SVG",
       "kind": "SVG",
-      "bytes": 1722
+      "bytes": 3158
     },
     {
       "file": "downloads/diagrams/rules.html",
       "title": "Rules beside flow HTML",
       "kind": "HTML",
-      "bytes": 3353
+      "bytes": 5652
     },
     {
       "file": "downloads/diagrams/nfr.svg",
       "title": "Quality with a number SVG",
       "kind": "SVG",
-      "bytes": 1591
+      "bytes": 3027
     },
     {
       "file": "downloads/diagrams/nfr.html",
       "title": "Quality with a number HTML",
       "kind": "HTML",
-      "bytes": 3223
+      "bytes": 5522
     },
     {
       "file": "downloads/diagrams/scope.svg",
       "title": "Scope box SVG",
       "kind": "SVG",
-      "bytes": 1533
+      "bytes": 2969
     },
     {
       "file": "downloads/diagrams/scope.html",
       "title": "Scope box HTML",
       "kind": "HTML",
-      "bytes": 3149
+      "bytes": 5448
     },
     {
       "file": "downloads/diagrams/options.svg",
       "title": "Options including stop SVG",
       "kind": "SVG",
-      "bytes": 1768
+      "bytes": 3204
     },
     {
       "file": "downloads/diagrams/options.html",
       "title": "Options including stop HTML",
       "kind": "HTML",
-      "bytes": 3404
+      "bytes": 5703
     },
     {
       "file": "downloads/diagrams/risk.svg",
       "title": "Risk card SVG",
       "kind": "SVG",
-      "bytes": 1734
+      "bytes": 3170
     },
     {
       "file": "downloads/diagrams/risk.html",
       "title": "Risk card HTML",
       "kind": "HTML",
-      "bytes": 3339
+      "bytes": 5638
     },
     {
       "file": "downloads/diagrams/persona.svg",
       "title": "Persona card SVG",
       "kind": "SVG",
-      "bytes": 1592
+      "bytes": 3028
     },
     {
       "file": "downloads/diagrams/persona.html",
       "title": "Persona card HTML",
       "kind": "HTML",
-      "bytes": 3229
+      "bytes": 5528
     },
     {
       "file": "downloads/diagrams/journey.svg",
       "title": "Journey lanes SVG",
       "kind": "SVG",
-      "bytes": 1569
+      "bytes": 3005
     },
     {
       "file": "downloads/diagrams/journey.html",
       "title": "Journey lanes HTML",
       "kind": "HTML",
-      "bytes": 3184
+      "bytes": 5483
     },
     {
       "file": "downloads/diagrams/context.svg",
       "title": "Context diagram SVG",
       "kind": "SVG",
-      "bytes": 1727
+      "bytes": 3094
     },
     {
       "file": "downloads/diagrams/context.html",
       "title": "Context diagram HTML",
       "kind": "HTML",
-      "bytes": 3361
+      "bytes": 5570
     },
     {
       "file": "downloads/diagrams/uml-set.svg",
       "title": "UML sketches SVG",
       "kind": "SVG",
-      "bytes": 1633
+      "bytes": 3000
     },
     {
       "file": "downloads/diagrams/uml-set.html",
       "title": "UML sketches HTML",
       "kind": "HTML",
-      "bytes": 3277
+      "bytes": 5486
     },
     {
       "file": "downloads/diagrams/gateway.svg",
       "title": "Gateway habits SVG",
       "kind": "SVG",
-      "bytes": 1710
+      "bytes": 3077
     },
     {
       "file": "downloads/diagrams/gateway.html",
       "title": "Gateway habits HTML",
       "kind": "HTML",
-      "bytes": 3343
+      "bytes": 5552
     },
     {
       "file": "downloads/diagrams/happy-sad.svg",
       "title": "Two paths SVG",
       "kind": "SVG",
-      "bytes": 1711
+      "bytes": 3078
     },
     {
       "file": "downloads/diagrams/happy-sad.html",
       "title": "Two paths HTML",
       "kind": "HTML",
-      "bytes": 3336
+      "bytes": 5545
     },
     {
       "file": "downloads/diagrams/backlog.svg",
       "title": "Backlog order SVG",
       "kind": "SVG",
-      "bytes": 1629
+      "bytes": 3092
     },
     {
       "file": "downloads/diagrams/backlog.html",
       "title": "Backlog order HTML",
       "kind": "HTML",
-      "bytes": 3274
+      "bytes": 5614
     },
     {
       "file": "downloads/diagrams/increment.svg",
       "title": "Increment SVG",
       "kind": "SVG",
-      "bytes": 1681
+      "bytes": 3144
     },
     {
       "file": "downloads/diagrams/increment.html",
       "title": "Increment HTML",
       "kind": "HTML",
-      "bytes": 3295
+      "bytes": 5635
     },
     {
       "file": "downloads/diagrams/roles-scrum.svg",
       "title": "Three accountabilities SVG",
       "kind": "SVG",
-      "bytes": 1583
+      "bytes": 3046
     },
     {
       "file": "downloads/diagrams/roles-scrum.html",
       "title": "Three accountabilities HTML",
       "kind": "HTML",
-      "bytes": 3223
+      "bytes": 5563
     },
     {
       "file": "downloads/diagrams/kanban-board.svg",
       "title": "Board with a limit SVG",
       "kind": "SVG",
-      "bytes": 1562
+      "bytes": 3000
     },
     {
       "file": "downloads/diagrams/kanban-board.html",
       "title": "Board with a limit HTML",
       "kind": "HTML",
-      "bytes": 3194
+      "bytes": 5509
     },
     {
       "file": "downloads/diagrams/sprint-kit.svg",
       "title": "Design sprint days SVG",
       "kind": "SVG",
-      "bytes": 1769
+      "bytes": 3235
     },
     {
       "file": "downloads/diagrams/sprint-kit.html",
       "title": "Design sprint days HTML",
       "kind": "HTML",
-      "bytes": 3421
+      "bytes": 5764
     },
     {
       "file": "downloads/diagrams/forces.svg",
       "title": "Switch forces SVG",
       "kind": "SVG",
-      "bytes": 1605
+      "bytes": 3106
     },
     {
       "file": "downloads/diagrams/forces.html",
       "title": "Switch forces HTML",
       "kind": "HTML",
-      "bytes": 3230
+      "bytes": 5608
     },
     {
       "file": "downloads/diagrams/double-diamond.svg",
       "title": "Learn then choose SVG",
       "kind": "SVG",
-      "bytes": 1624
+      "bytes": 3079
     },
     {
       "file": "downloads/diagrams/double-diamond.html",
       "title": "Learn then choose HTML",
       "kind": "HTML",
-      "bytes": 3270
+      "bytes": 5602
     },
     {
       "file": "downloads/diagrams/kpi-card.svg",
       "title": "KPI card SVG",
       "kind": "SVG",
-      "bytes": 1738
+      "bytes": 3304
     },
     {
       "file": "downloads/diagrams/kpi-card.html",
       "title": "KPI card HTML",
       "kind": "HTML",
-      "bytes": 3349
+      "bytes": 5792
     },
     {
       "file": "downloads/diagrams/sql-path.svg",
       "title": "One SQL question SVG",
       "kind": "SVG",
-      "bytes": 1590
+      "bytes": 3083
     },
     {
       "file": "downloads/diagrams/sql-path.html",
       "title": "One SQL question HTML",
       "kind": "HTML",
-      "bytes": 3233
+      "bytes": 5603
     },
     {
       "file": "downloads/diagrams/event-log.svg",
       "title": "Event log fields SVG",
       "kind": "SVG",
-      "bytes": 1585
+      "bytes": 3043
     },
     {
       "file": "downloads/diagrams/event-log.html",
       "title": "Event log fields HTML",
       "kind": "HTML",
-      "bytes": 3231
+      "bytes": 5566
     },
     {
       "file": "downloads/diagrams/jira-flow.svg",
       "title": "Ticket hygiene SVG",
       "kind": "SVG",
-      "bytes": 1619
+      "bytes": 3117
     },
     {
       "file": "downloads/diagrams/jira-flow.html",
       "title": "Ticket hygiene HTML",
       "kind": "HTML",
-      "bytes": 3261
+      "bytes": 5636
     },
     {
       "file": "downloads/diagrams/conf-page.svg",
       "title": "Decision page SVG",
       "kind": "SVG",
-      "bytes": 1571
+      "bytes": 3029
     },
     {
       "file": "downloads/diagrams/conf-page.html",
       "title": "Decision page HTML",
       "kind": "HTML",
-      "bytes": 3205
+      "bytes": 5540
     },
     {
       "file": "downloads/diagrams/ai-check.svg",
       "title": "Draft checklist SVG",
       "kind": "SVG",
-      "bytes": 1580
+      "bytes": 3016
     },
     {
       "file": "downloads/diagrams/ai-check.html",
       "title": "Draft checklist HTML",
       "kind": "HTML",
-      "bytes": 3196
+      "bytes": 5495
     },
     {
       "file": "downloads/diagrams/prompt.svg",
       "title": "Prompt parts SVG",
       "kind": "SVG",
-      "bytes": 1584
+      "bytes": 3020
     },
     {
       "file": "downloads/diagrams/prompt.html",
       "title": "Prompt parts HTML",
       "kind": "HTML",
-      "bytes": 3202
+      "bytes": 5501
     },
     {
       "file": "downloads/diagrams/handoff.svg",
       "title": "Human handoff SVG",
       "kind": "SVG",
-      "bytes": 1815
+      "bytes": 3254
     },
     {
       "file": "downloads/diagrams/handoff.html",
       "title": "Human handoff HTML",
       "kind": "HTML",
-      "bytes": 3434
+      "bytes": 5736
     },
     {
       "file": "downloads/diagrams/fhir-lens.svg",
       "title": "Healthcare lens SVG",
       "kind": "SVG",
-      "bytes": 1736
+      "bytes": 3194
     },
     {
       "file": "downloads/diagrams/fhir-lens.html",
       "title": "Healthcare lens HTML",
       "kind": "HTML",
-      "bytes": 3384
+      "bytes": 5719
     },
     {
       "file": "downloads/diagrams/a11y.svg",
       "title": "Accessibility checks SVG",
       "kind": "SVG",
-      "bytes": 1590
+      "bytes": 3056
     },
     {
       "file": "downloads/diagrams/a11y.html",
       "title": "Accessibility checks HTML",
       "kind": "HTML",
-      "bytes": 3233
+      "bytes": 5576
     },
     {
       "file": "downloads/diagrams/vendor.svg",
       "title": "Same questions SVG",
       "kind": "SVG",
-      "bytes": 1731
+      "bytes": 3167
     },
     {
       "file": "downloads/diagrams/vendor.html",
       "title": "Same questions HTML",
       "kind": "HTML",
-      "bytes": 3378
+      "bytes": 5677
     },
     {
       "file": "downloads/diagrams/change-ctrl.svg",
       "title": "Change record SVG",
       "kind": "SVG",
-      "bytes": 1564
+      "bytes": 3000
     },
     {
       "file": "downloads/diagrams/change-ctrl.html",
       "title": "Change record HTML",
       "kind": "HTML",
-      "bytes": 3184
+      "bytes": 5483
     },
     {
       "file": "downloads/diagrams/release.svg",
       "title": "Release note SVG",
       "kind": "SVG",
-      "bytes": 1603
+      "bytes": 3039
     },
     {
       "file": "downloads/diagrams/release.html",
       "title": "Release note HTML",
       "kind": "HTML",
-      "bytes": 3233
+      "bytes": 5532
     },
     {
       "file": "downloads/diagrams/retro.svg",
       "title": "Retro prompts SVG",
       "kind": "SVG",
-      "bytes": 1525
+      "bytes": 2988
     },
     {
       "file": "downloads/diagrams/retro.html",
       "title": "Retro prompts HTML",
       "kind": "HTML",
-      "bytes": 3156
+      "bytes": 5496
     },
     {
       "file": "downloads/diagrams/star.svg",
       "title": "STAR card SVG",
       "kind": "SVG",
-      "bytes": 1610
+      "bytes": 3106
     },
     {
       "file": "downloads/diagrams/star.html",
       "title": "STAR card HTML",
       "kind": "HTML",
-      "bytes": 3254
+      "bytes": 5627
     },
     {
       "file": "downloads/flashcards.json",
       "title": "Flashcards",
       "kind": "JSON",
-      "bytes": 10052
+      "bytes": 125410
     },
     {
       "file": "downloads/html/flashcards.html",
       "title": "Flashcards HTML",
       "kind": "HTML",
-      "bytes": 4761
+      "bytes": 6820
     },
     {
       "file": "downloads/flashcards.pdf",
       "title": "Flashcards PDF",
       "kind": "PDF",
-      "bytes": 7513
+      "bytes": 10234
     },
     {
       "file": "downloads/html/cheat-sheet.html",
       "title": "Cheat sheet HTML",
       "kind": "HTML",
-      "bytes": 1979
+      "bytes": 4038
     },
     {
       "file": "downloads/cheat-sheet.pdf",
       "title": "Cheat sheet PDF",
       "kind": "PDF",
-      "bytes": 3504
+      "bytes": 6223
     },
     {
       "file": "downloads/rooms/home.json",
       "title": "Business Analyst Free University JSON",
       "kind": "JSON",
-      "bytes": 649
+      "bytes": 3461
     },
     {
       "file": "downloads/rooms/home.html",
       "title": "Business Analyst Free University HTML",
       "kind": "HTML",
-      "bytes": 2260
+      "bytes": 4585
     },
     {
       "file": "downloads/rooms/home.pdf",
       "title": "Business Analyst Free University PDF",
       "kind": "PDF",
-      "bytes": 3692
+      "bytes": 6518
     },
     {
       "file": "downloads/rooms/home.docx",
       "title": "Business Analyst Free University DOCX",
       "kind": "DOCX",
-      "bytes": 37296
+      "bytes": 37954
     },
     {
       "file": "downloads/rooms/home.pptx",
       "title": "Business Analyst Free University PPTX",
       "kind": "PPTX",
-      "bytes": 31781
+      "bytes": 36485
     },
     {
       "file": "downloads/rooms/start.json",
       "title": "Start here JSON",
       "kind": "JSON",
-      "bytes": 613
+      "bytes": 3049
     },
     {
       "file": "downloads/rooms/start.html",
       "title": "Start here HTML",
       "kind": "HTML",
-      "bytes": 2200
+      "bytes": 4259
     },
     {
       "file": "downloads/rooms/start.pdf",
       "title": "Start here PDF",
       "kind": "PDF",
-      "bytes": 3626
+      "bytes": 6334
     },
     {
       "file": "downloads/rooms/start.docx",
       "title": "Start here DOCX",
       "kind": "DOCX",
-      "bytes": 37267
+      "bytes": 37834
     },
     {
       "file": "downloads/rooms/start.pptx",
       "title": "Start here PPTX",
       "kind": "PPTX",
-      "bytes": 31781
+      "bytes": 35001
     },
     {
       "file": "downloads/rooms/foundations.json",
       "title": "Foundations JSON",
       "kind": "JSON",
-      "bytes": 4927
+      "bytes": 7363
     },
     {
       "file": "downloads/rooms/foundations.html",
       "title": "Foundations HTML",
       "kind": "HTML",
-      "bytes": 5892
+      "bytes": 7951
     },
     {
       "file": "downloads/rooms/foundations.pdf",
       "title": "Foundations PDF",
       "kind": "PDF",
-      "bytes": 8005
+      "bytes": 10709
     },
     {
       "file": "downloads/rooms/foundations.docx",
       "title": "Foundations DOCX",
       "kind": "DOCX",
-      "bytes": 38723
+      "bytes": 39257
     },
     {
       "file": "downloads/rooms/foundations.pptx",
       "title": "Foundations PPTX",
       "kind": "PPTX",
-      "bytes": 31823
+      "bytes": 35043
     },
     {
       "file": "downloads/rooms/ecosystem.json",
       "title": "Ecosystem JSON",
       "kind": "JSON",
-      "bytes": 2302
+      "bytes": 4738
     },
     {
       "file": "downloads/rooms/ecosystem.html",
       "title": "Ecosystem HTML",
       "kind": "HTML",
-      "bytes": 3526
+      "bytes": 5585
     },
     {
       "file": "downloads/rooms/ecosystem.pdf",
       "title": "Ecosystem PDF",
       "kind": "PDF",
-      "bytes": 6409
+      "bytes": 7183
     },
     {
       "file": "downloads/rooms/ecosystem.docx",
       "title": "Ecosystem DOCX",
       "kind": "DOCX",
-      "bytes": 37809
+      "bytes": 38363
     },
     {
       "file": "downloads/rooms/ecosystem.pptx",
       "title": "Ecosystem PPTX",
       "kind": "PPTX",
-      "bytes": 31821
+      "bytes": 35039
     },
     {
       "file": "downloads/rooms/babok.json",
       "title": "BABOK JSON",
       "kind": "JSON",
-      "bytes": 8370
+      "bytes": 12464
     },
     {
       "file": "downloads/rooms/babok.html",
       "title": "BABOK HTML",
       "kind": "HTML",
-      "bytes": 8748
+      "bytes": 12016
     },
     {
       "file": "downloads/rooms/babok.pdf",
       "title": "BABOK PDF",
       "kind": "PDF",
-      "bytes": 11193
+      "bytes": 14270
     },
     {
       "file": "downloads/rooms/babok.docx",
       "title": "BABOK DOCX",
       "kind": "DOCX",
-      "bytes": 39917
+      "bytes": 40699
     },
     {
       "file": "downloads/rooms/babok.pptx",
       "title": "BABOK PPTX",
       "kind": "PPTX",
-      "bytes": 31854
+      "bytes": 36695
     },
     {
       "file": "downloads/rooms/requirements.json",
       "title": "Requirements JSON",
       "kind": "JSON",
-      "bytes": 4433
+      "bytes": 7989
     },
     {
       "file": "downloads/rooms/requirements.html",
       "title": "Requirements HTML",
       "kind": "HTML",
-      "bytes": 5424
+      "bytes": 8264
     },
     {
       "file": "downloads/rooms/requirements.pdf",
       "title": "Requirements PDF",
       "kind": "PDF",
-      "bytes": 7866
+      "bytes": 10935
     },
     {
       "file": "downloads/rooms/requirements.docx",
       "title": "Requirements DOCX",
       "kind": "DOCX",
-      "bytes": 38646
+      "bytes": 39404
     },
     {
       "file": "downloads/rooms/requirements.pptx",
       "title": "Requirements PPTX",
       "kind": "PPTX",
-      "bytes": 31814
+      "bytes": 36667
     },
     {
       "file": "downloads/rooms/modeling.json",
       "title": "Modeling JSON",
       "kind": "JSON",
-      "bytes": 3655
+      "bytes": 6261
     },
     {
       "file": "downloads/rooms/modeling.html",
       "title": "Modeling HTML",
       "kind": "HTML",
-      "bytes": 4682
+      "bytes": 6856
     },
     {
       "file": "downloads/rooms/modeling.pdf",
       "title": "Modeling PDF",
       "kind": "PDF",
-      "bytes": 7404
+      "bytes": 10168
     },
     {
       "file": "downloads/rooms/modeling.docx",
       "title": "Modeling DOCX",
       "kind": "DOCX",
-      "bytes": 38379
+      "bytes": 38970
     },
     {
       "file": "downloads/rooms/modeling.pptx",
       "title": "Modeling PPTX",
       "kind": "PPTX",
-      "bytes": 31815
+      "bytes": 35067
     },
     {
       "file": "downloads/rooms/agile.json",
       "title": "Agile JSON",
       "kind": "JSON",
-      "bytes": 4160
+      "bytes": 8959
     },
     {
       "file": "downloads/rooms/agile.html",
       "title": "Agile HTML",
       "kind": "HTML",
-      "bytes": 5181
+      "bytes": 8870
     },
     {
       "file": "downloads/rooms/agile.pdf",
       "title": "Agile PDF",
       "kind": "PDF",
-      "bytes": 7666
+      "bytes": 11085
     },
     {
       "file": "downloads/rooms/agile.docx",
       "title": "Agile DOCX",
       "kind": "DOCX",
-      "bytes": 38527
+      "bytes": 39471
     },
     {
       "file": "downloads/rooms/agile.pptx",
       "title": "Agile PPTX",
       "kind": "PPTX",
-      "bytes": 31854
+      "bytes": 38324
     },
     {
       "file": "downloads/rooms/data.json",
       "title": "Data JSON",
       "kind": "JSON",
-      "bytes": 4034
+      "bytes": 8329
     },
     {
       "file": "downloads/rooms/data.html",
       "title": "Data HTML",
       "kind": "HTML",
-      "bytes": 5080
+      "bytes": 8485
     },
     {
       "file": "downloads/rooms/data.pdf",
       "title": "Data PDF",
       "kind": "PDF",
-      "bytes": 7612
+      "bytes": 10982
     },
     {
       "file": "downloads/rooms/data.docx",
       "title": "Data DOCX",
       "kind": "DOCX",
-      "bytes": 38550
+      "bytes": 39489
     },
     {
       "file": "downloads/rooms/data.pptx",
       "title": "Data PPTX",
       "kind": "PPTX",
-      "bytes": 31852
+      "bytes": 38305
     },
     {
       "file": "downloads/rooms/tools.json",
       "title": "Tools JSON",
       "kind": "JSON",
-      "bytes": 3138
+      "bytes": 8164
     },
     {
       "file": "downloads/rooms/tools.html",
       "title": "Tools HTML",
       "kind": "HTML",
-      "bytes": 4246
+      "bytes": 8171
     },
     {
       "file": "downloads/rooms/tools.pdf",
       "title": "Tools PDF",
       "kind": "PDF",
-      "bytes": 7034
+      "bytes": 10566
     },
     {
       "file": "downloads/rooms/tools.docx",
       "title": "Tools DOCX",
       "kind": "DOCX",
-      "bytes": 38164
+      "bytes": 39241
     },
     {
       "file": "downloads/rooms/tools.pptx",
       "title": "Tools PPTX",
       "kind": "PPTX",
-      "bytes": 31805
+      "bytes": 38368
     },
     {
       "file": "downloads/rooms/ai.json",
       "title": "AI for business analysts JSON",
       "kind": "JSON",
-      "bytes": 3143
+      "bytes": 5794
     },
     {
       "file": "downloads/rooms/ai.html",
       "title": "AI for business analysts HTML",
       "kind": "HTML",
-      "bytes": 4285
+      "bytes": 6495
     },
     {
       "file": "downloads/rooms/ai.pdf",
       "title": "AI for business analysts PDF",
       "kind": "PDF",
-      "bytes": 7089
+      "bytes": 7967
     },
     {
       "file": "downloads/rooms/ai.docx",
       "title": "AI for business analysts DOCX",
       "kind": "DOCX",
-      "bytes": 38179
+      "bytes": 38806
     },
     {
       "file": "downloads/rooms/ai.pptx",
       "title": "AI for business analysts PPTX",
       "kind": "PPTX",
-      "bytes": 31835
+      "bytes": 35127
     },
     {
       "file": "downloads/rooms/domains.json",
       "title": "Domains JSON",
       "kind": "JSON",
-      "bytes": 3471
+      "bytes": 6687
     },
     {
       "file": "downloads/rooms/domains.html",
       "title": "Domains HTML",
       "kind": "HTML",
-      "bytes": 4602
+      "bytes": 7221
     },
     {
       "file": "downloads/rooms/domains.pdf",
       "title": "Domains PDF",
       "kind": "PDF",
-      "bytes": 7269
+      "bytes": 10246
     },
     {
       "file": "downloads/rooms/domains.docx",
       "title": "Domains DOCX",
       "kind": "DOCX",
-      "bytes": 38314
+      "bytes": 39037
     },
     {
       "file": "downloads/rooms/domains.pptx",
       "title": "Domains PPTX",
       "kind": "PPTX",
-      "bytes": 31829
+      "bytes": 36619
     },
     {
       "file": "downloads/rooms/product.json",
       "title": "Product craft JSON",
       "kind": "JSON",
-      "bytes": 4241
+      "bytes": 8102
     },
     {
       "file": "downloads/rooms/product.html",
       "title": "Product craft HTML",
       "kind": "HTML",
-      "bytes": 5228
+      "bytes": 8318
     },
     {
       "file": "downloads/rooms/product.pdf",
       "title": "Product craft PDF",
       "kind": "PDF",
-      "bytes": 7794
+      "bytes": 11103
     },
     {
       "file": "downloads/rooms/product.docx",
       "title": "Product craft DOCX",
       "kind": "DOCX",
-      "bytes": 38628
+      "bytes": 39540
     },
     {
       "file": "downloads/rooms/product.pptx",
       "title": "Product craft PPTX",
       "kind": "PPTX",
-      "bytes": 31829
+      "bytes": 36810
     },
     {
       "file": "downloads/rooms/certs.json",
       "title": "Certifications JSON",
       "kind": "JSON",
-      "bytes": 1134
+      "bytes": 7759
     },
     {
       "file": "downloads/rooms/certs.html",
       "title": "Certifications HTML",
       "kind": "HTML",
-      "bytes": 2534
+      "bytes": 7545
     },
     {
       "file": "downloads/rooms/certs.pdf",
       "title": "Certifications PDF",
       "kind": "PDF",
-      "bytes": 3892
+      "bytes": 9579
     },
     {
       "file": "downloads/rooms/certs.docx",
       "title": "Certifications DOCX",
       "kind": "DOCX",
-      "bytes": 37406
+      "bytes": 38670
     },
     {
       "file": "downloads/rooms/certs.pptx",
       "title": "Certifications PPTX",
       "kind": "PPTX",
-      "bytes": 31897
+      "bytes": 40008
     },
     {
       "file": "downloads/rooms/careers.json",
       "title": "Careers JSON",
       "kind": "JSON",
-      "bytes": 4408
+      "bytes": 7280
     },
     {
       "file": "downloads/rooms/careers.html",
       "title": "Careers HTML",
       "kind": "HTML",
-      "bytes": 5422
+      "bytes": 7798
     },
     {
       "file": "downloads/rooms/careers.pdf",
       "title": "Careers PDF",
       "kind": "PDF",
-      "bytes": 7931
+      "bytes": 10892
     },
     {
       "file": "downloads/rooms/careers.docx",
       "title": "Careers DOCX",
       "kind": "DOCX",
-      "bytes": 38698
+      "bytes": 39368
     },
     {
       "file": "downloads/rooms/careers.pptx",
       "title": "Careers PPTX",
       "kind": "PPTX",
-      "bytes": 31857
+      "bytes": 36599
     },
     {
       "file": "downloads/rooms/practice.json",
       "title": "Practice JSON",
       "kind": "JSON",
-      "bytes": 479
+      "bytes": 2915
     },
     {
       "file": "downloads/rooms/practice.html",
       "title": "Practice HTML",
       "kind": "HTML",
-      "bytes": 2061
+      "bytes": 4120
     },
     {
       "file": "downloads/rooms/practice.pdf",
       "title": "Practice PDF",
       "kind": "PDF",
-      "bytes": 3537
+      "bytes": 6236
     },
     {
       "file": "downloads/rooms/practice.docx",
       "title": "Practice DOCX",
       "kind": "DOCX",
-      "bytes": 37200
+      "bytes": 37771
     },
     {
       "file": "downloads/rooms/practice.pptx",
       "title": "Practice PPTX",
       "kind": "PPTX",
-      "bytes": 31755
+      "bytes": 34974
     },
     {
       "file": "downloads/rooms/diagrams.json",
       "title": "Diagrams JSON",
       "kind": "JSON",
-      "bytes": 467
+      "bytes": 3073
     },
     {
       "file": "downloads/rooms/diagrams.html",
       "title": "Diagrams HTML",
       "kind": "HTML",
-      "bytes": 2049
+      "bytes": 4223
     },
     {
       "file": "downloads/rooms/diagrams.pdf",
       "title": "Diagrams PDF",
       "kind": "PDF",
-      "bytes": 3504
+      "bytes": 6252
     },
     {
       "file": "downloads/rooms/diagrams.docx",
       "title": "Diagrams DOCX",
       "kind": "DOCX",
-      "bytes": 37178
+      "bytes": 37797
     },
     {
       "file": "downloads/rooms/diagrams.pptx",
       "title": "Diagrams PPTX",
       "kind": "PPTX",
-      "bytes": 31727
+      "bytes": 34976
     },
     {
       "file": "downloads/rooms/flows.json",
       "title": "Flows JSON",
       "kind": "JSON",
-      "bytes": 472
+      "bytes": 3503
     },
     {
       "file": "downloads/rooms/flows.html",
       "title": "Flows HTML",
       "kind": "HTML",
-      "bytes": 2054
+      "bytes": 4534
     },
     {
       "file": "downloads/rooms/flows.pdf",
       "title": "Flows PDF",
       "kind": "PDF",
-      "bytes": 3538
+      "bytes": 6422
     },
     {
       "file": "downloads/rooms/flows.docx",
       "title": "Flows DOCX",
       "kind": "DOCX",
-      "bytes": 37200
+      "bytes": 37896
     },
     {
       "file": "downloads/rooms/flows.pptx",
       "title": "Flows PPTX",
       "kind": "PPTX",
-      "bytes": 31745
+      "bytes": 36498
     },
     {
       "file": "downloads/rooms/charts.json",
       "title": "Charts JSON",
       "kind": "JSON",
-      "bytes": 483
+      "bytes": 4577
     },
     {
       "file": "downloads/rooms/charts.html",
       "title": "Charts HTML",
       "kind": "HTML",
-      "bytes": 2065
+      "bytes": 5333
     },
     {
       "file": "downloads/rooms/charts.pdf",
       "title": "Charts PDF",
       "kind": "PDF",
-      "bytes": 3505
+      "bytes": 6534
     },
     {
       "file": "downloads/rooms/charts.docx",
       "title": "Charts DOCX",
       "kind": "DOCX",
-      "bytes": 37192
+      "bytes": 38010
     },
     {
       "file": "downloads/rooms/charts.pptx",
       "title": "Charts PPTX",
       "kind": "PPTX",
-      "bytes": 31724
+      "bytes": 36566
     },
     {
       "file": "downloads/rooms/glossary.json",
       "title": "Glossary JSON",
       "kind": "JSON",
-      "bytes": 470
+      "bytes": 2906
     },
     {
       "file": "downloads/rooms/glossary.html",
       "title": "Glossary HTML",
       "kind": "HTML",
-      "bytes": 2052
+      "bytes": 4111
     },
     {
       "file": "downloads/rooms/glossary.pdf",
       "title": "Glossary PDF",
       "kind": "PDF",
-      "bytes": 3507
+      "bytes": 6199
     },
     {
       "file": "downloads/rooms/glossary.docx",
       "title": "Glossary DOCX",
       "kind": "DOCX",
-      "bytes": 37188
+      "bytes": 37760
     },
     {
       "file": "downloads/rooms/glossary.pptx",
       "title": "Glossary PPTX",
       "kind": "PPTX",
-      "bytes": 31730
+      "bytes": 34949
     },
     {
       "file": "downloads/rooms/resources.json",
       "title": "Resources JSON",
       "kind": "JSON",
-      "bytes": 496
+      "bytes": 2932
     },
     {
       "file": "downloads/rooms/resources.html",
       "title": "Resources HTML",
       "kind": "HTML",
-      "bytes": 2078
+      "bytes": 4137
     },
     {
       "file": "downloads/rooms/resources.pdf",
       "title": "Resources PDF",
       "kind": "PDF",
-      "bytes": 3515
+      "bytes": 6193
     },
     {
       "file": "downloads/rooms/resources.docx",
       "title": "Resources DOCX",
       "kind": "DOCX",
-      "bytes": 37194
+      "bytes": 37750
     },
     {
       "file": "downloads/rooms/resources.pptx",
       "title": "Resources PPTX",
       "kind": "PPTX",
-      "bytes": 31736
+      "bytes": 34956
     },
     {
       "file": "downloads/rooms/templates.json",
       "title": "Templates JSON",
       "kind": "JSON",
-      "bytes": 444
+      "bytes": 4000
     },
     {
       "file": "downloads/rooms/templates.html",
       "title": "Templates HTML",
       "kind": "HTML",
-      "bytes": 2031
+      "bytes": 4871
     },
     {
       "file": "downloads/rooms/templates.pdf",
       "title": "Templates PDF",
       "kind": "PDF",
-      "bytes": 3505
+      "bytes": 6522
     },
     {
       "file": "downloads/rooms/templates.docx",
       "title": "Templates DOCX",
       "kind": "DOCX",
-      "bytes": 37188
+      "bytes": 37986
     },
     {
       "file": "downloads/rooms/templates.pptx",
       "title": "Templates PPTX",
       "kind": "PPTX",
-      "bytes": 31729
+      "bytes": 36583
     },
     {
       "file": "downloads/rooms/downloads.json",
       "title": "Downloads JSON",
       "kind": "JSON",
-      "bytes": 572
+      "bytes": 3216
     },
     {
       "file": "downloads/rooms/downloads.html",
       "title": "Downloads HTML",
       "kind": "HTML",
-      "bytes": 2154
+      "bytes": 4366
     },
     {
       "file": "downloads/rooms/downloads.pdf",
       "title": "Downloads PDF",
       "kind": "PDF",
-      "bytes": 3623
+      "bytes": 6411
     },
     {
       "file": "downloads/rooms/downloads.docx",
       "title": "Downloads DOCX",
       "kind": "DOCX",
-      "bytes": 37238
+      "bytes": 37873
     },
     {
       "file": "downloads/rooms/downloads.pptx",
       "title": "Downloads PPTX",
       "kind": "PPTX",
-      "bytes": 31789
+      "bytes": 35053
     },
     {
       "file": "downloads/rooms/search.json",
       "title": "Search JSON",
       "kind": "JSON",
-      "bytes": 366
+      "bytes": 2802
     },
     {
       "file": "downloads/rooms/search.html",
       "title": "Search HTML",
       "kind": "HTML",
-      "bytes": 1948
+      "bytes": 4007
     },
     {
       "file": "downloads/rooms/search.pdf",
       "title": "Search PDF",
       "kind": "PDF",
-      "bytes": 3432
+      "bytes": 4147
     },
     {
       "file": "downloads/rooms/search.docx",
       "title": "Search DOCX",
       "kind": "DOCX",
-      "bytes": 37143
+      "bytes": 37710
     },
     {
       "file": "downloads/rooms/search.pptx",
       "title": "Search PPTX",
       "kind": "PPTX",
-      "bytes": 31688
+      "bytes": 34907
     },
     {
       "file": "downloads/rooms/credits.json",
       "title": "Legal and credits JSON",
       "kind": "JSON",
-      "bytes": 698
+      "bytes": 3342
     },
     {
       "file": "downloads/rooms/credits.html",
       "title": "Legal and credits HTML",
       "kind": "HTML",
-      "bytes": 2290
+      "bytes": 4502
     },
     {
       "file": "downloads/rooms/credits.pdf",
       "title": "Legal and credits PDF",
       "kind": "PDF",
-      "bytes": 3685
+      "bytes": 6498
     },
     {
       "file": "downloads/rooms/credits.docx",
       "title": "Legal and credits DOCX",
       "kind": "DOCX",
-      "bytes": 37282
+      "bytes": 37910
     },
     {
       "file": "downloads/rooms/credits.pptx",
       "title": "Legal and credits PPTX",
       "kind": "PPTX",
-      "bytes": 31860
+      "bytes": 35128
     },
     {
       "file": "downloads/rooms/help.json",
       "title": "Help JSON",
       "kind": "JSON",
-      "bytes": 502
+      "bytes": 3146
     },
     {
       "file": "downloads/rooms/help.html",
       "title": "Help HTML",
       "kind": "HTML",
-      "bytes": 2084
+      "bytes": 4296
     },
     {
       "file": "downloads/rooms/help.pdf",
       "title": "Help PDF",
       "kind": "PDF",
-      "bytes": 3535
+      "bytes": 6321
     },
     {
       "file": "downloads/rooms/help.docx",
       "title": "Help DOCX",
       "kind": "DOCX",
-      "bytes": 37203
+      "bytes": 37842
     },
     {
       "file": "downloads/rooms/help.pptx",
       "title": "Help PPTX",
       "kind": "PPTX",
-      "bytes": 31767
+      "bytes": 35034
     },
     {
       "file": "downloads/diagrams/baccm.png",
@@ -6206,25 +9389,25 @@
       "file": "downloads/png/cheat-sheet.png",
       "title": "cheat-sheet PNG",
       "kind": "PNG",
-      "bytes": 179540
+      "bytes": 296964
     },
     {
       "file": "downloads/png/flashcards.png",
       "title": "flashcards PNG",
       "kind": "PNG",
-      "bytes": 394928
+      "bytes": 513821
     },
     {
       "file": "downloads/png/brd-outline.png",
       "title": "brd-outline PNG",
       "kind": "PNG",
-      "bytes": 187630
+      "bytes": 346832
     },
     {
       "file": "downloads/ba-everything.zip",
       "title": "Download everything",
       "kind": "ZIP",
-      "bytes": 5576788
+      "bytes": 6230690
     }
   ],
   "templates": [
@@ -6268,7 +9451,7 @@
       "title": "User story card",
       "summary": "Role, capability, outcome, and scenarios.",
       "lines": [
-        "As a \u2026 I want \u2026 so that \u2026",
+        "As a … I want … so that …",
         "Given, When, Then for the main path.",
         "One unhappy path.",
         "Notes and out of scope."

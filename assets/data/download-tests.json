@@ -77,455 +77,455 @@
       "kind": "ZIP",
       "check": "bytes",
       "pass": true,
-      "detail": "11985"
+      "detail": "16364"
     },
     {
       "file": "downloads/diagrams/baccm.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1997"
+      "detail": "3433"
     },
     {
       "file": "downloads/diagrams/areas.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "2128"
+      "detail": "3564"
     },
     {
       "file": "downloads/diagrams/classes.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1793"
+      "detail": "3229"
     },
     {
       "file": "downloads/diagrams/elicitation.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1770"
+      "detail": "3206"
     },
     {
       "file": "downloads/diagrams/trace.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1766"
+      "detail": "3202"
     },
     {
       "file": "downloads/diagrams/grid.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "2082"
+      "detail": "3518"
     },
     {
       "file": "downloads/diagrams/bpmn.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1763"
+      "detail": "3130"
     },
     {
       "file": "downloads/diagrams/storymap.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1723"
+      "detail": "3212"
     },
     {
       "file": "downloads/diagrams/c4.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1557"
+      "detail": "2924"
     },
     {
       "file": "downloads/diagrams/erd.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1773"
+      "detail": "3209"
     },
     {
       "file": "downloads/diagrams/raci.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1622"
+      "detail": "3058"
     },
     {
       "file": "downloads/diagrams/swot.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1620"
+      "detail": "3056"
     },
     {
       "file": "downloads/diagrams/heart.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1788"
+      "detail": "3354"
     },
     {
       "file": "downloads/diagrams/okr.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1590"
+      "detail": "3019"
     },
     {
       "file": "downloads/diagrams/dt.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1639"
+      "detail": "3094"
     },
     {
       "file": "downloads/diagrams/jtbd.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1803"
+      "detail": "3304"
     },
     {
       "file": "downloads/diagrams/adkar.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1755"
+      "detail": "3216"
     },
     {
       "file": "downloads/diagrams/case.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "2108"
+      "detail": "3544"
     },
     {
       "file": "downloads/diagrams/rtm.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1933"
+      "detail": "3369"
     },
     {
       "file": "downloads/diagrams/domains.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "2172"
+      "detail": "3630"
     },
     {
       "file": "downloads/diagrams/career.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1800"
+      "detail": "3296"
     },
     {
       "file": "downloads/diagrams/ecosystem.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "2171"
+      "detail": "3634"
     },
     {
       "file": "downloads/diagrams/sprint.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1755"
+      "detail": "3218"
     },
     {
       "file": "downloads/diagrams/ai.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1782"
+      "detail": "3218"
     },
     {
       "file": "downloads/diagrams/verify-validate.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1823"
+      "detail": "3259"
     },
     {
       "file": "downloads/diagrams/priority.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1855"
+      "detail": "3291"
     },
     {
       "file": "downloads/diagrams/accept.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1612"
+      "detail": "3075"
     },
     {
       "file": "downloads/diagrams/states.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1755"
+      "detail": "3191"
     },
     {
       "file": "downloads/diagrams/workshop.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1790"
+      "detail": "3226"
     },
     {
       "file": "downloads/diagrams/interview.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1793"
+      "detail": "3229"
     },
     {
       "file": "downloads/diagrams/observe.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1908"
+      "detail": "3344"
     },
     {
       "file": "downloads/diagrams/rules.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1722"
+      "detail": "3158"
     },
     {
       "file": "downloads/diagrams/nfr.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1591"
+      "detail": "3027"
     },
     {
       "file": "downloads/diagrams/scope.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1533"
+      "detail": "2969"
     },
     {
       "file": "downloads/diagrams/options.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1768"
+      "detail": "3204"
     },
     {
       "file": "downloads/diagrams/risk.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1734"
+      "detail": "3170"
     },
     {
       "file": "downloads/diagrams/persona.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1592"
+      "detail": "3028"
     },
     {
       "file": "downloads/diagrams/journey.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1569"
+      "detail": "3005"
     },
     {
       "file": "downloads/diagrams/context.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1727"
+      "detail": "3094"
     },
     {
       "file": "downloads/diagrams/uml-set.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1633"
+      "detail": "3000"
     },
     {
       "file": "downloads/diagrams/gateway.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1710"
+      "detail": "3077"
     },
     {
       "file": "downloads/diagrams/happy-sad.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1711"
+      "detail": "3078"
     },
     {
       "file": "downloads/diagrams/backlog.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1629"
+      "detail": "3092"
     },
     {
       "file": "downloads/diagrams/increment.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1681"
+      "detail": "3144"
     },
     {
       "file": "downloads/diagrams/roles-scrum.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1583"
+      "detail": "3046"
     },
     {
       "file": "downloads/diagrams/kanban-board.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1562"
+      "detail": "3000"
     },
     {
       "file": "downloads/diagrams/sprint-kit.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1769"
+      "detail": "3235"
     },
     {
       "file": "downloads/diagrams/forces.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1605"
+      "detail": "3106"
     },
     {
       "file": "downloads/diagrams/double-diamond.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1624"
+      "detail": "3079"
     },
     {
       "file": "downloads/diagrams/kpi-card.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1738"
+      "detail": "3304"
     },
     {
       "file": "downloads/diagrams/sql-path.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1590"
+      "detail": "3083"
     },
     {
       "file": "downloads/diagrams/event-log.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1585"
+      "detail": "3043"
     },
     {
       "file": "downloads/diagrams/jira-flow.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1619"
+      "detail": "3117"
     },
     {
       "file": "downloads/diagrams/conf-page.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1571"
+      "detail": "3029"
     },
     {
       "file": "downloads/diagrams/ai-check.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1580"
+      "detail": "3016"
     },
     {
       "file": "downloads/diagrams/prompt.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1584"
+      "detail": "3020"
     },
     {
       "file": "downloads/diagrams/handoff.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1815"
+      "detail": "3254"
     },
     {
       "file": "downloads/diagrams/fhir-lens.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1736"
+      "detail": "3194"
     },
     {
       "file": "downloads/diagrams/a11y.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1590"
+      "detail": "3056"
     },
     {
       "file": "downloads/diagrams/vendor.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1731"
+      "detail": "3167"
     },
     {
       "file": "downloads/diagrams/change-ctrl.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1564"
+      "detail": "3000"
     },
     {
       "file": "downloads/diagrams/release.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1603"
+      "detail": "3039"
     },
     {
       "file": "downloads/diagrams/retro.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1525"
+      "detail": "2988"
     },
     {
       "file": "downloads/diagrams/star.svg",
       "kind": "SVG",
       "check": "bytes",
       "pass": true,
-      "detail": "1610"
+      "detail": "3106"
     },
     {
       "file": "downloads/flashcards.json",
@@ -1729,28 +1729,28 @@
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "179540"
+      "detail": "296964"
     },
     {
       "file": "downloads/png/flashcards.png",
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "394928"
+      "detail": "513821"
     },
     {
       "file": "downloads/png/brd-outline.png",
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "187630"
+      "detail": "346832"
     },
     {
       "file": "downloads/ba-everything.zip",
       "kind": "ZIP",
       "check": "bytes",
       "pass": true,
-      "detail": "5576577"
+      "detail": "6230690"
     },
     {
       "file": "downloads/html/brd-outline.html",
