@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 878 306" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 878 330" role="img">
 <title>Scrum events</title>
 <style>
 @keyframes baPulse { 50% { opacity: 0.78 } }
@@ -17,5 +17,6 @@
 <text x="52" y="201.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Review</text>
 <rect class="ba-box" x="314" y="164" width="250" height="64" rx="16" fill="#bbf7d0"/>
 <text x="330" y="201.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Retrospective</text>
-<text x="36" y="278" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">Names from the 2020 Scrum Guide contents.</text>
+<text x="36" y="284" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">Names from the 2020 Scrum Guide contents.</text>
+<text x="36" y="308" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="13">Independent study drawing. Not affiliated.</text>
 </svg>

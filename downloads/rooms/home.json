@@ -1,0 +1,12 @@
+{
+  "title": "Business Analyst Free University",
+  "page": "index.html",
+  "summary": "A free study lab for business analysis, from foundations through credentials.",
+  "five": "Start here if you have an hour. The banner is one row. The menu at the top left holds the rooms, text size, theme, text color, and search. Voice stays off until you ask. Fees are dated. Unknowns stay unknown.",
+  "example": [
+    "Read the five-minute block in a room, look at the drawing, then the worked example, then try the short quiz.",
+    "Downloads at the bottom of the downloads room keep the same disclaimer as the footer."
+  ],
+  "notes": [],
+  "quizzes": []
+}

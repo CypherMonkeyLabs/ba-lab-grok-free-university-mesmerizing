@@ -1,0 +1,11 @@
+{
+  "title": "Glossary",
+  "page": "glossary.html",
+  "summary": "Short business analysis definitions.",
+  "five": "Each term has a short meaning and a source. Filter the list. If a definition disagrees with the standard you are reading, trust the standard and tell us through the contact form.",
+  "example": [
+    "A requirement states a condition. A design describes a solution. Say which reading you intend so a reviewer knows."
+  ],
+  "notes": [],
+  "quizzes": []
+}

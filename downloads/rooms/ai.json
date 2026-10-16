@@ -1,0 +1,56 @@
+{
+  "title": "AI for business analysts",
+  "page": "ai.html",
+  "summary": "Drafting help, review, and responsible use.",
+  "five": "A model can draft a list, a scenario, or a first drawing. A person checks every fact against a source, marks unknowns, and accepts the text before a stakeholder sees it as a requirement. The handoff from a model to a person, in a contact center or a product flow, is itself a requirement. This lab claims no tool expertise for anyone.",
+  "example": [
+    "A model drafts: refunds are always instant. The policy you were given says refunds over a stated amount need a lead. You strike the word always, attach the policy, and mark the threshold as confirmed.",
+    "The fluent sentence was not the requirement. The corrected sentence is."
+  ],
+  "notes": [
+    {
+      "title": "Prompt for a draft",
+      "summary": "Ask a model for a draft you can edit: a question list, a stakeholder map, or a first pass at acceptance criteria. Give it the need, the constraint, and the audience. Read every line before it reaches a stakeholder."
+    },
+    {
+      "title": "Human review",
+      "summary": "The analyst remains accountable for the requirement. Check names, numbers, and rules against a source. A fluent paragraph can still be wrong. Keep the source next to the draft."
+    },
+    {
+      "title": "Invented facts",
+      "summary": "Models fill gaps. If the source does not state a fee, a law, or a metric, the draft must say unknown. This lab follows that rule. You should too when you use a model on a real initiative."
+    },
+    {
+      "title": "Agents and omni-channel",
+      "summary": "An agent that talks to a customer is a solution with requirements: what it may say, what it must hand to a person, how it is measured, and how a mistake is reversed. The SRE book's introduction is a public reminder that operations, including handoff, is part of the system."
+    },
+    {
+      "title": "Responsible use",
+      "summary": "Do not paste secrets, customer data, or unpublished financials into a tool whose terms you have not read. Say when a stakeholder is talking to a model. Accessibility and appeal paths still apply."
+    },
+    {
+      "title": "Evaluate the assistant",
+      "summary": "Write a small set of cases before you trust a drafting assistant: a normal case, an edge case, and a case it should refuse. Score it. A demo is not an evaluation."
+    },
+    {
+      "title": "Trace the draft",
+      "summary": "Tag sentences that came from a model until a person checks them. In a traceability matrix, 'model draft, unreviewed' is an honest status."
+    },
+    {
+      "title": "Contact center handoff",
+      "summary": "For a voice or chat agent, specify the moment a person takes over, what context moves with the conversation, and how the customer is not asked to start again. That handoff is a requirement, not a model parameter."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "Who accepts a model draft as a requirement?",
+      "choices": [
+        "The model",
+        "A person who checked it",
+        "Nobody",
+        "The theme picker"
+      ],
+      "answer": 1
+    }
+  ]
+}

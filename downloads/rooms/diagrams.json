@@ -1,0 +1,11 @@
+{
+  "title": "Diagrams",
+  "page": "diagrams.html",
+  "summary": "Study drawings for the business analysis lab.",
+  "five": "Each drawing answers one question. Read the caption and the source. Download the SVG, the PNG, or a standalone HTML page that keeps the color and the disclaimer.",
+  "example": [
+    "Cover the caption. Say what question the boxes answer. If you cannot, the drawing is too vague for the room you are in."
+  ],
+  "notes": [],
+  "quizzes": []
+}

@@ -32,10 +32,6 @@ LINKS = [
     ("Website", "https://cyphermonkeylabs.com"),
     ("GitHub", "https://github.com/CypherMonkeyLabs"),
     ("Profile", "https://linktr.ee/cyphermonkey"),
-    ("X", "https://x.com/Cypher0x9"),
-    ("LinkedIn", "https://www.linkedin.com/in/luckylakshmanucwebex"),
-    ("Hugging Face", "https://huggingface.co/Cypher0x9"),
-    ("Contact", "https://cyphermonkeylabs.com/#contact"),
 ]
 BABOK = ("BABOK Guide knowledge hub", "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/")
 FEES = ("IIBA certification fees", "https://www.iiba.org/business-analysis-certifications/certification-fees/")
@@ -919,7 +915,7 @@ def write_diagrams():
         box_h = max(64, 20 + 22 * max(len(p) for p in prepared))
         rows = (len(labels) + cols - 1) // cols
         width = pad_x * 2 + cols * box_w + (cols - 1) * gap_x
-        height = top + rows * box_h + (rows - 1) * gap_y + 78
+        height = top + rows * box_h + (rows - 1) * gap_y + 102
         parts = [
             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img">',
             f"<title>{xml(title)}</title>",
@@ -942,7 +938,8 @@ def write_diagrams():
                 parts.append(
                     f'<text x="{x + 16}" y="{start_y + li * 22}" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">{xml(line)}</text>'
                 )
-        parts.append(f'<text x="{pad_x}" y="{height - 28}" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">{xml(caption[:110])}</text>')
+        parts.append(f'<text x="{pad_x}" y="{height - 46}" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">{xml(caption[:110])}</text>')
+        parts.append(f'<text x="{pad_x}" y="{height - 22}" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="13">Independent study drawing. Not affiliated.</text>')
         parts.append("</svg>")
         file_rel = f"assets/diagrams/{did}.svg"
         (ROOT / file_rel).write_text("\n".join(parts), encoding="utf-8")
@@ -996,7 +993,8 @@ PAGES = [
     ("templates", "templates.html", "Templates", "Outlines for BRD, FRD, SRS, stories, RACI, SWOT, and process maps."),
     ("downloads", "downloads.html", "Downloads", "PDF, PPTX, DOCX, and HTML cheat sheets with sizes."),
     ("search", "search.html", "Search", "Search the business analysis lab."),
-    ("credits", "credits.html", "Credits", "What this lab made, and what it did not copy."),
+    ("credits", "credits.html", "Legal and credits", "Disclaimer, copyright, privacy, and how to ask for a correction."),
+    ("help", "help.html", "Help", "How the menu, the course, the guide, and the downloads work."),
 ]
 
 
@@ -1009,9 +1007,12 @@ def write_pages():
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · Business Analyst Free University</title>
 <meta name="description" content="{html.escape(desc)}">
+<meta name="theme-color" content="#0f766e">
 <script src="assets/js/boot.js"></script>
 <link rel="stylesheet" href="assets/css/lab.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="assets/icons/icon-192.png">
 </head>
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
@@ -1025,7 +1026,9 @@ def write_pages():
 <div id="guide-mount"></div>
 <script src="assets/js/frame.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="assets/js/onboard.js"></script>
 <script type="module" src="guide/guide.js"></script>
+<script src="assets/js/pwa.js"></script>
 </body>
 </html>
 """
@@ -1328,10 +1331,71 @@ def write_downloads(templates, diagrams=None, cards=None):
     return downloads
 
 
+def write_room_exports(items, quizzes):
+    folder = ROOT / "downloads" / "rooms"
+    folder.mkdir(parents=True, exist_ok=True)
+    files = []
+    for page, filename, title, desc in PAGES:
+        study = STUDY.get(page, {})
+        notes = [note for note in items if note["section"] == page]
+        room_quiz = [item for item in quizzes if item.get("section") == page]
+        lines = []
+        if study.get("five"):
+            lines.append(study["five"])
+        for para in study.get("example") or []:
+            lines.append(para)
+        for note in notes:
+            lines.append(note["title"] + ". " + note["summary"])
+        for item in room_quiz:
+            lines.append("Question. " + item["q"])
+        if not lines:
+            lines.append(desc)
+        payload = {
+            "title": title,
+            "page": filename,
+            "summary": desc,
+            "five": study.get("five", ""),
+            "example": study.get("example", []),
+            "notes": [{"title": note["title"], "summary": note["summary"]} for note in notes],
+            "quizzes": [{"q": item["q"], "choices": item["choices"], "answer": item["answer"]} for item in room_quiz],
+        }
+        json_rel = f"downloads/rooms/{page}.json"
+        (ROOT / json_rel).write_text(json.dumps(payload, indent=2), encoding="utf-8")
+        files.append((json_rel, title + " JSON", "JSON"))
+        write_html_sheet(folder / f"{page}.html", title, desc, lines[:36])
+        files.append((f"downloads/rooms/{page}.html", title + " HTML", "HTML"))
+        five = study.get("five") or desc
+        write_pdf(folder / f"{page}.pdf", title, [desc, five], lines[:24])
+        files.append((f"downloads/rooms/{page}.pdf", title + " PDF", "PDF"))
+        doc = Document()
+        doc.add_heading(title, 0)
+        doc.add_paragraph(desc)
+        for line in lines[:36]:
+            doc.add_paragraph(line, style="List Bullet")
+        doc.add_paragraph("CypherMonkey Labs")
+        doc.add_paragraph(DISCLAIMER)
+        link_p = doc.add_paragraph()
+        for index, (label, url) in enumerate(LINKS):
+            if index:
+                link_p.add_run("   ")
+            add_docx_link(link_p, label, url)
+        doc.save(folder / f"{page}.docx")
+        files.append((f"downloads/rooms/{page}.docx", title + " DOCX", "DOCX"))
+        write_pptx(folder / f"{page}.pptx", [
+            (title, [desc, "Business Analyst Free University"]),
+            ("In five minutes", [five[:700]]),
+            ("Export this room", ["PDF, HTML, DOCX, PPTX, and JSON sit beside this deck.", "Contact is the form on the lab website."]),
+        ])
+        files.append((f"downloads/rooms/{page}.pptx", title + " PPTX", "PPTX"))
+    return files
+
+
 def write_readme(downloads, counts):
+    shown = [item for item in downloads if "/rooms/" not in item["file"]]
+    room_count = len([item for item in downloads if "/rooms/" in item["file"]])
     rows = "\n".join(
         f"| {item['title']} | `{item['file']}` | {item['kind']} | {item['bytes'] / 1024:.1f} KB |"
-        for item in downloads
+        for item in shown
     )
     text = f"""# Business Analyst Free University
 
@@ -1344,10 +1408,6 @@ A free study lab for business analysis. Open the app, then the rooms. Lucky is a
 &nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com">Website</a>
 &nbsp;·&nbsp; <a href="https://github.com/CypherMonkeyLabs">GitHub</a>
 &nbsp;·&nbsp; <a href="https://linktr.ee/cyphermonkey">Profile</a>
-&nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com/#contact">Contact</a>
-&nbsp;·&nbsp; <a href="https://x.com/Cypher0x9">X</a>
-&nbsp;·&nbsp; <a href="https://www.linkedin.com/in/luckylakshmanucwebex">LinkedIn</a>
-&nbsp;·&nbsp; <a href="https://huggingface.co/Cypher0x9">Hugging Face</a>
 </p>
 
 ## Run it
@@ -1356,11 +1416,13 @@ A free study lab for business analysis. Open the app, then the rooms. Lucky is a
 python3 -m http.server 8742
 ```
 
-Open `http://127.0.0.1:8742/`. `npm run verify` checks local files, the catalog size, and that the lab has no email link.
+Open port 8742 on this computer. `npm run verify` checks local files, the catalog size, brand links, and that the lab has no email link.
+
+Publishing notes, including what is built and what is only prepared, are in `docs/PUBLISHING.md`.
 
 ## What is inside
 
-{counts['notes']} notes, {counts['diagrams']} diagrams, {counts['flows']} flows, {counts['cards']} flashcards. Themes, text size, text color, and a guide in the corner.
+{counts['notes']} notes, {counts['diagrams']} diagrams, {counts['flows']} flows, {counts['cards']} flashcards. Each room also has a PDF, HTML, DOCX, PPTX, and JSON pack under `downloads/rooms/` ({room_count} files). Themes, text size, text color, and a guide on the right edge. Contact is the form at https://cyphermonkeylabs.com/#contact.
 
 | Sheet | Path | Kind | Size |
 | --- | --- | --- | --- |
@@ -1374,7 +1436,7 @@ Open `http://127.0.0.1:8742/`. `npm run verify` checks local files, the catalog 
 
 © 2026 CypherMonkeyLabs 🐒
 
-[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cyphermonkey) · [Contact](https://cyphermonkeylabs.com/#contact) · [X](https://x.com/Cypher0x9) · [LinkedIn](https://www.linkedin.com/in/luckylakshmanucwebex) · [Hugging Face](https://huggingface.co/Cypher0x9)
+[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cyphermonkey)
 """
     (ROOT / "README.md").write_text(text, encoding="utf-8")
 
@@ -1388,6 +1450,8 @@ def main():
     flows = build_flows()
     templates = build_templates()
     downloads = write_downloads(templates, diagrams, cards)
+    for rel, title, kind in write_room_exports(items, quizzes):
+        downloads.append({"file": rel, "title": title, "kind": kind, "bytes": (ROOT / rel).stat().st_size})
     counts = {
         "notes": len(items),
         "diagrams": len(diagrams),
@@ -1422,6 +1486,8 @@ def main():
             {"name": "Study notes, diagrams, and the guide monkey", "note": "Original work in this repository. Drawings illustrate the notes. They are not copies of a vendor figure.", "license": "Original"},
             {"name": "Web Speech API", "note": "Optional browser voice. No speech audio is redistributed. A local open-licensed TTS engine was not available at build time, so there are no pre-recorded clips.", "license": "Platform"},
             {"name": "three.js", "note": "Not shipped. The guide uses layered SVG and CSS so phones do not download a 3D engine.", "license": "Not included"},
+            {"name": "Speech recognition", "note": "Optional microphone input uses the browser speech recognizer. If that API is missing, type the question. This lab does not receive the audio.", "license": "Platform"},
+            {"name": "Soft sound", "note": "A generated sine tone in the browser. No music file is shipped. Off until a tap.", "license": "Original"},
         ],
     }
     data = ROOT / "assets" / "data"
@@ -1431,10 +1497,6 @@ def main():
         {"id": "site", "label": "Website", "href": "https://cyphermonkeylabs.com"},
         {"id": "github", "label": "GitHub", "href": "https://github.com/CypherMonkeyLabs"},
         {"id": "profile", "label": "Profile", "href": "https://linktr.ee/cyphermonkey"},
-        {"id": "contact", "label": "Contact", "href": "https://cyphermonkeylabs.com/#contact"},
-        {"id": "x", "label": "X", "href": "https://x.com/Cypher0x9"},
-        {"id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/luckylakshmanucwebex"},
-        {"id": "huggingface", "label": "Hugging Face", "href": "https://huggingface.co/Cypher0x9"},
     ], indent=2), encoding="utf-8")
     write_pages()
     write_readme(downloads, counts)

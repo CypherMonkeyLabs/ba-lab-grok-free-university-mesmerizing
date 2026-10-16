@@ -1,0 +1,64 @@
+{
+  "title": "Careers",
+  "page": "careers.html",
+  "summary": "Roles and interviews, with no pay claims.",
+  "five": "Show a traced requirement, a confirmed model, and a measure with an owner. Practice STAR with a generic story, never a borrowed biography. Pay is not discussed here. Sponsorship is an employer decision and a legal question. The USCIS H-1B page opened for a high-level description of specialty occupations. It is not advice, and this lab promises no visa.",
+  "example": [
+    "Situation: a generic city clinic had no written rule for abnormal-result calls. Task: you were asked to make the rule testable. Action: you interviewed two nurses, wrote one story and one unhappy path, and traced it to a checklist. Result: the pilot checklist was used for two weeks and the open questions were listed.",
+    "That story is invented for practice. It is not Lucky's career and not a claim of employment."
+  ],
+  "notes": [
+    {
+      "title": "Role names",
+      "summary": "Titles you will see include business analyst, junior or senior business analyst, lead, product owner, and business systems analyst. A title is not a promise of scope. Read the decisions the role owns."
+    },
+    {
+      "title": "Levels, without pay",
+      "summary": "A foundation level practices elicitation and clear writing with support. A working level runs a workstream. A senior level sets the analysis approach and coaches others. This lab states no salaries and no 'typical' pay."
+    },
+    {
+      "title": "STAR, as a structure",
+      "summary": "Situation, task, action, result is a way to answer a behavioral question without wandering. The result should be something you can point to: a decision, a reduced defect, a baseline. Do not invent a metric for the story."
+    },
+    {
+      "title": "Question bank",
+      "summary": "Practice questions: tell us about a stakeholder who disagreed; how you traced a change; how you knew a requirement was testable; how you handled a missing data source. Answer from work you did. Mark practice stories as practice."
+    },
+    {
+      "title": "Case interview",
+      "summary": "A case gives you a short brief and too little time. Restate the need, name stakeholders, ask two clarifying questions, then outline scope, risks, and a first model. Say what you are assuming."
+    },
+    {
+      "title": "Portfolio pieces",
+      "summary": "Three honest pieces beat a large invented program. A requirement set with acceptance criteria, a process model of a public or personal workflow, and a traceability sample are enough. Remove any private data."
+    },
+    {
+      "title": "Resume words",
+      "summary": "Use words you can defend in the interview: elicitation, stakeholder map, user story, acceptance criteria, BPMN, traceability, UAT, workshop. Do not list a tool you have not opened."
+    },
+    {
+      "title": "Contracting notes",
+      "summary": "Corp-to-corp and similar arrangements are commercial structures. The IRS page on independent contractor status opened. Classification is a facts-and-circumstances question. This note is not tax or legal advice."
+    },
+    {
+      "title": "Sponsorship",
+      "summary": "Whether an employer will sponsor a work visa is the employer's decision and a legal question. Nothing in this lab promises sponsorship or a visa outcome, and this note is not legal advice. The USCIS H-1B page opened on 16 October 2026. It describes a specialty occupation as work that applies a body of highly specialized knowledge and that normally requires a bachelor's or higher degree in a directly related specialty. The petitioner files the petition. Specialty-occupation petitions need a certified labor condition application. The same page showed fee alerts that were in flux, including a note about litigation, so this lab does not quote a fee as settled."
+    },
+    {
+      "title": "Toward product ownership",
+      "summary": "A path some analysts take is deeper discovery, outcome metrics, and backlog accountability. The Scrum Guide and the CSPO page are the public anchors in this lab. Course fees that did not render stay unknown."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "A STAR practice answer in this lab is:",
+      "choices": [
+        "Lucky's employment history",
+        "A generic story with no employer claim",
+        "A pay demand",
+        "A visa promise"
+      ],
+      "answer": 1
+    }
+  ]
+}

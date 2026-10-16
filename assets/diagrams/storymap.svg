@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 306" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" role="img">
 <title>Story map</title>
 <style>
 @keyframes baPulse { 50% { opacity: 0.78 } }
@@ -16,5 +16,6 @@
 <text x="52" y="212.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">slice</text>
 <rect class="ba-box" x="314" y="164" width="250" height="64" rx="16" fill="#fde68a"/>
 <text x="330" y="201.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Later releases add depth</text>
-<text x="36" y="278" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">A slice is an outcome, not a technical layer.</text>
+<text x="36" y="284" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">A slice is an outcome, not a technical layer.</text>
+<text x="36" y="308" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="13">Independent study drawing. Not affiliated.</text>
 </svg>

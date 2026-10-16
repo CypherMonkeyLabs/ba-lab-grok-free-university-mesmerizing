@@ -1,0 +1,11 @@
+{
+  "title": "Downloads",
+  "page": "downloads.html",
+  "summary": "PDF, PPTX, DOCX, and HTML cheat sheets with sizes.",
+  "five": "Take an SVG, a PNG, or a standalone HTML diagram. Take cheat sheets as PDF, HTML, and PNG. Take flashcards as PDF, JSON, and HTML. Templates come as DOCX, PDF, and HTML. The deck is PPTX. One zip gathers the files after the images are rendered.",
+  "example": [
+    "Open a diagram HTML page on its own. The drawing, the caption, and the disclaimer box should all be there without the rest of the lab."
+  ],
+  "notes": [],
+  "quizzes": []
+}

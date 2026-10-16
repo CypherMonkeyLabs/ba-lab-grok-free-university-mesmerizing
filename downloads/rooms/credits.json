@@ -1,0 +1,11 @@
+{
+  "title": "Legal and credits",
+  "page": "credits.html",
+  "summary": "Disclaimer, copyright, privacy, and how to ask for a correction.",
+  "five": "This room is the legal page: disclaimer, copyright, trademarks, third-party licences, privacy, accessibility, and how to ask for a correction. The notes and drawings are original. Browser speech is the platform voice. three.js is not shipped. No pre-recorded clips were made, because no open local speech engine was on the build machine.",
+  "example": [
+    "Trust a sentence that has a source line. Treat a to-be-confirmed line as unknown. Ask for a correction through the contact form on the lab website."
+  ],
+  "notes": [],
+  "quizzes": []
+}

@@ -51,9 +51,10 @@ const rooms = {
   glossary: { title: "Glossary", blurb: "Short definitions.", chips: ["What is an RTM?"] },
   resources: { title: "Resources", blurb: "Only links that opened.", chips: ["Which links?"] },
   templates: { title: "Templates", blurb: "Outlines you can copy.", chips: ["RACI", "BRD"] },
-  downloads: { title: "Downloads", blurb: "SVG, PNG, HTML, PDF, DOCX, PPTX, and a zip.", chips: ["Where are the files?"] },
+  downloads: { title: "Downloads", blurb: "Standalone files for every room, plus Open app and View repo.", chips: ["Where are the files?"] },
   search: { title: "Search", blurb: "Find a note.", chips: ["Traceability"] },
-  credits: { title: "Credits", blurb: "Original notes and drawings. No 3D engine is shipped.", chips: ["What is original?"] }
+  help: { title: "Help", blurb: "Menu, course, guide, downloads, and the tour.", chips: ["How does the menu work?"] },
+  credits: { title: "Legal and credits", blurb: "Disclaimer, copyright, privacy, accessibility, and corrections.", chips: ["Who owns this?"] }
 };
 
 const kb = {

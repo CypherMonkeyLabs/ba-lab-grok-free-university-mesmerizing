@@ -4136,877 +4136,877 @@
       "file": "downloads/brd-outline.pdf",
       "title": "Business requirements outline",
       "kind": "PDF",
-      "bytes": 4765
+      "bytes": 3624
     },
     {
       "file": "downloads/html/brd-outline.html",
       "title": "Business requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 2318
+      "bytes": 2086
     },
     {
       "file": "downloads/frd-outline.pdf",
       "title": "Functional requirements outline",
       "kind": "PDF",
-      "bytes": 4678
+      "bytes": 3536
     },
     {
       "file": "downloads/html/frd-outline.html",
       "title": "Functional requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 2214
+      "bytes": 1982
     },
     {
       "file": "downloads/srs-outline.pdf",
       "title": "Software requirements outline",
       "kind": "PDF",
-      "bytes": 4680
+      "bytes": 3539
     },
     {
       "file": "downloads/html/srs-outline.html",
       "title": "Software requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 2198
+      "bytes": 1966
     },
     {
       "file": "downloads/user-story-card.pdf",
       "title": "User story card",
       "kind": "PDF",
-      "bytes": 4615
+      "bytes": 3473
     },
     {
       "file": "downloads/html/user-story-card.html",
       "title": "User story card (HTML)",
       "kind": "HTML",
-      "bytes": 2138
+      "bytes": 1906
     },
     {
       "file": "downloads/raci-sheet.pdf",
       "title": "RACI sheet",
       "kind": "PDF",
-      "bytes": 4648
+      "bytes": 3509
     },
     {
       "file": "downloads/html/raci-sheet.html",
       "title": "RACI sheet (HTML)",
       "kind": "HTML",
-      "bytes": 2177
+      "bytes": 1945
     },
     {
       "file": "downloads/swot-sheet.pdf",
       "title": "SWOT sheet",
       "kind": "PDF",
-      "bytes": 4607
+      "bytes": 3466
     },
     {
       "file": "downloads/html/swot-sheet.html",
       "title": "SWOT sheet (HTML)",
       "kind": "HTML",
-      "bytes": 2139
+      "bytes": 1907
     },
     {
       "file": "downloads/process-map-sheet.pdf",
       "title": "Process map checklist",
       "kind": "PDF",
-      "bytes": 4667
+      "bytes": 3527
     },
     {
       "file": "downloads/html/process-map-sheet.html",
       "title": "Process map checklist (HTML)",
       "kind": "HTML",
-      "bytes": 2202
+      "bytes": 1970
     },
     {
       "file": "downloads/cert-fee-notes.pdf",
       "title": "Certification fee notes",
       "kind": "PDF",
-      "bytes": 4933
+      "bytes": 3798
     },
     {
       "file": "downloads/ba-templates.docx",
       "title": "Template workbook",
       "kind": "DOCX",
-      "bytes": 39394
+      "bytes": 39148
     },
     {
       "file": "downloads/ba-study-deck.pptx",
       "title": "Study deck",
       "kind": "PPTX",
-      "bytes": 38626
+      "bytes": 37385
     },
     {
       "file": "downloads/ba-html-sheets.zip",
       "title": "HTML sheets, zipped",
       "kind": "ZIP",
-      "bytes": 8823
+      "bytes": 11985
     },
     {
       "file": "downloads/diagrams/baccm.svg",
       "title": "Core concept model SVG",
       "kind": "SVG",
-      "bytes": 1861
+      "bytes": 1997
     },
     {
       "file": "downloads/diagrams/baccm.html",
       "title": "Core concept model HTML",
       "kind": "HTML",
-      "bytes": 3789
+      "bytes": 3693
     },
     {
       "file": "downloads/diagrams/areas.svg",
       "title": "Six knowledge areas SVG",
       "kind": "SVG",
-      "bytes": 1992
+      "bytes": 2128
     },
     {
       "file": "downloads/diagrams/areas.html",
       "title": "Six knowledge areas HTML",
       "kind": "HTML",
-      "bytes": 3863
+      "bytes": 3767
     },
     {
       "file": "downloads/diagrams/classes.svg",
       "title": "Requirement classes SVG",
       "kind": "SVG",
-      "bytes": 1657
+      "bytes": 1793
     },
     {
       "file": "downloads/diagrams/classes.html",
       "title": "Requirement classes HTML",
       "kind": "HTML",
-      "bytes": 3534
+      "bytes": 3438
     },
     {
       "file": "downloads/diagrams/elicitation.svg",
       "title": "Elicitation loop SVG",
       "kind": "SVG",
-      "bytes": 1634
+      "bytes": 1770
     },
     {
       "file": "downloads/diagrams/elicitation.html",
       "title": "Elicitation loop HTML",
       "kind": "HTML",
-      "bytes": 3511
+      "bytes": 3415
     },
     {
       "file": "downloads/diagrams/trace.svg",
       "title": "Trace chain SVG",
       "kind": "SVG",
-      "bytes": 1630
+      "bytes": 1766
     },
     {
       "file": "downloads/diagrams/trace.html",
       "title": "Trace chain HTML",
       "kind": "HTML",
-      "bytes": 3509
+      "bytes": 3413
     },
     {
       "file": "downloads/diagrams/grid.svg",
       "title": "Stakeholder grid SVG",
       "kind": "SVG",
-      "bytes": 1946
+      "bytes": 2082
     },
     {
       "file": "downloads/diagrams/grid.html",
       "title": "Stakeholder grid HTML",
       "kind": "HTML",
-      "bytes": 3814
+      "bytes": 3718
     },
     {
       "file": "downloads/diagrams/bpmn.svg",
       "title": "BPMN pieces SVG",
       "kind": "SVG",
-      "bytes": 1627
+      "bytes": 1763
     },
     {
       "file": "downloads/diagrams/bpmn.html",
       "title": "BPMN pieces HTML",
       "kind": "HTML",
-      "bytes": 3492
+      "bytes": 3396
     },
     {
       "file": "downloads/diagrams/storymap.svg",
       "title": "Story map SVG",
       "kind": "SVG",
-      "bytes": 1587
+      "bytes": 1723
     },
     {
       "file": "downloads/diagrams/storymap.html",
       "title": "Story map HTML",
       "kind": "HTML",
-      "bytes": 3446
+      "bytes": 3350
     },
     {
       "file": "downloads/diagrams/c4.svg",
       "title": "C4 levels SVG",
       "kind": "SVG",
-      "bytes": 1421
+      "bytes": 1557
     },
     {
       "file": "downloads/diagrams/c4.html",
       "title": "C4 levels HTML",
       "kind": "HTML",
-      "bytes": 3274
+      "bytes": 3178
     },
     {
       "file": "downloads/diagrams/erd.svg",
       "title": "Small order model SVG",
       "kind": "SVG",
-      "bytes": 1637
+      "bytes": 1773
     },
     {
       "file": "downloads/diagrams/erd.html",
       "title": "Small order model HTML",
       "kind": "HTML",
-      "bytes": 3529
+      "bytes": 3433
     },
     {
       "file": "downloads/diagrams/raci.svg",
       "title": "RACI roles SVG",
       "kind": "SVG",
-      "bytes": 1486
+      "bytes": 1622
     },
     {
       "file": "downloads/diagrams/raci.html",
       "title": "RACI roles HTML",
       "kind": "HTML",
-      "bytes": 3349
+      "bytes": 3253
     },
     {
       "file": "downloads/diagrams/swot.svg",
       "title": "SWOT quadrants SVG",
       "kind": "SVG",
-      "bytes": 1484
+      "bytes": 1620
     },
     {
       "file": "downloads/diagrams/swot.html",
       "title": "SWOT quadrants HTML",
       "kind": "HTML",
-      "bytes": 3357
+      "bytes": 3261
     },
     {
       "file": "downloads/diagrams/heart.svg",
       "title": "HEART categories SVG",
       "kind": "SVG",
-      "bytes": 1652
+      "bytes": 1788
     },
     {
       "file": "downloads/diagrams/heart.html",
       "title": "HEART categories HTML",
       "kind": "HTML",
-      "bytes": 3542
+      "bytes": 3446
     },
     {
       "file": "downloads/diagrams/okr.svg",
       "title": "OKR shape SVG",
       "kind": "SVG",
-      "bytes": 1454
+      "bytes": 1590
     },
     {
       "file": "downloads/diagrams/okr.html",
       "title": "OKR shape HTML",
       "kind": "HTML",
-      "bytes": 3298
+      "bytes": 3202
     },
     {
       "file": "downloads/diagrams/dt.svg",
       "title": "Discover before converge SVG",
       "kind": "SVG",
-      "bytes": 1503
+      "bytes": 1639
     },
     {
       "file": "downloads/diagrams/dt.html",
       "title": "Discover before converge HTML",
       "kind": "HTML",
-      "bytes": 3408
+      "bytes": 3312
     },
     {
       "file": "downloads/diagrams/jtbd.svg",
       "title": "Job story SVG",
       "kind": "SVG",
-      "bytes": 1667
+      "bytes": 1803
     },
     {
       "file": "downloads/diagrams/jtbd.html",
       "title": "Job story HTML",
       "kind": "HTML",
-      "bytes": 3516
+      "bytes": 3420
     },
     {
       "file": "downloads/diagrams/adkar.svg",
       "title": "ADKAR SVG",
       "kind": "SVG",
-      "bytes": 1619
+      "bytes": 1755
     },
     {
       "file": "downloads/diagrams/adkar.html",
       "title": "ADKAR HTML",
       "kind": "HTML",
-      "bytes": 3480
+      "bytes": 3384
     },
     {
       "file": "downloads/diagrams/case.svg",
       "title": "Business case parts SVG",
       "kind": "SVG",
-      "bytes": 1972
+      "bytes": 2108
     },
     {
       "file": "downloads/diagrams/case.html",
       "title": "Business case parts HTML",
       "kind": "HTML",
-      "bytes": 3829
+      "bytes": 3733
     },
     {
       "file": "downloads/diagrams/rtm.svg",
       "title": "Matrix columns SVG",
       "kind": "SVG",
-      "bytes": 1797
+      "bytes": 1933
     },
     {
       "file": "downloads/diagrams/rtm.html",
       "title": "Matrix columns HTML",
       "kind": "HTML",
-      "bytes": 3654
+      "bytes": 3558
     },
     {
       "file": "downloads/diagrams/domains.svg",
       "title": "Domain lenses SVG",
       "kind": "SVG",
-      "bytes": 2036
+      "bytes": 2172
     },
     {
       "file": "downloads/diagrams/domains.html",
       "title": "Domain lenses HTML",
       "kind": "HTML",
-      "bytes": 3930
+      "bytes": 3834
     },
     {
       "file": "downloads/diagrams/career.svg",
       "title": "Career evidence SVG",
       "kind": "SVG",
-      "bytes": 1664
+      "bytes": 1800
     },
     {
       "file": "downloads/diagrams/career.html",
       "title": "Career evidence HTML",
       "kind": "HTML",
-      "bytes": 3519
+      "bytes": 3423
     },
     {
       "file": "downloads/diagrams/ecosystem.svg",
       "title": "Ecosystem map SVG",
       "kind": "SVG",
-      "bytes": 2035
+      "bytes": 2171
     },
     {
       "file": "downloads/diagrams/ecosystem.html",
       "title": "Ecosystem map HTML",
       "kind": "HTML",
-      "bytes": 3904
+      "bytes": 3808
     },
     {
       "file": "downloads/diagrams/sprint.svg",
       "title": "Scrum events SVG",
       "kind": "SVG",
-      "bytes": 1619
+      "bytes": 1755
     },
     {
       "file": "downloads/diagrams/sprint.html",
       "title": "Scrum events HTML",
       "kind": "HTML",
-      "bytes": 3480
+      "bytes": 3384
     },
     {
       "file": "downloads/diagrams/ai.svg",
       "title": "AI draft loop SVG",
       "kind": "SVG",
-      "bytes": 1646
+      "bytes": 1782
     },
     {
       "file": "downloads/diagrams/ai.html",
       "title": "AI draft loop HTML",
       "kind": "HTML",
-      "bytes": 3511
+      "bytes": 3415
     },
     {
       "file": "downloads/diagrams/verify-validate.svg",
       "title": "Verify then validate SVG",
       "kind": "SVG",
-      "bytes": 1687
+      "bytes": 1823
     },
     {
       "file": "downloads/diagrams/verify-validate.html",
       "title": "Verify then validate HTML",
       "kind": "HTML",
-      "bytes": 3557
+      "bytes": 3461
     },
     {
       "file": "downloads/diagrams/priority.svg",
       "title": "Priority words SVG",
       "kind": "SVG",
-      "bytes": 1719
+      "bytes": 1855
     },
     {
       "file": "downloads/diagrams/priority.html",
       "title": "Priority words HTML",
       "kind": "HTML",
-      "bytes": 3606
+      "bytes": 3510
     },
     {
       "file": "downloads/diagrams/accept.svg",
       "title": "Acceptance shape SVG",
       "kind": "SVG",
-      "bytes": 1476
+      "bytes": 1612
     },
     {
       "file": "downloads/diagrams/accept.html",
       "title": "Acceptance shape HTML",
       "kind": "HTML",
-      "bytes": 3331
+      "bytes": 3235
     },
     {
       "file": "downloads/diagrams/states.svg",
       "title": "Requirement states SVG",
       "kind": "SVG",
-      "bytes": 1619
+      "bytes": 1755
     },
     {
       "file": "downloads/diagrams/states.html",
       "title": "Requirement states HTML",
       "kind": "HTML",
-      "bytes": 3487
+      "bytes": 3391
     },
     {
       "file": "downloads/diagrams/workshop.svg",
       "title": "Workshop roles SVG",
       "kind": "SVG",
-      "bytes": 1654
+      "bytes": 1790
     },
     {
       "file": "downloads/diagrams/workshop.html",
       "title": "Workshop roles HTML",
       "kind": "HTML",
-      "bytes": 3526
+      "bytes": 3430
     },
     {
       "file": "downloads/diagrams/interview.svg",
       "title": "Interview shape SVG",
       "kind": "SVG",
-      "bytes": 1657
+      "bytes": 1793
     },
     {
       "file": "downloads/diagrams/interview.html",
       "title": "Interview shape HTML",
       "kind": "HTML",
-      "bytes": 3517
+      "bytes": 3421
     },
     {
       "file": "downloads/diagrams/observe.svg",
       "title": "Observation SVG",
       "kind": "SVG",
-      "bytes": 1772
+      "bytes": 1908
     },
     {
       "file": "downloads/diagrams/observe.html",
       "title": "Observation HTML",
       "kind": "HTML",
-      "bytes": 3630
+      "bytes": 3534
     },
     {
       "file": "downloads/diagrams/rules.svg",
       "title": "Rules beside flow SVG",
       "kind": "SVG",
-      "bytes": 1586
+      "bytes": 1722
     },
     {
       "file": "downloads/diagrams/rules.html",
       "title": "Rules beside flow HTML",
       "kind": "HTML",
-      "bytes": 3449
+      "bytes": 3353
     },
     {
       "file": "downloads/diagrams/nfr.svg",
       "title": "Quality with a number SVG",
       "kind": "SVG",
-      "bytes": 1455
+      "bytes": 1591
     },
     {
       "file": "downloads/diagrams/nfr.html",
       "title": "Quality with a number HTML",
       "kind": "HTML",
-      "bytes": 3319
+      "bytes": 3223
     },
     {
       "file": "downloads/diagrams/scope.svg",
       "title": "Scope box SVG",
       "kind": "SVG",
-      "bytes": 1397
+      "bytes": 1533
     },
     {
       "file": "downloads/diagrams/scope.html",
       "title": "Scope box HTML",
       "kind": "HTML",
-      "bytes": 3245
+      "bytes": 3149
     },
     {
       "file": "downloads/diagrams/options.svg",
       "title": "Options including stop SVG",
       "kind": "SVG",
-      "bytes": 1632
+      "bytes": 1768
     },
     {
       "file": "downloads/diagrams/options.html",
       "title": "Options including stop HTML",
       "kind": "HTML",
-      "bytes": 3500
+      "bytes": 3404
     },
     {
       "file": "downloads/diagrams/risk.svg",
       "title": "Risk card SVG",
       "kind": "SVG",
-      "bytes": 1598
+      "bytes": 1734
     },
     {
       "file": "downloads/diagrams/risk.html",
       "title": "Risk card HTML",
       "kind": "HTML",
-      "bytes": 3435
+      "bytes": 3339
     },
     {
       "file": "downloads/diagrams/persona.svg",
       "title": "Persona card SVG",
       "kind": "SVG",
-      "bytes": 1456
+      "bytes": 1592
     },
     {
       "file": "downloads/diagrams/persona.html",
       "title": "Persona card HTML",
       "kind": "HTML",
-      "bytes": 3325
+      "bytes": 3229
     },
     {
       "file": "downloads/diagrams/journey.svg",
       "title": "Journey lanes SVG",
       "kind": "SVG",
-      "bytes": 1433
+      "bytes": 1569
     },
     {
       "file": "downloads/diagrams/journey.html",
       "title": "Journey lanes HTML",
       "kind": "HTML",
-      "bytes": 3280
+      "bytes": 3184
     },
     {
       "file": "downloads/diagrams/context.svg",
       "title": "Context diagram SVG",
       "kind": "SVG",
-      "bytes": 1591
+      "bytes": 1727
     },
     {
       "file": "downloads/diagrams/context.html",
       "title": "Context diagram HTML",
       "kind": "HTML",
-      "bytes": 3457
+      "bytes": 3361
     },
     {
       "file": "downloads/diagrams/uml-set.svg",
       "title": "UML sketches SVG",
       "kind": "SVG",
-      "bytes": 1497
+      "bytes": 1633
     },
     {
       "file": "downloads/diagrams/uml-set.html",
       "title": "UML sketches HTML",
       "kind": "HTML",
-      "bytes": 3373
+      "bytes": 3277
     },
     {
       "file": "downloads/diagrams/gateway.svg",
       "title": "Gateway habits SVG",
       "kind": "SVG",
-      "bytes": 1574
+      "bytes": 1710
     },
     {
       "file": "downloads/diagrams/gateway.html",
       "title": "Gateway habits HTML",
       "kind": "HTML",
-      "bytes": 3439
+      "bytes": 3343
     },
     {
       "file": "downloads/diagrams/happy-sad.svg",
       "title": "Two paths SVG",
       "kind": "SVG",
-      "bytes": 1575
+      "bytes": 1711
     },
     {
       "file": "downloads/diagrams/happy-sad.html",
       "title": "Two paths HTML",
       "kind": "HTML",
-      "bytes": 3432
+      "bytes": 3336
     },
     {
       "file": "downloads/diagrams/backlog.svg",
       "title": "Backlog order SVG",
       "kind": "SVG",
-      "bytes": 1493
+      "bytes": 1629
     },
     {
       "file": "downloads/diagrams/backlog.html",
       "title": "Backlog order HTML",
       "kind": "HTML",
-      "bytes": 3370
+      "bytes": 3274
     },
     {
       "file": "downloads/diagrams/increment.svg",
       "title": "Increment SVG",
       "kind": "SVG",
-      "bytes": 1545
+      "bytes": 1681
     },
     {
       "file": "downloads/diagrams/increment.html",
       "title": "Increment HTML",
       "kind": "HTML",
-      "bytes": 3391
+      "bytes": 3295
     },
     {
       "file": "downloads/diagrams/roles-scrum.svg",
       "title": "Three accountabilities SVG",
       "kind": "SVG",
-      "bytes": 1447
+      "bytes": 1583
     },
     {
       "file": "downloads/diagrams/roles-scrum.html",
       "title": "Three accountabilities HTML",
       "kind": "HTML",
-      "bytes": 3319
+      "bytes": 3223
     },
     {
       "file": "downloads/diagrams/kanban-board.svg",
       "title": "Board with a limit SVG",
       "kind": "SVG",
-      "bytes": 1426
+      "bytes": 1562
     },
     {
       "file": "downloads/diagrams/kanban-board.html",
       "title": "Board with a limit HTML",
       "kind": "HTML",
-      "bytes": 3290
+      "bytes": 3194
     },
     {
       "file": "downloads/diagrams/sprint-kit.svg",
       "title": "Design sprint days SVG",
       "kind": "SVG",
-      "bytes": 1633
+      "bytes": 1769
     },
     {
       "file": "downloads/diagrams/sprint-kit.html",
       "title": "Design sprint days HTML",
       "kind": "HTML",
-      "bytes": 3517
+      "bytes": 3421
     },
     {
       "file": "downloads/diagrams/forces.svg",
       "title": "Switch forces SVG",
       "kind": "SVG",
-      "bytes": 1469
+      "bytes": 1605
     },
     {
       "file": "downloads/diagrams/forces.html",
       "title": "Switch forces HTML",
       "kind": "HTML",
-      "bytes": 3326
+      "bytes": 3230
     },
     {
       "file": "downloads/diagrams/double-diamond.svg",
       "title": "Learn then choose SVG",
       "kind": "SVG",
-      "bytes": 1488
+      "bytes": 1624
     },
     {
       "file": "downloads/diagrams/double-diamond.html",
       "title": "Learn then choose HTML",
       "kind": "HTML",
-      "bytes": 3366
+      "bytes": 3270
     },
     {
       "file": "downloads/diagrams/kpi-card.svg",
       "title": "KPI card SVG",
       "kind": "SVG",
-      "bytes": 1602
+      "bytes": 1738
     },
     {
       "file": "downloads/diagrams/kpi-card.html",
       "title": "KPI card HTML",
       "kind": "HTML",
-      "bytes": 3445
+      "bytes": 3349
     },
     {
       "file": "downloads/diagrams/sql-path.svg",
       "title": "One SQL question SVG",
       "kind": "SVG",
-      "bytes": 1454
+      "bytes": 1590
     },
     {
       "file": "downloads/diagrams/sql-path.html",
       "title": "One SQL question HTML",
       "kind": "HTML",
-      "bytes": 3329
+      "bytes": 3233
     },
     {
       "file": "downloads/diagrams/event-log.svg",
       "title": "Event log fields SVG",
       "kind": "SVG",
-      "bytes": 1449
+      "bytes": 1585
     },
     {
       "file": "downloads/diagrams/event-log.html",
       "title": "Event log fields HTML",
       "kind": "HTML",
-      "bytes": 3327
+      "bytes": 3231
     },
     {
       "file": "downloads/diagrams/jira-flow.svg",
       "title": "Ticket hygiene SVG",
       "kind": "SVG",
-      "bytes": 1483
+      "bytes": 1619
     },
     {
       "file": "downloads/diagrams/jira-flow.html",
       "title": "Ticket hygiene HTML",
       "kind": "HTML",
-      "bytes": 3357
+      "bytes": 3261
     },
     {
       "file": "downloads/diagrams/conf-page.svg",
       "title": "Decision page SVG",
       "kind": "SVG",
-      "bytes": 1435
+      "bytes": 1571
     },
     {
       "file": "downloads/diagrams/conf-page.html",
       "title": "Decision page HTML",
       "kind": "HTML",
-      "bytes": 3301
+      "bytes": 3205
     },
     {
       "file": "downloads/diagrams/ai-check.svg",
       "title": "Draft checklist SVG",
       "kind": "SVG",
-      "bytes": 1444
+      "bytes": 1580
     },
     {
       "file": "downloads/diagrams/ai-check.html",
       "title": "Draft checklist HTML",
       "kind": "HTML",
-      "bytes": 3292
+      "bytes": 3196
     },
     {
       "file": "downloads/diagrams/prompt.svg",
       "title": "Prompt parts SVG",
       "kind": "SVG",
-      "bytes": 1448
+      "bytes": 1584
     },
     {
       "file": "downloads/diagrams/prompt.html",
       "title": "Prompt parts HTML",
       "kind": "HTML",
-      "bytes": 3298
+      "bytes": 3202
     },
     {
       "file": "downloads/diagrams/handoff.svg",
       "title": "Human handoff SVG",
       "kind": "SVG",
-      "bytes": 1679
+      "bytes": 1815
     },
     {
       "file": "downloads/diagrams/handoff.html",
       "title": "Human handoff HTML",
       "kind": "HTML",
-      "bytes": 3530
+      "bytes": 3434
     },
     {
       "file": "downloads/diagrams/fhir-lens.svg",
       "title": "Healthcare lens SVG",
       "kind": "SVG",
-      "bytes": 1600
+      "bytes": 1736
     },
     {
       "file": "downloads/diagrams/fhir-lens.html",
       "title": "Healthcare lens HTML",
       "kind": "HTML",
-      "bytes": 3480
+      "bytes": 3384
     },
     {
       "file": "downloads/diagrams/a11y.svg",
       "title": "Accessibility checks SVG",
       "kind": "SVG",
-      "bytes": 1454
+      "bytes": 1590
     },
     {
       "file": "downloads/diagrams/a11y.html",
       "title": "Accessibility checks HTML",
       "kind": "HTML",
-      "bytes": 3329
+      "bytes": 3233
     },
     {
       "file": "downloads/diagrams/vendor.svg",
       "title": "Same questions SVG",
       "kind": "SVG",
-      "bytes": 1595
+      "bytes": 1731
     },
     {
       "file": "downloads/diagrams/vendor.html",
       "title": "Same questions HTML",
       "kind": "HTML",
-      "bytes": 3474
+      "bytes": 3378
     },
     {
       "file": "downloads/diagrams/change-ctrl.svg",
       "title": "Change record SVG",
       "kind": "SVG",
-      "bytes": 1428
+      "bytes": 1564
     },
     {
       "file": "downloads/diagrams/change-ctrl.html",
       "title": "Change record HTML",
       "kind": "HTML",
-      "bytes": 3280
+      "bytes": 3184
     },
     {
       "file": "downloads/diagrams/release.svg",
       "title": "Release note SVG",
       "kind": "SVG",
-      "bytes": 1467
+      "bytes": 1603
     },
     {
       "file": "downloads/diagrams/release.html",
       "title": "Release note HTML",
       "kind": "HTML",
-      "bytes": 3329
+      "bytes": 3233
     },
     {
       "file": "downloads/diagrams/retro.svg",
       "title": "Retro prompts SVG",
       "kind": "SVG",
-      "bytes": 1389
+      "bytes": 1525
     },
     {
       "file": "downloads/diagrams/retro.html",
       "title": "Retro prompts HTML",
       "kind": "HTML",
-      "bytes": 3252
+      "bytes": 3156
     },
     {
       "file": "downloads/diagrams/star.svg",
       "title": "STAR card SVG",
       "kind": "SVG",
-      "bytes": 1474
+      "bytes": 1610
     },
     {
       "file": "downloads/diagrams/star.html",
       "title": "STAR card HTML",
       "kind": "HTML",
-      "bytes": 3350
+      "bytes": 3254
     },
     {
       "file": "downloads/flashcards.json",
@@ -5018,433 +5018,1213 @@
       "file": "downloads/html/flashcards.html",
       "title": "Flashcards HTML",
       "kind": "HTML",
-      "bytes": 4993
+      "bytes": 4761
     },
     {
       "file": "downloads/flashcards.pdf",
       "title": "Flashcards PDF",
       "kind": "PDF",
-      "bytes": 9800
+      "bytes": 7513
     },
     {
       "file": "downloads/html/cheat-sheet.html",
       "title": "Cheat sheet HTML",
       "kind": "HTML",
-      "bytes": 2211
+      "bytes": 1979
     },
     {
       "file": "downloads/cheat-sheet.pdf",
       "title": "Cheat sheet PDF",
       "kind": "PDF",
-      "bytes": 4640
+      "bytes": 3504
+    },
+    {
+      "file": "downloads/rooms/home.json",
+      "title": "Business Analyst Free University JSON",
+      "kind": "JSON",
+      "bytes": 649
+    },
+    {
+      "file": "downloads/rooms/home.html",
+      "title": "Business Analyst Free University HTML",
+      "kind": "HTML",
+      "bytes": 2260
+    },
+    {
+      "file": "downloads/rooms/home.pdf",
+      "title": "Business Analyst Free University PDF",
+      "kind": "PDF",
+      "bytes": 3692
+    },
+    {
+      "file": "downloads/rooms/home.docx",
+      "title": "Business Analyst Free University DOCX",
+      "kind": "DOCX",
+      "bytes": 37295
+    },
+    {
+      "file": "downloads/rooms/home.pptx",
+      "title": "Business Analyst Free University PPTX",
+      "kind": "PPTX",
+      "bytes": 31772
+    },
+    {
+      "file": "downloads/rooms/start.json",
+      "title": "Start here JSON",
+      "kind": "JSON",
+      "bytes": 613
+    },
+    {
+      "file": "downloads/rooms/start.html",
+      "title": "Start here HTML",
+      "kind": "HTML",
+      "bytes": 2200
+    },
+    {
+      "file": "downloads/rooms/start.pdf",
+      "title": "Start here PDF",
+      "kind": "PDF",
+      "bytes": 3626
+    },
+    {
+      "file": "downloads/rooms/start.docx",
+      "title": "Start here DOCX",
+      "kind": "DOCX",
+      "bytes": 37266
+    },
+    {
+      "file": "downloads/rooms/start.pptx",
+      "title": "Start here PPTX",
+      "kind": "PPTX",
+      "bytes": 31772
+    },
+    {
+      "file": "downloads/rooms/foundations.json",
+      "title": "Foundations JSON",
+      "kind": "JSON",
+      "bytes": 4927
+    },
+    {
+      "file": "downloads/rooms/foundations.html",
+      "title": "Foundations HTML",
+      "kind": "HTML",
+      "bytes": 5892
+    },
+    {
+      "file": "downloads/rooms/foundations.pdf",
+      "title": "Foundations PDF",
+      "kind": "PDF",
+      "bytes": 8005
+    },
+    {
+      "file": "downloads/rooms/foundations.docx",
+      "title": "Foundations DOCX",
+      "kind": "DOCX",
+      "bytes": 38722
+    },
+    {
+      "file": "downloads/rooms/foundations.pptx",
+      "title": "Foundations PPTX",
+      "kind": "PPTX",
+      "bytes": 31814
+    },
+    {
+      "file": "downloads/rooms/ecosystem.json",
+      "title": "Ecosystem JSON",
+      "kind": "JSON",
+      "bytes": 2302
+    },
+    {
+      "file": "downloads/rooms/ecosystem.html",
+      "title": "Ecosystem HTML",
+      "kind": "HTML",
+      "bytes": 3526
+    },
+    {
+      "file": "downloads/rooms/ecosystem.pdf",
+      "title": "Ecosystem PDF",
+      "kind": "PDF",
+      "bytes": 6409
+    },
+    {
+      "file": "downloads/rooms/ecosystem.docx",
+      "title": "Ecosystem DOCX",
+      "kind": "DOCX",
+      "bytes": 37808
+    },
+    {
+      "file": "downloads/rooms/ecosystem.pptx",
+      "title": "Ecosystem PPTX",
+      "kind": "PPTX",
+      "bytes": 31812
+    },
+    {
+      "file": "downloads/rooms/babok.json",
+      "title": "BABOK JSON",
+      "kind": "JSON",
+      "bytes": 8370
+    },
+    {
+      "file": "downloads/rooms/babok.html",
+      "title": "BABOK HTML",
+      "kind": "HTML",
+      "bytes": 8748
+    },
+    {
+      "file": "downloads/rooms/babok.pdf",
+      "title": "BABOK PDF",
+      "kind": "PDF",
+      "bytes": 11193
+    },
+    {
+      "file": "downloads/rooms/babok.docx",
+      "title": "BABOK DOCX",
+      "kind": "DOCX",
+      "bytes": 39916
+    },
+    {
+      "file": "downloads/rooms/babok.pptx",
+      "title": "BABOK PPTX",
+      "kind": "PPTX",
+      "bytes": 31845
+    },
+    {
+      "file": "downloads/rooms/requirements.json",
+      "title": "Requirements JSON",
+      "kind": "JSON",
+      "bytes": 4433
+    },
+    {
+      "file": "downloads/rooms/requirements.html",
+      "title": "Requirements HTML",
+      "kind": "HTML",
+      "bytes": 5424
+    },
+    {
+      "file": "downloads/rooms/requirements.pdf",
+      "title": "Requirements PDF",
+      "kind": "PDF",
+      "bytes": 7866
+    },
+    {
+      "file": "downloads/rooms/requirements.docx",
+      "title": "Requirements DOCX",
+      "kind": "DOCX",
+      "bytes": 38645
+    },
+    {
+      "file": "downloads/rooms/requirements.pptx",
+      "title": "Requirements PPTX",
+      "kind": "PPTX",
+      "bytes": 31805
+    },
+    {
+      "file": "downloads/rooms/modeling.json",
+      "title": "Modeling JSON",
+      "kind": "JSON",
+      "bytes": 3655
+    },
+    {
+      "file": "downloads/rooms/modeling.html",
+      "title": "Modeling HTML",
+      "kind": "HTML",
+      "bytes": 4682
+    },
+    {
+      "file": "downloads/rooms/modeling.pdf",
+      "title": "Modeling PDF",
+      "kind": "PDF",
+      "bytes": 7404
+    },
+    {
+      "file": "downloads/rooms/modeling.docx",
+      "title": "Modeling DOCX",
+      "kind": "DOCX",
+      "bytes": 38378
+    },
+    {
+      "file": "downloads/rooms/modeling.pptx",
+      "title": "Modeling PPTX",
+      "kind": "PPTX",
+      "bytes": 31806
+    },
+    {
+      "file": "downloads/rooms/agile.json",
+      "title": "Agile JSON",
+      "kind": "JSON",
+      "bytes": 4160
+    },
+    {
+      "file": "downloads/rooms/agile.html",
+      "title": "Agile HTML",
+      "kind": "HTML",
+      "bytes": 5181
+    },
+    {
+      "file": "downloads/rooms/agile.pdf",
+      "title": "Agile PDF",
+      "kind": "PDF",
+      "bytes": 7666
+    },
+    {
+      "file": "downloads/rooms/agile.docx",
+      "title": "Agile DOCX",
+      "kind": "DOCX",
+      "bytes": 38526
+    },
+    {
+      "file": "downloads/rooms/agile.pptx",
+      "title": "Agile PPTX",
+      "kind": "PPTX",
+      "bytes": 31845
+    },
+    {
+      "file": "downloads/rooms/data.json",
+      "title": "Data JSON",
+      "kind": "JSON",
+      "bytes": 4034
+    },
+    {
+      "file": "downloads/rooms/data.html",
+      "title": "Data HTML",
+      "kind": "HTML",
+      "bytes": 5080
+    },
+    {
+      "file": "downloads/rooms/data.pdf",
+      "title": "Data PDF",
+      "kind": "PDF",
+      "bytes": 7612
+    },
+    {
+      "file": "downloads/rooms/data.docx",
+      "title": "Data DOCX",
+      "kind": "DOCX",
+      "bytes": 38549
+    },
+    {
+      "file": "downloads/rooms/data.pptx",
+      "title": "Data PPTX",
+      "kind": "PPTX",
+      "bytes": 31843
+    },
+    {
+      "file": "downloads/rooms/tools.json",
+      "title": "Tools JSON",
+      "kind": "JSON",
+      "bytes": 3138
+    },
+    {
+      "file": "downloads/rooms/tools.html",
+      "title": "Tools HTML",
+      "kind": "HTML",
+      "bytes": 4246
+    },
+    {
+      "file": "downloads/rooms/tools.pdf",
+      "title": "Tools PDF",
+      "kind": "PDF",
+      "bytes": 7034
+    },
+    {
+      "file": "downloads/rooms/tools.docx",
+      "title": "Tools DOCX",
+      "kind": "DOCX",
+      "bytes": 38163
+    },
+    {
+      "file": "downloads/rooms/tools.pptx",
+      "title": "Tools PPTX",
+      "kind": "PPTX",
+      "bytes": 31796
+    },
+    {
+      "file": "downloads/rooms/ai.json",
+      "title": "AI for business analysts JSON",
+      "kind": "JSON",
+      "bytes": 3143
+    },
+    {
+      "file": "downloads/rooms/ai.html",
+      "title": "AI for business analysts HTML",
+      "kind": "HTML",
+      "bytes": 4285
+    },
+    {
+      "file": "downloads/rooms/ai.pdf",
+      "title": "AI for business analysts PDF",
+      "kind": "PDF",
+      "bytes": 7089
+    },
+    {
+      "file": "downloads/rooms/ai.docx",
+      "title": "AI for business analysts DOCX",
+      "kind": "DOCX",
+      "bytes": 38178
+    },
+    {
+      "file": "downloads/rooms/ai.pptx",
+      "title": "AI for business analysts PPTX",
+      "kind": "PPTX",
+      "bytes": 31826
+    },
+    {
+      "file": "downloads/rooms/domains.json",
+      "title": "Domains JSON",
+      "kind": "JSON",
+      "bytes": 3471
+    },
+    {
+      "file": "downloads/rooms/domains.html",
+      "title": "Domains HTML",
+      "kind": "HTML",
+      "bytes": 4602
+    },
+    {
+      "file": "downloads/rooms/domains.pdf",
+      "title": "Domains PDF",
+      "kind": "PDF",
+      "bytes": 7269
+    },
+    {
+      "file": "downloads/rooms/domains.docx",
+      "title": "Domains DOCX",
+      "kind": "DOCX",
+      "bytes": 38313
+    },
+    {
+      "file": "downloads/rooms/domains.pptx",
+      "title": "Domains PPTX",
+      "kind": "PPTX",
+      "bytes": 31820
+    },
+    {
+      "file": "downloads/rooms/product.json",
+      "title": "Product craft JSON",
+      "kind": "JSON",
+      "bytes": 4241
+    },
+    {
+      "file": "downloads/rooms/product.html",
+      "title": "Product craft HTML",
+      "kind": "HTML",
+      "bytes": 5228
+    },
+    {
+      "file": "downloads/rooms/product.pdf",
+      "title": "Product craft PDF",
+      "kind": "PDF",
+      "bytes": 7794
+    },
+    {
+      "file": "downloads/rooms/product.docx",
+      "title": "Product craft DOCX",
+      "kind": "DOCX",
+      "bytes": 38627
+    },
+    {
+      "file": "downloads/rooms/product.pptx",
+      "title": "Product craft PPTX",
+      "kind": "PPTX",
+      "bytes": 31820
+    },
+    {
+      "file": "downloads/rooms/certs.json",
+      "title": "Certifications JSON",
+      "kind": "JSON",
+      "bytes": 1134
+    },
+    {
+      "file": "downloads/rooms/certs.html",
+      "title": "Certifications HTML",
+      "kind": "HTML",
+      "bytes": 2534
+    },
+    {
+      "file": "downloads/rooms/certs.pdf",
+      "title": "Certifications PDF",
+      "kind": "PDF",
+      "bytes": 3892
+    },
+    {
+      "file": "downloads/rooms/certs.docx",
+      "title": "Certifications DOCX",
+      "kind": "DOCX",
+      "bytes": 37405
+    },
+    {
+      "file": "downloads/rooms/certs.pptx",
+      "title": "Certifications PPTX",
+      "kind": "PPTX",
+      "bytes": 31888
+    },
+    {
+      "file": "downloads/rooms/careers.json",
+      "title": "Careers JSON",
+      "kind": "JSON",
+      "bytes": 4408
+    },
+    {
+      "file": "downloads/rooms/careers.html",
+      "title": "Careers HTML",
+      "kind": "HTML",
+      "bytes": 5422
+    },
+    {
+      "file": "downloads/rooms/careers.pdf",
+      "title": "Careers PDF",
+      "kind": "PDF",
+      "bytes": 7931
+    },
+    {
+      "file": "downloads/rooms/careers.docx",
+      "title": "Careers DOCX",
+      "kind": "DOCX",
+      "bytes": 38697
+    },
+    {
+      "file": "downloads/rooms/careers.pptx",
+      "title": "Careers PPTX",
+      "kind": "PPTX",
+      "bytes": 31848
+    },
+    {
+      "file": "downloads/rooms/practice.json",
+      "title": "Practice JSON",
+      "kind": "JSON",
+      "bytes": 479
+    },
+    {
+      "file": "downloads/rooms/practice.html",
+      "title": "Practice HTML",
+      "kind": "HTML",
+      "bytes": 2061
+    },
+    {
+      "file": "downloads/rooms/practice.pdf",
+      "title": "Practice PDF",
+      "kind": "PDF",
+      "bytes": 3537
+    },
+    {
+      "file": "downloads/rooms/practice.docx",
+      "title": "Practice DOCX",
+      "kind": "DOCX",
+      "bytes": 37199
+    },
+    {
+      "file": "downloads/rooms/practice.pptx",
+      "title": "Practice PPTX",
+      "kind": "PPTX",
+      "bytes": 31746
+    },
+    {
+      "file": "downloads/rooms/diagrams.json",
+      "title": "Diagrams JSON",
+      "kind": "JSON",
+      "bytes": 467
+    },
+    {
+      "file": "downloads/rooms/diagrams.html",
+      "title": "Diagrams HTML",
+      "kind": "HTML",
+      "bytes": 2049
+    },
+    {
+      "file": "downloads/rooms/diagrams.pdf",
+      "title": "Diagrams PDF",
+      "kind": "PDF",
+      "bytes": 3504
+    },
+    {
+      "file": "downloads/rooms/diagrams.docx",
+      "title": "Diagrams DOCX",
+      "kind": "DOCX",
+      "bytes": 37177
+    },
+    {
+      "file": "downloads/rooms/diagrams.pptx",
+      "title": "Diagrams PPTX",
+      "kind": "PPTX",
+      "bytes": 31718
+    },
+    {
+      "file": "downloads/rooms/flows.json",
+      "title": "Flows JSON",
+      "kind": "JSON",
+      "bytes": 472
+    },
+    {
+      "file": "downloads/rooms/flows.html",
+      "title": "Flows HTML",
+      "kind": "HTML",
+      "bytes": 2054
+    },
+    {
+      "file": "downloads/rooms/flows.pdf",
+      "title": "Flows PDF",
+      "kind": "PDF",
+      "bytes": 3538
+    },
+    {
+      "file": "downloads/rooms/flows.docx",
+      "title": "Flows DOCX",
+      "kind": "DOCX",
+      "bytes": 37199
+    },
+    {
+      "file": "downloads/rooms/flows.pptx",
+      "title": "Flows PPTX",
+      "kind": "PPTX",
+      "bytes": 31736
+    },
+    {
+      "file": "downloads/rooms/charts.json",
+      "title": "Charts JSON",
+      "kind": "JSON",
+      "bytes": 483
+    },
+    {
+      "file": "downloads/rooms/charts.html",
+      "title": "Charts HTML",
+      "kind": "HTML",
+      "bytes": 2065
+    },
+    {
+      "file": "downloads/rooms/charts.pdf",
+      "title": "Charts PDF",
+      "kind": "PDF",
+      "bytes": 3505
+    },
+    {
+      "file": "downloads/rooms/charts.docx",
+      "title": "Charts DOCX",
+      "kind": "DOCX",
+      "bytes": 37191
+    },
+    {
+      "file": "downloads/rooms/charts.pptx",
+      "title": "Charts PPTX",
+      "kind": "PPTX",
+      "bytes": 31715
+    },
+    {
+      "file": "downloads/rooms/glossary.json",
+      "title": "Glossary JSON",
+      "kind": "JSON",
+      "bytes": 470
+    },
+    {
+      "file": "downloads/rooms/glossary.html",
+      "title": "Glossary HTML",
+      "kind": "HTML",
+      "bytes": 2052
+    },
+    {
+      "file": "downloads/rooms/glossary.pdf",
+      "title": "Glossary PDF",
+      "kind": "PDF",
+      "bytes": 3507
+    },
+    {
+      "file": "downloads/rooms/glossary.docx",
+      "title": "Glossary DOCX",
+      "kind": "DOCX",
+      "bytes": 37187
+    },
+    {
+      "file": "downloads/rooms/glossary.pptx",
+      "title": "Glossary PPTX",
+      "kind": "PPTX",
+      "bytes": 31721
+    },
+    {
+      "file": "downloads/rooms/resources.json",
+      "title": "Resources JSON",
+      "kind": "JSON",
+      "bytes": 496
+    },
+    {
+      "file": "downloads/rooms/resources.html",
+      "title": "Resources HTML",
+      "kind": "HTML",
+      "bytes": 2078
+    },
+    {
+      "file": "downloads/rooms/resources.pdf",
+      "title": "Resources PDF",
+      "kind": "PDF",
+      "bytes": 3515
+    },
+    {
+      "file": "downloads/rooms/resources.docx",
+      "title": "Resources DOCX",
+      "kind": "DOCX",
+      "bytes": 37193
+    },
+    {
+      "file": "downloads/rooms/resources.pptx",
+      "title": "Resources PPTX",
+      "kind": "PPTX",
+      "bytes": 31727
+    },
+    {
+      "file": "downloads/rooms/templates.json",
+      "title": "Templates JSON",
+      "kind": "JSON",
+      "bytes": 444
+    },
+    {
+      "file": "downloads/rooms/templates.html",
+      "title": "Templates HTML",
+      "kind": "HTML",
+      "bytes": 2031
+    },
+    {
+      "file": "downloads/rooms/templates.pdf",
+      "title": "Templates PDF",
+      "kind": "PDF",
+      "bytes": 3505
+    },
+    {
+      "file": "downloads/rooms/templates.docx",
+      "title": "Templates DOCX",
+      "kind": "DOCX",
+      "bytes": 37187
+    },
+    {
+      "file": "downloads/rooms/templates.pptx",
+      "title": "Templates PPTX",
+      "kind": "PPTX",
+      "bytes": 31720
+    },
+    {
+      "file": "downloads/rooms/downloads.json",
+      "title": "Downloads JSON",
+      "kind": "JSON",
+      "bytes": 572
+    },
+    {
+      "file": "downloads/rooms/downloads.html",
+      "title": "Downloads HTML",
+      "kind": "HTML",
+      "bytes": 2154
+    },
+    {
+      "file": "downloads/rooms/downloads.pdf",
+      "title": "Downloads PDF",
+      "kind": "PDF",
+      "bytes": 3623
+    },
+    {
+      "file": "downloads/rooms/downloads.docx",
+      "title": "Downloads DOCX",
+      "kind": "DOCX",
+      "bytes": 37237
+    },
+    {
+      "file": "downloads/rooms/downloads.pptx",
+      "title": "Downloads PPTX",
+      "kind": "PPTX",
+      "bytes": 31780
+    },
+    {
+      "file": "downloads/rooms/search.json",
+      "title": "Search JSON",
+      "kind": "JSON",
+      "bytes": 366
+    },
+    {
+      "file": "downloads/rooms/search.html",
+      "title": "Search HTML",
+      "kind": "HTML",
+      "bytes": 1948
+    },
+    {
+      "file": "downloads/rooms/search.pdf",
+      "title": "Search PDF",
+      "kind": "PDF",
+      "bytes": 3432
+    },
+    {
+      "file": "downloads/rooms/search.docx",
+      "title": "Search DOCX",
+      "kind": "DOCX",
+      "bytes": 37142
+    },
+    {
+      "file": "downloads/rooms/search.pptx",
+      "title": "Search PPTX",
+      "kind": "PPTX",
+      "bytes": 31679
+    },
+    {
+      "file": "downloads/rooms/credits.json",
+      "title": "Legal and credits JSON",
+      "kind": "JSON",
+      "bytes": 698
+    },
+    {
+      "file": "downloads/rooms/credits.html",
+      "title": "Legal and credits HTML",
+      "kind": "HTML",
+      "bytes": 2290
+    },
+    {
+      "file": "downloads/rooms/credits.pdf",
+      "title": "Legal and credits PDF",
+      "kind": "PDF",
+      "bytes": 3685
+    },
+    {
+      "file": "downloads/rooms/credits.docx",
+      "title": "Legal and credits DOCX",
+      "kind": "DOCX",
+      "bytes": 37281
+    },
+    {
+      "file": "downloads/rooms/credits.pptx",
+      "title": "Legal and credits PPTX",
+      "kind": "PPTX",
+      "bytes": 31851
+    },
+    {
+      "file": "downloads/rooms/help.json",
+      "title": "Help JSON",
+      "kind": "JSON",
+      "bytes": 502
+    },
+    {
+      "file": "downloads/rooms/help.html",
+      "title": "Help HTML",
+      "kind": "HTML",
+      "bytes": 2084
+    },
+    {
+      "file": "downloads/rooms/help.pdf",
+      "title": "Help PDF",
+      "kind": "PDF",
+      "bytes": 3535
+    },
+    {
+      "file": "downloads/rooms/help.docx",
+      "title": "Help DOCX",
+      "kind": "DOCX",
+      "bytes": 37202
+    },
+    {
+      "file": "downloads/rooms/help.pptx",
+      "title": "Help PPTX",
+      "kind": "PPTX",
+      "bytes": 31758
     },
     {
       "file": "downloads/diagrams/baccm.png",
       "title": "Core concept model PNG",
       "kind": "PNG",
-      "bytes": 39007
+      "bytes": 42997
     },
     {
       "file": "downloads/diagrams/areas.png",
       "title": "Six knowledge areas PNG",
       "kind": "PNG",
-      "bytes": 44645
+      "bytes": 49113
     },
     {
       "file": "downloads/diagrams/classes.png",
       "title": "Requirement classes PNG",
       "kind": "PNG",
-      "bytes": 34648
+      "bytes": 38805
     },
     {
       "file": "downloads/diagrams/elicitation.png",
       "title": "Elicitation loop PNG",
       "kind": "PNG",
-      "bytes": 29921
+      "bytes": 34159
     },
     {
       "file": "downloads/diagrams/trace.png",
       "title": "Trace chain PNG",
       "kind": "PNG",
-      "bytes": 29427
+      "bytes": 33658
     },
     {
       "file": "downloads/diagrams/grid.png",
       "title": "Stakeholder grid PNG",
       "kind": "PNG",
-      "bytes": 66628
+      "bytes": 73972
     },
     {
       "file": "downloads/diagrams/bpmn.png",
       "title": "BPMN pieces PNG",
       "kind": "PNG",
-      "bytes": 32037
+      "bytes": 36263
     },
     {
       "file": "downloads/diagrams/storymap.png",
       "title": "Story map PNG",
       "kind": "PNG",
-      "bytes": 49967
+      "bytes": 57425
     },
     {
       "file": "downloads/diagrams/c4.png",
       "title": "C4 levels PNG",
       "kind": "PNG",
-      "bytes": 37474
+      "bytes": 44994
     },
     {
       "file": "downloads/diagrams/erd.png",
       "title": "Small order model PNG",
       "kind": "PNG",
-      "bytes": 31333
+      "bytes": 35559
     },
     {
       "file": "downloads/diagrams/raci.png",
       "title": "RACI roles PNG",
       "kind": "PNG",
-      "bytes": 51542
+      "bytes": 59022
     },
     {
       "file": "downloads/diagrams/swot.png",
       "title": "SWOT quadrants PNG",
       "kind": "PNG",
-      "bytes": 49053
+      "bytes": 56546
     },
     {
       "file": "downloads/diagrams/heart.png",
       "title": "HEART categories PNG",
       "kind": "PNG",
-      "bytes": 34347
+      "bytes": 38515
     },
     {
       "file": "downloads/diagrams/okr.png",
       "title": "OKR shape PNG",
       "kind": "PNG",
-      "bytes": 45745
+      "bytes": 53376
     },
     {
       "file": "downloads/diagrams/dt.png",
       "title": "Discover before converge PNG",
       "kind": "PNG",
-      "bytes": 50880
+      "bytes": 58351
     },
     {
       "file": "downloads/diagrams/jtbd.png",
       "title": "Job story PNG",
       "kind": "PNG",
-      "bytes": 48455
+      "bytes": 55950
     },
     {
       "file": "downloads/diagrams/adkar.png",
       "title": "ADKAR PNG",
       "kind": "PNG",
-      "bytes": 31394
+      "bytes": 35623
     },
     {
       "file": "downloads/diagrams/case.png",
       "title": "Business case parts PNG",
       "kind": "PNG",
-      "bytes": 43376
+      "bytes": 47679
     },
     {
       "file": "downloads/diagrams/rtm.png",
       "title": "Matrix columns PNG",
       "kind": "PNG",
-      "bytes": 31326
+      "bytes": 35579
     },
     {
       "file": "downloads/diagrams/domains.png",
       "title": "Domain lenses PNG",
       "kind": "PNG",
-      "bytes": 38610
+      "bytes": 42790
     },
     {
       "file": "downloads/diagrams/career.png",
       "title": "Career evidence PNG",
       "kind": "PNG",
-      "bytes": 38327
+      "bytes": 42297
     },
     {
       "file": "downloads/diagrams/ecosystem.png",
       "title": "Ecosystem map PNG",
       "kind": "PNG",
-      "bytes": 41045
+      "bytes": 45528
     },
     {
       "file": "downloads/diagrams/sprint.png",
       "title": "Scrum events PNG",
       "kind": "PNG",
-      "bytes": 30398
+      "bytes": 34630
     },
     {
       "file": "downloads/diagrams/ai.png",
       "title": "AI draft loop PNG",
       "kind": "PNG",
-      "bytes": 33653
+      "bytes": 37848
     },
     {
       "file": "downloads/diagrams/verify-validate.png",
       "title": "Verify then validate PNG",
       "kind": "PNG",
-      "bytes": 50511
+      "bytes": 57963
     },
     {
       "file": "downloads/diagrams/priority.png",
       "title": "Priority words PNG",
       "kind": "PNG",
-      "bytes": 59218
+      "bytes": 66643
     },
     {
       "file": "downloads/diagrams/accept.png",
       "title": "Acceptance shape PNG",
       "kind": "PNG",
-      "bytes": 48226
+      "bytes": 55753
     },
     {
       "file": "downloads/diagrams/states.png",
       "title": "Requirement states PNG",
       "kind": "PNG",
-      "bytes": 30375
+      "bytes": 34612
     },
     {
       "file": "downloads/diagrams/workshop.png",
       "title": "Workshop roles PNG",
       "kind": "PNG",
-      "bytes": 34474
+      "bytes": 38621
     },
     {
       "file": "downloads/diagrams/interview.png",
       "title": "Interview shape PNG",
       "kind": "PNG",
-      "bytes": 36474
+      "bytes": 40503
     },
     {
       "file": "downloads/diagrams/observe.png",
       "title": "Observation PNG",
       "kind": "PNG",
-      "bytes": 40339
+      "bytes": 44361
     },
     {
       "file": "downloads/diagrams/rules.png",
       "title": "Rules beside flow PNG",
       "kind": "PNG",
-      "bytes": 52649
+      "bytes": 60117
     },
     {
       "file": "downloads/diagrams/nfr.png",
       "title": "Quality with a number PNG",
       "kind": "PNG",
-      "bytes": 43687
+      "bytes": 51383
     },
     {
       "file": "downloads/diagrams/scope.png",
       "title": "Scope box PNG",
       "kind": "PNG",
-      "bytes": 31545
+      "bytes": 38985
     },
     {
       "file": "downloads/diagrams/options.png",
       "title": "Options including stop PNG",
       "kind": "PNG",
-      "bytes": 31698
+      "bytes": 35938
     },
     {
       "file": "downloads/diagrams/risk.png",
       "title": "Risk card PNG",
       "kind": "PNG",
-      "bytes": 29125
+      "bytes": 33368
     },
     {
       "file": "downloads/diagrams/persona.png",
       "title": "Persona card PNG",
       "kind": "PNG",
-      "bytes": 45004
+      "bytes": 52689
     },
     {
       "file": "downloads/diagrams/journey.png",
       "title": "Journey lanes PNG",
       "kind": "PNG",
-      "bytes": 42196
+      "bytes": 49908
     },
     {
       "file": "downloads/diagrams/context.png",
       "title": "Context diagram PNG",
       "kind": "PNG",
-      "bytes": 53798
+      "bytes": 61229
     },
     {
       "file": "downloads/diagrams/uml-set.png",
       "title": "UML sketches PNG",
       "kind": "PNG",
-      "bytes": 51046
+      "bytes": 58522
     },
     {
       "file": "downloads/diagrams/gateway.png",
       "title": "Gateway habits PNG",
       "kind": "PNG",
-      "bytes": 50512
+      "bytes": 57980
     },
     {
       "file": "downloads/diagrams/happy-sad.png",
       "title": "Two paths PNG",
       "kind": "PNG",
-      "bytes": 50208
+      "bytes": 57693
     },
     {
       "file": "downloads/diagrams/backlog.png",
       "title": "Backlog order PNG",
       "kind": "PNG",
-      "bytes": 53011
+      "bytes": 60476
     },
     {
       "file": "downloads/diagrams/increment.png",
       "title": "Increment PNG",
       "kind": "PNG",
-      "bytes": 42651
+      "bytes": 50350
     },
     {
       "file": "downloads/diagrams/roles-scrum.png",
       "title": "Three accountabilities PNG",
       "kind": "PNG",
-      "bytes": 44234
+      "bytes": 51930
     },
     {
       "file": "downloads/diagrams/kanban-board.png",
       "title": "Board with a limit PNG",
       "kind": "PNG",
-      "bytes": 36454
+      "bytes": 43923
     },
     {
       "file": "downloads/diagrams/sprint-kit.png",
       "title": "Design sprint days PNG",
       "kind": "PNG",
-      "bytes": 32152
+      "bytes": 36378
     },
     {
       "file": "downloads/diagrams/forces.png",
       "title": "Switch forces PNG",
       "kind": "PNG",
-      "bytes": 47501
+      "bytes": 55054
     },
     {
       "file": "downloads/diagrams/double-diamond.png",
       "title": "Learn then choose PNG",
       "kind": "PNG",
-      "bytes": 51078
+      "bytes": 58551
     },
     {
       "file": "downloads/diagrams/kpi-card.png",
       "title": "KPI card PNG",
       "kind": "PNG",
-      "bytes": 29414
+      "bytes": 33655
     },
     {
       "file": "downloads/diagrams/sql-path.png",
       "title": "One SQL question PNG",
       "kind": "PNG",
-      "bytes": 44381
+      "bytes": 52086
     },
     {
       "file": "downloads/diagrams/event-log.png",
       "title": "Event log fields PNG",
       "kind": "PNG",
-      "bytes": 40574
+      "bytes": 48334
     },
     {
       "file": "downloads/diagrams/jira-flow.png",
       "title": "Ticket hygiene PNG",
       "kind": "PNG",
-      "bytes": 47015
+      "bytes": 54595
     },
     {
       "file": "downloads/diagrams/conf-page.png",
       "title": "Decision page PNG",
       "kind": "PNG",
-      "bytes": 40869
+      "bytes": 48648
     },
     {
       "file": "downloads/diagrams/ai-check.png",
       "title": "Draft checklist PNG",
       "kind": "PNG",
-      "bytes": 44153
+      "bytes": 51858
     },
     {
       "file": "downloads/diagrams/prompt.png",
       "title": "Prompt parts PNG",
       "kind": "PNG",
-      "bytes": 43573
+      "bytes": 51262
     },
     {
       "file": "downloads/diagrams/handoff.png",
       "title": "Human handoff PNG",
       "kind": "PNG",
-      "bytes": 50033
+      "bytes": 57476
     },
     {
       "file": "downloads/diagrams/fhir-lens.png",
       "title": "Healthcare lens PNG",
       "kind": "PNG",
-      "bytes": 51936
+      "bytes": 59392
     },
     {
       "file": "downloads/diagrams/a11y.png",
       "title": "Accessibility checks PNG",
       "kind": "PNG",
-      "bytes": 43540
+      "bytes": 51232
     },
     {
       "file": "downloads/diagrams/vendor.png",
       "title": "Same questions PNG",
       "kind": "PNG",
-      "bytes": 52803
+      "bytes": 60240
     },
     {
       "file": "downloads/diagrams/change-ctrl.png",
       "title": "Change record PNG",
       "kind": "PNG",
-      "bytes": 42003
+      "bytes": 49726
     },
     {
       "file": "downloads/diagrams/release.png",
       "title": "Release note PNG",
       "kind": "PNG",
-      "bytes": 44577
+      "bytes": 52277
     },
     {
       "file": "downloads/diagrams/retro.png",
       "title": "Retro prompts PNG",
       "kind": "PNG",
-      "bytes": 49640
+      "bytes": 57120
     },
     {
       "file": "downloads/diagrams/star.png",
       "title": "STAR card PNG",
       "kind": "PNG",
-      "bytes": 48877
+      "bytes": 56369
     },
     {
       "file": "downloads/png/cheat-sheet.png",
       "title": "cheat-sheet PNG",
       "kind": "PNG",
-      "bytes": 174545
+      "bytes": 179540
     },
     {
       "file": "downloads/png/flashcards.png",
       "title": "flashcards PNG",
       "kind": "PNG",
-      "bytes": 389971
+      "bytes": 394928
     },
     {
       "file": "downloads/png/brd-outline.png",
       "title": "brd-outline PNG",
       "kind": "PNG",
-      "bytes": 182475
+      "bytes": 187630
     },
     {
       "file": "downloads/ba-everything.zip",
       "title": "Download everything",
       "kind": "ZIP",
-      "bytes": 3432284
+      "bytes": 5576577
     }
   ],
   "templates": [
@@ -5900,11 +6680,19 @@
       ]
     },
     "credits": {
-      "five": "The notes, drawings, and the guide monkey are original. Browser speech is the platform voice. three.js is not shipped, so a phone does not download a 3D engine. No pre-recorded clips were made, because no open local speech engine was on the build machine.",
+      "five": "This room is the legal page: disclaimer, copyright, trademarks, third-party licences, privacy, accessibility, and how to ask for a correction. The notes and drawings are original. Browser speech is the platform voice. three.js is not shipped. No pre-recorded clips were made, because no open local speech engine was on the build machine.",
       "visual": "ai-check",
       "exampleTitle": "What to trust",
       "example": [
-        "Trust a sentence that has a source line. Treat a to-be-confirmed line as unknown. Correct us through the contact form."
+        "Trust a sentence that has a source line. Treat a to-be-confirmed line as unknown. Ask for a correction through the contact form on the lab website."
+      ]
+    },
+    "help": {
+      "five": "The top-left button slides the menu in. Start here is the short path. The monkey docks on the right edge, can read a section aloud, and can point at an export. The Downloads page lists every standalone file.",
+      "visual": "states",
+      "exampleTitle": "Replay the tour",
+      "example": [
+        "The first visit shows a short tour. Help opens that tour again. The choice is stored in this browser."
       ]
     },
     "careers": {
@@ -6007,6 +6795,16 @@
       "name": "three.js",
       "note": "Not shipped. The guide uses layered SVG and CSS so phones do not download a 3D engine.",
       "license": "Not included"
+    },
+    {
+      "name": "Speech recognition",
+      "note": "Optional microphone input uses the browser speech recognizer. If that API is missing, type the question. This lab does not receive the audio.",
+      "license": "Platform"
+    },
+    {
+      "name": "Soft sound",
+      "note": "A generated sine tone in the browser. No music file is shipped. Off until a tap.",
+      "license": "Original"
     }
   ]
 }

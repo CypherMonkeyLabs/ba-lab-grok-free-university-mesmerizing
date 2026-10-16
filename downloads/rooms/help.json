@@ -1,0 +1,11 @@
+{
+  "title": "Help",
+  "page": "help.html",
+  "summary": "How the menu, the course, the guide, and the downloads work.",
+  "five": "The top-left button slides the menu in. Start here is the short path. The monkey docks on the right edge, can read a section aloud, and can point at an export. The Downloads page lists every standalone file.",
+  "example": [
+    "The first visit shows a short tour. Help opens that tour again. The choice is stored in this browser."
+  ],
+  "notes": [],
+  "quizzes": []
+}

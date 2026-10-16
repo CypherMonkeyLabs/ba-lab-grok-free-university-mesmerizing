@@ -1,0 +1,56 @@
+{
+  "title": "Tools",
+  "page": "tools.html",
+  "summary": "Jira, Confluence, Visio, Miro, Lucid, and Figma.",
+  "five": "Jira, Confluence, Visio, Miro, Lucid, and Figma are places teams keep work. The decision still lives in a sentence a person can accept. Put the outcome and the test on the ticket. Put the decision, the date, and the owner on the page. A polished board with no limit is still a list.",
+  "example": [
+    "Title: show the return reason. Description: the story and one Given-When-Then. Link: the business need identifier. Status moves to done only when that scenario passes.",
+    "The screenshot in the ticket is an illustration. The scenario is the requirement."
+  ],
+  "notes": [
+    {
+      "title": "Jira",
+      "summary": "Atlassian's getting-started guide for Jira opened. Use it to keep work visible: items, states, and owners. The workflow should match the real approval path. Do not add states nobody will use."
+    },
+    {
+      "title": "Confluence",
+      "summary": "Confluence is Atlassian's space for longer pages. A requirement page needs an owner, a status, and a link to the backlog item. A page without a status looks current long after it is not."
+    },
+    {
+      "title": "Azure DevOps boards",
+      "summary": "Microsoft's Azure DevOps backlogs documentation opened. Boards are another place teams order work. The analysis habits are the same as in Jira: one backlog, clear states, and acceptance criteria on the item."
+    },
+    {
+      "title": "Visio",
+      "summary": "Microsoft's Visio support home opened. Visio is a diagramming product teams use for process and system drawings. The drawing is only as good as the labels. Export a copy stakeholders can open."
+    },
+    {
+      "title": "Lucid and BPMN",
+      "summary": "Lucid's BPMN tutorial opened. Use a shared diagram when more than one person must edit. Agree on a small stencil so the file does not become a clip-art board."
+    },
+    {
+      "title": "Miro",
+      "summary": "Miro's Kanban page opened. A board is useful in a workshop because people can move notes. After the workshop, copy the decisions into the system of record. A board that is the only copy will be lost."
+    },
+    {
+      "title": "Figma",
+      "summary": "Figma's home page opened. It is a collaborative design surface teams use for interfaces. Treat a frame as a prototype at a stated fidelity. Comments on a frame are not approved requirements until someone records them as such."
+    },
+    {
+      "title": "Power Platform and Dynamics",
+      "summary": "Microsoft's Power Platform ALM overview and the Dynamics 365 implementation guide both opened. They are relevant when a solution will be configured rather than only described. The business analyst still writes the need, the roles, and the acceptance checks. This is study context, not a claim of delivery experience."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "A ticket is done when:",
+      "choices": [
+        "The screenshot looks finished",
+        "The agreed scenario passes",
+        "The board is colorful",
+        "A model said so"
+      ],
+      "answer": 1
+    }
+  ]
+}

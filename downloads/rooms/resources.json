@@ -1,0 +1,11 @@
+{
+  "title": "Resources",
+  "page": "resources.html",
+  "summary": "Links that opened in the October 2026 check.",
+  "five": "Every link in the table was requested in the October 2026 check. A page that did not open is omitted, and the related note says what is still to be confirmed.",
+  "example": [
+    "Scrum.org assessment pages, the SAFe POPM course page, and Kanban University course fees did not render. They are not linked and no price is invented."
+  ],
+  "notes": [],
+  "quizzes": []
+}

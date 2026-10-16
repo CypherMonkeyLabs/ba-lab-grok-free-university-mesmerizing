@@ -1,0 +1,23 @@
+{
+  "title": "Certifications",
+  "page": "certs.html",
+  "summary": "IIBA, PMI-PBA, and adjacent credentials with cited fees.",
+  "five": "Read the fee cell and the eligibility FAQ before you pay. ECBA, CCBA, CBAP, AAC, and CBDA figures in this lab were copied from IIBA pages on 16 October 2026, including member and non-member lines as printed. PMI-PBA experience paths and the exam shape are cited. The exam fee was not on the page that loaded. Scrum.org and the SAFe POPM course page did not yield a fee. Confirm before you pay. This lab states no salaries.",
+  "example": [
+    "If you are new, read the ECBA eligibility line on the FAQ before you read a price. If you are experienced, read the CBAP hour rules and the blueprint, then the fee cell.",
+    "A study plan can start before you pay. Paying is optional and external to this lab."
+  ],
+  "notes": [],
+  "quizzes": [
+    {
+      "q": "Before you pay an IIBA fee you should:",
+      "choices": [
+        "Trust a memory of the price",
+        "Read the current fee page",
+        "Skip eligibility",
+        "Assume a salary return"
+      ],
+      "answer": 1
+    }
+  ]
+}

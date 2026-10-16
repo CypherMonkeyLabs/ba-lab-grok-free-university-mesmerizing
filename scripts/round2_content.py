@@ -261,10 +261,16 @@ STUDY = {
         "example": ["Search for traceability, gateway, or ECBA. Open the note. The source line is the page that was checked."],
     },
     "credits": {
-        "five": "The notes, drawings, and the guide monkey are original. Browser speech is the platform voice. three.js is not shipped, so a phone does not download a 3D engine. No pre-recorded clips were made, because no open local speech engine was on the build machine.",
+        "five": "This room is the legal page: disclaimer, copyright, trademarks, third-party licences, privacy, accessibility, and how to ask for a correction. The notes and drawings are original. Browser speech is the platform voice. three.js is not shipped. No pre-recorded clips were made, because no open local speech engine was on the build machine.",
         "visual": "ai-check",
         "exampleTitle": "What to trust",
-        "example": ["Trust a sentence that has a source line. Treat a to-be-confirmed line as unknown. Correct us through the contact form."],
+        "example": ["Trust a sentence that has a source line. Treat a to-be-confirmed line as unknown. Ask for a correction through the contact form on the lab website."],
+    },
+    "help": {
+        "five": "The top-left button slides the menu in. Start here is the short path. The monkey docks on the right edge, can read a section aloud, and can point at an export. The Downloads page lists every standalone file.",
+        "visual": "states",
+        "exampleTitle": "Replay the tour",
+        "example": ["The first visit shows a short tour. Help opens that tour again. The choice is stored in this browser."],
     },
     "careers": {
         "five": "Show a traced requirement, a confirmed model, and a measure with an owner. Practice STAR with a generic story, never a borrowed biography. Pay is not discussed here. Sponsorship is an employer decision and a legal question. The USCIS H-1B page opened for a high-level description of specialty occupations. It is not advice, and this lab promises no visa.",

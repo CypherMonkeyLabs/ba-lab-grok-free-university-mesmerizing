@@ -1,0 +1,11 @@
+{
+  "title": "Start here",
+  "page": "start.html",
+  "summary": "A one-hour path through the business analysis lab.",
+  "five": "The one-hour path is eight short stops: display, need and roles, six knowledge areas, one testable requirement, one picture, one delivery frame, one measure, then credentials and practice. Skip the long rooms until the path is done.",
+  "example": [
+    "Spend the first six minutes on the core concept model. Spend the middle on one story with Given, When, and Then. End by reading one fee cell and marking anything unmarked as to be confirmed."
+  ],
+  "notes": [],
+  "quizzes": []
+}

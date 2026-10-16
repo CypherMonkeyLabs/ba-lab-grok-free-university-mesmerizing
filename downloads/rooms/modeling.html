@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Modeling</title>
+<style>
+body { margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; color: #1c1917; }
+main { width: min(42rem, calc(100% - 2rem)); margin: 1.5rem auto 2rem; }
+h1 { line-height: 1.2; }
+a { color: #1d4ed8; }
+.disclaimer-box { border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25); }
+.disclaimer-box a { color: #0f766e; }
+footer { padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }
+.badges a { display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<h1>Modeling</h1>
+<p>BPMN, UML, ERD, and C4 in plain language.</p>
+<ul>
+<li>Pick the question before the notation. BPMN is for flow: events, activities, gateways. UML is a family of sketches. An ERD names things and relationships. C4 steps from system context to container, component, and code. Stop at the level the audience can use. Draw the unhappy path.</li>
+<li>Start: a return arrives. Activity: look up the order. Gateway: is the item within the stated window? Yes path: refund. No path: explain the window and stop.</li>
+<li>Both paths have an end. The window length is a business rule beside the drawing, so a policy change does not redraw the map.</li>
+<li>BPMN in brief. Object Management Group publishes BPMN 2.0. For study, learn events, activities, gateways, and sequence flow. A gateway is a decision, not a task. Label the outgoing paths with conditions a stranger can test.</li>
+<li>Current state, then future. Draw how the work happens this week, including the spreadsheet and the rework. Then draw the proposed state. If you only draw the future, you will miss the step that actually takes the time.</li>
+<li>UML, used sparingly. OMG publishes UML. Use the diagram that answers the question in the room. A use case diagram shows who wants what. An activity diagram shows flow. A sequence diagram shows messages over time. A class diagram shows structure. One diagram, one question.</li>
+<li>Entity relationships. An entity is a thing you store. A relationship states how many of one relate to how many of another. Name the relationship from both directions. &#x27;Customer places order&#x27; is clearer than a line with no verb.</li>
+<li>C4, four levels. The C4 model site describes four abstractions: software system, container, component, and code. Start with a system context diagram: the system, the people, and the other systems. Go deeper only where the audience needs it.</li>
+<li>SIPOC. Supplier, input, process, output, customer is a one-page boundary. It is enough to see whether you are looking at the right process before you draw thirty boxes. This is a study scaffold, not a claimed standard text.</li>
+<li>States. State models help when a thing has a life: draft, submitted, approved, rejected. Name the event that causes each move and who may cause it. The technique list includes state modelling.</li>
+<li>Decisions apart from flow. If a gateway contains a policy, lift the policy into a decision with inputs and outputs. The process then stays stable when the policy changes. Decision modelling is on the technique list.</li>
+<li>Interfaces. Interface analysis asks what crosses a boundary: data, a document, or a handoff. For each crossing, name the producer, the consumer, the trigger, and what happens when it fails.</li>
+<li>Story map. A story map places user activities across the top and breaks releases downward. The first horizontal slice should be a thin outcome someone can use, not a layer of database tables.</li>
+<li>Question. An unlabeled BPMN path is:</li>
+</ul>
+<p>Business Analyst Free University. Study sheet, October 2026.</p>
+</main>
+<footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> Independent, free, learning-only student project. Respects every company and vendor. Trademarks belong to their owners. Not affiliated or endorsed. Concerns are removed or corrected promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. Happy to volunteer for any organization.</p></div>
+<p><strong>CypherMonkey Labs</strong></p>
+<p class="badges"><a href="https://cyphermonkeylabs.com">Website</a>
+<a href="https://github.com/CypherMonkeyLabs">GitHub</a>
+<a href="https://linktr.ee/cyphermonkey">Profile</a></p>
+<p>© 2026 CypherMonkeyLabs 🐒</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "title": "Charts",
+  "page": "charts.html",
+  "summary": "Exam blueprints and counts from this repository.",
+  "five": "Bars are blueprint percentages from pages that opened, or counts of files in this lab. They are not market statistics and not salaries.",
+  "example": [
+    "The CBAP analysis-and-design bar is the largest on that chart because the cited page says 30 percent. The lab count bars are how many notes this repository holds."
+  ],
+  "notes": [],
+  "quizzes": []
+}

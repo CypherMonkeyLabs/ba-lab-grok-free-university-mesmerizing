@@ -190,9 +190,25 @@
       return "<tr><td><a href=\"" + esc(item.file) + "\">" + esc(item.title) + "</a></td><td>" + esc(item.kind) + "</td><td>" + esc(sizeLabel(item.bytes)) + "</td></tr>";
     }).join("");
     main.innerHTML = "<h1>Downloads</h1>" + studyBlock(data, "downloads") +
-      "<p class=\"lede\">Each file stands alone and carries the disclaimer. Filter by kind. PNG images appear after the render step.</p>" +
+      "<p class=\"lede\">Each file stands alone and carries the disclaimer. Every room also has PDF, HTML, DOCX, PPTX, and JSON under downloads/rooms. Filter by kind.</p>" +
+      '<p class="actions"><a class="btn primary" href="index.html">Open app</a><a class="btn ghost" href="https://github.com/CypherMonkeyLabs/ba-lab-grok-free-university-mesmerizing">View repo</a></p>' +
       '<div class="filters" data-kind-filters><button type="button" data-kind="all" aria-pressed="true">All</button></div>' +
-      '<table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody data-download-rows>' + rows + "</tbody></table>";
+      '<table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody data-download-rows>' + rows + "</tbody></table>" +
+      "<h2>Headless download checks</h2><div data-download-tests><p>Loading the test table.</p></div>";
+    fetch("assets/data/download-tests.json").then(function (response) {
+      if (!response.ok) throw new Error("tests");
+      return response.json();
+    }).then(function (report) {
+      var host = main.querySelector("[data-download-tests]");
+      if (!host) return;
+      var body = (report.rows || []).map(function (row) {
+        return "<tr><td>" + esc(row.file) + "</td><td>" + esc(row.kind) + "</td><td>" + esc(row.check) + "</td><td>" + (row.pass ? "Pass" : "Fail") + "</td></tr>";
+      }).join("");
+      host.innerHTML = "<p>" + esc(report.summary || "") + "</p><table><thead><tr><th>File</th><th>Kind</th><th>Check</th><th>Result</th></tr></thead><tbody>" + body + "</tbody></table>";
+    }).catch(function () {
+      var host = main.querySelector("[data-download-tests]");
+      if (host) host.innerHTML = "<p>The test table is not in this copy yet. Run the download check to write it.</p>";
+    });
     var kinds = {};
     (data.downloads || []).forEach(function (item) { kinds[item.kind] = true; });
     var filters = main.querySelector("[data-kind-filters]");
@@ -341,6 +357,7 @@
       }
       host.innerHTML = blocks + '<p><button type="button" data-score>Score</button></p><p class="score" data-score-out>' +
         (done ? score + " / " + list.length : "") + "</p>";
+      decorate(window.BA_CATALOG);
       if (done) {
         host.querySelectorAll(".quiz-option").forEach(function (btn) {
           var qi = Number(btn.getAttribute("data-q"));
@@ -433,7 +450,27 @@
     var blocks = (data.credits || []).map(function (item) {
       return '<article class="item"><h3>' + esc(item.name) + "</h3><p>" + esc(item.note) + "</p><p class=\"meta\">" + esc(item.license) + "</p></article>";
     }).join("");
-    main.innerHTML = "<h1>Credits</h1>" + studyBlock(data, "credits") + '<div class="card-grid">' + blocks + "</div>";
+    main.innerHTML = "<h1>Legal and credits</h1>" + studyBlock(data, "credits") +
+      '<section class="callout"><h2>Disclaimer</h2><p>Independent, free, learning-only student project. Respects every company and vendor. Nothing is sold. This lab does not give legal, immigration, medical, or financial advice, and it promises no visa, job, or salary.</p></section>' +
+      '<section class="callout"><h2>Copyright</h2><p>© 2026 CypherMonkeyLabs. The study notes, diagrams, games, and guide in this repository are original unless a source line names another work. Summaries are not the text of the BABOK Guide or any standard.</p></section>' +
+      '<section class="callout"><h2>Trademarks</h2><p>Trademarks belong to their owners. CypherMonkey Labs is not affiliated with, endorsed by, or speaking for IIBA, PMI, Scrum Alliance, Scaled Agile, Atlassian, Microsoft, or any other organization named in a citation.</p></section>' +
+      '<section class="callout"><h2>Third-party licences</h2><p>Web Speech and speech recognition are platform features. No speech audio is redistributed. The soft sound is a tone generated in the browser. three.js is not included. Cited pages stay on their own sites.</p><div class="card-grid">' + blocks + "</div></section>" +
+      '<section class="callout"><h2>Privacy</h2><p>There is no account. Preferences, quiz scores, the guide position, and the tour flag stay in this browser. When you turn voice or the microphone on, the browser vendor handles that audio. This lab does not receive it.</p></section>' +
+      '<section class="callout"><h2>Accessibility</h2><p>The menu changes text size, text color, and theme, and it can reduce motion. A custom text color warns when contrast is below 4.5 to 1. A skip link is the first control. Buttons are sized for a fingertip. Read-along highlights the spoken sentence and can be paused.</p></section>' +
+      '<section class="callout"><h2>Removal request</h2><p>Concerns are removed or corrected through the contact section on the lab website: <a href="https://cyphermonkeylabs.com/#contact">the contact form</a>.</p></section>';
+  }
+  function renderHelp(data) {
+    main.innerHTML = "<h1>Help</h1><p class=\"lede\">A short map of the menu, the course, the guide, and the downloads. The tour can be opened again from this page.</p>" +
+      studyBlock(data, "help") +
+      '<p><button type="button" class="btn primary" id="replay-tour">Replay the tour</button></p>' +
+      '<section class="callout"><h2>Menu</h2><p>Use the top-left button. The drawer slides in. Text size, theme, text color, reduced motion, and search are inside it. Escape or a tap on the dimmed page closes it. On a phone the same menu is the Menu button in the bottom bar.</p></section>' +
+      '<section class="callout"><h2>Course</h2><p>Start here is the short path. The guide can also offer Finish in 10 minutes, Full course, or Just download. Full course reads a room, then opens the next room in the path.</p></section>' +
+      '<section class="callout"><h2>Guide</h2><p>The monkey sits on the right edge. Drag it and this browser keeps the spot. It hides while the menu is open. Ask a question, use Mic if the browser can listen, or ask it to take you to a room. Voice and the soft sound stay off until you choose them.</p></section>' +
+      '<section class="callout"><h2>Downloads</h2><p>Export on a room or a section offers PDF, HTML, DOCX, PPTX, and JSON for that room. The Downloads page lists every file, with Open app and View repo. Each file is meant to open on its own and includes the disclaimer.</p></section>';
+    var replay = document.getElementById("replay-tour");
+    if (replay) replay.addEventListener("click", function () {
+      if (window.BA_SHOW_TOUR) window.BA_SHOW_TOUR();
+    });
   }
   function renderSearch(data) {
     var params = new URLSearchParams(location.search);
@@ -570,6 +607,52 @@
     });
     draw();
   }
+  function exportControls(files) {
+    var wrap = document.createElement("span");
+    wrap.className = "export-pop";
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "export-btn";
+    button.textContent = "Export";
+    button.setAttribute("aria-haspopup", "true");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "Export this section");
+    var menu = document.createElement("span");
+    menu.className = "export-menu";
+    menu.hidden = true;
+    files.forEach(function (item) {
+      var link = document.createElement("a");
+      link.href = item.file;
+      link.textContent = item.kind;
+      menu.appendChild(link);
+    });
+    button.addEventListener("click", function (event) {
+      event.stopPropagation();
+      var open = menu.hidden;
+      main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
+      main.querySelectorAll(".export-btn").forEach(function (node) { node.setAttribute("aria-expanded", "false"); });
+      menu.hidden = !open;
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    wrap.appendChild(button);
+    wrap.appendChild(menu);
+    return wrap;
+  }
+  function decorate(data) {
+    if (!main || !data) return;
+    var id = document.body.dataset.page || "home";
+    var files = (data.downloads || []).filter(function (item) {
+      return item.file.indexOf("downloads/rooms/" + id + ".") === 0;
+    });
+    main.querySelectorAll("h1, h2, article.item").forEach(function (node) {
+      if (!files.length || node.querySelector(".export-btn")) return;
+      var heading = node.matches("h1, h2") ? node : node.querySelector("h2, h3");
+      (heading || node).appendChild(exportControls(files));
+    });
+    main.querySelectorAll(".five, .callout, article.item, p.lede").forEach(function (node) {
+      node.setAttribute("data-read", "true");
+    });
+  }
   function addBadge(name) {
     try {
       var badges = JSON.parse(localStorage.getItem("ba-badges") || "[]");
@@ -592,6 +675,14 @@
     product: ["Product craft", "Discovery, the business case, change, ethics, estimation, risk, and buying."],
     careers: ["Careers", "Role names and interview practice. No salary figures. Sponsorship is an employer and legal question, not a promise."]
   };
+
+  document.addEventListener("click", function () {
+    if (!main) return;
+    main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
+    main.querySelectorAll(".export-btn[aria-expanded='true']").forEach(function (node) {
+      node.setAttribute("aria-expanded", "false");
+    });
+  });
 
   fetch("assets/data/catalog.json")
     .then(function (response) {
@@ -623,8 +714,10 @@
       else if (page === "practice") renderPractice(data);
       else if (page === "search") renderSearch(data);
       else if (page === "credits") renderCredits(data);
+      else if (page === "help") renderHelp(data);
       else if (TITLES[page]) renderNotes(data, page, TITLES[page][0], TITLES[page][1]);
       else main.innerHTML = "<h1>This room is not in the catalog.</h1>";
+      decorate(data);
       document.dispatchEvent(new CustomEvent("ba-ready"));
     })
     .catch(function () {

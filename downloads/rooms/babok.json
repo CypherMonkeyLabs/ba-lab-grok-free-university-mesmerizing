@@ -1,0 +1,132 @@
+{
+  "title": "BABOK",
+  "page": "babok.html",
+  "summary": "A study map of the BABOK Guide knowledge areas and techniques.",
+  "five": "The public contents list six knowledge areas: planning the analysis, elicitation and collaboration, life cycle management, strategy analysis, requirements analysis and design definition, and solution evaluation. Under them sits a long technique list. Learn the question each technique answers. Verification asks if a requirement is fit to use. Validation asks if it is the right one.",
+  "example": [
+    "A generic warehouse releases a pick screen. Evaluation does not stop at launch. Measure mis-picks, ask pickers where the screen slows them, and recommend a change.",
+    "The CBAP page makes the same point in its public sample material: limitation assessment happens when a solution is in use in some form."
+  ],
+  "notes": [
+    {
+      "title": "Planning and monitoring",
+      "summary": "This knowledge area covers how the analysis itself will be run: the approach, stakeholder engagement, governance, information management, and how you will know the analysis work is performing. It is the plan for the analysis, not the plan for the whole project."
+    },
+    {
+      "title": "Elicitation and collaboration",
+      "summary": "Prepare, conduct, confirm, communicate, and keep collaboration going. Elicitation is not a single workshop. Confirmation is a separate task so that notes are not mistaken for agreement."
+    },
+    {
+      "title": "Requirements life cycle management",
+      "summary": "Trace, maintain, prioritize, assess changes, and approve. A requirement without a trace to a need and to a test is a rumor. Approval is a recorded decision, not a silent meeting."
+    },
+    {
+      "title": "Strategy analysis",
+      "summary": "Analyze the current state, define a future state, assess risks, and define a change strategy. Strategy work answers why this change, and what we are willing to risk, before the team debates screens."
+    },
+    {
+      "title": "Requirements analysis and design definition",
+      "summary": "Specify and model, verify, validate, define the requirements architecture, define design options, and recommend a solution based on potential value. Verification asks whether the requirement is fit to use. Validation asks whether it is the right requirement."
+    },
+    {
+      "title": "Solution evaluation",
+      "summary": "Measure performance, analyze those measures, assess solution limits, assess enterprise limits, and recommend actions that increase value. Evaluation continues after go-live. The CBAP sample material on the public page makes the same point: limitation assessment happens when the solution is in use in some form."
+    },
+    {
+      "title": "Underlying competencies",
+      "summary": "The guide lists analytical thinking, behavioral characteristics, business knowledge, communication, interaction, and tools and technology. Tools are last on purpose. A diagramming product does not supply the judgment."
+    },
+    {
+      "title": "Technique list",
+      "summary": "The public contents list fifty techniques, from acceptance criteria and backlog management through workshops. Learn the name, the question it answers, and one way it fails. Do not memorize a vendor's menu as if it were the technique."
+    },
+    {
+      "title": "Interviews",
+      "summary": "An interview is a prepared conversation with a purpose, questions, and a written confirmation. Send the notes back. Unconfirmed notes are your memory, not the stakeholder's agreement."
+    },
+    {
+      "title": "Workshops",
+      "summary": "A workshop gathers people who can decide or inform, with an agenda and a record. If the decision maker is absent, record the outcome as a draft."
+    },
+    {
+      "title": "Observation",
+      "summary": "Watch the work. People skip steps they no longer notice. Observation checks what an interview smooths over. Tell people you are observing, unless a formal study design says otherwise and ethics allow it."
+    },
+    {
+      "title": "Document analysis",
+      "summary": "Read the policy, the contract, the ticket history, and the old specification before you ask people to repeat them. Mark the date of each document. Old documents describe a world that may have changed."
+    },
+    {
+      "title": "Prototyping",
+      "summary": "A prototype is a learning tool. Label its fidelity. A polished picture can be mistaken for a promise. Capture which comments changed the requirement."
+    },
+    {
+      "title": "User stories",
+      "summary": "The technique list includes user stories. A common study form is: as a role, I want a capability, so that an outcome. The outcome is the part teams skip. Atlassian publishes a user-story explanation that matches this shape."
+    },
+    {
+      "title": "Use cases and scenarios",
+      "summary": "A use case names an actor and a goal, then the main path and the exceptions. Scenarios are concrete passes through that path. They become tests more easily than a paragraph of features."
+    },
+    {
+      "title": "Process modelling and analysis",
+      "summary": "Process modelling draws how work moves. Process analysis asks where it waits, loops, or fails. Draw the current state before you draw the wish."
+    },
+    {
+      "title": "Data modelling and dictionary",
+      "summary": "A data model names things the business cares about and how they relate. A data dictionary defines each field, including what 'blank' means. Skip the dictionary and two teams will load different meanings into the same column."
+    },
+    {
+      "title": "Non-functional requirements",
+      "summary": "Quality attributes include performance, security, availability, accessibility, and retention. Write a measure. 'Fast' is not a requirement. 'The search returns in under two seconds for the agreed test' can be tested."
+    },
+    {
+      "title": "Business rules",
+      "summary": "A business rule is a decision the organization enforces, such as who may approve a refund. Keep rules separate from process steps so a policy change does not require redrawing every flow."
+    },
+    {
+      "title": "SWOT",
+      "summary": "Strengths, weaknesses, opportunities, and threats are a snapshot. Strengths and weaknesses are internal. Opportunities and threats are external. A SWOT without a decision attached is a poster."
+    },
+    {
+      "title": "Risk analysis",
+      "summary": "A risk is an uncertain event that would matter if it happened. Write the event, the consequence, and the response you will actually take. A risk register that nobody reviews is a filing exercise."
+    },
+    {
+      "title": "Metrics and KPIs",
+      "summary": "The technique list names metrics and key performance indicators. A KPI needs a definition, a source, a cadence, and a person who acts when it moves. A number without an owner is a dashboard decoration."
+    },
+    {
+      "title": "Vendor assessment",
+      "summary": "Vendor assessment compares options against the need, not against the loudest demo. Separate must-have constraints from scored wishes. Record who scored and when."
+    },
+    {
+      "title": "Business cases",
+      "summary": "A business case recommends a course of action with costs, benefits, risks, and assumptions. If you do not know a figure, mark it unknown. Do not invent a return to make the page look finished."
+    },
+    {
+      "title": "Root cause analysis",
+      "summary": "Ask why the problem happens, more than once, until you reach something the team can change. Stopping at the first cause usually names a person instead of a system."
+    },
+    {
+      "title": "Prioritization",
+      "summary": "Prioritization is a decision about sequence and sacrifice. Name the rule: value, risk, dependency, or compliance. A list where everything is high priority has not been prioritized."
+    },
+    {
+      "title": "Backlog management",
+      "summary": "A backlog is an ordered list of options, not a warehouse of every idea. The Scrum Guide describes a Product Backlog as an artifact. Ordering it is ongoing work."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "Validation asks whether a requirement is:",
+      "choices": [
+        "Spelled correctly only",
+        "The right requirement",
+        "A theme color",
+        "A fee"
+      ],
+      "answer": 1
+    }
+  ]
+}

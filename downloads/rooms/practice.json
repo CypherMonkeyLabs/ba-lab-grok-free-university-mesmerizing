@@ -1,0 +1,11 @@
+{
+  "title": "Practice",
+  "page": "practice.html",
+  "summary": "Flashcards, a quiz, and a sort game.",
+  "five": "Cards, a quiz, a sort, a match, a stakeholder interview, a triage, and a BPMN order game. Scores stay in this browser. Questions were written for this lab. They are not retired exam items.",
+  "example": [
+    "Flip ten cards. Then take the quiz. Then place four triage items. The point is the habit, not a score to publish."
+  ],
+  "notes": [],
+  "quizzes": []
+}

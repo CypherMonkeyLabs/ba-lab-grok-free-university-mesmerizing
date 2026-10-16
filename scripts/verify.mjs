@@ -11,6 +11,12 @@ function fail(message) { problems.push(message); }
 
 const email = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
 const banned = [/mailto:/i, /dev\.to/i, /linktr\.ee\/(?!cyphermonkey\b)/i];
+const bannedHosts = new Set(["x.com", "www.x.com", "twitter.com", "www.twitter.com", "linkedin.com", "www.linkedin.com", "huggingface.co", "www.huggingface.co"]);
+const namespaces = new Set([
+  "http://www.w3.org/2000/svg",
+  "http://www.w3.org/1999/xlink",
+  "http://www.w3.org/XML/1998/namespace"
+]);
 
 function walk(dir, acc) {
   for (const name of readdirSync(dir)) {
@@ -48,7 +54,7 @@ for (const item of catalog.downloads) {
   if (!existsSync(path)) fail("missing download " + item.file);
   else if (statSync(path).size !== item.bytes) fail("size mismatch " + item.file);
 }
-for (const page of ["index.html", "start.html", "babok.html", "certs.html", "practice.html", "downloads.html", "credits.html", "guide/guide.js", "guide/kb/index.json"]) {
+for (const page of ["index.html", "start.html", "babok.html", "certs.html", "practice.html", "downloads.html", "credits.html", "help.html", "manifest.webmanifest", "sw.js", "docs/PUBLISHING.md", "docs/download-tests.md", "assets/js/onboard.js", "assets/js/pwa.js", "assets/data/download-tests.json", "extension/manifest.json", "embed/ba-widget.js", "guide/guide.js", "guide/kb/index.json"]) {
   if (!existsSync(join(root, page))) fail("missing " + page);
 }
 
@@ -56,9 +62,48 @@ const footerNeedles = ["CypherMonkey Labs", "cyphermonkeylabs.com/#contact", "©
 const sampleHtml = readFileSync(join(root, "downloads/html/brd-outline.html"), "utf8");
 for (const needle of footerNeedles) if (!sampleHtml.includes(needle)) fail("HTML sheet missing " + needle);
 const readme = readFileSync(join(root, "README.md"), "utf8");
-for (const needle of ["github.com/CypherMonkeyLabs", "huggingface.co/Cypher0x9", "linktr.ee/cyphermonkey", "Not affiliated"]) {
+for (const needle of ["github.com/CypherMonkeyLabs", "https://cyphermonkeylabs.com", "linktr.ee/cyphermonkey", "Not affiliated"]) {
   if (!readme.includes(needle)) fail("README missing " + needle);
 }
+if (/huggingface\.co|linkedin\.com|x\.com/i.test(readme)) fail("README still has a removed social host");
+
+const cited = new Set();
+function collectCited(node) {
+  if (typeof node === "string") {
+    const re = /https?:\/\/[^\s"'<>)]+/g;
+    let match;
+    while ((match = re.exec(node))) cited.add(match[0].replace(/[),.;]+$/g, ""));
+  } else if (Array.isArray(node)) node.forEach(collectCited);
+  else if (node && typeof node === "object") Object.values(node).forEach(collectCited);
+}
+collectCited(catalog);
+
+function hostAllowed(raw) {
+  const cleaned = raw.replace(/[),.;]+$/g, "");
+  if (namespaces.has(cleaned)) return true;
+  let parsed;
+  try { parsed = new URL(cleaned); } catch { return false; }
+  const host = parsed.hostname.toLowerCase();
+  if (bannedHosts.has(host)) return false;
+  if (host === "127.0.0.1" || host === "localhost") return true;
+  if (host === "cyphermonkeylabs.com" || host === "www.cyphermonkeylabs.com") return true;
+  if (host === "linktr.ee" || host === "www.linktr.ee") return parsed.pathname === "/cyphermonkey" || parsed.pathname === "/cyphermonkey/";
+  if (host === "github.com" || host === "www.github.com") return parsed.pathname === "/CypherMonkeyLabs" || parsed.pathname.startsWith("/CypherMonkeyLabs/");
+  if (cited.has(cleaned) || cited.has(cleaned.replace(/\/$/, ""))) return true;
+  return false;
+}
+for (const path of files) {
+  if (!textExt.test(path)) continue;
+  const text = readFileSync(path, "utf8");
+  const re = /https?:\/\/[^\s"'<>)]+/g;
+  let match;
+  while ((match = re.exec(text))) {
+    if (!hostAllowed(match[0])) fail("unexpected host " + match[0].replace(/[),.;]+$/g, "") + " in " + path);
+  }
+}
+const tests = JSON.parse(readFileSync(join(root, "assets/data/download-tests.json"), "utf8"));
+const failedTests = (tests.rows || []).filter((row) => !row.pass);
+if (failedTests.length) fail("download checks failed: " + failedTests.length);
 
 const kb = JSON.parse(readFileSync(join(root, "guide/kb/index.json"), "utf8"));
 const hit = answerQuestion("What is an RTM?", kb, "glossary");
