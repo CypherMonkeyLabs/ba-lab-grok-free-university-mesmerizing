@@ -30,7 +30,7 @@
     },
     {
       "title": "Contact center and CCaaS",
-      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data a agent or a person needs at the start of the conversation. Vendor product claims stay out unless a page was opened."
+      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data an agent or a person needs at the start of the conversation. The Connect Customer feature overview, opened in October 2026, lists voice, chat and SMS, web and video calling, tasks, and email. The journey, metric, and migration rooms expand that lens. Vendor claims stay out unless a page was opened."
     },
     {
       "title": "ERP and CRM",
@@ -170,6 +170,13 @@
       "label": "WCAG 2.2 recommendation",
       "url": "https://www.w3.org/TR/WCAG22/",
       "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "kind": "official",
       "status": "open",
       "checked": "2026-10"
     }

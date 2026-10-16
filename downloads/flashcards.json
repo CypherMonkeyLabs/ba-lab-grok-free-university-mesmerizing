@@ -98,6 +98,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -195,6 +230,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -298,6 +368,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -395,6 +500,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -498,6 +638,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -595,6 +770,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -698,6 +908,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -795,6 +1040,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -898,6 +1178,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -995,6 +1310,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -1098,6 +1448,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -1195,6 +1580,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -1298,6 +1718,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -1395,6 +1850,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -1498,6 +1988,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -1595,6 +2120,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -1698,6 +2258,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -1795,6 +2390,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -1898,6 +2528,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -1995,6 +2660,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -2098,6 +2798,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -2195,6 +2930,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -2298,6 +3068,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -2395,6 +3200,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -2498,6 +3338,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -2595,6 +3470,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -2698,6 +3608,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -2795,6 +3740,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -2898,6 +3878,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -2995,6 +4010,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -3098,6 +4148,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -3195,6 +4280,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -3298,6 +4418,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -3395,6 +4550,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -3498,6 +4688,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -3595,6 +4820,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -3698,6 +4958,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -3795,6 +5090,41 @@
         {
           "label": "About IIBA",
           "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
@@ -3898,6 +5228,41 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     },
@@ -3998,6 +5363,1931 @@
           "kind": "official",
           "status": "open",
           "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Journey map",
+      "back": "A visualization of the process a person goes through to accomplish a goal. One actor per map.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Experience map",
+      "back": "A broader picture of a general human experience, not tied to one product.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Service blueprint",
+      "back": "The business-side picture of a specific journey: how the organization supports the touchpoints.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Average handle time",
+      "back": "On the Connect metric page: average connected time with an agent, including talk, hold, after-contact work, and task pause.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Service level",
+      "back": "On that page: contacts removed from the queue inside X seconds, divided by contacts queued. Removal includes answer, abandon, or callback request.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Abandonment rate",
+      "back": "On that page: contacts the customer disconnected while still in queue, divided by contacts queued. Callbacks are not abandoned.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Occupancy",
+      "back": "On that page: contact time divided by contact time plus idle time. It does not account for concurrency.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "First-contact resolution",
+      "back": "On that page's cases metric: closed cases with exactly one call, chat, or email contact.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "CSAT",
+      "back": "IBM: positive responses (4 or 5 out of 5, or 80 to 100 percent) divided by all responses, times 100.",
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "After-contact work",
+      "back": "Time after the conversation that the Connect handle-time definition still includes.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Operating model",
+      "back": "Who uses the contact center and how it is managed. Not a runbook. The migration page asks for a signed RASCI and swimlanes.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "RASCI",
+      "back": "Responsible, accountable, supported, consulted, and informed, as the operational migration page spells the matrix.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Workstream",
+      "back": "A team-bound set of migration activities. The guidance page recommends operational, technical foundation, and user journeys.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Minimum lovable product",
+      "back": "The migration page's name for a small stable slice, such as one caller journey for a small group of agents, before later sprints.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "NN/g, Journey Mapping 101",
+          "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Connect Customer metric definitions",
+          "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IBM, What is CSAT and how to calculate it",
+          "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, project phases and workstreams",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "AWS Prescriptive Guidance, operational workstream",
+          "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
         }
       ]
     }
@@ -4090,6 +7380,41 @@
     {
       "label": "About IIBA",
       "url": "https://www.iiba.org/about-iiba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
       "kind": "official",
       "status": "open",
       "checked": "2026-10"

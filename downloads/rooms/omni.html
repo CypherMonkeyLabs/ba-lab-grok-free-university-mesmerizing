@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omnichannel journeys</title>
+<style>
+body { margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; color: #1c1917; }
+main { width: min(42rem, calc(100% - 2rem)); margin: 1.5rem auto 2rem; }
+h1 { line-height: 1.2; }
+a { color: #1d4ed8; }
+.disclaimer-box { border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25); }
+.disclaimer-box a { color: #0f766e; }
+footer { padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }
+.badges a { display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }
+.sources-deeper { width: min(42rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; }
+.sources-deeper a { font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+<h1>Omnichannel journeys</h1>
+<p>Journey maps and requirements across voice, chat, SMS, WhatsApp, email, and social.</p>
+<ul>
+<li>A journey map, as Nielsen Norman Group defines it, shows one person accomplishing one goal: actor, scenario, phases, what they do and feel, and the opportunities. A contact center then has to say which channels are in scope. The Connect Customer overview lists voice, chat and SMS, messaging apps, email, tasks, and web or video. WhatsApp, on its setup page, needs a business account, a number Meta can verify, and an inbound flow, and verification can take up to two weeks. The requirement is the context that travels with the person, the handoff to a human, and the measure. A second actor is a second map.</li>
+<li>Actor: a person waiting for a delivery. Scenario: the tracking page stopped two days ago, and they expect a date, not a menu. This is one map. The courier&#x27;s map would be another.</li>
+<li>Phases you can check: notice, try self-serve, contact, resolve. Channels in scope only if the project confirms them: voice, chat, SMS, WhatsApp, email, or a social account. The feature overview names WhatsApp and Facebook Messenger as messaging examples. This check did not open a Messenger setup article, so those steps stay unwritten.</li>
+<li>Opportunity: the agent sees the tracking number at the start, and the person is not asked to repeat it if the channel changes. Owner: the service-line owner. Measure: you pick it in the metrics room and write the formula.</li>
+<li>What a journey map is. Nielsen Norman Group&#x27;s Journey Mapping 101, last reviewed on that site in July 2026 and opened for this lab in October 2026, defines a journey map as a visualization of the process that a person goes through in order to accomplish a goal. The page says mapping starts from a series of user actions on a timeline, then adds thoughts and emotions to make a narrative, then condenses that narrative into a visualization.</li>
+<li>Five elements on the map. The same article says journey maps share five elements: the actor, the scenario and expectations, the journey phases, the actions mindsets and emotions, and the opportunities. Opportunities, with ownership and metrics, are how the team decides what to change and how an improvement will be measured.</li>
+<li>Map, blueprint, and story map. The article separates three pictures that teams mix up. An experience map is broader: a generic human experience, not one product. A service blueprint takes the business view of a specific journey and shows how the organization supports the touchpoints. A user-story map breaks a feature into release slices. The article says journey maps are for discovery and understanding, and user-story maps are for planning and implementation.</li>
+<li>Channels a platform page lists. The Connect Customer feature overview, opened in October 2026, lists voice, chat and SMS, web calling and video, tasks, and email. It says customers choose a channel from preference and wait time, can stay with the same agent across channels, and if the agent changes the interaction history is preserved so they do not have to repeat themselves. This lab cites that page. It does not rank vendors.</li>
+<li>Chat, SMS, and messaging apps. The feature overview groups web chat, mobile chat, SMS, and third-party messaging apps. It names WhatsApp and Facebook Messenger as examples of those apps. It says a chatbot can run first, and if a person is needed the agent receives the prior self-service context. This check did not open a separate Facebook Messenger setup article, so Messenger setup steps are not written here.</li>
+<li>WhatsApp as a requirement, not a logo. The Connect Customer WhatsApp setup page says you link a WhatsApp Business Account and phone number through AWS End User Messaging Social, import the number, and attach an inbound contact flow. The number must be able to receive a voice call or an SMS so Meta can complete verification. The page says automated business verification can take up to 2 weeks, and that WhatsApp can disable an account if policy is violated or the business identity cannot be verified. It recommends a new number that is not already carrying live voice or SMS traffic.</li>
+<li>Social is still a contact. Treat a social or messaging conversation as a contact with a channel, a queue, and a record, not as a post you only read. The feature overview says agents use the same tools for SMS that they use for calls and chats, and that messaging can start in self-service before a person joins. Write which public account is in scope. A channel you have not confirmed is out of scope until someone names it.</li>
+<li>Requirements the map should force. The journey article says the useful end of a map is an opportunity with an owner and a way to measure the improvement. For a contact-center project, write these as requirements: the actor and the scenario, the channels in scope, the context that must travel with the person, the moment a bot hands to a person, and the measure you will read after the change. The feature overview says agents should not make the customer start again when the agent changes.</li>
+<li>Blueprint under the journey. After the journey is stable enough to argue about, the Nielsen Norman article points to a service blueprint: the same journey, drawn from the organization&#x27;s side. In a contact center that means the flow, the queue, the person or bot who acts, and the system that must answer. The user-journeys migration page says mapping experiences and recording prompts belongs with business stakeholders and service-line owners, not only with the technical foundation team.</li>
+<li>Question. Nielsen Norman&#x27;s journey-map article says how many points of view belong on one map?</li>
+<li>Question. The Connect WhatsApp setup page says business verification can take up to:</li>
+</ul>
+<p>Business Analyst Free University. Study sheet, October 2026.</p>
+</main>
+<footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> Independent, free, learning-only student project. Respects every company and vendor. Trademarks belong to their owners. Not affiliated or endorsed. Names in the contact-center rooms are citations of pages opened in October 2026, not endorsements. Concerns are removed or corrected promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. Happy to volunteer for any organization.</p></div>
+<p><strong>CypherMonkey Labs</strong></p>
+<p class="badges"><a href="https://cyphermonkeylabs.com">Website</a>
+<a href="https://github.com/CypherMonkeyLabs">GitHub</a>
+<a href="https://linktr.ee/cypherMonkey">Profile</a></p>
+<p>© 2026 CypherMonkeyLabs 🐒</p>
+</footer>
+<section class="sources-deeper"><h2>Sources and go deeper</h2><p>Last checked 2026-10. A line marked confirm did not open, so it is not linked.</p><ul><li><a href="https://www.iiba.org/knowledgehub/">IIBA KnowledgeHub, including the BABOK Guide contents</a> <span>(standard, last checked 2026-10)</span></li>
+<li>BABOK Guide article on the IIBA knowledge hub <span>(standard, confirm, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/">IIBA home</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/">Manifesto for Agile Software Development</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/principles.html">Principles behind the Agile Manifesto</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/About-BPMN">OMG, about BPMN 2.0</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/PDF">BPMN 2.0 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0.2/About-BPMN">OMG, about BPMN 2.0.2</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/About-UML">OMG, about UML 2.5.1</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML 2.5.1 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/membership/">IIBA membership</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/communities/">OMG managed communities</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.nngroup.com/articles/journey-mapping-101/">NN/g, Journey Mapping 101</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html">Connect Customer feature overview</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html">Connect Customer, Set up WhatsApp Business messaging</a> <span>(official, last checked 2026-10)</span></li></ul></section>
+</body>
+</html>

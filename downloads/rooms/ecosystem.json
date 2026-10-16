@@ -1,11 +1,11 @@
 {
   "title": "Ecosystem",
   "page": "ecosystem.html",
-  "summary": "Glossary links, sister roles, and future hooks.",
-  "five": "The same techniques show up in product ownership, project delivery, data work, and change. Shared techniques do not mean shared authority. Ask who decides the need, who decides the date, and who accepts the result. This lab uses the BABOK hub as the core public map and cites neighbors only where a page opened.",
+  "summary": "Glossary, mind map, sister technologies, integrations, bridges, and future hooks.",
+  "five": "Business analysis sits beside product ownership, project delivery, data, architecture, and change. Shared techniques still need a named decision maker. For contact centers, the mind map in this room links the person's goal to channels, the journey and the blueprint, the queue, the agent and the CRM profile, the measures, and the three migration workstreams. Sister technologies are only the ones the feature overview describes: bots, CRM profiles, workforce scheduling, screen recording, flows that call other systems, and email. Future hooks stop where the opened page stops.",
   "example": [
-    "A generic retailer wants a clearer return. The analyst writes the need and the acceptance checks. A project manager sequences the work. A product owner orders the backlog.",
-    "If one person holds two of those, write that down. Hidden decision rights cause the meeting after the meeting."
+    "A generic retailer asks for WhatsApp. Foundations asks for the need. The omnichannel room asks which actor and which context must move. The metrics room asks which formula will show that the move helped. The migration room asks who signs the operating model.",
+    "The feature overview names Salesforce, Zendesk, and ServiceNow as CRM examples a profile can combine with contact history. That is a citation. It is not a selection. Anything the pages did not describe stays off the map."
   ],
   "notes": [
     {
@@ -18,11 +18,35 @@
     },
     {
       "title": "Bridges to other labs",
-      "summary": "Contact-center work needs the same elicitation and acceptance habits, plus queue, channel, and quality measures. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation."
+      "summary": "The omnichannel, metrics, and migration rooms use the same elicitation and acceptance habits as the rest of this lab, plus queue, channel, and quality measures from pages that opened. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation."
     },
     {
       "title": "Future hooks",
       "summary": "Useful next studies are decision modeling, process mining, and evaluation of AI-assisted analysis. Each is introduced here only as far as a public source opened. Deeper vendor features stay marked to be confirmed."
+    },
+    {
+      "title": "Contact-center words, with a source",
+      "summary": "The glossary in this lab now includes the contact-center words these rooms use: journey map, experience map, service blueprint, average handle time, service level, abandonment rate, occupancy, first-contact resolution, CSAT, after-contact work, operating model, RASCI, and workstream. Each line names the page that was opened. A word that is not in that list is not defined here."
+    },
+    {
+      "title": "Mind map",
+      "summary": "Read the ecosystem drawing as a study map, not as a vendor architecture. The person and the goal sit in the middle. Around them: the channels, the journey and the blueprint, the queue and the flow, the agent and the customer profile, the measures, and the three migration workstreams. If a box has no opened source, it does not belong on the map."
+    },
+    {
+      "title": "Sister technologies",
+      "summary": "The feature overview describes neighboring pieces a contact-center analyst will meet. Conversational IVR and chatbots can use Amazon Lex. Customer Profiles can combine contact history with a CRM; the page names Salesforce, Zendesk, and ServiceNow. Forecasting and agent scheduling are described for the workforce team. Screen recordings are described as a way to review what an agent did. Contact flows can call AWS Lambda, including toward a CRM. Email on that page is tied to Amazon Simple Email Service. Naming a product here is a citation, not a recommendation."
+    },
+    {
+      "title": "Integration map",
+      "summary": "A study sequence, taken from how the feature overview lays the work out, is: channel, then contact flow, then queue, then agent workspace, with a customer profile beside the agent and a case when the issue spans contacts. The WhatsApp page adds a step in front of that sequence: a business account and a verified number before any message arrives. Draw only the arrows you can name. An unnamed arrow is a gap."
+    },
+    {
+      "title": "Bridges into the other rooms",
+      "summary": "Use Foundations for the need before the platform name. Use Requirements for the handoff and the acceptance scenario. Use Modeling when the journey or the blueprint needs a picture. Use the metrics room when a chart needs a formula. Use Domains for the contact-center lens beside other industries. Use the migration room when the change is a move from a legacy platform. Shared pages do not merge the decision rights."
+    },
+    {
+      "title": "Future hooks that a page actually describes",
+      "summary": "The feature overview describes generative AI agent assist during calls and chats, generated post-contact summaries, and forecasting and scheduling. Those are descriptions of a product page, not a claim that a reader's platform has them, and not a roadmap. A person still accepts any requirement a model drafts. The WhatsApp setup page adds a planning constraint you can write today: business verification can take up to 2 weeks. Features this check did not open stay unmarked."
     }
   ],
   "quizzes": [
@@ -33,6 +57,16 @@
         "You still name who decides",
         "The project manager owns the need",
         "No one owns the test"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "A product name on the ecosystem map is:",
+      "choices": [
+        "A recommendation to buy it",
+        "A citation of a page that opened",
+        "Proof the reader already owns it",
+        "A future roadmap"
       ],
       "answer": 1
     }
@@ -125,6 +159,48 @@
     {
       "label": "About IIBA",
       "url": "https://www.iiba.org/about-iiba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer, Set up WhatsApp Business messaging",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
       "kind": "official",
       "status": "open",
       "checked": "2026-10"

@@ -100,7 +100,7 @@
         '<div>' +
         '<p class="kicker">Business analysis · free study lab</p>' +
         "<h1>Business Analyst Free University</h1>" +
-        "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>" +
+        "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. Omnichannel journeys, contact-center metrics, and cloud-migration artifacts each have a room. This lab is not a vendor course and it is not for sale.</p>" +
         '<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>' +
         listenButton(data.narration) +
         "</div>" +
@@ -149,7 +149,7 @@
     }).join("");
     main.innerHTML =
       "<h1>Start here</h1>" +
-      "<p class=\"lede\">About one hour if you read the path and skip the long rooms. Come back for the diagrams, games, and downloads.</p>" +
+      "<p class=\"lede\">About one hour if you read the path and skip the long rooms. Come back for the diagrams, games, and downloads. Omnichannel, contact metrics, and cloud migration are in the Learn menu when you want the contact-center rooms.</p>" +
       studyBlock(data, "start") +
       listenButton(data.narration) +
       '<div class="card-grid">' + steps + "</div>" +
@@ -473,9 +473,9 @@
       return '<article class="item"><h3>' + esc(item.name) + "</h3><p>" + esc(item.note) + "</p><p class=\"meta\">" + esc(item.license) + "</p></article>";
     }).join("");
     main.innerHTML = "<h1>Legal and credits</h1>" + studyBlock(data, "credits") +
-      '<section class="callout"><h2>Disclaimer</h2><p>Independent, free, learning-only student project. Respects every company and vendor. Nothing is sold. This lab does not give legal, immigration, medical, or financial advice, and it promises no visa, job, or salary.</p></section>' +
+      '<section class="callout"><h2>Disclaimer</h2><p>Independent, free, learning-only student project. Respects every company and vendor. Nothing is sold. This lab does not give legal, immigration, medical, or financial advice, and it promises no visa, job, or salary. Names in the contact-center rooms are citations of pages opened in October 2026, not endorsements, and the formulas there are the cited page\'s formulas.</p></section>' +
       '<section class="callout"><h2>Copyright</h2><p>© 2026 CypherMonkeyLabs. The study notes, diagrams, games, and guide in this repository are original unless a source line names another work. Summaries are not the text of the BABOK Guide or any standard.</p></section>' +
-      '<section class="callout"><h2>Trademarks</h2><p>Trademarks belong to their owners. CypherMonkey Labs is not affiliated with, endorsed by, or speaking for IIBA, PMI, Scrum Alliance, Scaled Agile, Atlassian, Microsoft, or any other organization named in a citation.</p></section>' +
+      '<section class="callout"><h2>Trademarks</h2><p>Trademarks belong to their owners. CypherMonkey Labs is not affiliated with, endorsed by, or speaking for IIBA, PMI, Scrum Alliance, Scaled Agile, Atlassian, Microsoft, Amazon, IBM, Nielsen Norman Group, Meta, or any other organization named in a citation.</p></section>' +
       '<section class="callout"><h2>Third-party licences</h2><p>Web Speech and speech recognition are platform features. No speech audio is redistributed. The soft sound is a tone generated in the browser. three.js is not included. Cited pages stay on their own sites.</p><div class="card-grid">' + blocks + "</div></section>" +
       '<section class="callout"><h2>Privacy</h2><p>There is no account. Preferences, quiz scores, the guide position, and the tour flag stay in this browser. When you turn voice or the microphone on, the browser vendor handles that audio. This lab does not receive it.</p></section>' +
       '<section class="callout"><h2>Accessibility</h2><p>The menu changes text size, text color, and theme, and it can reduce motion. A custom text color warns when contrast is below 4.5 to 1. A skip link is the first control. Buttons are sized for a fingertip. Read-along highlights the spoken sentence and can be paused.</p></section>' +
@@ -486,7 +486,7 @@
       studyBlock(data, "help") +
       '<p><button type="button" class="btn primary" id="replay-tour">Replay the tour</button></p>' +
       '<section class="callout"><h2>Menu</h2><p>Use the top-left button. The drawer slides in. Text size, theme, text color, reduced motion, and search are inside it. Escape or a tap on the dimmed page closes it. On a phone the same menu is the Menu button in the bottom bar.</p></section>' +
-      '<section class="callout"><h2>Course</h2><p>Start here is the short path. The guide can also offer Finish in 10 minutes, Full course, or Just download. Full course reads a room, then opens the next room in the path.</p></section>' +
+      '<section class="callout"><h2>Course</h2><p>Start here is the short path. The guide can also offer Finish in 10 minutes, Full course, or Just download. Full course reads a room, then opens the next room in the path. Omnichannel, Contact metrics, Cloud migration, and Ecosystem are in the Learn group of the menu.</p></section>' +
       '<section class="callout"><h2>Guide</h2><p>The first visit walks Home, Menu, Learn, Diagrams, Play, Listen, Downloads, and the guide, with Next, Back, Collapse, and Skip. The tour does not cover the page. Collapse tucks it into a Tour button, and later visits stay collapsed. The monkey talks from the right side of the home page. Drag it and this browser keeps the spot. It hides while the menu is open. A quiet offer may appear after a few idle minutes. Not now waits, and Stop offering remembers. Voice and the soft sound stay off until you choose them.</p></section>' +
       '<section class="callout"><h2>Downloads</h2><p>Export on a room or a section offers PDF, HTML, DOCX, PPTX, and JSON for that room. The Downloads page lists every file, with Open app and View repo. Each file is meant to open on its own and includes the disclaimer.</p></section>';
     var replay = document.getElementById("replay-tour");
@@ -697,7 +697,10 @@
 
   var TITLES = {
     foundations: ["Foundations", "The job, the neighboring roles, and the words a team uses before anyone writes a requirement."],
-    ecosystem: ["Ecosystem", "How business analysis sits beside product, project, data, architecture, and contact-center work."],
+    ecosystem: ["Ecosystem", "Glossary, mind map, sister technologies, integration sequence, bridges, and future hooks. A product name is a citation."],
+    omni: ["Omnichannel journeys", "One actor, one goal, then the channels a contact center actually confirmed: voice, chat, SMS, WhatsApp, email, and social."],
+    metrics: ["Contact-center metrics", "AHT, service level, abandonment, occupancy, first-contact resolution, and CSAT. Formulas come from the page that was opened. Sample arithmetic is not a real center."],
+    migrate: ["Contact-center migration", "Business-analysis artifacts for moving a legacy contact center to the cloud: journeys, operating model, acceptance, and the go-live watch list."],
     babok: ["BABOK guide", "A study map of A Guide to the Business Analysis Body of Knowledge. Summaries are original. They are not the guide's text."],
     requirements: ["Requirements", "From a conversation to a traced, testable statement a team can accept or reject."],
     modeling: ["Modeling", "Pictures that make a rule, a process, or a system boundary easier to argue about."],

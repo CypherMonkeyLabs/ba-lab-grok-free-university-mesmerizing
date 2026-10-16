@@ -19,12 +19,25 @@ from reportlab.platypus import ListFlowable, ListItem, Paragraph, SimpleDocTempl
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 
 from round2_content import EXTRA_DIAGRAMS, EXTRA_FLOWS, GAMES, INTERVIEWS, STUDY, USCIS, extra_quizzes
+from contact_center import (
+    CC_DIAGRAMS,
+    CC_FLOWS,
+    CC_GLOSSARY,
+    CC_RESOURCES,
+    CC_SOURCE_PAGES,
+    CC_STUDY,
+    FEATURE,
+    cc_notes,
+    cc_quizzes,
+    cc_source_rows,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 AS_OF = "2026-10"
 DISCLAIMER = (
     "Independent, free, learning-only student project. Respects every company and vendor. "
-    "Trademarks belong to their owners. Not affiliated or endorsed. Concerns are removed or corrected "
+    "Trademarks belong to their owners. Not affiliated or endorsed. Names in the contact-center rooms "
+    "are citations of pages opened in October 2026, not endorsements. Concerns are removed or corrected "
     "promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. "
     "Happy to volunteer for any organization."
 )
@@ -138,7 +151,7 @@ def build_items():
              "Product manager, product owner, project manager, process analyst, data analyst, business architect, and quality analyst share techniques with business analysis. Ask which decisions each role owns on this initiative. Shared techniques do not mean shared authority.",
              SCRUM),
         note("e-bridges", "ecosystem", "intermediate", "Bridges to other labs",
-             "Contact-center work needs the same elicitation and acceptance habits, plus queue, channel, and quality measures. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation.",
+             "The omnichannel, metrics, and migration rooms use the same elicitation and acceptance habits as the rest of this lab, plus queue, channel, and quality measures from pages that opened. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation.",
              SRE),
         note("e-future", "ecosystem", "advanced", "Future hooks",
              "Useful next studies are decision modeling, process mining, and evaluation of AI-assisted analysis. Each is introduced here only as far as a public source opened. Deeper vendor features stay marked to be confirmed.",
@@ -414,8 +427,8 @@ def build_items():
              "Telecom analysis meets orders, service activation, and faults. Separate the customer-facing promise from the network task. A public TM Forum page was not opened in this check, so it is not linked.",
              b, tbd="A TM Forum or similar public page for the framework you want to cite."),
         note("dom-cc", "domains", "intermediate", "Contact center and CCaaS",
-             "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data a agent or a person needs at the start of the conversation. Vendor product claims stay out unless a page was opened.",
-             SRE),
+             "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data an agent or a person needs at the start of the conversation. The Connect Customer feature overview, opened in October 2026, lists voice, chat and SMS, web and video calling, tasks, and email. The journey, metric, and migration rooms expand that lens. Vendor claims stay out unless a page was opened.",
+             FEATURE),
         note("dom-erp", "domains", "intermediate", "ERP and CRM",
              "Salesforce's CRM page opened. Dynamics 365's implementation guide opened. Both are examples of systems that already contain processes. Fit-gap analysis asks what the product does, what you will configure, and what you will not change. A gap is not automatically a customization.",
              SF),
@@ -486,6 +499,7 @@ def build_items():
              "A path some analysts take is deeper discovery, outcome metrics, and backlog accountability. The Scrum Guide and the CSPO page are the public anchors in this lab. Course fees that did not render stay unknown.",
              SCRUM),
     ]
+    items.extend(cc_notes())
     return items
 
 
@@ -532,6 +546,7 @@ def build_glossary():
         ("PMI-PBA", "PMI's Professional in Business Analysis credential.", PMI),
         ("BACCM", "The Business Analysis Core Concept Model in the BABOK Guide.", BABOK),
     ]
+    rows.extend(CC_GLOSSARY)
     return [{"term": t, "meaning": m, "source": s[0], "url": s[1], "asOf": AS_OF} for t, m, s in rows]
 
 
@@ -602,6 +617,8 @@ def build_quizzes():
         ["The newest unreviewed edit", "An agreed version you can compare later", "A salary band", "A theme color"], 1,
         "Without an agreed version, change control has nothing to diff.", BABOK)
     for item in extra_quizzes():
+        q.append(item)
+    for item in cc_quizzes():
         q.append(item)
     return q
 
@@ -783,6 +800,7 @@ def build_resources():
         (("CypherMonkey Labs", "https://cyphermonkeylabs.com/#contact"), "Contact for a correction. No email is published in this lab."),
         (USCIS, "H-1B specialty-occupation description. Not legal advice. Fees on that page were in flux, so none are copied."),
     ]
+    pairs.extend(CC_RESOURCES)
     return [{"title": p[0][0], "url": p[0][1], "note": p[1], "asOf": AS_OF} for p in pairs]
 
 
@@ -878,6 +896,9 @@ FLOWS = [
     ("case-flow", "Business case path", ["Need", "Options", "Sourced costs and benefits", "Risks", "Recommend or say unknown"], "Unknown is a permitted recommendation.", BABOK),
 ]
 FLOWS.extend(EXTRA_FLOWS)
+DIAGRAMS.extend(CC_DIAGRAMS)
+FLOWS.extend(CC_FLOWS)
+STUDY.update(CC_STUDY)
 
 
 def xml(text):
@@ -972,7 +993,10 @@ PAGES = [
     ("home", "index.html", "Business Analyst Free University", "A free study lab for business analysis, from foundations through credentials."),
     ("start", "start.html", "Start here", "A one-hour path through the business analysis lab."),
     ("foundations", "foundations.html", "Foundations", "What business analysis is and how the roles differ."),
-    ("ecosystem", "ecosystem.html", "Ecosystem", "Glossary links, sister roles, and future hooks."),
+    ("ecosystem", "ecosystem.html", "Ecosystem", "Glossary, mind map, sister technologies, integrations, bridges, and future hooks."),
+    ("omni", "omni.html", "Omnichannel journeys", "Journey maps and requirements across voice, chat, SMS, WhatsApp, email, and social."),
+    ("metrics", "metrics.html", "Contact-center metrics", "AHT, service level, abandonment, occupancy, first-contact resolution, and CSAT, with the formula that was opened."),
+    ("migrate", "migrate.html", "Contact-center migration", "Business-analysis artifacts for a legacy contact center moving to the cloud."),
     ("babok", "babok.html", "BABOK", "A study map of the BABOK Guide knowledge areas and techniques."),
     ("requirements", "requirements.html", "Requirements", "Elicitation, stories, acceptance criteria, and traceability."),
     ("modeling", "modeling.html", "Modeling", "BPMN, UML, ERD, and C4 in plain language."),
@@ -1168,6 +1192,13 @@ def build_room_sources():
         "credits": wcag,
         "help": wcag,
     }
+    opened_rows = cc_source_rows()
+    for page, indexes in CC_SOURCE_PAGES.items():
+        current = list(extras.get(page, []))
+        for index in indexes:
+            label, url, kind = opened_rows[index]
+            current.append(S(label, url, kind))
+        extras[page] = current
     rooms = {}
     opened = set()
     for page, _filename, _title, _desc in PAGES:
@@ -1235,10 +1266,10 @@ HOME_HERO = """<section class="hero hero-vivid" id="static-hero">
 <div class="hero-copy">
 <p class="kicker">Business analysis · free study lab</p>
 <h1>Business Analyst Free University</h1>
-<p class="lede">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>
+<p class="lede">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. Omnichannel journeys, contact-center metrics, and cloud-migration artifacts each have a room. This lab is not a vendor course and it is not for sale.</p>
 <p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>
 <p><button type="button" class="btn" data-listen>Listen</button> <span class="meta">Speech stays off until you press Listen.</span></p>
-<p class="listen-script meta">Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.</p>
+<p class="listen-script meta">Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. The contact-center rooms cover journeys, metrics, and a move to the cloud, and they cite only pages opened in October 2026. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.</p>
 </div>
 <div class="hero-stage" aria-hidden="true">
 <article class="depth-card tone-a"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v4M5 8h14v11H5zM9 19v2M15 19v2"/></svg><strong>Need</strong><span>The change someone asks for</span></article>
@@ -1316,14 +1347,25 @@ def footer_canvas(canvas, doc):
     canvas.setFillColorRGB(0.93, 0.99, 0.96)
     canvas.setStrokeColorRGB(0.06, 0.46, 0.43)
     canvas.setLineWidth(1.4)
-    canvas.roundRect(28, 86, letter[0] - 56, 58, 8, fill=1, stroke=1)
+    canvas.roundRect(28, 82, letter[0] - 56, 68, 8, fill=1, stroke=1)
     canvas.setFillColorRGB(0.07, 0.31, 0.29)
     canvas.setFont("Helvetica", 7.5)
-    canvas.drawString(40, 126, "Shield")
-    text = DISCLAIMER
-    canvas.drawString(78, 126, text[:105])
-    canvas.drawString(40, 114, text[105:220])
-    canvas.drawString(40, 102, text[220:335])
+    canvas.drawString(40, 136, "Shield")
+    words = DISCLAIMER.split()
+    lines, cur = [], ""
+    for word in words:
+        trial = (cur + " " + word).strip()
+        if len(trial) > 108 and cur:
+            lines.append(cur)
+            cur = word
+        else:
+            cur = trial
+    if cur:
+        lines.append(cur)
+    y = 124
+    for line in lines[:4]:
+        canvas.drawString(40, y, line)
+        y -= 11
     canvas.setFillColorRGB(0.07, 0.09, 0.16)
     canvas.rect(0, 0, letter[0], 80, fill=1, stroke=0)
     canvas.setFillColorRGB(0.95, 0.96, 0.98)
@@ -1760,7 +1802,7 @@ def write_readme(downloads, counts):
     )
     text = f"""# Business Analyst Free University
 
-A free study lab for business analysis. Open the app, then the rooms. Lucky is a student sharing notes on systems, contact centers, and AI omni-channel work. Nothing here is for sale.
+A free study lab for business analysis. Open the app, then the rooms. Lucky is a student sharing notes on systems, contact centers, and AI omni-channel work. Omnichannel journeys, contact-center metrics, cloud-migration artifacts, and the ecosystem map are Learn rooms. Nothing here is for sale.
 
 **Fundamentals through credentials, with the source on the note.**
 
@@ -1825,6 +1867,7 @@ def main():
         "narration": (
             "Welcome. This is a free study lab for business analysis. "
             "Start with what the work is, then the six knowledge areas, then a testable requirement. "
+            "The contact-center rooms cover journeys, metrics, and a move to the cloud, and they cite only pages opened in October 2026. "
             "Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. "
             "Nothing here is sold, and this lab states no salaries."
         ),

@@ -99,6 +99,41 @@
       "kind": "official",
       "status": "open",
       "checked": "2026-10"
+    },
+    {
+      "label": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
     }
   ]
 }
