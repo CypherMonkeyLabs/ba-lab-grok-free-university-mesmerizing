@@ -18,19 +18,24 @@ from reportlab.lib.units import inch
 from reportlab.platypus import ListFlowable, ListItem, Paragraph, SimpleDocTemplate, Spacer
 from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
 
+from round2_content import EXTRA_DIAGRAMS, EXTRA_FLOWS, GAMES, INTERVIEWS, STUDY, USCIS, extra_quizzes
+
 ROOT = Path(__file__).resolve().parents[1]
 AS_OF = "2026-10"
 DISCLAIMER = (
-    "Independent, free, learning-only student project. Respects every company, tradition, and vendor. "
-    "Trademarks and sources belong to their owners. Not sold. Concerns are handled by correcting or removing "
-    "content promptly via https://cyphermonkeylabs.com/#contact. Happy to volunteer for any organization."
+    "Independent, free, learning-only student project. Respects every company and vendor. "
+    "Trademarks belong to their owners. Not affiliated or endorsed. Concerns are removed or corrected "
+    "promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. "
+    "Happy to volunteer for any organization."
 )
 LINKS = [
-    ("GitHub", "https://github.com/CypherMonkeyLabs"),
     ("Website", "https://cyphermonkeylabs.com"),
+    ("GitHub", "https://github.com/CypherMonkeyLabs"),
+    ("Profile", "https://linktr.ee/cyphermonkey"),
     ("X", "https://x.com/Cypher0x9"),
     ("LinkedIn", "https://www.linkedin.com/in/luckylakshmanucwebex"),
     ("Hugging Face", "https://huggingface.co/Cypher0x9"),
+    ("Contact", "https://cyphermonkeylabs.com/#contact"),
 ]
 BABOK = ("BABOK Guide knowledge hub", "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/")
 FEES = ("IIBA certification fees", "https://www.iiba.org/business-analysis-certifications/certification-fees/")
@@ -305,7 +310,7 @@ def build_items():
              "Scaled Agile's site opened. The Product Owner / Product Manager course page returned HTTP 429 on 16 October 2026, so it is not linked and no price is copied. SAFe distinguishes product ownership at team level from product management across a larger train. Confirm the current split on their site.",
              SAFE, tbd="POPM price, duration, and exam rules."),
         note("a-kanban", "agile", "foundation", "Kanban",
-             "A kanban board makes work visible and limits how much is in progress. Miro publishes a Kanban page that opened. Kanban University's page responded but did not render course content in this check, so certification fees are not shown and that site is not linked.",
+             "A kanban board makes work visible and limits how much is in progress. Miro publishes a Kanban page that opened. Kanban University's home title loaded on 16 October 2026, but course names and fees did not render, so that site is not linked and no price is copied.",
              MIRO, tbd="Kanban University course names and fees."),
         note("a-dt", "agile", "foundation", "Design thinking",
              "IDEO's design thinking site opened. Use it as a reminder to spend time with the people who have the problem before you converge on a solution. It is a practice, not a certificate this lab can price.",
@@ -479,8 +484,8 @@ def build_items():
              "Corp-to-corp and similar arrangements are commercial structures. The IRS page on independent contractor status opened. Classification is a facts-and-circumstances question. This note is not tax or legal advice.",
              IRS),
         note("c-h1b", "careers", "advanced", "Sponsorship",
-             "Whether an employer will sponsor a work visa is the employer's decision and a legal question. The public H-1B page did not open in the 16 October 2026 check, so it is not linked. Nothing in this lab promises sponsorship or a visa outcome.",
-             ("Checked 16 October 2026. No visa page is linked.", ""), tbd="A USCIS H-1B page that opens, if you need the current official rules."),
+             "Whether an employer will sponsor a work visa is the employer's decision and a legal question. Nothing in this lab promises sponsorship or a visa outcome, and this note is not legal advice. The USCIS H-1B page opened on 16 October 2026. It describes a specialty occupation as work that applies a body of highly specialized knowledge and that normally requires a bachelor's or higher degree in a directly related specialty. The petitioner files the petition. Specialty-occupation petitions need a certified labor condition application. The same page showed fee alerts that were in flux, including a note about litigation, so this lab does not quote a fee as settled.",
+             USCIS, tbd="Which fee applies to a given petition. Read the live USCIS page before anyone files."),
         note("c-cpo", "careers", "advanced", "Toward product ownership",
              "A path some analysts take is deeper discovery, outcome metrics, and backlog accountability. The Scrum Guide and the CSPO page are the public anchors in this lab. Course fees that did not render stay unknown.",
              SCRUM),
@@ -535,7 +540,7 @@ def build_glossary():
 
 
 def build_cards(glossary):
-    cards = [{"front": g["term"], "back": g["meaning"], "source": g["source"], "url": g["url"], "asOf": AS_OF} for g in glossary[:36]]
+    cards = [{"front": g["term"], "back": g["meaning"], "source": g["source"], "url": g["url"], "asOf": AS_OF} for g in glossary]
     return cards
 
 
@@ -600,6 +605,8 @@ def build_quizzes():
     add("A baseline is:",
         ["The newest unreviewed edit", "An agreed version you can compare later", "A salary band", "A theme color"], 1,
         "Without an agreed version, change control has nothing to diff.", BABOK)
+    for item in extra_quizzes():
+        q.append(item)
     return q
 
 
@@ -778,6 +785,7 @@ def build_resources():
         (IRS, "Independent contractor definition. Not tax advice."),
         (WCAG, "Accessibility quick reference."),
         (("CypherMonkey Labs", "https://cyphermonkeylabs.com/#contact"), "Contact for a correction. No email is published in this lab."),
+        (USCIS, "H-1B specialty-occupation description. Not legal advice. Fees on that page were in flux, so none are copied."),
     ]
     return [{"title": p[0][0], "url": p[0][1], "note": p[1], "asOf": AS_OF} for p in pairs]
 
@@ -855,6 +863,7 @@ DIAGRAMS = [
     ("sprint", "Scrum events", ["Sprint", "Planning", "Daily scrum", "Review", "Retrospective"], "Names from the 2020 Scrum Guide contents.", SCRUM),
     ("ai", "AI draft loop", ["Source material", "Model draft", "Human check", "Trace update", "Stakeholder review"], "Unreviewed model text is not a requirement.", BABOK),
 ]
+DIAGRAMS.extend(EXTRA_DIAGRAMS)
 
 FLOWS = [
     ("elicit-flow", "From question to baseline", ["Prepare the questions", "Hold the conversation", "Send notes back", "Edit from the reply", "Baseline the agreed lines"], "Confirmation is a step, not a mood.", BABOK),
@@ -872,6 +881,7 @@ FLOWS = [
     ("kpi-flow", "Measure loop", ["Question the number answers", "Formula and source", "Owner and cadence", "Threshold for action", "Review after release"], "A chart without an owner waits forever.", HEART),
     ("case-flow", "Business case path", ["Need", "Options", "Sourced costs and benefits", "Risks", "Recommend or say unknown"], "Unknown is a permitted recommendation.", BABOK),
 ]
+FLOWS.extend(EXTRA_FLOWS)
 
 
 def xml(text):
@@ -913,6 +923,11 @@ def write_diagrams():
         parts = [
             f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}" role="img">',
             f"<title>{xml(title)}</title>",
+            "<style>",
+            "@keyframes baPulse { 50% { opacity: 0.78 } }",
+            ".ba-box { animation: baPulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }",
+            "@media (prefers-reduced-motion: reduce) { .ba-box { animation: none } }",
+            "</style>",
             f'<rect width="100%" height="100%" rx="24" fill="#0b1220"/>',
             f'<text x="{pad_x}" y="46" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700">{xml(title)}</text>',
         ]
@@ -921,7 +936,7 @@ def write_diagrams():
             x = pad_x + c * (box_w + gap_x)
             y = top + r * (box_h + gap_y)
             fill = colors[i % len(colors)]
-            parts.append(f'<rect x="{x}" y="{y}" width="{box_w}" height="{box_h}" rx="16" fill="{fill}"/>')
+            parts.append(f'<rect class="ba-box" x="{x}" y="{y}" width="{box_w}" height="{box_h}" rx="16" fill="{fill}"/>')
             start_y = y + (box_h - 22 * len(lines)) / 2 + 16
             for li, line in enumerate(lines):
                 parts.append(
@@ -981,6 +996,7 @@ PAGES = [
     ("templates", "templates.html", "Templates", "Outlines for BRD, FRD, SRS, stories, RACI, SWOT, and process maps."),
     ("downloads", "downloads.html", "Downloads", "PDF, PPTX, DOCX, and HTML cheat sheets with sizes."),
     ("search", "search.html", "Search", "Search the business analysis lab."),
+    ("credits", "credits.html", "Credits", "What this lab made, and what it did not copy."),
 ]
 
 
@@ -999,10 +1015,13 @@ def write_pages():
 </head>
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
-<header class="display-bar" id="display-bar"></header>
+<div class="top-chrome">
+<button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="section-banner" id="section-banner"></div>
+</div>
 <main id="main" tabindex="-1"></main>
 <footer class="site-footer" id="site-footer"></footer>
+<nav class="phone-bar" id="phone-bar" aria-label="Quick actions"></nav>
 <div id="guide-mount"></div>
 <script src="assets/js/frame.js"></script>
 <script src="assets/js/app.js"></script>
@@ -1015,23 +1034,31 @@ def write_pages():
 
 def footer_canvas(canvas, doc):
     canvas.saveState()
+    canvas.setFillColorRGB(0.93, 0.99, 0.96)
+    canvas.setStrokeColorRGB(0.06, 0.46, 0.43)
+    canvas.setLineWidth(1.4)
+    canvas.roundRect(28, 86, letter[0] - 56, 58, 8, fill=1, stroke=1)
+    canvas.setFillColorRGB(0.07, 0.31, 0.29)
+    canvas.setFont("Helvetica", 7.5)
+    canvas.drawString(40, 126, "Shield")
+    text = DISCLAIMER
+    canvas.drawString(78, 126, text[:105])
+    canvas.drawString(40, 114, text[105:220])
+    canvas.drawString(40, 102, text[220:335])
     canvas.setFillColorRGB(0.07, 0.09, 0.16)
-    canvas.rect(0, 0, letter[0], 78, fill=1, stroke=0)
+    canvas.rect(0, 0, letter[0], 80, fill=1, stroke=0)
     canvas.setFillColorRGB(0.95, 0.96, 0.98)
     canvas.setFont("Helvetica", 8)
-    canvas.drawString(36, 62, "CypherMonkey Labs")
-    canvas.drawString(36, 50, "© 2026 CypherMonkeyLabs")
-    text = DISCLAIMER
-    canvas.drawString(36, 36, text[:120])
-    canvas.drawString(36, 24, text[120:240])
+    canvas.drawString(36, 64, "CypherMonkey Labs")
+    canvas.drawString(180, 64, "© 2026 CypherMonkeyLabs")
     x = 36
     for label, url in LINKS:
         canvas.setFillColorRGB(0.45, 0.85, 0.8)
-        canvas.roundRect(x, 6, 70, 14, 3, fill=1, stroke=0)
+        canvas.roundRect(x, 10, 72, 16, 3, fill=1, stroke=0)
         canvas.setFillColorRGB(0.1, 0.1, 0.1)
-        canvas.setFont("Helvetica", 7)
-        canvas.drawString(x + 6, 10, label)
-        canvas.linkURL(url, (x, 6, x + 70, 20), relative=0)
+        canvas.setFont("Helvetica", 6.5)
+        canvas.drawString(x + 4, 15, label[:12])
+        canvas.linkURL(url, (x, 10, x + 72, 26), relative=0)
         x += 76
     canvas.restoreState()
 
@@ -1048,7 +1075,7 @@ def write_pdf(path: Path, title: str, paragraphs, bullets):
         story.append(ListFlowable([ListItem(Paragraph(item, body)) for item in bullets], bulletType="bullet", leftIndent=16))
     story.append(Spacer(1, 10))
     story.append(Paragraph(DISCLAIMER, ParagraphStyle("d", parent=body, fontSize=8, leading=11, textColor="#44403c")))
-    doc = SimpleDocTemplate(str(path), pagesize=letter, leftMargin=0.7 * inch, rightMargin=0.7 * inch, topMargin=0.7 * inch, bottomMargin=1.15 * inch, title=title)
+    doc = SimpleDocTemplate(str(path), pagesize=letter, leftMargin=0.7 * inch, rightMargin=0.7 * inch, topMargin=0.7 * inch, bottomMargin=2.15 * inch, title=title)
     doc.build(story, onFirstPage=footer_canvas, onLaterPages=footer_canvas)
 
 
@@ -1148,7 +1175,9 @@ body {{ margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; col
 main {{ width: min(42rem, calc(100% - 2rem)); margin: 1.5rem auto 2rem; }}
 h1 {{ line-height: 1.2; }}
 a {{ color: #1d4ed8; }}
-footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); }}
+.disclaimer-box {{ border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25); }}
+.disclaimer-box a {{ color: #0f766e; }}
+footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }}
 .badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }}
 </style>
 </head>
@@ -1162,8 +1191,8 @@ footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #f
 <p>Business Analyst Free University. Study sheet, October 2026.</p>
 </main>
 <footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> {html.escape(DISCLAIMER)}</p></div>
 <p><strong>CypherMonkey Labs</strong></p>
-<p>{html.escape(DISCLAIMER)}</p>
 <p class="badges">{badges}</p>
 <p>© 2026 CypherMonkeyLabs 🐒</p>
 </footer>
@@ -1172,7 +1201,44 @@ footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #f
 """, encoding="utf-8")
 
 
-def write_downloads(templates):
+def write_diagram_html(path: Path, title: str, svg_text: str, caption: str):
+    badges = "\n".join(
+        f'<a href="{html.escape(url)}">{html.escape(label)}</a>' for label, url in LINKS
+    )
+    path.write_text(f"""<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{html.escape(title)}</title>
+<style>
+body {{ margin: 0; font-family: "Segoe UI", sans-serif; background: #07111f; color: #f8fafc; }}
+main {{ width: min(60rem, calc(100% - 2rem)); margin: 1rem auto 2rem; }}
+svg {{ width: 100%; height: auto; }}
+.disclaimer-box {{ border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25), 0 0 24px rgba(45,212,191,.45); }}
+.disclaimer-box a {{ color: #0f766e; }}
+footer {{ padding: 1rem; }}
+.badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; color: #1c1917; border-radius: 12px; font-weight: 700; text-decoration: none; }}
+</style>
+</head>
+<body>
+<main>
+<h1>{html.escape(title)}</h1>
+<p>{html.escape(caption)}</p>
+{svg_text}
+</main>
+<footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> {html.escape(DISCLAIMER)}</p></div>
+<p><strong>CypherMonkey Labs</strong></p>
+<p class="badges">{badges}</p>
+<p>© 2026 CypherMonkeyLabs 🐒</p>
+</footer>
+</body>
+</html>
+""", encoding="utf-8")
+
+
+def write_downloads(templates, diagrams=None, cards=None):
     folder = ROOT / "downloads"
     html_dir = folder / "html"
     html_dir.mkdir(parents=True, exist_ok=True)
@@ -1224,6 +1290,38 @@ def write_downloads(templates):
         for html_file in sorted(html_dir.glob("*.html")):
             zf.write(html_file, arcname=html_file.name)
     files.append(("downloads/ba-html-sheets.zip", "HTML sheets, zipped", "ZIP"))
+    diagram_dir = folder / "diagrams"
+    diagram_dir.mkdir(parents=True, exist_ok=True)
+    for diagram in diagrams or []:
+        svg_path = ROOT / diagram["file"]
+        svg_text = svg_path.read_text(encoding="utf-8")
+        svg_copy = diagram_dir / f"{diagram['id']}.svg"
+        svg_copy.write_text(svg_text, encoding="utf-8")
+        files.append((f"downloads/diagrams/{diagram['id']}.svg", diagram["title"] + " SVG", "SVG"))
+        html_copy = diagram_dir / f"{diagram['id']}.html"
+        write_diagram_html(html_copy, diagram["title"], svg_text, diagram["caption"])
+        files.append((f"downloads/diagrams/{diagram['id']}.html", diagram["title"] + " HTML", "HTML"))
+    card_list = cards or []
+    (folder / "flashcards.json").write_text(json.dumps(card_list, indent=2), encoding="utf-8")
+    files.append(("downloads/flashcards.json", "Flashcards", "JSON"))
+    card_lines = [f"{card['front']}: {card['back']}" for card in card_list]
+    write_html_sheet(html_dir / "flashcards.html", "Flashcards", "Term on the left, study meaning on the right.", card_lines)
+    files.append(("downloads/html/flashcards.html", "Flashcards HTML", "HTML"))
+    write_pdf(folder / "flashcards.pdf", "Flashcards", ["Flip these in the lab, or read them here."], card_lines[:80])
+    files.append(("downloads/flashcards.pdf", "Flashcards PDF", "PDF"))
+    cheat_lines = [
+        "Need before solution.",
+        "One accountable owner.",
+        "Trace to a test.",
+        "Unhappy path is drawn.",
+        "Unknown stays blank.",
+        "Confirm a fee before you pay.",
+        "No salaries in this lab.",
+    ]
+    write_html_sheet(html_dir / "cheat-sheet.html", "One-page cheat sheet", "Seven habits from this lab.", cheat_lines)
+    files.append(("downloads/html/cheat-sheet.html", "Cheat sheet HTML", "HTML"))
+    write_pdf(folder / "cheat-sheet.pdf", "One-page cheat sheet", ["Seven habits. The rooms expand them."], cheat_lines)
+    files.append(("downloads/cheat-sheet.pdf", "Cheat sheet PDF", "PDF"))
     downloads = []
     for rel, title, kind in files:
         downloads.append({"file": rel, "title": title, "kind": kind, "bytes": (ROOT / rel).stat().st_size})
@@ -1243,9 +1341,10 @@ A free study lab for business analysis. Open the app, then the rooms. Lucky is a
 
 <p>
 <a href="index.html"><img alt="" src="assets/diagrams/baccm.svg" width="88" height="52"> Open the app</a>
-&nbsp;·&nbsp; <a href="https://github.com/cipher0x9">GitHub</a>
-&nbsp;·&nbsp; <a href="https://github.com/CypherMonkeyLabs">Labs</a>
 &nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com">Website</a>
+&nbsp;·&nbsp; <a href="https://github.com/CypherMonkeyLabs">GitHub</a>
+&nbsp;·&nbsp; <a href="https://linktr.ee/cyphermonkey">Profile</a>
+&nbsp;·&nbsp; <a href="https://cyphermonkeylabs.com/#contact">Contact</a>
 &nbsp;·&nbsp; <a href="https://x.com/Cypher0x9">X</a>
 &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/luckylakshmanucwebex">LinkedIn</a>
 &nbsp;·&nbsp; <a href="https://huggingface.co/Cypher0x9">Hugging Face</a>
@@ -1275,7 +1374,7 @@ Open `http://127.0.0.1:8742/`. `npm run verify` checks local files, the catalog 
 
 © 2026 CypherMonkeyLabs 🐒
 
-[GitHub](https://github.com/CypherMonkeyLabs) · [Website](https://cyphermonkeylabs.com) · [X](https://x.com/Cypher0x9) · [LinkedIn](https://www.linkedin.com/in/luckylakshmanucwebex) · [Hugging Face](https://huggingface.co/Cypher0x9)
+[Website](https://cyphermonkeylabs.com) · [GitHub](https://github.com/CypherMonkeyLabs) · [Profile](https://linktr.ee/cyphermonkey) · [Contact](https://cyphermonkeylabs.com/#contact) · [X](https://x.com/Cypher0x9) · [LinkedIn](https://www.linkedin.com/in/luckylakshmanucwebex) · [Hugging Face](https://huggingface.co/Cypher0x9)
 """
     (ROOT / "README.md").write_text(text, encoding="utf-8")
 
@@ -1288,7 +1387,7 @@ def main():
     diagrams = write_diagrams()
     flows = build_flows()
     templates = build_templates()
-    downloads = write_downloads(templates)
+    downloads = write_downloads(templates, diagrams, cards)
     counts = {
         "notes": len(items),
         "diagrams": len(diagrams),
@@ -1316,13 +1415,23 @@ def main():
         "templates": templates,
         "certs": build_certs(),
         "course": build_course(),
+        "study": STUDY,
+        "games": GAMES,
+        "interviews": INTERVIEWS,
+        "credits": [
+            {"name": "Study notes, diagrams, and the guide monkey", "note": "Original work in this repository. Drawings illustrate the notes. They are not copies of a vendor figure.", "license": "Original"},
+            {"name": "Web Speech API", "note": "Optional browser voice. No speech audio is redistributed. A local open-licensed TTS engine was not available at build time, so there are no pre-recorded clips.", "license": "Platform"},
+            {"name": "three.js", "note": "Not shipped. The guide uses layered SVG and CSS so phones do not download a 3D engine.", "license": "Not included"},
+        ],
     }
     data = ROOT / "assets" / "data"
     data.mkdir(parents=True, exist_ok=True)
     (data / "catalog.json").write_text(json.dumps(catalog, indent=2), encoding="utf-8")
     (data / "socials.json").write_text(json.dumps([
-        {"id": "github", "label": "GitHub", "href": "https://github.com/CypherMonkeyLabs"},
         {"id": "site", "label": "Website", "href": "https://cyphermonkeylabs.com"},
+        {"id": "github", "label": "GitHub", "href": "https://github.com/CypherMonkeyLabs"},
+        {"id": "profile", "label": "Profile", "href": "https://linktr.ee/cyphermonkey"},
+        {"id": "contact", "label": "Contact", "href": "https://cyphermonkeylabs.com/#contact"},
         {"id": "x", "label": "X", "href": "https://x.com/Cypher0x9"},
         {"id": "linkedin", "label": "LinkedIn", "href": "https://www.linkedin.com/in/luckylakshmanucwebex"},
         {"id": "huggingface", "label": "Hugging Face", "href": "https://huggingface.co/Cypher0x9"},

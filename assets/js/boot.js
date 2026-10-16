@@ -3,6 +3,7 @@
   var root = document.documentElement;
   var themes = {
     aurora: 1,
+    midnight: 1,
     neon: 1,
     holographic: 1,
     cyberpunk: 1,

@@ -1,13 +1,23 @@
 [
   {
+    "id": "site",
+    "label": "Website",
+    "href": "https://cyphermonkeylabs.com"
+  },
+  {
     "id": "github",
     "label": "GitHub",
     "href": "https://github.com/CypherMonkeyLabs"
   },
   {
-    "id": "site",
-    "label": "Website",
-    "href": "https://cyphermonkeylabs.com"
+    "id": "profile",
+    "label": "Profile",
+    "href": "https://linktr.ee/cyphermonkey"
+  },
+  {
+    "id": "contact",
+    "label": "Contact",
+    "href": "https://cyphermonkeylabs.com/#contact"
   },
   {
     "id": "x",

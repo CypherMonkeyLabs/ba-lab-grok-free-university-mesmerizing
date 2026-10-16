@@ -69,8 +69,10 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  min-height: 8rem;
+  min-height: 0;
+  flex: 1 1 auto;
 }
+.ba-form { flex: 0 0 auto; background: #fff; }
 .ba-bubble {
   margin: 0;
   padding: 0.55rem 0.7rem;
@@ -83,9 +85,44 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; padding: 0 0.6rem 0.4rem; }
 .ba-form { display: flex; gap: 0.35rem; padding: 0.45rem; border-top: 1px solid #e7e5e4; }
 .ba-form input { flex: 1; min-width: 0; min-height: 44px; border-radius: 12px; border: 1px solid #d6d3d1; padding: 0 0.6rem; }
-.ba-panel[hidden], .ba-nudge[hidden] { display: none; }
+.ba-panel[hidden], .ba-nudge[hidden], .ba-voice[hidden], .ba-guide[hidden] { display: none !important; }
+.ba-monkey {
+  transform: perspective(240px) rotateX(8deg) rotateY(-12deg);
+  animation: idle 3.2s ease-in-out infinite;
+}
+.ba-monkey .face { fill: #f6c56b; }
+.ba-monkey .ear { fill: #e8a84a; }
+.ba-monkey .muzzle { fill: #ffe7c2; }
+.ba-monkey .specs { fill: none; stroke: #0f172a; stroke-width: 1.7; }
+.ba-monkey .eye { fill: #1c1917; transform-box: fill-box; transform-origin: center; animation: blink 4.8s infinite; }
+.ba-monkey .smile, .ba-monkey .arm { fill: none; stroke: #1c1917; stroke-width: 1.7; stroke-linecap: round; }
+.ba-monkey .arm { transform-origin: 22px 58px; }
+.ba-monkey[data-mood="wave"] .arm { animation: wave 0.55s ease-in-out 2; }
+.ba-monkey[data-mood="cheer"] { filter: saturate(1.2); }
+.choice-grid { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.5rem; }
+.choice-grid button, .ba-bubble button, .ba-voice button { min-height: 44px; margin: 0.15rem 0.15rem 0 0; }
+.ba-voice { display: grid; gap: 0.35rem; padding: 0.45rem 0.6rem; border-top: 1px solid #e7e5e4; }
+.ba-voice label { display: flex; justify-content: space-between; gap: 0.4rem; align-items: center; }
+.sent.is-on { background: #fde68a; border-radius: 4px; }
+@keyframes idle { 50% { transform: perspective(240px) rotateX(8deg) rotateY(-12deg) translateY(-3px); } }
+@keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.12); } }
+@keyframes wave { 50% { transform: rotate(-24deg); } }
 @media (max-width: 800px) {
-  .ba-guide { right: 0.45rem; }
-  .ba-monkey, .ba-monkey svg { width: 52px; height: 52px; }
-  .ba-panel { max-height: 58vh; }
+  .ba-guide { right: 0.15rem; bottom: 0.2rem; z-index: 37; }
+  .ba-monkey, .ba-monkey svg { width: 44px; height: 44px; }
+  .ba-panel {
+    position: fixed;
+    left: 0.4rem;
+    right: 0.4rem;
+    bottom: 3.7rem;
+    width: auto;
+    height: min(62vh, 32rem);
+    max-height: min(62vh, 32rem);
+    border-radius: 16px 16px 0 0;
+    z-index: 37;
+  }
+  .phone-bar button[data-phone="guide"] { visibility: hidden; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ba-monkey, .ba-monkey .eye, .ba-monkey .arm { animation: none; }
 }

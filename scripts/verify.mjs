@@ -10,7 +10,7 @@ const problems = [];
 function fail(message) { problems.push(message); }
 
 const email = /[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}/;
-const banned = [/mailto:/i, /linktr\.ee/i, /linktree/i, /dev\.to/i];
+const banned = [/mailto:/i, /dev\.to/i, /linktr\.ee\/(?!cyphermonkey\b)/i];
 
 function walk(dir, acc) {
   for (const name of readdirSync(dir)) {
@@ -35,8 +35,8 @@ for (const path of files) {
 
 const catalog = JSON.parse(readFileSync(join(root, "assets/data/catalog.json"), "utf8"));
 if ((catalog.items || []).length < 100) fail("fewer than 100 notes");
-if ((catalog.diagrams || []).length < 20) fail("fewer than 20 diagrams");
-if ((catalog.flows || []).length < 10) fail("fewer than 10 flows");
+if ((catalog.diagrams || []).length < 60) fail("fewer than 60 diagrams");
+if ((catalog.flows || []).length < 30) fail("fewer than 30 flows");
 if ((catalog.flashcards || []).length < 20) fail("fewer than 20 flashcards");
 if ((catalog.quizzes || []).length < 12) fail("fewer than 12 quiz items");
 
@@ -48,7 +48,7 @@ for (const item of catalog.downloads) {
   if (!existsSync(path)) fail("missing download " + item.file);
   else if (statSync(path).size !== item.bytes) fail("size mismatch " + item.file);
 }
-for (const page of ["index.html", "start.html", "babok.html", "certs.html", "practice.html", "downloads.html", "guide/guide.js", "guide/kb/index.json"]) {
+for (const page of ["index.html", "start.html", "babok.html", "certs.html", "practice.html", "downloads.html", "credits.html", "guide/guide.js", "guide/kb/index.json"]) {
   if (!existsSync(join(root, page))) fail("missing " + page);
 }
 
@@ -56,7 +56,7 @@ const footerNeedles = ["CypherMonkey Labs", "cyphermonkeylabs.com/#contact", "©
 const sampleHtml = readFileSync(join(root, "downloads/html/brd-outline.html"), "utf8");
 for (const needle of footerNeedles) if (!sampleHtml.includes(needle)) fail("HTML sheet missing " + needle);
 const readme = readFileSync(join(root, "README.md"), "utf8");
-for (const needle of ["github.com/cipher0x9", "github.com/CypherMonkeyLabs", "huggingface.co/Cypher0x9"]) {
+for (const needle of ["github.com/CypherMonkeyLabs", "huggingface.co/Cypher0x9", "linktr.ee/cyphermonkey", "Not affiliated"]) {
   if (!readme.includes(needle)) fail("README missing " + needle);
 }
 

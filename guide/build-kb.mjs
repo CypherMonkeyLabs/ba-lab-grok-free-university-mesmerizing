@@ -23,6 +23,10 @@ function add(page, title, text, href) {
 (catalog.glossary || []).forEach(function (term) {
   add("glossary", term.term, term.meaning, "glossary.html");
 });
+Object.keys(catalog.study || {}).forEach(function (section) {
+  var study = catalog.study[section];
+  add(section, "Learn it in 5 minutes", study.five, section === "home" ? "index.html" : section + ".html");
+});
 
 const rooms = {
   home: { title: "Home", blurb: "The front door. Start with the one-hour path.", chips: ["What is this lab?", "Start the course", "Quiz"] },
@@ -47,8 +51,9 @@ const rooms = {
   glossary: { title: "Glossary", blurb: "Short definitions.", chips: ["What is an RTM?"] },
   resources: { title: "Resources", blurb: "Only links that opened.", chips: ["Which links?"] },
   templates: { title: "Templates", blurb: "Outlines you can copy.", chips: ["RACI", "BRD"] },
-  downloads: { title: "Downloads", blurb: "PDF, PPTX, DOCX, and HTML sheets.", chips: ["Where are the files?"] },
-  search: { title: "Search", blurb: "Find a note.", chips: ["Traceability"] }
+  downloads: { title: "Downloads", blurb: "SVG, PNG, HTML, PDF, DOCX, PPTX, and a zip.", chips: ["Where are the files?"] },
+  search: { title: "Search", blurb: "Find a note.", chips: ["Traceability"] },
+  credits: { title: "Credits", blurb: "Original notes and drawings. No 3D engine is shipped.", chips: ["What is original?"] }
 };
 
 const kb = {

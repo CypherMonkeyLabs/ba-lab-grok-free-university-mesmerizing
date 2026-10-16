@@ -85,6 +85,7 @@
       '<div class="obj gear">⚙️<span>Gear</span></div>' +
       "</div></section>" +
       '<section><h2>One-hour path</h2><ol class="path-list">' + steps + "</ol></section>" +
+      studyBlock(data, "home") +
       '<section><h2>Rooms</h2><div class="room-grid">' +
       (window.BA_FRAME ? window.BA_FRAME.sections : []).filter(function (s) { return s[0] !== "home"; }).map(function (s) {
         return '<a class="card" href="' + esc(s[2]) + '"><h3>' + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
@@ -93,9 +94,31 @@
     bindListen(main, data.narration);
   }
 
+  function studyBlock(data, section) {
+    var study = (data.study || {})[section];
+    if (!study) return "";
+    var diagram = (data.diagrams || []).filter(function (item) { return item.id === study.visual; })[0];
+    var visual = diagram
+      ? '<figure class="diagram-frame"><img src="' + esc(diagram.file) + '" alt="' + esc(diagram.alt) + '"><figcaption>' + esc(diagram.caption) + "</figcaption></figure>"
+      : "";
+    var example = (study.example || []).map(function (line) { return "<p>" + esc(line) + "</p>"; }).join("");
+    return '<section class="five"><h2>Learn it in 5 minutes</h2><p>' + esc(study.five || "") + "</p></section>" +
+      visual +
+      '<section class="callout"><h2>' + esc(study.exampleTitle || "Worked example") + "</h2>" + example + "</section>";
+  }
+  function roomQuiz(data, section, host) {
+    if (!host) return;
+    var quizzes = (data.quizzes || []).filter(function (item) { return item.section === section; });
+    if (!quizzes.length) quizzes = (data.quizzes || []).slice(0, 1);
+    renderQuiz(data, host, quizzes, "ba-quiz-" + section);
+  }
   function renderNotes(data, section, title, lede) {
     var items = bySection(data, section).map(card).join("");
-    main.innerHTML = "<h1>" + esc(title) + "</h1><p class=\"lede\">" + esc(lede) + "</p><div class=\"card-grid\">" + items + "</div>";
+    main.innerHTML = "<h1>" + esc(title) + "</h1><p class=\"lede\">" + esc(lede) + "</p>" +
+      studyBlock(data, section) +
+      '<div class="card-grid">' + items + "</div>" +
+      '<section><h2>Check yourself</h2><div data-room-quiz></div></section>';
+    roomQuiz(data, section, main.querySelector("[data-room-quiz]"));
   }
 
   function renderStart(data) {
@@ -105,12 +128,13 @@
     main.innerHTML =
       "<h1>Start here</h1>" +
       "<p class=\"lede\">About one hour if you read the path and skip the long rooms. Come back for the diagrams, games, and downloads.</p>" +
+      studyBlock(data, "start") +
       listenButton(data.narration) +
       '<div class="card-grid">' + steps + "</div>" +
       '<section class="callout"><h2>How to use the lab</h2><ul>' +
-      "<li>The top rail and the left wheel open the same rooms.</li>" +
-      "<li>Text size, theme, text color, and motion stay in this browser.</li>" +
-      "<li>The monkey at the lower right is a study companion. Voice is off until you turn it on.</li>" +
+      "<li>The top-left menu slides in. Text size, theme, text color, motion, and search live there.</li>" +
+      "<li>The banner is one row. Arrows move it.</li>" +
+      "<li>The monkey is a study companion. Voice is off until you ask it to speak.</li>" +
       "<li>If a fee or rule is marked to be confirmed, the public page did not show it on the check date.</li></ul></section>";
     bindListen(main, data.narration);
   }
@@ -124,7 +148,11 @@
         (cert.tbd ? '<p class="tbd">To be confirmed: ' + esc(cert.tbd) + "</p>" : "") +
         sourceLine(cert) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Certifications</h1><p class=\"lede\">Fees below are copied from pages opened on 16 October 2026. They are in US dollars and IIBA says they can change. This lab does not repeat salary claims from vendor marketing.</p><div class=\"card-grid\">" + blocks + "</div>";
+    main.innerHTML = "<h1>Certifications</h1><p class=\"lede\">Fees below are copied from pages opened on 16 October 2026. They are in US dollars and IIBA says they can change. This lab does not repeat salary claims from vendor marketing.</p>" +
+      studyBlock(data, "certs") +
+      '<div class="card-grid">' + blocks + "</div>" +
+      '<section><h2>Check yourself</h2><div data-room-quiz></div></section>';
+    roomQuiz(data, "certs", main.querySelector("[data-room-quiz]"));
   }
 
   function renderGlossary(data) {
@@ -139,7 +167,7 @@
       }).join("");
       list.innerHTML = '<table><tbody>' + rows + "</tbody></table>";
     }
-    main.innerHTML = "<h1>Glossary</h1><p class=\"lede\">Short study definitions. They are not a substitute for the cited standard.</p>";
+    main.innerHTML = "<h1>Glossary</h1><p class=\"lede\">Short study definitions. They are not a substitute for the cited standard.</p>" + studyBlock(data, "glossary");
     var input = document.createElement("input");
     input.type = "search";
     input.setAttribute("aria-label", "Filter glossary");
@@ -154,14 +182,39 @@
     var rows = (data.resources || []).map(function (item) {
       return "<tr><td><a href=\"" + esc(item.url) + "\">" + esc(item.title) + "</a></td><td>" + esc(item.note) + "</td><td>" + esc(item.asOf) + "</td></tr>";
     }).join("");
-    main.innerHTML = "<h1>Resources</h1><p class=\"lede\">Every link in this table was requested on the date shown. A page that did not open is omitted, and the related note says so.</p><table><thead><tr><th>Link</th><th>Why it is here</th><th>Checked</th></tr></thead><tbody>" + rows + "</tbody></table>";
+    main.innerHTML = "<h1>Resources</h1><p class=\"lede\">Every link in this table was requested on the date shown. A page that did not open is omitted, and the related note says so.</p>" + studyBlock(data, "resources") + "<table><thead><tr><th>Link</th><th>Why it is here</th><th>Checked</th></tr></thead><tbody>" + rows + "</tbody></table>";
   }
 
   function renderDownloads(data) {
     var rows = (data.downloads || []).map(function (item) {
       return "<tr><td><a href=\"" + esc(item.file) + "\">" + esc(item.title) + "</a></td><td>" + esc(item.kind) + "</td><td>" + esc(sizeLabel(item.bytes)) + "</td></tr>";
     }).join("");
-    main.innerHTML = "<h1>Downloads</h1><p class=\"lede\">Cheat sheets and templates. Each file carries the same disclaimer and owner line as the site footer.</p><table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody>" + rows + "</tbody></table>";
+    main.innerHTML = "<h1>Downloads</h1>" + studyBlock(data, "downloads") +
+      "<p class=\"lede\">Each file stands alone and carries the disclaimer. Filter by kind. PNG images appear after the render step.</p>" +
+      '<div class="filters" data-kind-filters><button type="button" data-kind="all" aria-pressed="true">All</button></div>' +
+      '<table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody data-download-rows>' + rows + "</tbody></table>";
+    var kinds = {};
+    (data.downloads || []).forEach(function (item) { kinds[item.kind] = true; });
+    var filters = main.querySelector("[data-kind-filters]");
+    Object.keys(kinds).sort().forEach(function (kind) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.setAttribute("data-kind", kind);
+      button.textContent = kind;
+      filters.appendChild(button);
+    });
+    filters.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-kind]");
+      if (!button) return;
+      var kind = button.getAttribute("data-kind");
+      filters.querySelectorAll("button").forEach(function (node) {
+        node.setAttribute("aria-pressed", node === button ? "true" : "false");
+      });
+      main.querySelectorAll("[data-download-rows] tr").forEach(function (row) {
+        var cell = row.children[1] ? row.children[1].textContent : "";
+        row.hidden = kind !== "all" && cell !== kind;
+      });
+    });
   }
 
   function renderTemplates(data) {
@@ -169,14 +222,14 @@
       var lines = (item.lines || []).map(function (line) { return "<li>" + esc(line) + "</li>"; }).join("");
       return '<article class="item"><h3>' + esc(item.title) + "</h3><p>" + esc(item.summary) + "</p><ul>" + lines + "</ul><p><a href=\"downloads.html\">Download the set</a></p></article>";
     }).join("");
-    main.innerHTML = "<h1>Templates</h1><p class=\"lede\">Outlines you can copy into your own notes. They are study scaffolds, not a company's official form.</p><div class=\"card-grid\">" + blocks + "</div>";
+    main.innerHTML = "<h1>Templates</h1><p class=\"lede\">Outlines you can copy into your own notes. They are study scaffolds, not a company's official form.</p>" + studyBlock(data, "templates") + '<div class="card-grid">' + blocks + "</div>";
   }
 
   function renderDiagrams(data) {
     var blocks = (data.diagrams || []).map(function (item) {
       return '<article class="item"><h3>' + esc(item.title) + '</h3><div class="diagram-frame"><img src="' + esc(item.file) + '" alt="' + esc(item.alt) + '"></div><p>' + esc(item.caption) + "</p>" + sourceLine(item) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Diagrams</h1><p class=\"lede\">Drawings made for this lab. They illustrate the notes. They are not copies of a vendor's figure.</p>" + blocks;
+    main.innerHTML = "<h1>Diagrams</h1><p class=\"lede\">Drawings made for this lab. They illustrate the notes. They are not copies of a vendor's figure.</p>" + studyBlock(data, "diagrams") + blocks;
   }
 
   function renderFlows(data) {
@@ -186,7 +239,7 @@
       }).join("");
       return '<article class="item"><h3>' + esc(flow.title) + "</h3><p>" + esc(flow.caption) + "</p>" + steps + sourceLine(flow) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Flows</h1><p class=\"lede\">Each track is a sequence, not a timer from a real project. On a phone, or with reduced motion, the moving dot stays still.</p>" + blocks;
+    main.innerHTML = "<h1>Flows</h1><p class=\"lede\">Each track is a sequence, not a timer from a real project. On a phone, or with reduced motion, the moving dot stays still.</p>" + studyBlock(data, "flows") + blocks;
   }
 
   function renderCharts(data) {
@@ -198,19 +251,25 @@
       }).join("");
       return '<article class="item"><h3>' + esc(chart.title) + "</h3>" + rows + sourceLine(chart) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Charts</h1><p class=\"lede\">Blueprint percentages come from the cited exam pages. Repository counts are the files in this lab, not a market statistic.</p>" + blocks;
+    main.innerHTML = "<h1>Charts</h1><p class=\"lede\">Blueprint percentages come from the cited exam pages. Repository counts are the files in this lab, not a market statistic.</p>" + studyBlock(data, "charts") + blocks;
   }
 
   function renderPractice(data) {
     main.innerHTML =
       "<h1>Practice</h1>" +
       "<p class=\"lede\">Scores stay in this browser. Questions were written for this lab. They are not retired exam items.</p>" +
+      studyBlock(data, "practice") +
       '<div class="filters" role="tablist">' +
       '<button type="button" data-tab="cards" aria-pressed="true">Flashcards</button>' +
       '<button type="button" data-tab="quiz" aria-pressed="false">Quiz</button>' +
       '<button type="button" data-tab="game" aria-pressed="false">Sort game</button>' +
-      '<button type="button" data-tab="daily" aria-pressed="false">Daily challenge</button></div>' +
-      '<div data-panel="cards"></div><div data-panel="quiz" hidden></div><div data-panel="game" hidden></div><div data-panel="daily" hidden></div>';
+      '<button type="button" data-tab="daily" aria-pressed="false">Daily</button>' +
+      '<button type="button" data-tab="match" aria-pressed="false">Match</button>' +
+      '<button type="button" data-tab="interview" aria-pressed="false">Interview</button>' +
+      '<button type="button" data-tab="triage" aria-pressed="false">Triage</button>' +
+      '<button type="button" data-tab="bpmn" aria-pressed="false">BPMN</button></div>' +
+      '<div data-panel="cards"></div><div data-panel="quiz" hidden></div><div data-panel="game" hidden></div><div data-panel="daily" hidden></div>' +
+      '<div data-panel="match" hidden></div><div data-panel="interview" hidden></div><div data-panel="triage" hidden></div><div data-panel="bpmn" hidden></div>';
     main.querySelector(".filters").addEventListener("click", function (event) {
       var btn = event.target.closest("[data-tab]");
       if (!btn) return;
@@ -225,6 +284,10 @@
     renderQuiz(data, main.querySelector('[data-panel="quiz"]'), data.quizzes, "ba-quiz");
     renderGame(main.querySelector('[data-panel="game"]'));
     renderDaily(data, main.querySelector('[data-panel="daily"]'));
+    renderMatch(data, main.querySelector('[data-panel="match"]'));
+    renderInterview(data, main.querySelector('[data-panel="interview"]'));
+    renderTriage(data, main.querySelector('[data-panel="triage"]'));
+    renderBpmn(data, main.querySelector('[data-panel="bpmn"]'));
   }
 
   function renderCards(data, host) {
@@ -366,12 +429,18 @@
     renderQuiz(data, wrap, [item], "ba-daily");
   }
 
+  function renderCredits(data) {
+    var blocks = (data.credits || []).map(function (item) {
+      return '<article class="item"><h3>' + esc(item.name) + "</h3><p>" + esc(item.note) + "</p><p class=\"meta\">" + esc(item.license) + "</p></article>";
+    }).join("");
+    main.innerHTML = "<h1>Credits</h1>" + studyBlock(data, "credits") + '<div class="card-grid">' + blocks + "</div>";
+  }
   function renderSearch(data) {
     var params = new URLSearchParams(location.search);
     var q = (params.get("q") || "").trim().toLowerCase();
     var input = '<form class="search-form" action="search.html"><input type="search" name="q" value="' + esc(params.get("q") || "") + '" aria-label="Search the lab"><button type="submit">Search</button></form>';
     if (!q) {
-      main.innerHTML = "<h1>Search</h1>" + input + "<p>Type a term such as traceability, CBAP, or BPMN.</p>";
+      main.innerHTML = "<h1>Search</h1>" + studyBlock(data, "search") + input + "<p>Type a term such as traceability, CBAP, or BPMN.</p>";
       return;
     }
     var hits = [];
@@ -387,6 +456,120 @@
     main.innerHTML = "<h1>Search</h1>" + input + "<p>" + hits.length + " matches for “" + esc(params.get("q") || "") + "”.</p><div class=\"card-grid\">" + hits.join("") + "</div>";
   }
 
+  function renderMatch(data, host) {
+    var pairs = ((data.games || {}).match) || [];
+    var rights = pairs.map(function (pair) { return pair[1]; });
+    host.innerHTML = "<h2>Match the term</h2><p>Pick the meaning that belongs to each term.</p>";
+    var chosen = {};
+    pairs.forEach(function (pair, index) {
+      var article = document.createElement("article");
+      article.className = "item";
+      article.innerHTML = "<h3>" + esc(pair[0]) + "</h3>" + rights.map(function (meaning) {
+        return '<button type="button" class="choice" data-i="' + index + '" data-v="' + esc(meaning) + '">' + esc(meaning) + "</button>";
+      }).join("");
+      host.appendChild(article);
+    });
+    var out = document.createElement("p");
+    var check = document.createElement("button");
+    check.type = "button";
+    check.textContent = "Check";
+    host.appendChild(check);
+    host.appendChild(out);
+    host.addEventListener("click", function (event) {
+      var button = event.target.closest(".choice");
+      if (button) {
+        chosen[button.getAttribute("data-i")] = button.getAttribute("data-v");
+        button.parentElement.querySelectorAll(".choice").forEach(function (node) {
+          node.setAttribute("aria-pressed", node === button ? "true" : "false");
+        });
+      }
+      if (event.target === check) {
+        var correct = 0;
+        pairs.forEach(function (pair, index) { if (chosen[index] === pair[1]) correct += 1; });
+        out.textContent = correct + " of " + pairs.length + " match.";
+        if (correct === pairs.length) addBadge("Match cleared");
+      }
+    });
+  }
+  function renderInterview(data, host) {
+    var rounds = ((data.games || {}).interview) || [];
+    var bank = (data.interviews || []).map(function (item) {
+      return "<article class=\"item\"><h3>" + esc(item.q) + "</h3><p>" + esc(item.star) + "</p></article>";
+    }).join("");
+    host.innerHTML = "<h2>Stakeholder interview</h2><p>These prompts are generic. They are not a biography and they claim no tool experience.</p>" +
+      rounds.map(function (item) {
+        return '<article class="item"><h3>' + esc(item.ask) + "</h3><p><strong>A useful shape.</strong> " + esc(item.better) + "</p><p><strong>A weaker shape.</strong> " + esc(item.weaker) + "</p></article>";
+      }).join("") +
+      "<h2>STAR bank</h2>" + bank;
+  }
+  function renderTriage(data, host) {
+    var items = ((data.games || {}).triage) || [];
+    host.innerHTML = "<h2>Requirements triage</h2><p>Now, later, or drop. This is a study key for a generic clinic, not a company policy.</p>";
+    var chosen = {};
+    items.forEach(function (pair, index) {
+      var article = document.createElement("article");
+      article.className = "item";
+      article.innerHTML = "<p>" + esc(pair[0]) + "</p>" + ["Now", "Later", "Drop"].map(function (lane) {
+        return '<button type="button" class="choice" data-i="' + index + '" data-v="' + lane + '">' + lane + "</button>";
+      }).join("");
+      host.appendChild(article);
+    });
+    var out = document.createElement("p");
+    var check = document.createElement("button");
+    check.type = "button";
+    check.textContent = "Check";
+    host.appendChild(check);
+    host.appendChild(out);
+    host.addEventListener("click", function (event) {
+      var button = event.target.closest(".choice");
+      if (button) {
+        chosen[button.getAttribute("data-i")] = button.getAttribute("data-v");
+        button.parentElement.querySelectorAll(".choice").forEach(function (node) {
+          node.setAttribute("aria-pressed", node === button ? "true" : "false");
+        });
+      }
+      if (event.target === check) {
+        var correct = 0;
+        items.forEach(function (pair, index) { if (chosen[index] === pair[1]) correct += 1; });
+        out.textContent = correct + " of " + items.length + " match the study key.";
+        if (correct === items.length) addBadge("Triage cleared");
+      }
+    });
+  }
+  function renderBpmn(data, host) {
+    var order = ((data.games || {}).bpmn) || [];
+    var pool = order.slice().reverse();
+    host.innerHTML = "<h2>BPMN builder</h2><p>Put the pieces in an order that can tell the return story. This is a study sequence, not a graded exam item.</p><div data-built></div><div data-pool></div><p data-bpmn-out></p>";
+    var built = [];
+    function draw() {
+      host.querySelector("[data-built]").innerHTML = "<p><strong>Your flow.</strong> " + (built.map(esc).join(" → ") || "Empty") + "</p>";
+      host.querySelector("[data-pool]").innerHTML = pool.map(function (token) {
+        return '<button type="button" class="choice" data-token="' + esc(token) + '">' + esc(token) + "</button>";
+      }).join(" ") + ' <button type="button" data-undo>Undo</button> <button type="button" data-bpmn-check>Check</button>';
+    }
+    host.addEventListener("click", function (event) {
+      var token = event.target.closest("[data-token]");
+      if (token) {
+        var name = token.getAttribute("data-token");
+        var index = pool.indexOf(name);
+        if (index >= 0) {
+          pool.splice(index, 1);
+          built.push(name);
+          draw();
+        }
+      }
+      if (event.target.closest("[data-undo]") && built.length) {
+        pool.unshift(built.pop());
+        draw();
+      }
+      if (event.target.closest("[data-bpmn-check]")) {
+        var ok = built.join("|") === order.join("|");
+        host.querySelector("[data-bpmn-out]").textContent = ok ? "That matches the study sequence." : "Not yet. Start, lookup, the question, then the two endings.";
+        if (ok) addBadge("BPMN sequence cleared");
+      }
+    });
+    draw();
+  }
   function addBadge(name) {
     try {
       var badges = JSON.parse(localStorage.getItem("ba-badges") || "[]");
@@ -418,6 +601,15 @@
     .then(function (data) {
       window.BA_CATALOG = data;
       if (window.BA_SET_COUNTS && data.counts) window.BA_SET_COUNTS(data.counts);
+      window.BA_SPEAK = function () {
+        var text = data.narration || "";
+        if (!window.speechSynthesis) return;
+        if (speechSynthesis.speaking) {
+          speechSynthesis.cancel();
+          return;
+        }
+        speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+      };
       if (page === "home") renderHome(data);
       else if (page === "start") renderStart(data);
       else if (page === "certs") renderCerts(data);
@@ -430,6 +622,7 @@
       else if (page === "charts") renderCharts(data);
       else if (page === "practice") renderPractice(data);
       else if (page === "search") renderSearch(data);
+      else if (page === "credits") renderCredits(data);
       else if (TITLES[page]) renderNotes(data, page, TITLES[page][0], TITLES[page][1]);
       else main.innerHTML = "<h1>This room is not in the catalog.</h1>";
       document.dispatchEvent(new CustomEvent("ba-ready"));
