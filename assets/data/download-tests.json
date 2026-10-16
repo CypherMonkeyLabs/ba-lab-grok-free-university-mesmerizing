@@ -1,5 +1,5 @@
 {
-  "summary": "349 checks, 0 failed.",
+  "summary": "397 checks, 0 failed.",
   "generated": "2026-10-16",
   "rows": [
     {
@@ -77,7 +77,7 @@
       "kind": "ZIP",
       "check": "bytes",
       "pass": true,
-      "detail": "16364"
+      "detail": "19082"
     },
     {
       "file": "downloads/diagrams/baccm.svg",
@@ -528,6 +528,83 @@
       "detail": "3106"
     },
     {
+      "file": "downloads/diagrams/omni-parts.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3515"
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3440"
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3429"
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3440"
+    },
+    {
+      "file": "downloads/diagrams/sl-split.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3469"
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3429"
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3608"
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3699"
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3716"
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3544"
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.svg",
+      "kind": "SVG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "3487"
+    },
+    {
       "file": "downloads/flashcards.json",
       "kind": "JSON",
       "check": "json payload",
@@ -655,6 +732,90 @@
     },
     {
       "file": "downloads/rooms/ecosystem.pptx",
+      "kind": "PPTX",
+      "check": "pptx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/omni.json",
+      "kind": "JSON",
+      "check": "json payload",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/omni.pdf",
+      "kind": "PDF",
+      "check": "pdf disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/omni.docx",
+      "kind": "DOCX",
+      "check": "docx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/omni.pptx",
+      "kind": "PPTX",
+      "check": "pptx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/metrics.json",
+      "kind": "JSON",
+      "check": "json payload",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/metrics.pdf",
+      "kind": "PDF",
+      "check": "pdf disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/metrics.docx",
+      "kind": "DOCX",
+      "check": "docx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/metrics.pptx",
+      "kind": "PPTX",
+      "check": "pptx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/migrate.json",
+      "kind": "JSON",
+      "check": "json payload",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/migrate.pdf",
+      "kind": "PDF",
+      "check": "pdf disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/migrate.docx",
+      "kind": "DOCX",
+      "check": "docx disclaimer",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/migrate.pptx",
       "kind": "PPTX",
       "check": "pptx disclaimer",
       "pass": true,
@@ -1725,32 +1886,109 @@
       "detail": "56369"
     },
     {
+      "file": "downloads/diagrams/omni-parts.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "46769"
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "45798"
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "45598"
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "43260"
+    },
+    {
+      "file": "downloads/diagrams/sl-split.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "48348"
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "41067"
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "48098"
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "52346"
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "49847"
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "48919"
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.png",
+      "kind": "PNG",
+      "check": "bytes",
+      "pass": true,
+      "detail": "41751"
+    },
+    {
       "file": "downloads/png/cheat-sheet.png",
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "296964"
+      "detail": "304054"
     },
     {
       "file": "downloads/png/flashcards.png",
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "513821"
+      "detail": "719348"
     },
     {
       "file": "downloads/png/brd-outline.png",
       "kind": "PNG",
       "check": "bytes",
       "pass": true,
-      "detail": "346832"
+      "detail": "352825"
     },
     {
       "file": "downloads/ba-everything.zip",
       "kind": "ZIP",
       "check": "bytes",
       "pass": true,
-      "detail": "6230690"
+      "detail": "7233836"
     },
     {
       "file": "downloads/html/brd-outline.html",
@@ -2250,6 +2488,83 @@
       "detail": "ok"
     },
     {
+      "file": "downloads/diagrams/omni-parts.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/sl-split.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
       "file": "downloads/html/flashcards.html",
       "kind": "HTML",
       "check": "headless standalone",
@@ -2286,6 +2601,27 @@
     },
     {
       "file": "downloads/rooms/ecosystem.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/omni.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/metrics.html",
+      "kind": "HTML",
+      "check": "headless standalone",
+      "pass": true,
+      "detail": "ok"
+    },
+    {
+      "file": "downloads/rooms/migrate.html",
       "kind": "HTML",
       "check": "headless standalone",
       "pass": true,

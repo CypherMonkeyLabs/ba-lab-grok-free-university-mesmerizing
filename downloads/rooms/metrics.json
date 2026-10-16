@@ -1,0 +1,211 @@
+{
+  "title": "Contact-center metrics",
+  "page": "metrics.html",
+  "summary": "AHT, service level, abandonment, occupancy, first-contact resolution, and CSAT, with the formula that was opened.",
+  "five": "Use the definition on the report's own page. On the Connect metric-definitions page, average handle time adds interaction, hold, after-contact work, and task pause, then averages the records that are not all null. Service level X is contacts removed from the queue inside X seconds divided by contacts queued, and removal includes an answer, an abandon, or a callback request. Abandonment is in-queue disconnects divided by contacts queued, and callbacks are not abandons. Occupancy is contact time over contact time plus idle time, and it ignores extra concurrent slots. First-contact resolution on that page is closed cases with exactly one call, chat, or email. IBM's CSAT page divides positive responses by all responses. Sample numbers below are arithmetic, not a center's results.",
+  "example": [
+    "Handle time. Record A is 120 + 30 + 60 + 0 = 210 seconds. Record B is 90 + 0 + 30 + 0 = 120 seconds. Average = 165 seconds. If a record's four fields are all null, the page says to skip it.",
+    "Service level 30. Of 100 queued contacts, 60 were answered, 10 abandoned, and 5 requested a callback, all inside 30 seconds. Removed = 75, so service level = 75 percent. Answered-only would be 60 percent. Write which formula you mean.",
+    "Abandonment. 8 in-queue disconnects out of 100 queued is 8 percent. Four callbacks are not in the 8. Occupancy. 40 minutes on contacts and 10 minutes idle is 80 percent. First contact. 6 of 8 closed cases had exactly one call, chat, or email, which is 75 percent. CSAT. 30 ratings of 4 or 5 out of 40 responses is 75 percent. None of these lines is a target."
+  ],
+  "notes": [
+    {
+      "title": "Whose definition you are using",
+      "summary": "The formulas in this room are copied from the Connect Customer metric-definitions page and, for CSAT, from IBM's CSAT page, both opened in October 2026. They are not a universal contact-center standard. A legacy report can use the same name and a different fraction. Write the definition beside the number before you compare platforms."
+    },
+    {
+      "title": "Average handle time",
+      "summary": "The metric-definitions page says average handle time is the average time, from start to finish, that a contact is connected with an agent. It includes talk time, hold time, after-contact work, and agent pause duration. Pause applies only to tasks. The metric applies to inbound and outbound calls. For each contact record the page adds agent interaction, customer hold, after-contact work, and agent pause when those fields are present. If all four fields are null, that record is skipped. The average is the sum of the included records divided by how many records were not skipped."
+    },
+    {
+      "title": "Handle-time pitfalls",
+      "summary": "After-contact work is inside this definition, so a timer that stops when the customer hangs up is a different metric. The page says pause duration applies only to tasks, so a voice comparison that adds pause is not what this page describes. The page also publishes a separate average active time that includes interaction, hold, and after-contact work, including time in a custom status. Do not label that number AHT unless you checked the name on the report."
+    },
+    {
+      "title": "Service level X",
+      "summary": "Service level X on the metric-definitions page is the percentage of contacts removed from the queue between 0 and X seconds after being added. A contact is removed when an agent answers, the customer abandons, or the customer requests a callback. The printed calculation is (contacts removed from queue in X seconds / contacts queued) x 100. Preset values for X, in seconds, are 15, 20, 25, 30, 45, 60, 90, 120, 180, 240, 300, and 600. The page says a custom service level lives only on the report where you created it, up to 7 days, and up to 10 custom levels per report."
+    },
+    {
+      "title": "Service-level pitfalls",
+      "summary": "Because abandonment and callback requests count as removal, a fast hang-up can raise this service level. Teams that mean 'answered inside X' must say so, and they must not paste this platform's service level into that sentence. The page also says the maximum custom duration is 7 days because a contact cannot last longer than 7 days on this platform. Another platform's limit is not copied here."
+    },
+    {
+      "title": "Abandonment rate",
+      "summary": "The metric-definitions page says abandonment rate is the percentage of abandoned contacts. An abandoned contact was disconnected by the customer while in queue, so the customer was not connected to an agent. Contacts queued for callback are not counted as abandoned. The printed calculation is (contacts abandoned / contacts queues) x 100. The minimum is 0 percent and the maximum is 100 percent."
+    },
+    {
+      "title": "Abandonment pitfalls",
+      "summary": "The page says that when you group by routing profile, abandonment rate shows as 0, because an abandoned contact never reaches an agent and so has no routing profile. A routing profile is assigned when an agent accepts a contact. A dashboard sliced that way can hide the queue problem. Callbacks are also excluded, so a queue that offers callback can look calmer than the customer's wait."
+    },
+    {
+      "title": "Occupancy",
+      "summary": "Occupancy on the metric-definitions page is the percentage of time that agents were active on contacts. The page's steps are: get total contact time, get total contact and idle time, then calculate the percentage. The printed line is (contact time / contact time + idle time). Read with those steps, contact time is divided by contact time plus idle time. The minimum is 0 percent and the maximum is 100 percent. The page says data for this metric is available starting 1 October 2023 0:00:00 GMT."
+    },
+    {
+      "title": "Occupancy and concurrency",
+      "summary": "The page says occupancy does not account for concurrency. An agent is 100 percent occupied for an interval if they are handling at least one contact for that entire duration. An agent on one chat for the whole hour, with empty chat slots, is still fully occupied under this definition. Do not use it as proof that every slot was full."
+    },
+    {
+      "title": "First contact, as this page counts it",
+      "summary": "Cases resolved on first contact measures the percent of cases resolved on the first contact, and the page says that includes only calls, chats, or email. The case must be closed. The calculation returns true if there is exactly one of those contacts, otherwise false, and the page says the final percentage uses the average. A case that is reopened and then closed in the interval still counts. A case reopened but not closed in the interval does not. The page says this returns null if the case is not closed or has no contacts. SMS is not in the contact list on that calculation."
+    },
+    {
+      "title": "CSAT",
+      "summary": "IBM's CSAT page, opened in October 2026, says a customer satisfaction score indicates satisfaction with the company's product or services, focused on a specific interaction. It says you ask how satisfied the person was and offer a scale of 1 to 3, 1 to 5, or 1 to 10, or a percentage. The calculation it prints: add the positive responses (ratings of 4 or 5 out of 5, or 80 to 100 percent), divide by the total number of responses, then multiply by 100."
+    },
+    {
+      "title": "CSAT pitfalls",
+      "summary": "The IBM page says CSAT does not give a full ongoing view of the long-term relationship. It describes Net Promoter Score as the recommend-to-a-friend question, and Customer Effort Score as how easy a task was. It does not print the arithmetic for those two, so this lab does not invent it. The page's own cons: a score can be skewed by events outside the contact, the survey may not say why, and people are more likely to answer after an exceptionally good or bad contact. The page also prints American Customer Satisfaction Index figures and calls them CSAT benchmarks, including banks 80 for 2024. This lab does not set those figures as a target."
+    },
+    {
+      "title": "What go-live day actually watches",
+      "summary": "The migration checklist says that on go-live day you review real-time metrics and verify that calls are being answered, that abandonment rates and average handle times are as expected, and that queue depth remains sensible. The checklist does not print the expected numbers. The expected line is the organization's, or it is unknown. Write it down before the bridge opens."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "On the Connect metric-definitions page, service level X treats which events as removal from the queue?",
+      "choices": [
+        "Only answered contacts",
+        "An answer, an abandon, or a callback request",
+        "Only abandons",
+        "After-contact work"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "IBM's printed CSAT calculation uses which ratings as positive on a 1 to 5 scale?",
+      "choices": [
+        "Only 5",
+        "4 and 5",
+        "3, 4, and 5",
+        "The mean of all scores, labeled as a percentage"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "The Connect occupancy definition accounts for concurrent chat slots by:",
+      "choices": [
+        "Dividing by the number of slots",
+        "Not accounting for concurrency",
+        "Ignoring idle time",
+        "Using abandonment as the denominator"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer historical metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/historical-metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

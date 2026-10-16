@@ -1,11 +1,11 @@
 {
   "asOf": "2026-10",
-  "narration": "Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.",
+  "narration": "Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. The contact-center rooms cover journeys, metrics, and a move to the cloud, and they cite only pages opened in October 2026. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.",
   "counts": {
-    "notes": 130,
-    "diagrams": 64,
-    "flows": 32,
-    "cards": 40
+    "notes": 169,
+    "diagrams": 75,
+    "flows": 36,
+    "cards": 54
   },
   "items": [
     {
@@ -188,7 +188,7 @@
       "section": "ecosystem",
       "level": "intermediate",
       "title": "Bridges to other labs",
-      "summary": "Contact-center work needs the same elicitation and acceptance habits, plus queue, channel, and quality measures. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation.",
+      "summary": "The omnichannel, metrics, and migration rooms use the same elicitation and acceptance habits as the rest of this lab, plus queue, channel, and quality measures from pages that opened. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation.",
       "points": [],
       "source": "Google SRE book introduction",
       "url": "https://sre.google/sre-book/introduction/",
@@ -1298,10 +1298,10 @@
       "section": "domains",
       "level": "intermediate",
       "title": "Contact center and CCaaS",
-      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data a agent or a person needs at the start of the conversation. Vendor product claims stay out unless a page was opened.",
+      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data an agent or a person needs at the start of the conversation. The Connect Customer feature overview, opened in October 2026, lists voice, chat and SMS, web and video calling, tasks, and email. The journey, metric, and migration rooms expand that lens. Vendor claims stay out unless a page was opened.",
       "points": [],
-      "source": "Google SRE book introduction",
-      "url": "https://sre.google/sre-book/introduction/",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
       "asOf": "2026-10",
       "tbd": ""
     },
@@ -1580,6 +1580,520 @@
       "url": "https://scrumguides.org/scrum-guide.html",
       "asOf": "2026-10",
       "tbd": ""
+    },
+    {
+      "id": "om-map",
+      "section": "omni",
+      "level": "foundation",
+      "title": "What a journey map is",
+      "summary": "Nielsen Norman Group's Journey Mapping 101, last reviewed on that site in July 2026 and opened for this lab in October 2026, defines a journey map as a visualization of the process that a person goes through in order to accomplish a goal. The page says mapping starts from a series of user actions on a timeline, then adds thoughts and emotions to make a narrative, then condenses that narrative into a visualization.",
+      "points": [],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-parts",
+      "section": "omni",
+      "level": "foundation",
+      "title": "Five elements on the map",
+      "summary": "The same article says journey maps share five elements: the actor, the scenario and expectations, the journey phases, the actions mindsets and emotions, and the opportunities. Opportunities, with ownership and metrics, are how the team decides what to change and how an improvement will be measured.",
+      "points": [
+        "Actor: the point of view. The article says to provide one point of view per map.",
+        "Scenario and expectations: the situation, the goal, and what the person expects. A scenario can be current or anticipated.",
+        "Phases: high-level stages that organize the rest. The article's support-shaped example is discover, try, buy, use, seek support.",
+        "Actions are the narrative of what the person does, not every click. Mindsets are thoughts and questions. Emotions are the ups and downs.",
+        "Opportunities ask what to do with the knowledge, who owns the change, and how improvement will be measured."
+      ],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-cousins",
+      "section": "omni",
+      "level": "intermediate",
+      "title": "Map, blueprint, and story map",
+      "summary": "The article separates three pictures that teams mix up. An experience map is broader: a generic human experience, not one product. A service blueprint takes the business view of a specific journey and shows how the organization supports the touchpoints. A user-story map breaks a feature into release slices. The article says journey maps are for discovery and understanding, and user-story maps are for planning and implementation.",
+      "points": [],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-channels",
+      "section": "omni",
+      "level": "foundation",
+      "title": "Channels a platform page lists",
+      "summary": "The Connect Customer feature overview, opened in October 2026, lists voice, chat and SMS, web calling and video, tasks, and email. It says customers choose a channel from preference and wait time, can stay with the same agent across channels, and if the agent changes the interaction history is preserved so they do not have to repeat themselves. This lab cites that page. It does not rank vendors.",
+      "points": [
+        "Voice uses the softphone in the browser. The page describes 16 kHz audio.",
+        "Text channels on that page include web chat, mobile chat, SMS, and third-party messaging apps.",
+        "Tasks cover follow-up work such as messages, training, and research, routed like other contacts.",
+        "Email can arrive at a business address or from a web form. The page says email uses Amazon Simple Email Service, up to five custom domains, and up to 100 addresses."
+      ],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-text",
+      "section": "omni",
+      "level": "intermediate",
+      "title": "Chat, SMS, and messaging apps",
+      "summary": "The feature overview groups web chat, mobile chat, SMS, and third-party messaging apps. It names WhatsApp and Facebook Messenger as examples of those apps. It says a chatbot can run first, and if a person is needed the agent receives the prior self-service context. This check did not open a separate Facebook Messenger setup article, so Messenger setup steps are not written here.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-wa",
+      "section": "omni",
+      "level": "intermediate",
+      "title": "WhatsApp as a requirement, not a logo",
+      "summary": "The Connect Customer WhatsApp setup page says you link a WhatsApp Business Account and phone number through AWS End User Messaging Social, import the number, and attach an inbound contact flow. The number must be able to receive a voice call or an SMS so Meta can complete verification. The page says automated business verification can take up to 2 weeks, and that WhatsApp can disable an account if policy is violated or the business identity cannot be verified. It recommends a new number that is not already carrying live voice or SMS traffic.",
+      "points": [
+        "Test before live traffic: set the agent to Available in the Contact Control Panel and send a WhatsApp message from a phone.",
+        "A flow can branch on the segment attribute Subtype equal to connect:WhatsApp.",
+        "The page says customers can resume a chat with context, metadata, and the transcript carried forward.",
+        "Quotas called out for go-live include concurrent active chats, StartChatContact, and the WhatsApp send APIs. This lab does not copy quota numbers."
+      ],
+      "source": "Connect Customer, Set up WhatsApp Business messaging",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-social",
+      "section": "omni",
+      "level": "advanced",
+      "title": "Social is still a contact",
+      "summary": "Treat a social or messaging conversation as a contact with a channel, a queue, and a record, not as a post you only read. The feature overview says agents use the same tools for SMS that they use for calls and chats, and that messaging can start in self-service before a person joins. Write which public account is in scope. A channel you have not confirmed is out of scope until someone names it.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-req",
+      "section": "omni",
+      "level": "advanced",
+      "title": "Requirements the map should force",
+      "summary": "The journey article says the useful end of a map is an opportunity with an owner and a way to measure the improvement. For a contact-center project, write these as requirements: the actor and the scenario, the channels in scope, the context that must travel with the person, the moment a bot hands to a person, and the measure you will read after the change. The feature overview says agents should not make the customer start again when the agent changes.",
+      "points": [
+        "One map, one actor. A second persona is a second map.",
+        "Name the data on screen at the start of the contact. The feature overview's Customer Profiles section says profiles can combine contact history with CRM products it names: Salesforce, Zendesk, ServiceNow, or another CRM.",
+        "A vendor name is a solution hypothesis. The need is still the person's goal."
+      ],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "om-blue",
+      "section": "omni",
+      "level": "advanced",
+      "title": "Blueprint under the journey",
+      "summary": "After the journey is stable enough to argue about, the Nielsen Norman article points to a service blueprint: the same journey, drawn from the organization's side. In a contact center that means the flow, the queue, the person or bot who acts, and the system that must answer. The user-journeys migration page says mapping experiences and recording prompts belongs with business stakeholders and service-line owners, not only with the technical foundation team.",
+      "points": [],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-frame",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "Whose definition you are using",
+      "summary": "The formulas in this room are copied from the Connect Customer metric-definitions page and, for CSAT, from IBM's CSAT page, both opened in October 2026. They are not a universal contact-center standard. A legacy report can use the same name and a different fraction. Write the definition beside the number before you compare platforms.",
+      "points": [],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-aht",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "Average handle time",
+      "summary": "The metric-definitions page says average handle time is the average time, from start to finish, that a contact is connected with an agent. It includes talk time, hold time, after-contact work, and agent pause duration. Pause applies only to tasks. The metric applies to inbound and outbound calls. For each contact record the page adds agent interaction, customer hold, after-contact work, and agent pause when those fields are present. If all four fields are null, that record is skipped. The average is the sum of the included records divided by how many records were not skipped.",
+      "points": [
+        "Sample arithmetic only, not a real center. Record A: 120 seconds of interaction, 30 of hold, 60 of after-contact work, 0 pause. Total 210 seconds.",
+        "Record B: 90 + 0 + 30 + 0 = 120 seconds. Neither record is skipped.",
+        "Average handle time = (210 + 120) / 2 = 165 seconds."
+      ],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-aht-pit",
+      "section": "metrics",
+      "level": "intermediate",
+      "title": "Handle-time pitfalls",
+      "summary": "After-contact work is inside this definition, so a timer that stops when the customer hangs up is a different metric. The page says pause duration applies only to tasks, so a voice comparison that adds pause is not what this page describes. The page also publishes a separate average active time that includes interaction, hold, and after-contact work, including time in a custom status. Do not label that number AHT unless you checked the name on the report.",
+      "points": [],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-sl",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "Service level X",
+      "summary": "Service level X on the metric-definitions page is the percentage of contacts removed from the queue between 0 and X seconds after being added. A contact is removed when an agent answers, the customer abandons, or the customer requests a callback. The printed calculation is (contacts removed from queue in X seconds / contacts queued) x 100. Preset values for X, in seconds, are 15, 20, 25, 30, 45, 60, 90, 120, 180, 240, 300, and 600. The page says a custom service level lives only on the report where you created it, up to 7 days, and up to 10 custom levels per report.",
+      "points": [
+        "Sample only. 100 contacts queued. Within 30 seconds: 60 answered, 10 abandoned, 5 requested a callback. Removed = 75.",
+        "Service level 30 = 75 / 100 x 100 = 75 percent.",
+        "Answered-only would be 60 percent. That is a different formula. Say which one the project uses."
+      ],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-sl-pit",
+      "section": "metrics",
+      "level": "advanced",
+      "title": "Service-level pitfalls",
+      "summary": "Because abandonment and callback requests count as removal, a fast hang-up can raise this service level. Teams that mean 'answered inside X' must say so, and they must not paste this platform's service level into that sentence. The page also says the maximum custom duration is 7 days because a contact cannot last longer than 7 days on this platform. Another platform's limit is not copied here.",
+      "points": [],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-abn",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "Abandonment rate",
+      "summary": "The metric-definitions page says abandonment rate is the percentage of abandoned contacts. An abandoned contact was disconnected by the customer while in queue, so the customer was not connected to an agent. Contacts queued for callback are not counted as abandoned. The printed calculation is (contacts abandoned / contacts queues) x 100. The minimum is 0 percent and the maximum is 100 percent.",
+      "points": [
+        "Sample only. 100 contacts queued, 8 abandoned in queue, and 4 waiting for a callback. The 4 are not abandoned under this page.",
+        "Abandonment rate = 8 / 100 x 100 = 8 percent."
+      ],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-abn-pit",
+      "section": "metrics",
+      "level": "intermediate",
+      "title": "Abandonment pitfalls",
+      "summary": "The page says that when you group by routing profile, abandonment rate shows as 0, because an abandoned contact never reaches an agent and so has no routing profile. A routing profile is assigned when an agent accepts a contact. A dashboard sliced that way can hide the queue problem. Callbacks are also excluded, so a queue that offers callback can look calmer than the customer's wait.",
+      "points": [],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-occ",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "Occupancy",
+      "summary": "Occupancy on the metric-definitions page is the percentage of time that agents were active on contacts. The page's steps are: get total contact time, get total contact and idle time, then calculate the percentage. The printed line is (contact time / contact time + idle time). Read with those steps, contact time is divided by contact time plus idle time. The minimum is 0 percent and the maximum is 100 percent. The page says data for this metric is available starting 1 October 2023 0:00:00 GMT.",
+      "points": [
+        "Sample only. 40 minutes on contacts and 10 minutes idle.",
+        "Occupancy = 40 / (40 + 10) x 100 = 80 percent."
+      ],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-occ-pit",
+      "section": "metrics",
+      "level": "advanced",
+      "title": "Occupancy and concurrency",
+      "summary": "The page says occupancy does not account for concurrency. An agent is 100 percent occupied for an interval if they are handling at least one contact for that entire duration. An agent on one chat for the whole hour, with empty chat slots, is still fully occupied under this definition. Do not use it as proof that every slot was full.",
+      "points": [],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-fcr",
+      "section": "metrics",
+      "level": "intermediate",
+      "title": "First contact, as this page counts it",
+      "summary": "Cases resolved on first contact measures the percent of cases resolved on the first contact, and the page says that includes only calls, chats, or email. The case must be closed. The calculation returns true if there is exactly one of those contacts, otherwise false, and the page says the final percentage uses the average. A case that is reopened and then closed in the interval still counts. A case reopened but not closed in the interval does not. The page says this returns null if the case is not closed or has no contacts. SMS is not in the contact list on that calculation.",
+      "points": [
+        "Sample only. Eight closed cases. Six have exactly one voice, chat, or email contact. Two have more than one.",
+        "Six true and two false. The average is 6 / 8 = 0.75, which is 75 percent.",
+        "An agent checkbox labeled resolved is a different measure until you show it matches this rule."
+      ],
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-csat",
+      "section": "metrics",
+      "level": "foundation",
+      "title": "CSAT",
+      "summary": "IBM's CSAT page, opened in October 2026, says a customer satisfaction score indicates satisfaction with the company's product or services, focused on a specific interaction. It says you ask how satisfied the person was and offer a scale of 1 to 3, 1 to 5, or 1 to 10, or a percentage. The calculation it prints: add the positive responses (ratings of 4 or 5 out of 5, or 80 to 100 percent), divide by the total number of responses, then multiply by 100.",
+      "points": [
+        "Sample only. 40 responses. 30 are a 4 or a 5 on a 1 to 5 scale.",
+        "CSAT = 30 / 40 x 100 = 75 percent.",
+        "Say the scale and the count of responses next to the percent."
+      ],
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-csat-pit",
+      "section": "metrics",
+      "level": "advanced",
+      "title": "CSAT pitfalls",
+      "summary": "The IBM page says CSAT does not give a full ongoing view of the long-term relationship. It describes Net Promoter Score as the recommend-to-a-friend question, and Customer Effort Score as how easy a task was. It does not print the arithmetic for those two, so this lab does not invent it. The page's own cons: a score can be skewed by events outside the contact, the survey may not say why, and people are more likely to answer after an exceptionally good or bad contact. The page also prints American Customer Satisfaction Index figures and calls them CSAT benchmarks, including banks 80 for 2024. This lab does not set those figures as a target.",
+      "points": [],
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "kpi-golive",
+      "section": "metrics",
+      "level": "advanced",
+      "title": "What go-live day actually watches",
+      "summary": "The migration checklist says that on go-live day you review real-time metrics and verify that calls are being answered, that abandonment rates and average handle times are as expected, and that queue depth remains sensible. The checklist does not print the expected numbers. The expected line is the organization's, or it is unknown. Write it down before the bridge opens.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-words",
+      "section": "migrate",
+      "level": "foundation",
+      "title": "Sprint, workstream, and phase",
+      "summary": "The AWS Prescriptive Guidance page on contact-center migration phases says a sprint is a time-bound collection of activities delivered by different workstreams, and gives two weeks as an example, not a rule for your project. A workstream is a team-bound set of activities. A phase is a goal-oriented collection across workstreams and ends at a milestone. The design phase, on that page, produces documents such as architectural diagrams, build specifications, and high-level designs, and it is done when the right stakeholders approve them.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-three",
+      "section": "migrate",
+      "level": "foundation",
+      "title": "Three workstreams",
+      "summary": "The same page recommends at least three parallel workstreams: operational, technical foundation, and user journeys. It says mapping customer experiences and recording call prompts belongs on the user-journey workstream because those tasks need business stakeholders and service-line owners. Account and landing-zone work sits on the technical foundation. The page says the diagram has no specific timelines. Add the activities that fit, and estimate duration with the stakeholders.",
+      "points": [
+        "Sprint 0, as that page describes it, is kick-off, discovery, planning, and design.",
+        "The minimum lovable product is a small, stable slice. The page's example is a straightforward caller journey for a small group of agents.",
+        "Later sprints add capability after that slice is live."
+      ],
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-discover",
+      "section": "migrate",
+      "level": "intermediate",
+      "title": "The journey workshop artifact",
+      "summary": "The user-journeys page says discovery gathers existing flows or, if you are designing, runs a workshop. The canvas is a visual tool such as PowerPoint, Visio, or draw.io, or the contact-flow designer. You add blocks, decision points, and placeholders for steps still to confirm, and you name the owner of each placeholder. The page lists the attendees: project managers, business and solutions architects, business analysts, and the service-line owner and operator.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-design",
+      "section": "migrate",
+      "level": "intermediate",
+      "title": "One picture that stays true",
+      "summary": "The user-journeys page says design documentation is optional and depends on the size of the flow. If the team uses the contact-flow designer, the page says the journey is self-documented and is the build, which keeps a single source of truth. If you keep a separate design document, it must follow change control so it does not drift from the build.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-test",
+      "section": "migrate",
+      "level": "intermediate",
+      "title": "Functional test, then acceptance",
+      "summary": "The user-journeys page splits test into two steps in order. Functional testing happens across sprints as flows are created, by a functional test team. User acceptance testing happens only after functional tests pass, and it is performed by client business users, either a dedicated team or people from the service line. Flows go to production only after they pass that acceptance test.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-cut",
+      "section": "migrate",
+      "level": "advanced",
+      "title": "Temporary number, cutover, rollback",
+      "summary": "The deploy section says you claim a temporary phone number, assign the flows, and let the project team place test calls and run a selection of acceptance scripts. At go-live that number is replaced by the public number. Rollback, on that page, is swapping the number back to the legacy service line. The before-go-live checklist adds two planning items: toll-free repointing may need a provider ticket, and a porting request should be filed well before the date. This lab does not copy a lead time.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-opmodel",
+      "section": "migrate",
+      "level": "foundation",
+      "title": "Operating model, not a runbook",
+      "summary": "The operational workstream page says the operating model defines who will use the contact center and how it will be managed. It is not a procedure, a runbook, or a configuration file. The page's example: do not document how to pull logs. Document who pulls them and which queue or vendor receives them. The model includes a RASCI matrix (responsible, accountable, supported, consulted, and informed) and swimlanes for end-to-end activities, such as who can start an emergency queue message and what data they use. Stakeholders sign it before production, and the page says that sign-off is a go-live requirement.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-si",
+      "section": "migrate",
+      "level": "intermediate",
+      "title": "Service introduction and the change board",
+      "summary": "Service introduction, on the operational page, puts the operating model into use. The page says the project must pass that team's checklists before go-live, including acceptance results, a check that no conflicting freeze or other go-live is on the same day, training completed, and operations ready. Engage that team early. The migration checklist says you submit a change request and get change-approval-board approval for a specific date and time. The checklist evidence is the input to that discussion.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-train",
+      "section": "migrate",
+      "level": "foundation",
+      "title": "Training is a migration artifact",
+      "summary": "The operational page says the technology can work and the migration can still fail if users do not know how to answer contacts and do their daily tasks. It recommends training the trainer with in-house staff when that team exists, with project specialists supplying manuals and screen guides. If there is no training team, specialists train supervisors and lead support staff, who then train users. It also recommends instructor-led product training for system administrators and product owners. Course prices are not on that page, so this lab states none.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-check",
+      "section": "migrate",
+      "level": "advanced",
+      "title": "Checklist the analyst can trace",
+      "summary": "The before-go-live checklist, opened in October 2026, asks you to confirm: acceptance passed and leftover issues accepted, the number cutover planned, users trained, operations signed into the support model, code in production, service lines have run acceptance scripts on a temporary number, and the change board has approved the cutover. On the day: agents logged in for calls and chats, post-go-live support present, a conference bridge open until success or rollback, cutover at the approved time, and the live metrics in the metrics room.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "mg-ba",
+      "section": "migrate",
+      "level": "advanced",
+      "title": "What the analyst owns in the pack",
+      "summary": "From the pages above, a business-analysis pack for this kind of move contains: outcomes and success criteria from the alignment activity, the current and future journey with placeholder owners, the channel and prompt list, the RASCI and the swimlanes, the acceptance scripts, the metric definitions you will call 'expected' on go-live day, and the service lines that are out of this slice. The alignment page says you also validate timelines and costs. If a cost was not sourced, leave it blank.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-gloss-cc",
+      "section": "ecosystem",
+      "level": "foundation",
+      "title": "Contact-center words, with a source",
+      "summary": "The glossary in this lab now includes the contact-center words these rooms use: journey map, experience map, service blueprint, average handle time, service level, abandonment rate, occupancy, first-contact resolution, CSAT, after-contact work, operating model, RASCI, and workstream. Each line names the page that was opened. A word that is not in that list is not defined here.",
+      "points": [],
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-mind",
+      "section": "ecosystem",
+      "level": "foundation",
+      "title": "Mind map",
+      "summary": "Read the ecosystem drawing as a study map, not as a vendor architecture. The person and the goal sit in the middle. Around them: the channels, the journey and the blueprint, the queue and the flow, the agent and the customer profile, the measures, and the three migration workstreams. If a box has no opened source, it does not belong on the map.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-tech",
+      "section": "ecosystem",
+      "level": "intermediate",
+      "title": "Sister technologies",
+      "summary": "The feature overview describes neighboring pieces a contact-center analyst will meet. Conversational IVR and chatbots can use Amazon Lex. Customer Profiles can combine contact history with a CRM; the page names Salesforce, Zendesk, and ServiceNow. Forecasting and agent scheduling are described for the workforce team. Screen recordings are described as a way to review what an agent did. Contact flows can call AWS Lambda, including toward a CRM. Email on that page is tied to Amazon Simple Email Service. Naming a product here is a citation, not a recommendation.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-integrate",
+      "section": "ecosystem",
+      "level": "intermediate",
+      "title": "Integration map",
+      "summary": "A study sequence, taken from how the feature overview lays the work out, is: channel, then contact flow, then queue, then agent workspace, with a customer profile beside the agent and a case when the issue spans contacts. The WhatsApp page adds a step in front of that sequence: a business account and a verified number before any message arrives. Draw only the arrows you can name. An unnamed arrow is a gap.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-bridge-cc",
+      "section": "ecosystem",
+      "level": "intermediate",
+      "title": "Bridges into the other rooms",
+      "summary": "Use Foundations for the need before the platform name. Use Requirements for the handoff and the acceptance scenario. Use Modeling when the journey or the blueprint needs a picture. Use the metrics room when a chart needs a formula. Use Domains for the contact-center lens beside other industries. Use the migration room when the change is a move from a legacy platform. Shared pages do not merge the decision rights.",
+      "points": [],
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "tbd": ""
+    },
+    {
+      "id": "e-future-cc",
+      "section": "ecosystem",
+      "level": "advanced",
+      "title": "Future hooks that a page actually describes",
+      "summary": "The feature overview describes generative AI agent assist during calls and chats, generated post-contact summaries, and forecasting and scheduling. Those are descriptions of a product page, not a claim that a reader's platform has them, and not a roadmap. A person still accepts any requirement a model drafts. The WhatsApp setup page adds a planning constraint you can write today: business verification can take up to 2 weeks. Features this check did not open stay unmarked.",
+      "points": [],
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "tbd": "Any vendor roadmap, quota, or price that was not on an opened page."
     }
   ],
   "glossary": [
@@ -1862,6 +2376,104 @@
       "source": "BABOK Guide knowledge hub",
       "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
       "asOf": "2026-10"
+    },
+    {
+      "term": "Journey map",
+      "meaning": "A visualization of the process a person goes through to accomplish a goal. One actor per map.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Experience map",
+      "meaning": "A broader picture of a general human experience, not tied to one product.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Service blueprint",
+      "meaning": "The business-side picture of a specific journey: how the organization supports the touchpoints.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Average handle time",
+      "meaning": "On the Connect metric page: average connected time with an agent, including talk, hold, after-contact work, and task pause.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Service level",
+      "meaning": "On that page: contacts removed from the queue inside X seconds, divided by contacts queued. Removal includes answer, abandon, or callback request.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Abandonment rate",
+      "meaning": "On that page: contacts the customer disconnected while still in queue, divided by contacts queued. Callbacks are not abandoned.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Occupancy",
+      "meaning": "On that page: contact time divided by contact time plus idle time. It does not account for concurrency.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "First-contact resolution",
+      "meaning": "On that page's cases metric: closed cases with exactly one call, chat, or email contact.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "CSAT",
+      "meaning": "IBM: positive responses (4 or 5 out of 5, or 80 to 100 percent) divided by all responses, times 100.",
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "After-contact work",
+      "meaning": "Time after the conversation that the Connect handle-time definition still includes.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Operating model",
+      "meaning": "Who uses the contact center and how it is managed. Not a runbook. The migration page asks for a signed RASCI and swimlanes.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "RASCI",
+      "meaning": "Responsible, accountable, supported, consulted, and informed, as the operational migration page spells the matrix.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Workstream",
+      "meaning": "A team-bound set of migration activities. The guidance page recommends operational, technical foundation, and user journeys.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10"
+    },
+    {
+      "term": "Minimum lovable product",
+      "meaning": "The migration page's name for a small stable slice, such as one caller journey for a small group of agents, before later sprints.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10"
     }
   ],
   "flashcards": [
@@ -2143,6 +2755,104 @@
       "back": "The Business Analysis Core Concept Model in the BABOK Guide.",
       "source": "BABOK Guide knowledge hub",
       "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Journey map",
+      "back": "A visualization of the process a person goes through to accomplish a goal. One actor per map.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Experience map",
+      "back": "A broader picture of a general human experience, not tied to one product.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Service blueprint",
+      "back": "The business-side picture of a specific journey: how the organization supports the touchpoints.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Average handle time",
+      "back": "On the Connect metric page: average connected time with an agent, including talk, hold, after-contact work, and task pause.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Service level",
+      "back": "On that page: contacts removed from the queue inside X seconds, divided by contacts queued. Removal includes answer, abandon, or callback request.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Abandonment rate",
+      "back": "On that page: contacts the customer disconnected while still in queue, divided by contacts queued. Callbacks are not abandoned.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Occupancy",
+      "back": "On that page: contact time divided by contact time plus idle time. It does not account for concurrency.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "First-contact resolution",
+      "back": "On that page's cases metric: closed cases with exactly one call, chat, or email contact.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "CSAT",
+      "back": "IBM: positive responses (4 or 5 out of 5, or 80 to 100 percent) divided by all responses, times 100.",
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "After-contact work",
+      "back": "Time after the conversation that the Connect handle-time definition still includes.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Operating model",
+      "back": "Who uses the contact center and how it is managed. Not a runbook. The migration page asks for a signed RASCI and swimlanes.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "RASCI",
+      "back": "Responsible, accountable, supported, consulted, and informed, as the operational migration page spells the matrix.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Workstream",
+      "back": "A team-bound set of migration activities. The guidance page recommends operational, technical foundation, and user journeys.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10"
+    },
+    {
+      "front": "Minimum lovable product",
+      "back": "The migration page's name for a small stable slice, such as one caller journey for a small group of agents, before later sprints.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
       "asOf": "2026-10"
     }
   ],
@@ -2593,6 +3303,126 @@
       "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
       "asOf": "2026-10",
       "section": "careers"
+    },
+    {
+      "q": "Nielsen Norman's journey-map article says how many points of view belong on one map?",
+      "choices": [
+        "As many personas as the workshop invites",
+        "One",
+        "One per channel",
+        "None, the map is the company's"
+      ],
+      "answer": 1,
+      "why": "The article says to provide one point of view per map. A second actor is a second map.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10",
+      "section": "omni"
+    },
+    {
+      "q": "The Connect WhatsApp setup page says business verification can take up to:",
+      "choices": [
+        "A few minutes, so ignore it",
+        "2 weeks",
+        "A time this lab invented",
+        "It does not mention verification"
+      ],
+      "answer": 1,
+      "why": "The page says the automated business verification process can take up to 2 weeks, and tells you to start early.",
+      "source": "Connect Customer, Set up WhatsApp Business messaging",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+      "asOf": "2026-10",
+      "section": "omni"
+    },
+    {
+      "q": "On the Connect metric-definitions page, service level X treats which events as removal from the queue?",
+      "choices": [
+        "Only answered contacts",
+        "An answer, an abandon, or a callback request",
+        "Only abandons",
+        "After-contact work"
+      ],
+      "answer": 1,
+      "why": "The page lists those three. Answered-only is a different formula.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "section": "metrics"
+    },
+    {
+      "q": "IBM's printed CSAT calculation uses which ratings as positive on a 1 to 5 scale?",
+      "choices": [
+        "Only 5",
+        "4 and 5",
+        "3, 4, and 5",
+        "The mean of all scores, labeled as a percentage"
+      ],
+      "answer": 1,
+      "why": "The page says ratings of 4 or 5 out of 5, divided by all responses, times 100.",
+      "source": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "asOf": "2026-10",
+      "section": "metrics"
+    },
+    {
+      "q": "The Connect occupancy definition accounts for concurrent chat slots by:",
+      "choices": [
+        "Dividing by the number of slots",
+        "Not accounting for concurrency",
+        "Ignoring idle time",
+        "Using abandonment as the denominator"
+      ],
+      "answer": 1,
+      "why": "The page says occupancy does not account for concurrency. One contact for the whole interval can be 100 percent.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10",
+      "section": "metrics"
+    },
+    {
+      "q": "The migration guidance recommends at least which parallel workstreams?",
+      "choices": [
+        "Only a technical build",
+        "Operational, technical foundation, and user journeys",
+        "A single Gantt chart",
+        "Training after go-live only"
+      ],
+      "answer": 1,
+      "why": "Those three are the recommendation on the workstreams page.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10",
+      "section": "migrate"
+    },
+    {
+      "q": "The operational page says the operating model should be:",
+      "choices": [
+        "A screenshot runbook for pulling logs",
+        "A RASCI and swimlanes of who does what, signed before production",
+        "Optional if the software is configured",
+        "A salary plan"
+      ],
+      "answer": 1,
+      "why": "The page says it is not a runbook, and that sign-off is a go-live requirement.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10",
+      "section": "migrate"
+    },
+    {
+      "q": "A product name on the ecosystem map is:",
+      "choices": [
+        "A recommendation to buy it",
+        "A citation of a page that opened",
+        "Proof the reader already owns it",
+        "A future roadmap"
+      ],
+      "answer": 1,
+      "why": "The feature overview names products. This lab does not turn that list into a shortlist.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10",
+      "section": "ecosystem"
     }
   ],
   "diagrams": [
@@ -3235,6 +4065,116 @@
       "source": "IIBA certification FAQ",
       "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
       "asOf": "2026-10"
+    },
+    {
+      "id": "omni-parts",
+      "title": "Journey map elements",
+      "file": "assets/diagrams/omni-parts.svg",
+      "alt": "Journey map elements. Five elements from the Nielsen Norman article.",
+      "caption": "Five elements from the Nielsen Norman article.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "omni-channels",
+      "title": "Channels named on the overview",
+      "file": "assets/diagrams/omni-channels.svg",
+      "alt": "Channels named on the overview. The feature overview's list. Not a ranking.",
+      "caption": "The feature overview's list. Not a ranking.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "omni-blueprint",
+      "title": "Journey then blueprint",
+      "file": "assets/diagrams/omni-blueprint.svg",
+      "alt": "Journey then blueprint. Blueprint is the organization's side of the same journey.",
+      "caption": "Blueprint is the organization's side of the same journey.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "aht-parts",
+      "title": "What this AHT adds",
+      "file": "assets/diagrams/aht-parts.svg",
+      "alt": "What this AHT adds. Average of the records that remain.",
+      "caption": "Average of the records that remain.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "sl-split",
+      "title": "Removed from queue inside X",
+      "file": "assets/diagrams/sl-split.svg",
+      "alt": "Removed from queue inside X. Connect's service level. Answered-only is a different formula.",
+      "caption": "Connect's service level. Answered-only is a different formula.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "metric-owner",
+      "title": "Before you publish a KPI",
+      "file": "assets/diagrams/metric-owner.svg",
+      "alt": "Before you publish a KPI. If the action line is not agreed, write unknown.",
+      "caption": "If the action line is not agreed, write unknown.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "migrate-streams",
+      "title": "Three migration workstreams",
+      "file": "assets/diagrams/migrate-streams.svg",
+      "alt": "Three migration workstreams. Parallel work. No timeline on the source diagram.",
+      "caption": "Parallel work. No timeline on the source diagram.",
+      "source": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "migrate-pack",
+      "title": "Analysis pack for the move",
+      "file": "assets/diagrams/migrate-pack.svg",
+      "alt": "Analysis pack for the move. Costs stay blank until sourced.",
+      "caption": "Costs stay blank until sourced.",
+      "source": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "eco-mind",
+      "title": "Contact-center mind map",
+      "file": "assets/diagrams/eco-mind.svg",
+      "alt": "Contact-center mind map. A study map. Boxes need an opened source.",
+      "caption": "A study map. Boxes need an opened source.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "eco-sisters",
+      "title": "Sister technologies on the overview",
+      "file": "assets/diagrams/eco-sisters.svg",
+      "alt": "Sister technologies on the overview. Citations, not a shortlist.",
+      "caption": "Citations, not a shortlist.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "eco-integrate",
+      "title": "Integration sequence",
+      "file": "assets/diagrams/eco-integrate.svg",
+      "alt": "Integration sequence. Draw an arrow only when you can name it.",
+      "caption": "Draw an arrow only when you can name it.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10"
     }
   ],
   "flows": [
@@ -3708,6 +4648,66 @@
       "source": "IIBA certification FAQ",
       "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
       "asOf": "2026-10"
+    },
+    {
+      "id": "omni-flow",
+      "title": "From journey to requirement",
+      "steps": [
+        "Name one actor and one goal",
+        "List phases and channels",
+        "Mark where it breaks",
+        "Name the owner of the fix",
+        "Write the measure"
+      ],
+      "caption": "One map does not cover two actors.",
+      "source": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "channel-flow",
+      "title": "A contact that changes channel",
+      "steps": [
+        "Person starts on a channel",
+        "Self-service may go first",
+        "Context moves with the contact",
+        "A person joins without a restart",
+        "The record says which channel"
+      ],
+      "caption": "History preserved is a requirement on the overview.",
+      "source": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "metric-define-flow",
+      "title": "Fix a disputed number",
+      "steps": [
+        "Write the question",
+        "Copy the formula from the report's own page",
+        "Compute one sample by hand",
+        "Name the owner",
+        "Do not compare a second platform until its formula is written"
+      ],
+      "caption": "Same name, different fraction, is a common dispute.",
+      "source": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "asOf": "2026-10"
+    },
+    {
+      "id": "migrate-ba-flow",
+      "title": "Artifacts before cutover",
+      "steps": [
+        "Align on outcomes",
+        "Workshop the journey and name placeholder owners",
+        "Sign the operating model",
+        "Accept the flows",
+        "Watch the agreed metrics as you cut over"
+      ],
+      "caption": "Rollback is swapping the number back.",
+      "source": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "asOf": "2026-10"
     }
   ],
   "charts": [
@@ -3848,19 +4848,19 @@
       "rows": [
         {
           "label": "Notes",
-          "value": 130
+          "value": 169
         },
         {
           "label": "Diagrams",
-          "value": 64
+          "value": 75
         },
         {
           "label": "Flows",
-          "value": 32
+          "value": 36
         },
         {
           "label": "Flashcards",
-          "value": 40
+          "value": 54
         }
       ]
     }
@@ -3968,6 +4968,27 @@
       {
         "label": "How to Meet WCAG, quick reference",
         "url": "https://www.w3.org/WAI/WCAG22/quickref/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer feature overview",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, project phases and workstreams",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
         "kind": "official",
         "status": "open",
         "checked": "2026-10"
@@ -4247,6 +5268,383 @@
       {
         "label": "About IIBA",
         "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "NN/g, Journey Mapping 101",
+        "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer feature overview",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer, Set up WhatsApp Business messaging",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, project phases and workstreams",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, user journeys workstream",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "omni": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "NN/g, Journey Mapping 101",
+        "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer feature overview",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer, Set up WhatsApp Business messaging",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "metrics": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer historical metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/historical-metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IBM, What is CSAT and how to calculate it",
+        "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, migration checklists",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      }
+    ],
+    "migrate": [
+      {
+        "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+        "url": "https://www.iiba.org/knowledgehub/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BABOK Guide article on the IIBA knowledge hub",
+        "url": "",
+        "kind": "standard",
+        "status": "confirm",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA home",
+        "url": "https://www.iiba.org/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Manifesto for Agile Software Development",
+        "url": "https://agilemanifesto.org/",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Principles behind the Agile Manifesto",
+        "url": "https://agilemanifesto.org/principles.html",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0",
+        "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "BPMN 2.0 specification PDF",
+        "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about BPMN 2.0.2",
+        "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG, about UML 2.5.1",
+        "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "UML 2.5.1 specification PDF",
+        "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+        "kind": "standard",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IIBA membership",
+        "url": "https://www.iiba.org/membership/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "OMG managed communities",
+        "url": "https://www.omg.org/communities/",
+        "kind": "community",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, project phases and workstreams",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, user journeys workstream",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, operational workstream",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, migration checklists",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
         "kind": "official",
         "status": "open",
         "checked": "2026-10"
@@ -5379,6 +6777,13 @@
         "kind": "standard",
         "status": "open",
         "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer feature overview",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
       }
     ],
     "product": [
@@ -6424,6 +7829,41 @@
         "kind": "official",
         "status": "open",
         "checked": "2026-10"
+      },
+      {
+        "label": "NN/g, Journey Mapping 101",
+        "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IBM, What is CSAT and how to calculate it",
+        "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, project phases and workstreams",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, operational workstream",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
       }
     ],
     "resources": [
@@ -6514,6 +7954,41 @@
       {
         "label": "About IIBA",
         "url": "https://www.iiba.org/about-iiba/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "NN/g, Journey Mapping 101",
+        "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer feature overview",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "Connect Customer metric definitions",
+        "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "IBM, What is CSAT and how to calculate it",
+        "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+        "kind": "official",
+        "status": "open",
+        "checked": "2026-10"
+      },
+      {
+        "label": "AWS Prescriptive Guidance, migration checklists",
+        "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
         "kind": "official",
         "status": "open",
         "checked": "2026-10"
@@ -7312,6 +8787,60 @@
       "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
       "note": "H-1B specialty-occupation description. Not legal advice. Fees on that page were in flux, so none are copied.",
       "asOf": "2026-10"
+    },
+    {
+      "title": "NN/g, Journey Mapping 101",
+      "url": "https://www.nngroup.com/articles/journey-mapping-101/",
+      "note": "Journey map definition, five elements, and the difference from a blueprint and a story map.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "note": "Channels, profiles, and neighboring contact-center capabilities described by the vendor.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Connect Customer, Set up WhatsApp Business messaging",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/whatsapp-integration.html",
+      "note": "WhatsApp Business Account, verification, flow, and test steps.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "note": "Handle time, service level, abandonment, occupancy, and first-contact resolution as that page defines them.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "IBM, What is CSAT and how to calculate it",
+      "url": "https://www.ibm.com/think/topics/csat-customer-satisfaction-score",
+      "note": "CSAT formula and the limits the page states. NPS and CES arithmetic is not printed there.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "note": "Sprint, workstream, phase, and the three parallel workstreams.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+      "note": "Journey workshop, design source of truth, test, and cutover.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "note": "Operating model, RASCI, service introduction, and training.",
+      "asOf": "2026-10"
+    },
+    {
+      "title": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "note": "Before go-live and day-of checklists, including which metrics to watch.",
+      "asOf": "2026-10"
     }
   ],
   "downloads": [
@@ -7319,109 +8848,109 @@
       "file": "downloads/brd-outline.pdf",
       "title": "Business requirements outline",
       "kind": "PDF",
-      "bytes": 6625
+      "bytes": 6748
     },
     {
       "file": "downloads/html/brd-outline.html",
       "title": "Business requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 4926
+      "bytes": 5025
     },
     {
       "file": "downloads/frd-outline.pdf",
       "title": "Functional requirements outline",
       "kind": "PDF",
-      "bytes": 6533
+      "bytes": 6656
     },
     {
       "file": "downloads/html/frd-outline.html",
       "title": "Functional requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 4822
+      "bytes": 4921
     },
     {
       "file": "downloads/srs-outline.pdf",
       "title": "Software requirements outline",
       "kind": "PDF",
-      "bytes": 6528
+      "bytes": 6652
     },
     {
       "file": "downloads/html/srs-outline.html",
       "title": "Software requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 4806
+      "bytes": 4905
     },
     {
       "file": "downloads/user-story-card.pdf",
       "title": "User story card",
       "kind": "PDF",
-      "bytes": 6478
+      "bytes": 6605
     },
     {
       "file": "downloads/html/user-story-card.html",
       "title": "User story card (HTML)",
       "kind": "HTML",
-      "bytes": 4746
+      "bytes": 4845
     },
     {
       "file": "downloads/raci-sheet.pdf",
       "title": "RACI sheet",
       "kind": "PDF",
-      "bytes": 6740
+      "bytes": 6865
     },
     {
       "file": "downloads/html/raci-sheet.html",
       "title": "RACI sheet (HTML)",
       "kind": "HTML",
-      "bytes": 5035
+      "bytes": 5134
     },
     {
       "file": "downloads/swot-sheet.pdf",
       "title": "SWOT sheet",
       "kind": "PDF",
-      "bytes": 6692
+      "bytes": 6818
     },
     {
       "file": "downloads/html/swot-sheet.html",
       "title": "SWOT sheet (HTML)",
       "kind": "HTML",
-      "bytes": 4997
+      "bytes": 5096
     },
     {
       "file": "downloads/process-map-sheet.pdf",
       "title": "Process map checklist",
       "kind": "PDF",
-      "bytes": 6284
+      "bytes": 6413
     },
     {
       "file": "downloads/html/process-map-sheet.html",
       "title": "Process map checklist (HTML)",
       "kind": "HTML",
-      "bytes": 4144
+      "bytes": 4243
     },
     {
       "file": "downloads/cert-fee-notes.pdf",
       "title": "Certification fee notes",
       "kind": "PDF",
-      "bytes": 9489
+      "bytes": 9674
     },
     {
       "file": "downloads/ba-templates.docx",
       "title": "Template workbook",
       "kind": "DOCX",
-      "bytes": 39913
+      "bytes": 39957
     },
     {
       "file": "downloads/ba-study-deck.pptx",
       "title": "Study deck",
       "kind": "PPTX",
-      "bytes": 42127
+      "bytes": 42303
     },
     {
       "file": "downloads/ba-html-sheets.zip",
       "title": "HTML sheets, zipped",
       "kind": "ZIP",
-      "bytes": 16364
+      "bytes": 19082
     },
     {
       "file": "downloads/diagrams/baccm.svg",
@@ -7433,7 +8962,7 @@
       "file": "downloads/diagrams/baccm.html",
       "title": "Core concept model HTML",
       "kind": "HTML",
-      "bytes": 5992
+      "bytes": 6091
     },
     {
       "file": "downloads/diagrams/areas.svg",
@@ -7445,7 +8974,7 @@
       "file": "downloads/diagrams/areas.html",
       "title": "Six knowledge areas HTML",
       "kind": "HTML",
-      "bytes": 6066
+      "bytes": 6165
     },
     {
       "file": "downloads/diagrams/classes.svg",
@@ -7457,7 +8986,7 @@
       "file": "downloads/diagrams/classes.html",
       "title": "Requirement classes HTML",
       "kind": "HTML",
-      "bytes": 5737
+      "bytes": 5836
     },
     {
       "file": "downloads/diagrams/elicitation.svg",
@@ -7469,7 +8998,7 @@
       "file": "downloads/diagrams/elicitation.html",
       "title": "Elicitation loop HTML",
       "kind": "HTML",
-      "bytes": 5714
+      "bytes": 5813
     },
     {
       "file": "downloads/diagrams/trace.svg",
@@ -7481,7 +9010,7 @@
       "file": "downloads/diagrams/trace.html",
       "title": "Trace chain HTML",
       "kind": "HTML",
-      "bytes": 5712
+      "bytes": 5811
     },
     {
       "file": "downloads/diagrams/grid.svg",
@@ -7493,7 +9022,7 @@
       "file": "downloads/diagrams/grid.html",
       "title": "Stakeholder grid HTML",
       "kind": "HTML",
-      "bytes": 6017
+      "bytes": 6116
     },
     {
       "file": "downloads/diagrams/bpmn.svg",
@@ -7505,7 +9034,7 @@
       "file": "downloads/diagrams/bpmn.html",
       "title": "BPMN pieces HTML",
       "kind": "HTML",
-      "bytes": 5605
+      "bytes": 5704
     },
     {
       "file": "downloads/diagrams/storymap.svg",
@@ -7517,7 +9046,7 @@
       "file": "downloads/diagrams/storymap.html",
       "title": "Story map HTML",
       "kind": "HTML",
-      "bytes": 5716
+      "bytes": 5815
     },
     {
       "file": "downloads/diagrams/c4.svg",
@@ -7529,7 +9058,7 @@
       "file": "downloads/diagrams/c4.html",
       "title": "C4 levels HTML",
       "kind": "HTML",
-      "bytes": 5387
+      "bytes": 5486
     },
     {
       "file": "downloads/diagrams/erd.svg",
@@ -7541,7 +9070,7 @@
       "file": "downloads/diagrams/erd.html",
       "title": "Small order model HTML",
       "kind": "HTML",
-      "bytes": 5732
+      "bytes": 5831
     },
     {
       "file": "downloads/diagrams/raci.svg",
@@ -7553,7 +9082,7 @@
       "file": "downloads/diagrams/raci.html",
       "title": "RACI roles HTML",
       "kind": "HTML",
-      "bytes": 5552
+      "bytes": 5651
     },
     {
       "file": "downloads/diagrams/swot.svg",
@@ -7565,7 +9094,7 @@
       "file": "downloads/diagrams/swot.html",
       "title": "SWOT quadrants HTML",
       "kind": "HTML",
-      "bytes": 5560
+      "bytes": 5659
     },
     {
       "file": "downloads/diagrams/heart.svg",
@@ -7577,7 +9106,7 @@
       "file": "downloads/diagrams/heart.html",
       "title": "HEART categories HTML",
       "kind": "HTML",
-      "bytes": 5889
+      "bytes": 5988
     },
     {
       "file": "downloads/diagrams/okr.svg",
@@ -7589,7 +9118,7 @@
       "file": "downloads/diagrams/okr.html",
       "title": "OKR shape HTML",
       "kind": "HTML",
-      "bytes": 5494
+      "bytes": 5593
     },
     {
       "file": "downloads/diagrams/dt.svg",
@@ -7601,7 +9130,7 @@
       "file": "downloads/diagrams/dt.html",
       "title": "Discover before converge HTML",
       "kind": "HTML",
-      "bytes": 5644
+      "bytes": 5743
     },
     {
       "file": "downloads/diagrams/jtbd.svg",
@@ -7613,7 +9142,7 @@
       "file": "downloads/diagrams/jtbd.html",
       "title": "Job story HTML",
       "kind": "HTML",
-      "bytes": 5798
+      "bytes": 5897
     },
     {
       "file": "downloads/diagrams/adkar.svg",
@@ -7625,7 +9154,7 @@
       "file": "downloads/diagrams/adkar.html",
       "title": "ADKAR HTML",
       "kind": "HTML",
-      "bytes": 5722
+      "bytes": 5821
     },
     {
       "file": "downloads/diagrams/case.svg",
@@ -7637,7 +9166,7 @@
       "file": "downloads/diagrams/case.html",
       "title": "Business case parts HTML",
       "kind": "HTML",
-      "bytes": 6032
+      "bytes": 6131
     },
     {
       "file": "downloads/diagrams/rtm.svg",
@@ -7649,7 +9178,7 @@
       "file": "downloads/diagrams/rtm.html",
       "title": "Matrix columns HTML",
       "kind": "HTML",
-      "bytes": 5857
+      "bytes": 5956
     },
     {
       "file": "downloads/diagrams/domains.svg",
@@ -7661,7 +9190,7 @@
       "file": "downloads/diagrams/domains.html",
       "title": "Domain lenses HTML",
       "kind": "HTML",
-      "bytes": 6169
+      "bytes": 6268
     },
     {
       "file": "downloads/diagrams/career.svg",
@@ -7673,7 +9202,7 @@
       "file": "downloads/diagrams/career.html",
       "title": "Career evidence HTML",
       "kind": "HTML",
-      "bytes": 5796
+      "bytes": 5895
     },
     {
       "file": "downloads/diagrams/ecosystem.svg",
@@ -7685,7 +9214,7 @@
       "file": "downloads/diagrams/ecosystem.html",
       "title": "Ecosystem map HTML",
       "kind": "HTML",
-      "bytes": 6148
+      "bytes": 6247
     },
     {
       "file": "downloads/diagrams/sprint.svg",
@@ -7697,7 +9226,7 @@
       "file": "downloads/diagrams/sprint.html",
       "title": "Scrum events HTML",
       "kind": "HTML",
-      "bytes": 5724
+      "bytes": 5823
     },
     {
       "file": "downloads/diagrams/ai.svg",
@@ -7709,7 +9238,7 @@
       "file": "downloads/diagrams/ai.html",
       "title": "AI draft loop HTML",
       "kind": "HTML",
-      "bytes": 5714
+      "bytes": 5813
     },
     {
       "file": "downloads/diagrams/verify-validate.svg",
@@ -7721,7 +9250,7 @@
       "file": "downloads/diagrams/verify-validate.html",
       "title": "Verify then validate HTML",
       "kind": "HTML",
-      "bytes": 5760
+      "bytes": 5859
     },
     {
       "file": "downloads/diagrams/priority.svg",
@@ -7733,7 +9262,7 @@
       "file": "downloads/diagrams/priority.html",
       "title": "Priority words HTML",
       "kind": "HTML",
-      "bytes": 5809
+      "bytes": 5908
     },
     {
       "file": "downloads/diagrams/accept.svg",
@@ -7745,7 +9274,7 @@
       "file": "downloads/diagrams/accept.html",
       "title": "Acceptance shape HTML",
       "kind": "HTML",
-      "bytes": 5575
+      "bytes": 5674
     },
     {
       "file": "downloads/diagrams/states.svg",
@@ -7757,7 +9286,7 @@
       "file": "downloads/diagrams/states.html",
       "title": "Requirement states HTML",
       "kind": "HTML",
-      "bytes": 5690
+      "bytes": 5789
     },
     {
       "file": "downloads/diagrams/workshop.svg",
@@ -7769,7 +9298,7 @@
       "file": "downloads/diagrams/workshop.html",
       "title": "Workshop roles HTML",
       "kind": "HTML",
-      "bytes": 5729
+      "bytes": 5828
     },
     {
       "file": "downloads/diagrams/interview.svg",
@@ -7781,7 +9310,7 @@
       "file": "downloads/diagrams/interview.html",
       "title": "Interview shape HTML",
       "kind": "HTML",
-      "bytes": 5720
+      "bytes": 5819
     },
     {
       "file": "downloads/diagrams/observe.svg",
@@ -7793,7 +9322,7 @@
       "file": "downloads/diagrams/observe.html",
       "title": "Observation HTML",
       "kind": "HTML",
-      "bytes": 5833
+      "bytes": 5932
     },
     {
       "file": "downloads/diagrams/rules.svg",
@@ -7805,7 +9334,7 @@
       "file": "downloads/diagrams/rules.html",
       "title": "Rules beside flow HTML",
       "kind": "HTML",
-      "bytes": 5652
+      "bytes": 5751
     },
     {
       "file": "downloads/diagrams/nfr.svg",
@@ -7817,7 +9346,7 @@
       "file": "downloads/diagrams/nfr.html",
       "title": "Quality with a number HTML",
       "kind": "HTML",
-      "bytes": 5522
+      "bytes": 5621
     },
     {
       "file": "downloads/diagrams/scope.svg",
@@ -7829,7 +9358,7 @@
       "file": "downloads/diagrams/scope.html",
       "title": "Scope box HTML",
       "kind": "HTML",
-      "bytes": 5448
+      "bytes": 5547
     },
     {
       "file": "downloads/diagrams/options.svg",
@@ -7841,7 +9370,7 @@
       "file": "downloads/diagrams/options.html",
       "title": "Options including stop HTML",
       "kind": "HTML",
-      "bytes": 5703
+      "bytes": 5802
     },
     {
       "file": "downloads/diagrams/risk.svg",
@@ -7853,7 +9382,7 @@
       "file": "downloads/diagrams/risk.html",
       "title": "Risk card HTML",
       "kind": "HTML",
-      "bytes": 5638
+      "bytes": 5737
     },
     {
       "file": "downloads/diagrams/persona.svg",
@@ -7865,7 +9394,7 @@
       "file": "downloads/diagrams/persona.html",
       "title": "Persona card HTML",
       "kind": "HTML",
-      "bytes": 5528
+      "bytes": 5627
     },
     {
       "file": "downloads/diagrams/journey.svg",
@@ -7877,7 +9406,7 @@
       "file": "downloads/diagrams/journey.html",
       "title": "Journey lanes HTML",
       "kind": "HTML",
-      "bytes": 5483
+      "bytes": 5582
     },
     {
       "file": "downloads/diagrams/context.svg",
@@ -7889,7 +9418,7 @@
       "file": "downloads/diagrams/context.html",
       "title": "Context diagram HTML",
       "kind": "HTML",
-      "bytes": 5570
+      "bytes": 5669
     },
     {
       "file": "downloads/diagrams/uml-set.svg",
@@ -7901,7 +9430,7 @@
       "file": "downloads/diagrams/uml-set.html",
       "title": "UML sketches HTML",
       "kind": "HTML",
-      "bytes": 5486
+      "bytes": 5585
     },
     {
       "file": "downloads/diagrams/gateway.svg",
@@ -7913,7 +9442,7 @@
       "file": "downloads/diagrams/gateway.html",
       "title": "Gateway habits HTML",
       "kind": "HTML",
-      "bytes": 5552
+      "bytes": 5651
     },
     {
       "file": "downloads/diagrams/happy-sad.svg",
@@ -7925,7 +9454,7 @@
       "file": "downloads/diagrams/happy-sad.html",
       "title": "Two paths HTML",
       "kind": "HTML",
-      "bytes": 5545
+      "bytes": 5644
     },
     {
       "file": "downloads/diagrams/backlog.svg",
@@ -7937,7 +9466,7 @@
       "file": "downloads/diagrams/backlog.html",
       "title": "Backlog order HTML",
       "kind": "HTML",
-      "bytes": 5614
+      "bytes": 5713
     },
     {
       "file": "downloads/diagrams/increment.svg",
@@ -7949,7 +9478,7 @@
       "file": "downloads/diagrams/increment.html",
       "title": "Increment HTML",
       "kind": "HTML",
-      "bytes": 5635
+      "bytes": 5734
     },
     {
       "file": "downloads/diagrams/roles-scrum.svg",
@@ -7961,7 +9490,7 @@
       "file": "downloads/diagrams/roles-scrum.html",
       "title": "Three accountabilities HTML",
       "kind": "HTML",
-      "bytes": 5563
+      "bytes": 5662
     },
     {
       "file": "downloads/diagrams/kanban-board.svg",
@@ -7973,7 +9502,7 @@
       "file": "downloads/diagrams/kanban-board.html",
       "title": "Board with a limit HTML",
       "kind": "HTML",
-      "bytes": 5509
+      "bytes": 5608
     },
     {
       "file": "downloads/diagrams/sprint-kit.svg",
@@ -7985,7 +9514,7 @@
       "file": "downloads/diagrams/sprint-kit.html",
       "title": "Design sprint days HTML",
       "kind": "HTML",
-      "bytes": 5764
+      "bytes": 5863
     },
     {
       "file": "downloads/diagrams/forces.svg",
@@ -7997,7 +9526,7 @@
       "file": "downloads/diagrams/forces.html",
       "title": "Switch forces HTML",
       "kind": "HTML",
-      "bytes": 5608
+      "bytes": 5707
     },
     {
       "file": "downloads/diagrams/double-diamond.svg",
@@ -8009,7 +9538,7 @@
       "file": "downloads/diagrams/double-diamond.html",
       "title": "Learn then choose HTML",
       "kind": "HTML",
-      "bytes": 5602
+      "bytes": 5701
     },
     {
       "file": "downloads/diagrams/kpi-card.svg",
@@ -8021,7 +9550,7 @@
       "file": "downloads/diagrams/kpi-card.html",
       "title": "KPI card HTML",
       "kind": "HTML",
-      "bytes": 5792
+      "bytes": 5891
     },
     {
       "file": "downloads/diagrams/sql-path.svg",
@@ -8033,7 +9562,7 @@
       "file": "downloads/diagrams/sql-path.html",
       "title": "One SQL question HTML",
       "kind": "HTML",
-      "bytes": 5603
+      "bytes": 5702
     },
     {
       "file": "downloads/diagrams/event-log.svg",
@@ -8045,7 +9574,7 @@
       "file": "downloads/diagrams/event-log.html",
       "title": "Event log fields HTML",
       "kind": "HTML",
-      "bytes": 5566
+      "bytes": 5665
     },
     {
       "file": "downloads/diagrams/jira-flow.svg",
@@ -8057,7 +9586,7 @@
       "file": "downloads/diagrams/jira-flow.html",
       "title": "Ticket hygiene HTML",
       "kind": "HTML",
-      "bytes": 5636
+      "bytes": 5735
     },
     {
       "file": "downloads/diagrams/conf-page.svg",
@@ -8069,7 +9598,7 @@
       "file": "downloads/diagrams/conf-page.html",
       "title": "Decision page HTML",
       "kind": "HTML",
-      "bytes": 5540
+      "bytes": 5639
     },
     {
       "file": "downloads/diagrams/ai-check.svg",
@@ -8081,7 +9610,7 @@
       "file": "downloads/diagrams/ai-check.html",
       "title": "Draft checklist HTML",
       "kind": "HTML",
-      "bytes": 5495
+      "bytes": 5594
     },
     {
       "file": "downloads/diagrams/prompt.svg",
@@ -8093,7 +9622,7 @@
       "file": "downloads/diagrams/prompt.html",
       "title": "Prompt parts HTML",
       "kind": "HTML",
-      "bytes": 5501
+      "bytes": 5600
     },
     {
       "file": "downloads/diagrams/handoff.svg",
@@ -8105,7 +9634,7 @@
       "file": "downloads/diagrams/handoff.html",
       "title": "Human handoff HTML",
       "kind": "HTML",
-      "bytes": 5736
+      "bytes": 5835
     },
     {
       "file": "downloads/diagrams/fhir-lens.svg",
@@ -8117,7 +9646,7 @@
       "file": "downloads/diagrams/fhir-lens.html",
       "title": "Healthcare lens HTML",
       "kind": "HTML",
-      "bytes": 5719
+      "bytes": 5818
     },
     {
       "file": "downloads/diagrams/a11y.svg",
@@ -8129,7 +9658,7 @@
       "file": "downloads/diagrams/a11y.html",
       "title": "Accessibility checks HTML",
       "kind": "HTML",
-      "bytes": 5576
+      "bytes": 5675
     },
     {
       "file": "downloads/diagrams/vendor.svg",
@@ -8141,7 +9670,7 @@
       "file": "downloads/diagrams/vendor.html",
       "title": "Same questions HTML",
       "kind": "HTML",
-      "bytes": 5677
+      "bytes": 5776
     },
     {
       "file": "downloads/diagrams/change-ctrl.svg",
@@ -8153,7 +9682,7 @@
       "file": "downloads/diagrams/change-ctrl.html",
       "title": "Change record HTML",
       "kind": "HTML",
-      "bytes": 5483
+      "bytes": 5582
     },
     {
       "file": "downloads/diagrams/release.svg",
@@ -8165,7 +9694,7 @@
       "file": "downloads/diagrams/release.html",
       "title": "Release note HTML",
       "kind": "HTML",
-      "bytes": 5532
+      "bytes": 5631
     },
     {
       "file": "downloads/diagrams/retro.svg",
@@ -8177,7 +9706,7 @@
       "file": "downloads/diagrams/retro.html",
       "title": "Retro prompts HTML",
       "kind": "HTML",
-      "bytes": 5496
+      "bytes": 5595
     },
     {
       "file": "downloads/diagrams/star.svg",
@@ -8189,67 +9718,199 @@
       "file": "downloads/diagrams/star.html",
       "title": "STAR card HTML",
       "kind": "HTML",
-      "bytes": 5627
+      "bytes": 5726
+    },
+    {
+      "file": "downloads/diagrams/omni-parts.svg",
+      "title": "Journey map elements SVG",
+      "kind": "SVG",
+      "bytes": 3515
+    },
+    {
+      "file": "downloads/diagrams/omni-parts.html",
+      "title": "Journey map elements HTML",
+      "kind": "HTML",
+      "bytes": 6141
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.svg",
+      "title": "Channels named on the overview SVG",
+      "kind": "SVG",
+      "bytes": 3440
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.html",
+      "title": "Channels named on the overview HTML",
+      "kind": "HTML",
+      "bytes": 6088
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.svg",
+      "title": "Journey then blueprint SVG",
+      "kind": "SVG",
+      "bytes": 3429
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.html",
+      "title": "Journey then blueprint HTML",
+      "kind": "HTML",
+      "bytes": 6075
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.svg",
+      "title": "What this AHT adds SVG",
+      "kind": "SVG",
+      "bytes": 3440
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.html",
+      "title": "What this AHT adds HTML",
+      "kind": "HTML",
+      "bytes": 6051
+    },
+    {
+      "file": "downloads/diagrams/sl-split.svg",
+      "title": "Removed from queue inside X SVG",
+      "kind": "SVG",
+      "bytes": 3469
+    },
+    {
+      "file": "downloads/diagrams/sl-split.html",
+      "title": "Removed from queue inside X HTML",
+      "kind": "HTML",
+      "bytes": 6130
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.svg",
+      "title": "Before you publish a KPI SVG",
+      "kind": "SVG",
+      "bytes": 3429
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.html",
+      "title": "Before you publish a KPI HTML",
+      "kind": "HTML",
+      "bytes": 6065
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.svg",
+      "title": "Three migration workstreams SVG",
+      "kind": "SVG",
+      "bytes": 3608
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.html",
+      "title": "Three migration workstreams HTML",
+      "kind": "HTML",
+      "bytes": 6251
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.svg",
+      "title": "Analysis pack for the move SVG",
+      "kind": "SVG",
+      "bytes": 3699
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.html",
+      "title": "Analysis pack for the move HTML",
+      "kind": "HTML",
+      "bytes": 6322
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.svg",
+      "title": "Contact-center mind map SVG",
+      "kind": "SVG",
+      "bytes": 3716
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.html",
+      "title": "Contact-center mind map HTML",
+      "kind": "HTML",
+      "bytes": 6343
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.svg",
+      "title": "Sister technologies on the overview SVG",
+      "kind": "SVG",
+      "bytes": 3544
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.html",
+      "title": "Sister technologies on the overview HTML",
+      "kind": "HTML",
+      "bytes": 6181
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.svg",
+      "title": "Integration sequence SVG",
+      "kind": "SVG",
+      "bytes": 3487
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.html",
+      "title": "Integration sequence HTML",
+      "kind": "HTML",
+      "bytes": 6107
     },
     {
       "file": "downloads/flashcards.json",
       "title": "Flashcards",
       "kind": "JSON",
-      "bytes": 125410
+      "bytes": 245000
     },
     {
       "file": "downloads/html/flashcards.html",
       "title": "Flashcards HTML",
       "kind": "HTML",
-      "bytes": 6820
+      "bytes": 9774
     },
     {
       "file": "downloads/flashcards.pdf",
       "title": "Flashcards PDF",
       "kind": "PDF",
-      "bytes": 10234
+      "bytes": 14390
     },
     {
       "file": "downloads/html/cheat-sheet.html",
       "title": "Cheat sheet HTML",
       "kind": "HTML",
-      "bytes": 4038
+      "bytes": 4137
     },
     {
       "file": "downloads/cheat-sheet.pdf",
       "title": "Cheat sheet PDF",
       "kind": "PDF",
-      "bytes": 6223
+      "bytes": 6341
     },
     {
       "file": "downloads/rooms/home.json",
       "title": "Business Analyst Free University JSON",
       "kind": "JSON",
-      "bytes": 3461
+      "bytes": 4225
     },
     {
       "file": "downloads/rooms/home.html",
       "title": "Business Analyst Free University HTML",
       "kind": "HTML",
-      "bytes": 4585
+      "bytes": 5283
     },
     {
       "file": "downloads/rooms/home.pdf",
       "title": "Business Analyst Free University PDF",
       "kind": "PDF",
-      "bytes": 6518
+      "bytes": 6903
     },
     {
       "file": "downloads/rooms/home.docx",
       "title": "Business Analyst Free University DOCX",
       "kind": "DOCX",
-      "bytes": 37954
+      "bytes": 38211
     },
     {
       "file": "downloads/rooms/home.pptx",
       "title": "Business Analyst Free University PPTX",
       "kind": "PPTX",
-      "bytes": 36485
+      "bytes": 36653
     },
     {
       "file": "downloads/rooms/start.json",
@@ -8261,25 +9922,25 @@
       "file": "downloads/rooms/start.html",
       "title": "Start here HTML",
       "kind": "HTML",
-      "bytes": 4259
+      "bytes": 4358
     },
     {
       "file": "downloads/rooms/start.pdf",
       "title": "Start here PDF",
       "kind": "PDF",
-      "bytes": 6334
+      "bytes": 6457
     },
     {
       "file": "downloads/rooms/start.docx",
       "title": "Start here DOCX",
       "kind": "DOCX",
-      "bytes": 37834
+      "bytes": 37882
     },
     {
       "file": "downloads/rooms/start.pptx",
       "title": "Start here PPTX",
       "kind": "PPTX",
-      "bytes": 35001
+      "bytes": 35000
     },
     {
       "file": "downloads/rooms/foundations.json",
@@ -8291,55 +9952,145 @@
       "file": "downloads/rooms/foundations.html",
       "title": "Foundations HTML",
       "kind": "HTML",
-      "bytes": 7951
+      "bytes": 8050
     },
     {
       "file": "downloads/rooms/foundations.pdf",
       "title": "Foundations PDF",
       "kind": "PDF",
-      "bytes": 10709
+      "bytes": 10892
     },
     {
       "file": "downloads/rooms/foundations.docx",
       "title": "Foundations DOCX",
       "kind": "DOCX",
-      "bytes": 39257
+      "bytes": 39300
     },
     {
       "file": "downloads/rooms/foundations.pptx",
       "title": "Foundations PPTX",
       "kind": "PPTX",
-      "bytes": 35043
+      "bytes": 35044
     },
     {
       "file": "downloads/rooms/ecosystem.json",
       "title": "Ecosystem JSON",
       "kind": "JSON",
-      "bytes": 4738
+      "bytes": 10128
     },
     {
       "file": "downloads/rooms/ecosystem.html",
       "title": "Ecosystem HTML",
       "kind": "HTML",
-      "bytes": 5585
+      "bytes": 10307
     },
     {
       "file": "downloads/rooms/ecosystem.pdf",
       "title": "Ecosystem PDF",
       "kind": "PDF",
-      "bytes": 7183
+      "bytes": 14117
     },
     {
       "file": "downloads/rooms/ecosystem.docx",
       "title": "Ecosystem DOCX",
       "kind": "DOCX",
-      "bytes": 38363
+      "bytes": 39986
     },
     {
       "file": "downloads/rooms/ecosystem.pptx",
       "title": "Ecosystem PPTX",
       "kind": "PPTX",
-      "bytes": 35039
+      "bytes": 36883
+    },
+    {
+      "file": "downloads/rooms/omni.json",
+      "title": "Omnichannel journeys JSON",
+      "kind": "JSON",
+      "bytes": 9655
+    },
+    {
+      "file": "downloads/rooms/omni.html",
+      "title": "Omnichannel journeys HTML",
+      "kind": "HTML",
+      "bytes": 10145
+    },
+    {
+      "file": "downloads/rooms/omni.pdf",
+      "title": "Omnichannel journeys PDF",
+      "kind": "PDF",
+      "bytes": 14359
+    },
+    {
+      "file": "downloads/rooms/omni.docx",
+      "title": "Omnichannel journeys DOCX",
+      "kind": "DOCX",
+      "bytes": 40021
+    },
+    {
+      "file": "downloads/rooms/omni.pptx",
+      "title": "Omnichannel journeys PPTX",
+      "kind": "PPTX",
+      "bytes": 36838
+    },
+    {
+      "file": "downloads/rooms/metrics.json",
+      "title": "Contact-center metrics JSON",
+      "kind": "JSON",
+      "bytes": 12975
+    },
+    {
+      "file": "downloads/rooms/metrics.html",
+      "title": "Contact-center metrics HTML",
+      "kind": "HTML",
+      "bytes": 13103
+    },
+    {
+      "file": "downloads/rooms/metrics.pdf",
+      "title": "Contact-center metrics PDF",
+      "kind": "PDF",
+      "bytes": 17881
+    },
+    {
+      "file": "downloads/rooms/metrics.docx",
+      "title": "Contact-center metrics DOCX",
+      "kind": "DOCX",
+      "bytes": 40867
+    },
+    {
+      "file": "downloads/rooms/metrics.pptx",
+      "title": "Contact-center metrics PPTX",
+      "kind": "PPTX",
+      "bytes": 36896
+    },
+    {
+      "file": "downloads/rooms/migrate.json",
+      "title": "Contact-center migration JSON",
+      "kind": "JSON",
+      "bytes": 11920
+    },
+    {
+      "file": "downloads/rooms/migrate.html",
+      "title": "Contact-center migration HTML",
+      "kind": "HTML",
+      "bytes": 12191
+    },
+    {
+      "file": "downloads/rooms/migrate.pdf",
+      "title": "Contact-center migration PDF",
+      "kind": "PDF",
+      "bytes": 15282
+    },
+    {
+      "file": "downloads/rooms/migrate.docx",
+      "title": "Contact-center migration DOCX",
+      "kind": "DOCX",
+      "bytes": 40690
+    },
+    {
+      "file": "downloads/rooms/migrate.pptx",
+      "title": "Contact-center migration PPTX",
+      "kind": "PPTX",
+      "bytes": 36839
     },
     {
       "file": "downloads/rooms/babok.json",
@@ -8351,25 +10102,25 @@
       "file": "downloads/rooms/babok.html",
       "title": "BABOK HTML",
       "kind": "HTML",
-      "bytes": 12016
+      "bytes": 12115
     },
     {
       "file": "downloads/rooms/babok.pdf",
       "title": "BABOK PDF",
       "kind": "PDF",
-      "bytes": 14270
+      "bytes": 14512
     },
     {
       "file": "downloads/rooms/babok.docx",
       "title": "BABOK DOCX",
       "kind": "DOCX",
-      "bytes": 40699
+      "bytes": 40741
     },
     {
       "file": "downloads/rooms/babok.pptx",
       "title": "BABOK PPTX",
       "kind": "PPTX",
-      "bytes": 36695
+      "bytes": 36697
     },
     {
       "file": "downloads/rooms/requirements.json",
@@ -8381,25 +10132,25 @@
       "file": "downloads/rooms/requirements.html",
       "title": "Requirements HTML",
       "kind": "HTML",
-      "bytes": 8264
+      "bytes": 8363
     },
     {
       "file": "downloads/rooms/requirements.pdf",
       "title": "Requirements PDF",
       "kind": "PDF",
-      "bytes": 10935
+      "bytes": 11104
     },
     {
       "file": "downloads/rooms/requirements.docx",
       "title": "Requirements DOCX",
       "kind": "DOCX",
-      "bytes": 39404
+      "bytes": 39443
     },
     {
       "file": "downloads/rooms/requirements.pptx",
       "title": "Requirements PPTX",
       "kind": "PPTX",
-      "bytes": 36667
+      "bytes": 36674
     },
     {
       "file": "downloads/rooms/modeling.json",
@@ -8411,19 +10162,19 @@
       "file": "downloads/rooms/modeling.html",
       "title": "Modeling HTML",
       "kind": "HTML",
-      "bytes": 6856
+      "bytes": 6955
     },
     {
       "file": "downloads/rooms/modeling.pdf",
       "title": "Modeling PDF",
       "kind": "PDF",
-      "bytes": 10168
+      "bytes": 10353
     },
     {
       "file": "downloads/rooms/modeling.docx",
       "title": "Modeling DOCX",
       "kind": "DOCX",
-      "bytes": 38970
+      "bytes": 39011
     },
     {
       "file": "downloads/rooms/modeling.pptx",
@@ -8441,25 +10192,25 @@
       "file": "downloads/rooms/agile.html",
       "title": "Agile HTML",
       "kind": "HTML",
-      "bytes": 8870
+      "bytes": 8969
     },
     {
       "file": "downloads/rooms/agile.pdf",
       "title": "Agile PDF",
       "kind": "PDF",
-      "bytes": 11085
+      "bytes": 11258
     },
     {
       "file": "downloads/rooms/agile.docx",
       "title": "Agile DOCX",
       "kind": "DOCX",
-      "bytes": 39471
+      "bytes": 39508
     },
     {
       "file": "downloads/rooms/agile.pptx",
       "title": "Agile PPTX",
       "kind": "PPTX",
-      "bytes": 38324
+      "bytes": 38328
     },
     {
       "file": "downloads/rooms/data.json",
@@ -8471,25 +10222,25 @@
       "file": "downloads/rooms/data.html",
       "title": "Data HTML",
       "kind": "HTML",
-      "bytes": 8485
+      "bytes": 8584
     },
     {
       "file": "downloads/rooms/data.pdf",
       "title": "Data PDF",
       "kind": "PDF",
-      "bytes": 10982
+      "bytes": 11157
     },
     {
       "file": "downloads/rooms/data.docx",
       "title": "Data DOCX",
       "kind": "DOCX",
-      "bytes": 39489
+      "bytes": 39525
     },
     {
       "file": "downloads/rooms/data.pptx",
       "title": "Data PPTX",
       "kind": "PPTX",
-      "bytes": 38305
+      "bytes": 38306
     },
     {
       "file": "downloads/rooms/tools.json",
@@ -8501,25 +10252,25 @@
       "file": "downloads/rooms/tools.html",
       "title": "Tools HTML",
       "kind": "HTML",
-      "bytes": 8171
+      "bytes": 8270
     },
     {
       "file": "downloads/rooms/tools.pdf",
       "title": "Tools PDF",
       "kind": "PDF",
-      "bytes": 10566
+      "bytes": 10745
     },
     {
       "file": "downloads/rooms/tools.docx",
       "title": "Tools DOCX",
       "kind": "DOCX",
-      "bytes": 39241
+      "bytes": 39285
     },
     {
       "file": "downloads/rooms/tools.pptx",
       "title": "Tools PPTX",
       "kind": "PPTX",
-      "bytes": 38368
+      "bytes": 38377
     },
     {
       "file": "downloads/rooms/ai.json",
@@ -8531,19 +10282,19 @@
       "file": "downloads/rooms/ai.html",
       "title": "AI for business analysts HTML",
       "kind": "HTML",
-      "bytes": 6495
+      "bytes": 6594
     },
     {
       "file": "downloads/rooms/ai.pdf",
       "title": "AI for business analysts PDF",
       "kind": "PDF",
-      "bytes": 7967
+      "bytes": 8087
     },
     {
       "file": "downloads/rooms/ai.docx",
       "title": "AI for business analysts DOCX",
       "kind": "DOCX",
-      "bytes": 38806
+      "bytes": 38851
     },
     {
       "file": "downloads/rooms/ai.pptx",
@@ -8555,31 +10306,31 @@
       "file": "downloads/rooms/domains.json",
       "title": "Domains JSON",
       "kind": "JSON",
-      "bytes": 6687
+      "bytes": 7112
     },
     {
       "file": "downloads/rooms/domains.html",
       "title": "Domains HTML",
       "kind": "HTML",
-      "bytes": 7221
+      "bytes": 7690
     },
     {
       "file": "downloads/rooms/domains.pdf",
       "title": "Domains PDF",
       "kind": "PDF",
-      "bytes": 10246
+      "bytes": 10694
     },
     {
       "file": "downloads/rooms/domains.docx",
       "title": "Domains DOCX",
       "kind": "DOCX",
-      "bytes": 39037
+      "bytes": 39210
     },
     {
       "file": "downloads/rooms/domains.pptx",
       "title": "Domains PPTX",
       "kind": "PPTX",
-      "bytes": 36619
+      "bytes": 36689
     },
     {
       "file": "downloads/rooms/product.json",
@@ -8591,25 +10342,25 @@
       "file": "downloads/rooms/product.html",
       "title": "Product craft HTML",
       "kind": "HTML",
-      "bytes": 8318
+      "bytes": 8417
     },
     {
       "file": "downloads/rooms/product.pdf",
       "title": "Product craft PDF",
       "kind": "PDF",
-      "bytes": 11103
+      "bytes": 11280
     },
     {
       "file": "downloads/rooms/product.docx",
       "title": "Product craft DOCX",
       "kind": "DOCX",
-      "bytes": 39540
+      "bytes": 39581
     },
     {
       "file": "downloads/rooms/product.pptx",
       "title": "Product craft PPTX",
       "kind": "PPTX",
-      "bytes": 36810
+      "bytes": 36808
     },
     {
       "file": "downloads/rooms/certs.json",
@@ -8621,25 +10372,25 @@
       "file": "downloads/rooms/certs.html",
       "title": "Certifications HTML",
       "kind": "HTML",
-      "bytes": 7545
+      "bytes": 7644
     },
     {
       "file": "downloads/rooms/certs.pdf",
       "title": "Certifications PDF",
       "kind": "PDF",
-      "bytes": 9579
+      "bytes": 9767
     },
     {
       "file": "downloads/rooms/certs.docx",
       "title": "Certifications DOCX",
       "kind": "DOCX",
-      "bytes": 38670
+      "bytes": 38707
     },
     {
       "file": "downloads/rooms/certs.pptx",
       "title": "Certifications PPTX",
       "kind": "PPTX",
-      "bytes": 40008
+      "bytes": 40007
     },
     {
       "file": "downloads/rooms/careers.json",
@@ -8651,25 +10402,25 @@
       "file": "downloads/rooms/careers.html",
       "title": "Careers HTML",
       "kind": "HTML",
-      "bytes": 7798
+      "bytes": 7897
     },
     {
       "file": "downloads/rooms/careers.pdf",
       "title": "Careers PDF",
       "kind": "PDF",
-      "bytes": 10892
+      "bytes": 11061
     },
     {
       "file": "downloads/rooms/careers.docx",
       "title": "Careers DOCX",
       "kind": "DOCX",
-      "bytes": 39368
+      "bytes": 39408
     },
     {
       "file": "downloads/rooms/careers.pptx",
       "title": "Careers PPTX",
       "kind": "PPTX",
-      "bytes": 36599
+      "bytes": 36601
     },
     {
       "file": "downloads/rooms/practice.json",
@@ -8681,25 +10432,25 @@
       "file": "downloads/rooms/practice.html",
       "title": "Practice HTML",
       "kind": "HTML",
-      "bytes": 4120
+      "bytes": 4219
     },
     {
       "file": "downloads/rooms/practice.pdf",
       "title": "Practice PDF",
       "kind": "PDF",
-      "bytes": 6236
+      "bytes": 6366
     },
     {
       "file": "downloads/rooms/practice.docx",
       "title": "Practice DOCX",
       "kind": "DOCX",
-      "bytes": 37771
+      "bytes": 37814
     },
     {
       "file": "downloads/rooms/practice.pptx",
       "title": "Practice PPTX",
       "kind": "PPTX",
-      "bytes": 34974
+      "bytes": 34977
     },
     {
       "file": "downloads/rooms/diagrams.json",
@@ -8711,25 +10462,25 @@
       "file": "downloads/rooms/diagrams.html",
       "title": "Diagrams HTML",
       "kind": "HTML",
-      "bytes": 4223
+      "bytes": 4322
     },
     {
       "file": "downloads/rooms/diagrams.pdf",
       "title": "Diagrams PDF",
       "kind": "PDF",
-      "bytes": 6252
+      "bytes": 6384
     },
     {
       "file": "downloads/rooms/diagrams.docx",
       "title": "Diagrams DOCX",
       "kind": "DOCX",
-      "bytes": 37797
+      "bytes": 37840
     },
     {
       "file": "downloads/rooms/diagrams.pptx",
       "title": "Diagrams PPTX",
       "kind": "PPTX",
-      "bytes": 34976
+      "bytes": 34982
     },
     {
       "file": "downloads/rooms/flows.json",
@@ -8741,25 +10492,25 @@
       "file": "downloads/rooms/flows.html",
       "title": "Flows HTML",
       "kind": "HTML",
-      "bytes": 4534
+      "bytes": 4633
     },
     {
       "file": "downloads/rooms/flows.pdf",
       "title": "Flows PDF",
       "kind": "PDF",
-      "bytes": 6422
+      "bytes": 6553
     },
     {
       "file": "downloads/rooms/flows.docx",
       "title": "Flows DOCX",
       "kind": "DOCX",
-      "bytes": 37896
+      "bytes": 37940
     },
     {
       "file": "downloads/rooms/flows.pptx",
       "title": "Flows PPTX",
       "kind": "PPTX",
-      "bytes": 36498
+      "bytes": 36508
     },
     {
       "file": "downloads/rooms/charts.json",
@@ -8771,85 +10522,85 @@
       "file": "downloads/rooms/charts.html",
       "title": "Charts HTML",
       "kind": "HTML",
-      "bytes": 5333
+      "bytes": 5432
     },
     {
       "file": "downloads/rooms/charts.pdf",
       "title": "Charts PDF",
       "kind": "PDF",
-      "bytes": 6534
+      "bytes": 6658
     },
     {
       "file": "downloads/rooms/charts.docx",
       "title": "Charts DOCX",
       "kind": "DOCX",
-      "bytes": 38010
+      "bytes": 38052
     },
     {
       "file": "downloads/rooms/charts.pptx",
       "title": "Charts PPTX",
       "kind": "PPTX",
-      "bytes": 36566
+      "bytes": 36564
     },
     {
       "file": "downloads/rooms/glossary.json",
       "title": "Glossary JSON",
       "kind": "JSON",
-      "bytes": 2906
+      "bytes": 4139
     },
     {
       "file": "downloads/rooms/glossary.html",
       "title": "Glossary HTML",
       "kind": "HTML",
-      "bytes": 4111
+      "bytes": 5168
     },
     {
       "file": "downloads/rooms/glossary.pdf",
       "title": "Glossary PDF",
       "kind": "PDF",
-      "bytes": 6199
+      "bytes": 6750
     },
     {
       "file": "downloads/rooms/glossary.docx",
       "title": "Glossary DOCX",
       "kind": "DOCX",
-      "bytes": 37760
+      "bytes": 38127
     },
     {
       "file": "downloads/rooms/glossary.pptx",
       "title": "Glossary PPTX",
       "kind": "PPTX",
-      "bytes": 34949
+      "bytes": 36636
     },
     {
       "file": "downloads/rooms/resources.json",
       "title": "Resources JSON",
       "kind": "JSON",
-      "bytes": 2932
+      "bytes": 4120
     },
     {
       "file": "downloads/rooms/resources.html",
       "title": "Resources HTML",
       "kind": "HTML",
-      "bytes": 4137
+      "bytes": 5149
     },
     {
       "file": "downloads/rooms/resources.pdf",
       "title": "Resources PDF",
       "kind": "PDF",
-      "bytes": 6193
+      "bytes": 6730
     },
     {
       "file": "downloads/rooms/resources.docx",
       "title": "Resources DOCX",
       "kind": "DOCX",
-      "bytes": 37750
+      "bytes": 38117
     },
     {
       "file": "downloads/rooms/resources.pptx",
       "title": "Resources PPTX",
       "kind": "PPTX",
-      "bytes": 34956
+      "bytes": 36627
     },
     {
       "file": "downloads/rooms/templates.json",
@@ -8861,25 +10612,25 @@
       "file": "downloads/rooms/templates.html",
       "title": "Templates HTML",
       "kind": "HTML",
-      "bytes": 4871
+      "bytes": 4970
     },
     {
       "file": "downloads/rooms/templates.pdf",
       "title": "Templates PDF",
       "kind": "PDF",
-      "bytes": 6522
+      "bytes": 6648
     },
     {
       "file": "downloads/rooms/templates.docx",
       "title": "Templates DOCX",
       "kind": "DOCX",
-      "bytes": 37986
+      "bytes": 38032
     },
     {
       "file": "downloads/rooms/templates.pptx",
       "title": "Templates PPTX",
       "kind": "PPTX",
-      "bytes": 36583
+      "bytes": 36594
     },
     {
       "file": "downloads/rooms/downloads.json",
@@ -8891,25 +10642,25 @@
       "file": "downloads/rooms/downloads.html",
       "title": "Downloads HTML",
       "kind": "HTML",
-      "bytes": 4366
+      "bytes": 4465
     },
     {
       "file": "downloads/rooms/downloads.pdf",
       "title": "Downloads PDF",
       "kind": "PDF",
-      "bytes": 6411
+      "bytes": 6535
     },
     {
       "file": "downloads/rooms/downloads.docx",
       "title": "Downloads DOCX",
       "kind": "DOCX",
-      "bytes": 37873
+      "bytes": 37916
     },
     {
       "file": "downloads/rooms/downloads.pptx",
       "title": "Downloads PPTX",
       "kind": "PPTX",
-      "bytes": 35053
+      "bytes": 35062
     },
     {
       "file": "downloads/rooms/search.json",
@@ -8921,25 +10672,25 @@
       "file": "downloads/rooms/search.html",
       "title": "Search HTML",
       "kind": "HTML",
-      "bytes": 4007
+      "bytes": 4106
     },
     {
       "file": "downloads/rooms/search.pdf",
       "title": "Search PDF",
       "kind": "PDF",
-      "bytes": 4147
+      "bytes": 4204
     },
     {
       "file": "downloads/rooms/search.docx",
       "title": "Search DOCX",
       "kind": "DOCX",
-      "bytes": 37710
+      "bytes": 37753
     },
     {
       "file": "downloads/rooms/search.pptx",
       "title": "Search PPTX",
       "kind": "PPTX",
-      "bytes": 34907
+      "bytes": 34908
     },
     {
       "file": "downloads/rooms/credits.json",
@@ -8951,25 +10702,25 @@
       "file": "downloads/rooms/credits.html",
       "title": "Legal and credits HTML",
       "kind": "HTML",
-      "bytes": 4502
+      "bytes": 4601
     },
     {
       "file": "downloads/rooms/credits.pdf",
       "title": "Legal and credits PDF",
       "kind": "PDF",
-      "bytes": 6498
+      "bytes": 6622
     },
     {
       "file": "downloads/rooms/credits.docx",
       "title": "Legal and credits DOCX",
       "kind": "DOCX",
-      "bytes": 37910
+      "bytes": 37955
     },
     {
       "file": "downloads/rooms/credits.pptx",
       "title": "Legal and credits PPTX",
       "kind": "PPTX",
-      "bytes": 35128
+      "bytes": 35136
     },
     {
       "file": "downloads/rooms/help.json",
@@ -8981,25 +10732,25 @@
       "file": "downloads/rooms/help.html",
       "title": "Help HTML",
       "kind": "HTML",
-      "bytes": 4296
+      "bytes": 4395
     },
     {
       "file": "downloads/rooms/help.pdf",
       "title": "Help PDF",
       "kind": "PDF",
-      "bytes": 6321
+      "bytes": 6442
     },
     {
       "file": "downloads/rooms/help.docx",
       "title": "Help DOCX",
       "kind": "DOCX",
-      "bytes": 37842
+      "bytes": 37882
     },
     {
       "file": "downloads/rooms/help.pptx",
       "title": "Help PPTX",
       "kind": "PPTX",
-      "bytes": 35034
+      "bytes": 35038
     },
     {
       "file": "downloads/diagrams/baccm.png",
@@ -9386,28 +11137,94 @@
       "bytes": 56369
     },
     {
+      "file": "downloads/diagrams/omni-parts.png",
+      "title": "Journey map elements PNG",
+      "kind": "PNG",
+      "bytes": 46769
+    },
+    {
+      "file": "downloads/diagrams/omni-channels.png",
+      "title": "Channels named on the overview PNG",
+      "kind": "PNG",
+      "bytes": 45798
+    },
+    {
+      "file": "downloads/diagrams/omni-blueprint.png",
+      "title": "Journey then blueprint PNG",
+      "kind": "PNG",
+      "bytes": 45598
+    },
+    {
+      "file": "downloads/diagrams/aht-parts.png",
+      "title": "What this AHT adds PNG",
+      "kind": "PNG",
+      "bytes": 43260
+    },
+    {
+      "file": "downloads/diagrams/sl-split.png",
+      "title": "Removed from queue inside X PNG",
+      "kind": "PNG",
+      "bytes": 48348
+    },
+    {
+      "file": "downloads/diagrams/metric-owner.png",
+      "title": "Before you publish a KPI PNG",
+      "kind": "PNG",
+      "bytes": 41067
+    },
+    {
+      "file": "downloads/diagrams/migrate-streams.png",
+      "title": "Three migration workstreams PNG",
+      "kind": "PNG",
+      "bytes": 48098
+    },
+    {
+      "file": "downloads/diagrams/migrate-pack.png",
+      "title": "Analysis pack for the move PNG",
+      "kind": "PNG",
+      "bytes": 52346
+    },
+    {
+      "file": "downloads/diagrams/eco-mind.png",
+      "title": "Contact-center mind map PNG",
+      "kind": "PNG",
+      "bytes": 49847
+    },
+    {
+      "file": "downloads/diagrams/eco-sisters.png",
+      "title": "Sister technologies on the overview PNG",
+      "kind": "PNG",
+      "bytes": 48919
+    },
+    {
+      "file": "downloads/diagrams/eco-integrate.png",
+      "title": "Integration sequence PNG",
+      "kind": "PNG",
+      "bytes": 41751
+    },
+    {
       "file": "downloads/png/cheat-sheet.png",
       "title": "cheat-sheet PNG",
       "kind": "PNG",
-      "bytes": 296964
+      "bytes": 304054
     },
     {
       "file": "downloads/png/flashcards.png",
       "title": "flashcards PNG",
       "kind": "PNG",
-      "bytes": 513821
+      "bytes": 719348
     },
     {
       "file": "downloads/png/brd-outline.png",
       "title": "brd-outline PNG",
       "kind": "PNG",
-      "bytes": 346832
+      "bytes": 352825
     },
     {
       "file": "downloads/ba-everything.zip",
       "title": "Download everything",
       "kind": "ZIP",
-      "bytes": 6230690
+      "bytes": 7233836
     }
   ],
   "templates": [
@@ -9675,12 +11492,12 @@
       ]
     },
     "ecosystem": {
-      "five": "The same techniques show up in product ownership, project delivery, data work, and change. Shared techniques do not mean shared authority. Ask who decides the need, who decides the date, and who accepts the result. This lab uses the BABOK hub as the core public map and cites neighbors only where a page opened.",
-      "visual": "ecosystem",
-      "exampleTitle": "Worked example: three roles, one change",
+      "five": "Business analysis sits beside product ownership, project delivery, data, architecture, and change. Shared techniques still need a named decision maker. For contact centers, the mind map in this room links the person's goal to channels, the journey and the blueprint, the queue, the agent and the CRM profile, the measures, and the three migration workstreams. Sister technologies are only the ones the feature overview describes: bots, CRM profiles, workforce scheduling, screen recording, flows that call other systems, and email. Future hooks stop where the opened page stops.",
+      "visual": "eco-mind",
+      "exampleTitle": "Worked example: where a question goes",
       "example": [
-        "A generic retailer wants a clearer return. The analyst writes the need and the acceptance checks. A project manager sequences the work. A product owner orders the backlog.",
-        "If one person holds two of those, write that down. Hidden decision rights cause the meeting after the meeting."
+        "A generic retailer asks for WhatsApp. Foundations asks for the need. The omnichannel room asks which actor and which context must move. The metrics room asks which formula will show that the move helped. The migration room asks who signs the operating model.",
+        "The feature overview names Salesforce, Zendesk, and ServiceNow as CRM examples a profile can combine with contact history. That is a citation. It is not a selection. Anything the pages did not describe stays off the map."
       ]
     },
     "babok": {
@@ -9885,6 +11702,36 @@
       "example": [
         "Situation: a generic city clinic had no written rule for abnormal-result calls. Task: you were asked to make the rule testable. Action: you interviewed two nurses, wrote one story and one unhappy path, and traced it to a checklist. Result: the pilot checklist was used for two weeks and the open questions were listed.",
         "That story is invented for practice. It is not Lucky's career and not a claim of employment."
+      ]
+    },
+    "omni": {
+      "five": "A journey map, as Nielsen Norman Group defines it, shows one person accomplishing one goal: actor, scenario, phases, what they do and feel, and the opportunities. A contact center then has to say which channels are in scope. The Connect Customer overview lists voice, chat and SMS, messaging apps, email, tasks, and web or video. WhatsApp, on its setup page, needs a business account, a number Meta can verify, and an inbound flow, and verification can take up to two weeks. The requirement is the context that travels with the person, the handoff to a human, and the measure. A second actor is a second map.",
+      "visual": "omni-parts",
+      "exampleTitle": "Worked example: one lost parcel",
+      "example": [
+        "Actor: a person waiting for a delivery. Scenario: the tracking page stopped two days ago, and they expect a date, not a menu. This is one map. The courier's map would be another.",
+        "Phases you can check: notice, try self-serve, contact, resolve. Channels in scope only if the project confirms them: voice, chat, SMS, WhatsApp, email, or a social account. The feature overview names WhatsApp and Facebook Messenger as messaging examples. This check did not open a Messenger setup article, so those steps stay unwritten.",
+        "Opportunity: the agent sees the tracking number at the start, and the person is not asked to repeat it if the channel changes. Owner: the service-line owner. Measure: you pick it in the metrics room and write the formula."
+      ]
+    },
+    "metrics": {
+      "five": "Use the definition on the report's own page. On the Connect metric-definitions page, average handle time adds interaction, hold, after-contact work, and task pause, then averages the records that are not all null. Service level X is contacts removed from the queue inside X seconds divided by contacts queued, and removal includes an answer, an abandon, or a callback request. Abandonment is in-queue disconnects divided by contacts queued, and callbacks are not abandons. Occupancy is contact time over contact time plus idle time, and it ignores extra concurrent slots. First-contact resolution on that page is closed cases with exactly one call, chat, or email. IBM's CSAT page divides positive responses by all responses. Sample numbers below are arithmetic, not a center's results.",
+      "visual": "sl-split",
+      "exampleTitle": "Worked example: five sample calculations",
+      "example": [
+        "Handle time. Record A is 120 + 30 + 60 + 0 = 210 seconds. Record B is 90 + 0 + 30 + 0 = 120 seconds. Average = 165 seconds. If a record's four fields are all null, the page says to skip it.",
+        "Service level 30. Of 100 queued contacts, 60 were answered, 10 abandoned, and 5 requested a callback, all inside 30 seconds. Removed = 75, so service level = 75 percent. Answered-only would be 60 percent. Write which formula you mean.",
+        "Abandonment. 8 in-queue disconnects out of 100 queued is 8 percent. Four callbacks are not in the 8. Occupancy. 40 minutes on contacts and 10 minutes idle is 80 percent. First contact. 6 of 8 closed cases had exactly one call, chat, or email, which is 75 percent. CSAT. 30 ratings of 4 or 5 out of 40 responses is 75 percent. None of these lines is a target."
+      ]
+    },
+    "migrate": {
+      "five": "AWS Prescriptive Guidance for a Connect migration recommends three parallel workstreams: operational, technical foundation, and user journeys. The analyst's artifacts sit mostly on the first and the third: outcomes, a journey workshop with named placeholder owners, a RASCI operating model that is not a runbook, acceptance scripts, training, and the metric definitions you will call expected on cutover day. Test functionally before business users accept. Cut over by moving the public number, and roll back by pointing it at the legacy line. The guidance diagram has no durations. Do not invent one.",
+      "visual": "migrate-pack",
+      "exampleTitle": "Worked example: a parcel desk, one slice",
+      "example": [
+        "Alignment: the outcome is that a person with a stalled parcel reaches someone who can see the tracking number. Success criteria are written with the metric formulas, not with a vendor's adjective. Cost cells with no source stay blank.",
+        "Workshop attendees match the user-journeys page: project manager, architects, business analyst, service-line owner. Placeholders such as the queue greeting name an owner. The operating model says who may turn on an emergency message, not the click path.",
+        "Go-live watch, from the checklist: calls answered, abandonment and handle time as expected, queue depth sensible. The expected numbers are the ones you agreed, or they are marked unknown. Rollback is swapping the number back."
       ]
     }
   },

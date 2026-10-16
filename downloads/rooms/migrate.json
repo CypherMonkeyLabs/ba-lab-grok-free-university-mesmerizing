@@ -1,0 +1,193 @@
+{
+  "title": "Contact-center migration",
+  "page": "migrate.html",
+  "summary": "Business-analysis artifacts for a legacy contact center moving to the cloud.",
+  "five": "AWS Prescriptive Guidance for a Connect migration recommends three parallel workstreams: operational, technical foundation, and user journeys. The analyst's artifacts sit mostly on the first and the third: outcomes, a journey workshop with named placeholder owners, a RASCI operating model that is not a runbook, acceptance scripts, training, and the metric definitions you will call expected on cutover day. Test functionally before business users accept. Cut over by moving the public number, and roll back by pointing it at the legacy line. The guidance diagram has no durations. Do not invent one.",
+  "example": [
+    "Alignment: the outcome is that a person with a stalled parcel reaches someone who can see the tracking number. Success criteria are written with the metric formulas, not with a vendor's adjective. Cost cells with no source stay blank.",
+    "Workshop attendees match the user-journeys page: project manager, architects, business analyst, service-line owner. Placeholders such as the queue greeting name an owner. The operating model says who may turn on an emergency message, not the click path.",
+    "Go-live watch, from the checklist: calls answered, abandonment and handle time as expected, queue depth sensible. The expected numbers are the ones you agreed, or they are marked unknown. Rollback is swapping the number back."
+  ],
+  "notes": [
+    {
+      "title": "Sprint, workstream, and phase",
+      "summary": "The AWS Prescriptive Guidance page on contact-center migration phases says a sprint is a time-bound collection of activities delivered by different workstreams, and gives two weeks as an example, not a rule for your project. A workstream is a team-bound set of activities. A phase is a goal-oriented collection across workstreams and ends at a milestone. The design phase, on that page, produces documents such as architectural diagrams, build specifications, and high-level designs, and it is done when the right stakeholders approve them."
+    },
+    {
+      "title": "Three workstreams",
+      "summary": "The same page recommends at least three parallel workstreams: operational, technical foundation, and user journeys. It says mapping customer experiences and recording call prompts belongs on the user-journey workstream because those tasks need business stakeholders and service-line owners. Account and landing-zone work sits on the technical foundation. The page says the diagram has no specific timelines. Add the activities that fit, and estimate duration with the stakeholders."
+    },
+    {
+      "title": "The journey workshop artifact",
+      "summary": "The user-journeys page says discovery gathers existing flows or, if you are designing, runs a workshop. The canvas is a visual tool such as PowerPoint, Visio, or draw.io, or the contact-flow designer. You add blocks, decision points, and placeholders for steps still to confirm, and you name the owner of each placeholder. The page lists the attendees: project managers, business and solutions architects, business analysts, and the service-line owner and operator."
+    },
+    {
+      "title": "One picture that stays true",
+      "summary": "The user-journeys page says design documentation is optional and depends on the size of the flow. If the team uses the contact-flow designer, the page says the journey is self-documented and is the build, which keeps a single source of truth. If you keep a separate design document, it must follow change control so it does not drift from the build."
+    },
+    {
+      "title": "Functional test, then acceptance",
+      "summary": "The user-journeys page splits test into two steps in order. Functional testing happens across sprints as flows are created, by a functional test team. User acceptance testing happens only after functional tests pass, and it is performed by client business users, either a dedicated team or people from the service line. Flows go to production only after they pass that acceptance test."
+    },
+    {
+      "title": "Temporary number, cutover, rollback",
+      "summary": "The deploy section says you claim a temporary phone number, assign the flows, and let the project team place test calls and run a selection of acceptance scripts. At go-live that number is replaced by the public number. Rollback, on that page, is swapping the number back to the legacy service line. The before-go-live checklist adds two planning items: toll-free repointing may need a provider ticket, and a porting request should be filed well before the date. This lab does not copy a lead time."
+    },
+    {
+      "title": "Operating model, not a runbook",
+      "summary": "The operational workstream page says the operating model defines who will use the contact center and how it will be managed. It is not a procedure, a runbook, or a configuration file. The page's example: do not document how to pull logs. Document who pulls them and which queue or vendor receives them. The model includes a RASCI matrix (responsible, accountable, supported, consulted, and informed) and swimlanes for end-to-end activities, such as who can start an emergency queue message and what data they use. Stakeholders sign it before production, and the page says that sign-off is a go-live requirement."
+    },
+    {
+      "title": "Service introduction and the change board",
+      "summary": "Service introduction, on the operational page, puts the operating model into use. The page says the project must pass that team's checklists before go-live, including acceptance results, a check that no conflicting freeze or other go-live is on the same day, training completed, and operations ready. Engage that team early. The migration checklist says you submit a change request and get change-approval-board approval for a specific date and time. The checklist evidence is the input to that discussion."
+    },
+    {
+      "title": "Training is a migration artifact",
+      "summary": "The operational page says the technology can work and the migration can still fail if users do not know how to answer contacts and do their daily tasks. It recommends training the trainer with in-house staff when that team exists, with project specialists supplying manuals and screen guides. If there is no training team, specialists train supervisors and lead support staff, who then train users. It also recommends instructor-led product training for system administrators and product owners. Course prices are not on that page, so this lab states none."
+    },
+    {
+      "title": "Checklist the analyst can trace",
+      "summary": "The before-go-live checklist, opened in October 2026, asks you to confirm: acceptance passed and leftover issues accepted, the number cutover planned, users trained, operations signed into the support model, code in production, service lines have run acceptance scripts on a temporary number, and the change board has approved the cutover. On the day: agents logged in for calls and chats, post-go-live support present, a conference bridge open until success or rollback, cutover at the approved time, and the live metrics in the metrics room."
+    },
+    {
+      "title": "What the analyst owns in the pack",
+      "summary": "From the pages above, a business-analysis pack for this kind of move contains: outcomes and success criteria from the alignment activity, the current and future journey with placeholder owners, the channel and prompt list, the RASCI and the swimlanes, the acceptance scripts, the metric definitions you will call 'expected' on go-live day, and the service lines that are out of this slice. The alignment page says you also validate timelines and costs. If a cost was not sourced, leave it blank."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "The migration guidance recommends at least which parallel workstreams?",
+      "choices": [
+        "Only a technical build",
+        "Operational, technical foundation, and user journeys",
+        "A single Gantt chart",
+        "Training after go-live only"
+      ],
+      "answer": 1
+    },
+    {
+      "q": "The operational page says the operating model should be:",
+      "choices": [
+        "A screenshot runbook for pulling logs",
+        "A RASCI and swimlanes of who does what, signed before production",
+        "Optional if the software is configured",
+        "A salary plan"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, user journeys workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/user-journeys.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, operational workstream",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/operational.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, migration checklists",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/checklist.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

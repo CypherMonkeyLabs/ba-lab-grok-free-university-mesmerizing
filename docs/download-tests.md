@@ -1,6 +1,6 @@
 # Download checks
 
-349 checks, 0 failed.
+397 checks, 0 failed.
 
 | File | Kind | Check | Result |
 | --- | --- | --- | --- |
@@ -79,6 +79,17 @@
 | `downloads/diagrams/release.svg` | SVG | bytes | Pass |
 | `downloads/diagrams/retro.svg` | SVG | bytes | Pass |
 | `downloads/diagrams/star.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/omni-parts.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/omni-channels.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/omni-blueprint.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/aht-parts.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/sl-split.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/metric-owner.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/migrate-streams.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/migrate-pack.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/eco-mind.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/eco-sisters.svg` | SVG | bytes | Pass |
+| `downloads/diagrams/eco-integrate.svg` | SVG | bytes | Pass |
 | `downloads/flashcards.json` | JSON | json payload | Pass |
 | `downloads/flashcards.pdf` | PDF | pdf disclaimer | Pass |
 | `downloads/cheat-sheet.pdf` | PDF | pdf disclaimer | Pass |
@@ -98,6 +109,18 @@
 | `downloads/rooms/ecosystem.pdf` | PDF | pdf disclaimer | Pass |
 | `downloads/rooms/ecosystem.docx` | DOCX | docx disclaimer | Pass |
 | `downloads/rooms/ecosystem.pptx` | PPTX | pptx disclaimer | Pass |
+| `downloads/rooms/omni.json` | JSON | json payload | Pass |
+| `downloads/rooms/omni.pdf` | PDF | pdf disclaimer | Pass |
+| `downloads/rooms/omni.docx` | DOCX | docx disclaimer | Pass |
+| `downloads/rooms/omni.pptx` | PPTX | pptx disclaimer | Pass |
+| `downloads/rooms/metrics.json` | JSON | json payload | Pass |
+| `downloads/rooms/metrics.pdf` | PDF | pdf disclaimer | Pass |
+| `downloads/rooms/metrics.docx` | DOCX | docx disclaimer | Pass |
+| `downloads/rooms/metrics.pptx` | PPTX | pptx disclaimer | Pass |
+| `downloads/rooms/migrate.json` | JSON | json payload | Pass |
+| `downloads/rooms/migrate.pdf` | PDF | pdf disclaimer | Pass |
+| `downloads/rooms/migrate.docx` | DOCX | docx disclaimer | Pass |
+| `downloads/rooms/migrate.pptx` | PPTX | pptx disclaimer | Pass |
 | `downloads/rooms/babok.json` | JSON | json payload | Pass |
 | `downloads/rooms/babok.pdf` | PDF | pdf disclaimer | Pass |
 | `downloads/rooms/babok.docx` | DOCX | docx disclaimer | Pass |
@@ -250,6 +273,17 @@
 | `downloads/diagrams/release.png` | PNG | bytes | Pass |
 | `downloads/diagrams/retro.png` | PNG | bytes | Pass |
 | `downloads/diagrams/star.png` | PNG | bytes | Pass |
+| `downloads/diagrams/omni-parts.png` | PNG | bytes | Pass |
+| `downloads/diagrams/omni-channels.png` | PNG | bytes | Pass |
+| `downloads/diagrams/omni-blueprint.png` | PNG | bytes | Pass |
+| `downloads/diagrams/aht-parts.png` | PNG | bytes | Pass |
+| `downloads/diagrams/sl-split.png` | PNG | bytes | Pass |
+| `downloads/diagrams/metric-owner.png` | PNG | bytes | Pass |
+| `downloads/diagrams/migrate-streams.png` | PNG | bytes | Pass |
+| `downloads/diagrams/migrate-pack.png` | PNG | bytes | Pass |
+| `downloads/diagrams/eco-mind.png` | PNG | bytes | Pass |
+| `downloads/diagrams/eco-sisters.png` | PNG | bytes | Pass |
+| `downloads/diagrams/eco-integrate.png` | PNG | bytes | Pass |
 | `downloads/png/cheat-sheet.png` | PNG | bytes | Pass |
 | `downloads/png/flashcards.png` | PNG | bytes | Pass |
 | `downloads/png/brd-outline.png` | PNG | bytes | Pass |
@@ -325,12 +359,26 @@
 | `downloads/diagrams/release.html` | HTML | headless standalone | Pass |
 | `downloads/diagrams/retro.html` | HTML | headless standalone | Pass |
 | `downloads/diagrams/star.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/omni-parts.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/omni-channels.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/omni-blueprint.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/aht-parts.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/sl-split.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/metric-owner.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/migrate-streams.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/migrate-pack.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/eco-mind.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/eco-sisters.html` | HTML | headless standalone | Pass |
+| `downloads/diagrams/eco-integrate.html` | HTML | headless standalone | Pass |
 | `downloads/html/flashcards.html` | HTML | headless standalone | Pass |
 | `downloads/html/cheat-sheet.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/home.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/start.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/foundations.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/ecosystem.html` | HTML | headless standalone | Pass |
+| `downloads/rooms/omni.html` | HTML | headless standalone | Pass |
+| `downloads/rooms/metrics.html` | HTML | headless standalone | Pass |
+| `downloads/rooms/migrate.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/babok.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/requirements.html` | HTML | headless standalone | Pass |
 | `downloads/rooms/modeling.html` | HTML | headless standalone | Pass |

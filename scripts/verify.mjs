@@ -105,7 +105,7 @@ const tests = JSON.parse(readFileSync(join(root, "assets/data/download-tests.jso
 const failedTests = (tests.rows || []).filter((row) => !row.pass);
 if (failedTests.length) fail("download checks failed: " + failedTests.length);
 
-const sourcePages = ["home", "start", "foundations", "ecosystem", "babok", "requirements", "modeling", "agile", "data", "tools", "ai", "domains", "product", "certs", "careers", "practice", "diagrams", "flows", "charts", "glossary", "resources", "templates", "downloads", "search", "credits", "help"];
+const sourcePages = ["home", "start", "foundations", "ecosystem", "omni", "metrics", "migrate", "babok", "requirements", "modeling", "agile", "data", "tools", "ai", "domains", "product", "certs", "careers", "practice", "diagrams", "flows", "charts", "glossary", "resources", "templates", "downloads", "search", "credits", "help"];
 for (const page of sourcePages) {
   const sourcePath = join(root, "assets/data/sources", page + ".json");
   if (!existsSync(sourcePath)) {

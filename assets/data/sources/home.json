@@ -107,6 +107,27 @@
       "kind": "official",
       "status": "open",
       "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer feature overview",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/connect-feature-overview.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Connect Customer metric definitions",
+      "url": "https://docs.aws.amazon.com/connect/latest/adminguide/metrics-definitions.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "AWS Prescriptive Guidance, project phases and workstreams",
+      "url": "https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-migration-connect/workstreams.html",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
     }
   ]
 }
