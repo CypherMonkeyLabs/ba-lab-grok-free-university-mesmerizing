@@ -28,10 +28,12 @@ for (const [width, height] of sizes) {
     await page.evaluate(() => {
       localStorage.clear();
       localStorage.setItem("ba-onboard", "done");
+      localStorage.setItem("canon-tour-done", "1");
+      localStorage.setItem("ba-greet-done", "1");
     });
     await page.reload({ waitUntil: "networkidle0" });
     if (tour) await page.goto("http://127.0.0.1:8742/?tour=1", { waitUntil: "networkidle0" });
-    await page.waitForSelector("h1, .hero h1, #ba-tour-title");
+    await page.waitForSelector("h1, .hero h1, #ob-title");
     if (menu) {
       await page.click("#menu-btn");
       await new Promise((resolve) => setTimeout(resolve, 400));
@@ -62,7 +64,7 @@ for (const [width, height] of sizes) {
       const copy = document.querySelector(".copyline");
       const bar = document.getElementById("phone-bar");
       const tourCard = document.querySelector(".ba-tour-card");
-      const badges = document.querySelectorAll(".badge-row a");
+      const badges = document.querySelectorAll(".brand-icons a");
       const h1r = box(h1);
       const mr = box(menuBtn);
       const monkeyBox = box(monkey);

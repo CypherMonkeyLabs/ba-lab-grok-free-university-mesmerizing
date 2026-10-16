@@ -28,7 +28,8 @@
     ["help", "Help", "help.html", "book", "Menu, course, guide, and downloads, including the tour.", "Start"],
     ["search", "Search", "search.html", "link", "Find a note by words you remember.", "Start"]
   ];
-  var BANNER = ["start", "foundations", "babok", "requirements", "modeling", "agile", "practice", "diagrams", "downloads"];
+  var BANNER = ["home", "start", "foundations", "babok", "requirements", "modeling", "agile", "practice", "diagrams", "downloads"];
+  var GLOW = { diagrams: 1, practice: 1, downloads: 1 };
   var ICONS = {
     home: '<path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-5v-6H10v6H5a1 1 0 0 1-1-1z"/>',
     rocket: '<path d="M14 4c2 3 3 6 3 8a5 5 0 0 1-5 5c-2 0-5-1-8-3 2-3 3-6 3-8a5 5 0 0 1 5-5z"/><path d="M9 15l-2 5 5-2"/>',
@@ -50,12 +51,6 @@
     link: '<path d="M10 13a5 5 0 0 0 7.1.1l1.9-1.9a5 5 0 0 0-7.1-7.1L10.8 5"/><path d="M14 11a5 5 0 0 0-7.1-.1L5 12.8a5 5 0 0 0 7.1 7.1l1.1-1.1"/>',
     download: '<path d="M12 4v10M8 10l4 4 4-4M5 19h14"/>',
     menu: '<path d="M5 7h14M5 12h14M5 17h14"/>'
-  };
-  var MONKEY = '<svg viewBox="0 0 64 64" aria-hidden="true"><ellipse cx="32" cy="36" rx="16" ry="15" fill="#f6c56b"/><ellipse cx="14" cy="32" rx="8" ry="9" fill="#e8a84a"/><ellipse cx="50" cy="32" rx="8" ry="9" fill="#e8a84a"/><ellipse cx="26" cy="34" rx="7" ry="6" fill="#fff7e8"/><ellipse cx="38" cy="34" rx="7" ry="6" fill="#fff7e8"/><circle cx="26" cy="34" r="2.2" fill="#1c1917"/><circle cx="38" cy="34" r="2.2" fill="#1c1917"/><path d="M28 42c2 2 6 2 8 0" fill="none" stroke="#1c1917" stroke-width="1.6" stroke-linecap="round"/><circle cx="26" cy="34" r="6.2" fill="none" stroke="#0f172a" stroke-width="1.6"/><circle cx="38" cy="34" r="6.2" fill="none" stroke="#0f172a" stroke-width="1.6"/><path d="M32 30.5v7" stroke="#0f172a" stroke-width="1.6"/></svg>';
-  var BRAND = {
-    github: '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.22 3.38 9.65 8.07 11.22.59.12.8-.26.8-.57v-2.02c-3.28.73-3.97-1.42-3.97-1.42-.53-1.38-1.3-1.75-1.3-1.75-1.07-.75.08-.73.08-.73 1.18.08 1.8 1.24 1.8 1.24 1.05 1.84 2.76 1.31 3.43.99.1-.78.41-1.31.75-1.61-2.62-.31-5.37-1.34-5.37-5.98 0-1.32.46-2.4 1.22-3.25-.12-.3-.53-1.53.12-3.18 0 0 1-.33 3.3 1.25a11.3 11.3 0 0 1 6 0c2.3-1.58 3.3-1.25 3.3-1.25.65 1.65.24 2.88.12 3.18.76.85 1.22 1.93 1.22 3.25 0 4.65-2.76 5.66-5.39 5.96.42.38.8 1.12.8 2.26v3.35c0 .31.21.7.81.57A11.52 11.52 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5z"/></svg>',
-    site: MONKEY,
-    profile: '<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="#43e660"/><path fill="#1c1917" d="M10 8.2h2.3v3.1H15v1.8h-2.7V17H10v-3.9H7.4V11.3H10z"/></svg>'
   };
   var SOCIALS = [
     { id: "site", label: "CypherMonkey Labs website", href: "https://cyphermonkeylabs.com" },
@@ -220,7 +215,7 @@
       var item = findSection(id);
       if (!item) return "";
       var on = item[0] === current;
-      return '<a class="chip' + (on ? " is-current" : "") + '" href="' + esc(item[2]) + '"' +
+      return '<a class="chip' + (on ? " is-current" : "") + (GLOW[item[0]] ? " glow-ico" : "") + '" href="' + esc(item[2]) + '"' +
         (on ? ' aria-current="page"' : "") + ' title="' + esc(item[4]) + '">' +
         svg(item[3]) + "<span>" + esc(item[1]) + "</span></a>";
     }).join("");
@@ -253,7 +248,7 @@
     var body = groups.map(function (group) {
       var links = SECTIONS.filter(function (item) { return item[5] === group; }).map(function (item) {
         var on = item[0] === current;
-        return '<a class="menu-link' + (on ? " is-current" : "") + '" href="' + esc(item[2]) + '"' +
+        return '<a class="menu-link' + (on ? " is-current" : "") + (GLOW[item[0]] ? " glow-ico" : "") + '" href="' + esc(item[2]) + '"' +
           (on ? ' aria-current="page"' : "") + '>' +
           svg(item[3]) + "<strong>" + esc(item[1]) + "</strong><span class=\"desc\">" + esc(item[4]) + "</span></a>";
       }).join("");
@@ -306,13 +301,17 @@
   function renderPhone() {
     var bar = document.getElementById("phone-bar");
     if (!bar) return;
+    function barControl(tag, attrs, icon, label, glow) {
+      return "<" + tag + ' class="' + (glow ? "glow-ico" : "") + '" ' + attrs + ">" +
+        '<span class="bar-ico" aria-hidden="true">' + svg(icon) + "</span><span>" + label + "</span></" + tag + ">";
+    }
     bar.innerHTML =
-      '<button type="button" data-phone="menu">Menu</button>' +
-      '<a href="foundations.html">Learn</a>' +
-      '<a href="diagrams.html">Diagrams</a>' +
-      '<a href="practice.html">Play</a>' +
-      '<button type="button" data-phone="listen">Listen</button>' +
-      '<button type="button" data-phone="guide">Guide</button>';
+      barControl("button", 'type="button" data-phone="menu"', "menu", "Menu", true) +
+      barControl("a", 'href="foundations.html"', "book", "Learn", false) +
+      barControl("a", 'href="diagrams.html"', "image", "Diagrams", true) +
+      barControl("a", 'href="practice.html"', "cards", "Play", true) +
+      barControl("button", 'type="button" data-phone="listen"', "mic", "Listen", true) +
+      barControl("button", 'type="button" data-phone="guide"', "spark", "Guide", false);
     bar.addEventListener("click", function (event) {
       var button = event.target.closest("[data-phone]");
       if (!button) return;
@@ -326,23 +325,27 @@
     });
   }
 
+  function brandArt(value, key) {
+    if (!value) return "";
+    return typeof value === "function" ? value(key) : value;
+  }
   function renderFooter() {
     var footer = document.getElementById("site-footer");
     if (!footer) return;
-    var badges = SOCIALS.map(function (item) {
-      var text = item.iconOnly ? "" : "";
-      return '<a class="badge badge-' + esc(item.id) + '" href="' + esc(item.href) + '" aria-label="' + esc(item.label) + '">' +
-        (BRAND[item.id] || "") + text + "</a>";
-    }).join("");
+    var marks = window.CANON_BRAND || {};
+    var icons =
+      '<a class="brand-icon brand-web" href="https://cyphermonkeylabs.com" aria-label="CypherMonkey Labs website">' + brandArt(marks.monkey, "ft") + "</a>" +
+      '<a class="brand-icon brand-gh" href="https://github.com/CypherMonkeyLabs" aria-label="GitHub organization">' + brandArt(marks.github, "gh") + "</a>" +
+      '<a class="brand-icon brand-lt" href="https://linktr.ee/cyphermonkey" aria-label="Linktree">' + brandArt(marks.linktree, "lt") + "</a>";
     footer.innerHTML =
       '<div class="footer-inner">' +
       '<div class="disclaimer-box"><p><span class="shield" aria-hidden="true">🛡️</span> ' + esc(DISCLAIMER).replace(
         "the contact form at https://cyphermonkeylabs.com/#contact",
         '<a href="https://cyphermonkeylabs.com/#contact">the contact form</a>'
       ) + "</p></div>" +
-      "<p><strong>CypherMonkey Labs</strong></p>" +
-      '<div class="badge-row">' + badges + "</div>" +
-      '<p class="copyline">© 2026 CypherMonkeyLabs 🐒</p>' +
+      '<p class="footer-brand">CypherMonkey Labs</p>' +
+      '<nav class="brand-icons" aria-label="CypherMonkey Labs links">' + icons + "</nav>" +
+      '<p class="copyline">© 2026 CypherMonkeyLabs</p>' +
       '<ul class="identity-counts" aria-label="Library size">' +
       '<li><b data-count="notes">0</b> notes</li>' +
       '<li><b data-count="diagrams">0</b> diagrams</li>' +
@@ -358,6 +361,9 @@
     });
   };
 
+  var menuBtn = document.getElementById("menu-btn");
+  if (menuBtn) menuBtn.classList.add("glow-ico");
+  document.querySelectorAll("[data-listen]").forEach(function (node) { node.classList.add("glow-ico"); });
   renderBanner();
   renderDrawer();
   renderPhone();

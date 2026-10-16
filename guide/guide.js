@@ -83,15 +83,17 @@ function pose(name) {
 }
 
 function monkeySvg() {
-  return '<svg viewBox="0 0 80 80" aria-hidden="true">' +
-    '<ellipse class="ear left" cx="16" cy="36" rx="10" ry="12"/>' +
-    '<ellipse class="ear right" cx="64" cy="36" rx="10" ry="12"/>' +
-    '<ellipse class="face" cx="40" cy="42" rx="22" ry="20"/>' +
-    '<ellipse class="muzzle" cx="40" cy="50" rx="12" ry="9"/>' +
-    '<g class="specs"><circle cx="32" cy="40" r="7"/><circle cx="48" cy="40" r="7"/><path d="M39 40h2"/></g>' +
-    '<circle class="eye" cx="32" cy="40" r="1.8"/><circle class="eye" cx="48" cy="40" r="1.8"/>' +
-    '<path class="smile" d="M34 52c2 2 8 2 12 0"/>' +
-    '<path class="arm" d="M18 58c6 8 10 6 12 0"/>' +
+  return '<span class="ba-aura" aria-hidden="true"></span><span class="ba-glow" aria-hidden="true"></span>' +
+    '<svg viewBox="0 0 80 80" aria-hidden="true">' +
+    '<defs><radialGradient id="bafur" cx="40%" cy="32%" r="70%"><stop offset="0" stop-color="#ffe7a3"/><stop offset=".55" stop-color="#f6b73c"/><stop offset="1" stop-color="#c2410c"/></radialGradient></defs>' +
+    '<ellipse class="ear left" cx="16" cy="36" rx="11" ry="13"/>' +
+    '<ellipse class="ear right" cx="64" cy="36" rx="11" ry="13"/>' +
+    '<ellipse class="face" cx="40" cy="42" rx="24" ry="22"/>' +
+    '<ellipse class="muzzle" cx="40" cy="52" rx="13" ry="10"/>' +
+    '<g class="specs"><circle cx="31" cy="40" r="8"/><circle cx="49" cy="40" r="8"/><path d="M39 40h2"/><path d="M18 38l5 2M62 38l-5 2"/></g>' +
+    '<circle class="eye" cx="31" cy="40" r="2"/><circle class="eye" cx="49" cy="40" r="2"/>' +
+    '<path class="smile" d="M32 54c3 3 13 3 16 0"/>' +
+    '<path class="arm" d="M14 56c8 12 14 8 16-2"/>' +
     "</svg>";
 }
 
@@ -673,6 +675,7 @@ function onReady() {
   }
 }
 function applyDock() {
+  if (host.classList.contains("is-greeting")) return;
   if (typeof session.x === "number" && typeof session.y === "number") {
     var maxX = Math.max(0, window.innerWidth - host.offsetWidth);
     var maxY = Math.max(0, window.innerHeight - host.offsetHeight);
@@ -725,6 +728,10 @@ function listen() {
 }
 
 monkey.addEventListener("click", function () {
+  if (host.classList.contains("is-greeting")) {
+    endGreet();
+    return;
+  }
   if (monkey.dataset.dragged === "true") {
     monkey.dataset.dragged = "false";
     return;
@@ -822,6 +829,113 @@ fetch(new URL("kb/index.json", base))
 
 if (session.hidden) host.hidden = true;
 setVoice(false);
+
+var nudge = document.createElement("div");
+nudge.className = "ba-nudge";
+nudge.hidden = true;
+host.appendChild(nudge);
+var pokeTimer = 0;
+var greetClosed = false;
+
+function storedFlag(key) {
+  try { return localStorage.getItem(key); } catch (err) { return null; }
+}
+function pokeOff() { return storedFlag("ba-poke-off") === "1"; }
+function pokeCount() { return Number(storedFlag("ba-poke-count") || "0") || 0; }
+function hideNudge() {
+  nudge.hidden = true;
+  nudge.innerHTML = "";
+}
+function endGreet() {
+  if (!host.classList.contains("is-greeting")) return;
+  greetClosed = true;
+  if (window.speechSynthesis) window.speechSynthesis.cancel();
+  host.classList.remove("is-greeting");
+  host.style.left = "";
+  host.style.top = "";
+  host.style.right = "";
+  host.style.transform = "";
+  hideNudge();
+  pose("encourage");
+  applyDock();
+  schedulePoke();
+}
+function beginGreet() {
+  if (storedFlag("ba-greet-done") === "1") {
+    schedulePoke();
+    return;
+  }
+  try { localStorage.setItem("ba-greet-done", "1"); } catch (err) { return; }
+  greetClosed = false;
+  host.classList.add("is-greeting");
+  host.style.right = "auto";
+  host.style.bottom = "auto";
+  host.style.left = "50%";
+  host.style.top = "46%";
+  host.style.transform = "translate(-50%, -50%)";
+  pose("greeting");
+  nudge.hidden = false;
+  nudge.innerHTML = "<p>Welcome to CypherMonkey Labs. I am your BA guide. I only repeat the notes in this lab.</p>" +
+    '<div class="ba-nudge-actions"><button type="button" data-hear>Hear it</button><button type="button" data-dock>Dock on the right</button></div>';
+  window.setTimeout(function () { if (!greetClosed) endGreet(); }, 8000);
+}
+function schedulePoke() {
+  if (pokeOff() || pokeCount() >= 3) return;
+  window.clearTimeout(pokeTimer);
+  var wait = 120000 + Math.floor(Math.random() * 180000);
+  pokeTimer = window.setTimeout(showPoke, wait);
+}
+function showPoke() {
+  if (pokeOff() || pokeCount() >= 3) return;
+  if (document.body.dataset.tour === "open" || document.body.dataset.menu === "open" || !panel.hidden || host.classList.contains("is-greeting")) {
+    pokeTimer = window.setTimeout(showPoke, 20000);
+    return;
+  }
+  try { localStorage.setItem("ba-poke-count", String(pokeCount() + 1)); } catch (err) { return; }
+  pose("encourage");
+  nudge.hidden = false;
+  nudge.innerHTML = "<p>I can read this page with you, or stay quiet.</p>" +
+    '<div class="ba-nudge-actions"><button type="button" data-poke="read">Read this page</button>' +
+    '<button type="button" data-poke="later">Not now</button><button type="button" data-poke="stop">Stop offering</button></div>';
+}
+nudge.addEventListener("click", function (event) {
+  event.stopPropagation();
+  if (event.target.closest("[data-hear]")) {
+    if (!window.speechSynthesis) {
+      var copy = nudge.querySelector("p");
+      if (copy) copy.textContent = "This browser has no speech synthesis. The words stay on screen.";
+      return;
+    }
+    window.speechSynthesis.cancel();
+    var utter = new SpeechSynthesisUtterance("Welcome to CypherMonkey Labs. I am your BA guide. I only repeat the notes in this lab.");
+    utter.rate = 0.9;
+    utter.pitch = 0.96;
+    var list = window.speechSynthesis.getVoices();
+    var picked = list.filter(function (voice) { return voice.name === session.voiceName; })[0];
+    if (picked) utter.voice = picked;
+    window.speechSynthesis.speak(utter);
+    return;
+  }
+  if (event.target.closest("[data-dock]")) endGreet();
+  if (event.target.closest("[data-poke='read']")) {
+    hideNudge();
+    openPanel(true);
+    setVoice(true);
+    startReadAlong(0);
+  }
+  if (event.target.closest("[data-poke='later']")) {
+    hideNudge();
+    schedulePoke();
+  }
+  if (event.target.closest("[data-poke='stop']")) {
+    try { localStorage.setItem("ba-poke-off", "1"); } catch (err) { /* ignore */ }
+    hideNudge();
+  }
+});
+document.addEventListener("canon-tour-finished", beginGreet);
+document.addEventListener("canon-tour-skipped", schedulePoke);
+if (storedFlag("canon-tour-done") === "1" && storedFlag("ba-greet-done") !== "1") beginGreet();
+else if (storedFlag("canon-tour-done")) schedulePoke();
 try {
   if (localStorage.getItem("ba-sound") === "on") {
     document.addEventListener("pointerdown", function () { setSound(true); }, { once: true });

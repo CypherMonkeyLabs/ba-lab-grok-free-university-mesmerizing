@@ -1025,6 +1025,7 @@ def write_pages():
 requestAnimationFrame(function () {
   requestAnimationFrame(function () {
   var sources = [
+    ["assets/js/brand.js"],
     ["assets/js/frame.js"],
     ["assets/js/app.js"],
     ["guide/guide.js", "module"],
@@ -1065,7 +1066,7 @@ requestAnimationFrame(function () {
 <body data-page="{page}">
 <a class="skip" href="#main">Skip to content</a>
 <div class="top-chrome">
-<button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span><span></span></button>
+<button type="button" class="menu-btn glow-ico" id="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="section-banner" id="section-banner"></div>
 </div>
 <main id="main" tabindex="-1">{hero}</main>

@@ -3,43 +3,84 @@
   right: 0;
   top: 38%;
   z-index: 35;
-  width: 64px;
-  height: 64px;
+  width: 104px;
+  height: 104px;
   overflow: visible;
   font-family: "Segoe UI", "Avenir Next", sans-serif;
   color: #1c1917;
 }
+.ba-guide.is-greeting {
+  left: 50%;
+  right: auto;
+  top: 46%;
+  width: 132px;
+  height: 132px;
+  transform: translate(-50%, -50%);
+  z-index: 74;
+}
 body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-monkey {
-  width: 64px;
-  height: 64px;
+  position: relative;
+  width: 104px;
+  height: 104px;
   border: 0;
   border-radius: 50%;
   padding: 0;
   cursor: grab;
   touch-action: none;
   user-select: none;
-  background: radial-gradient(circle at 30% 30%, #fde68a, #f59e0b 55%, #fb7185);
-  box-shadow: 0 0 18px #fbbf24, 0 8px 20px rgba(0, 0, 0, 0.25);
+  background: transparent;
+  box-shadow: none;
 }
-.ba-monkey svg { width: 64px; height: 64px; display: block; }
+.ba-guide.is-greeting .ba-monkey { width: 132px; height: 132px; }
+.ba-aura {
+  position: absolute;
+  inset: -8px;
+  border-radius: 46%;
+  background: conic-gradient(from 40deg, #22d3ee, #6366f1, #f59e0b, #f472b6, #22d3ee);
+  filter: blur(7px);
+  opacity: 0.9;
+  animation: cg-spin 7s linear infinite;
+}
+.ba-glow {
+  position: absolute;
+  inset: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.85), rgba(99, 102, 241, 0.35) 46%, rgba(245, 158, 11, 0.15) 68%, transparent 74%);
+  animation: cg-pulse 2.8s ease-in-out infinite;
+}
+.ba-monkey svg { position: relative; z-index: 1; width: 104px; height: 104px; display: block; filter: drop-shadow(0 10px 10px rgba(2, 6, 23, 0.35)); }
+.ba-guide.is-greeting .ba-monkey svg { width: 132px; height: 132px; }
+@keyframes cg-spin { to { transform: rotate(1turn); } }
+@keyframes cg-pulse { 50% { opacity: 0.55; transform: scale(1.05); } }
 .ba-nudge {
   position: absolute;
-  right: 72px;
+  right: 112px;
   bottom: 8px;
-  width: min(16rem, 70vw);
+  width: min(18rem, 70vw);
   background: #fff;
   color: #1c1917;
+  border: 2px solid #c4b5fd;
   border-radius: 14px;
   padding: 0.6rem 0.7rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 30px rgba(49, 10, 90, 0.28);
 }
+.ba-guide.is-greeting .ba-nudge {
+  position: fixed;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  top: calc(46% + 78px);
+  transform: translateX(-50%);
+}
+.ba-nudge p { margin: 0 0 0.45rem; }
+.ba-nudge-actions { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .ba-nudge button { min-height: 44px; }
 .ba-panel {
   position: fixed;
-  right: 4.8rem;
+  right: 7.2rem;
   top: 4.6rem;
-  width: min(22rem, calc(100vw - 6rem));
+  width: min(22rem, calc(100vw - 9rem));
   max-height: min(32rem, 70vh);
   display: flex;
   flex-direction: column;
@@ -126,12 +167,15 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.12); } }
 @keyframes wave { 50% { transform: rotate(-24deg); } }
 @media (max-width: 800px) {
-  .ba-guide { width: 48px; height: 48px; }
-  .ba-monkey, .ba-monkey svg { width: 48px; height: 48px; }
+  .ba-guide { width: 84px; height: 84px; }
+  .ba-monkey, .ba-monkey svg { width: 84px; height: 84px; }
+  .ba-guide.is-greeting { width: 112px; height: 112px; }
+  .ba-guide.is-greeting .ba-monkey,
+  .ba-guide.is-greeting .ba-monkey svg { width: 112px; height: 112px; }
   .ba-panel {
     position: fixed;
     left: 0.4rem;
-    right: 3.4rem;
+    right: 5.6rem;
     top: auto;
     bottom: 3.7rem;
     width: auto;
@@ -142,10 +186,12 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   }
 }
 @media (prefers-reduced-motion: reduce) {
-  .ba-monkey, .ba-monkey .eye, .ba-monkey .arm { animation: none; }
+  .ba-monkey, .ba-monkey .eye, .ba-monkey .arm, .ba-aura, .ba-glow { animation: none; }
   .is-reading { box-shadow: none; }
 }
 html[data-motion="reduce"] .ba-monkey,
 html[data-motion="reduce"] .ba-monkey .eye,
-html[data-motion="reduce"] .ba-monkey .arm { animation: none; }
+html[data-motion="reduce"] .ba-monkey .arm,
+html[data-motion="reduce"] .ba-aura,
+html[data-motion="reduce"] .ba-glow { animation: none; }
 html[data-motion="reduce"] .is-reading { box-shadow: none; }

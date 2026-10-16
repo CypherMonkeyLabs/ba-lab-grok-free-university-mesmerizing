@@ -1,173 +1,225 @@
-/* First-visit tour. Stored in this browser. Help can open it again. */
+/* First-open tour. Six numbered steps, stored in this browser. Help can open it again. */
 (function () {
+  var KEY = "canon-tour-done";
+  var soundOn = false;
+  var audio = null;
+  var layer = null;
+  var step = 0;
+  var reduce = false;
+
   var STEPS = [
     {
-      title: "Welcome",
-      text: "Welcome to CypherMonkey Labs. I am the study guide for this free business analysis lab. You can read every room in silence. Voice is optional.",
-      voice: true
+      title: "Home",
+      selectors: ["a.chip[href='index.html']", "a.menu-link[href='index.html']"],
+      body: "This is Home. The Home chip in the banner brings you back to the front door, where the one-hour path starts."
     },
     {
       title: "Menu",
-      text: "The top-left button opens the menu. It slides in from the left. Text size, theme, text color, motion, and search live there. Escape, or a tap outside, closes it. On a phone, Menu is the first button in the bottom bar."
+      selectors: ["#menu-btn", "#phone-bar [data-phone='menu']"],
+      body: "Menu is the glowing button at the top left on a wide screen, and the left side of the bottom bar on a phone. It slides open. Escape, Close, or a tap outside puts it away."
     },
     {
-      title: "Course",
-      text: "Start here is the short path. When you open the guide, it can finish a room in about ten minutes, walk the full course, or send you to the downloads."
+      title: "Learn",
+      selectors: ["#phone-bar a[href='foundations.html']", "a.chip[href='foundations.html']", "a.chip[href='start.html']"],
+      body: "Learn opens the course. Start here, then a room. Each room has a five-minute block, a picture, a worked example, and a quiz."
     },
     {
-      title: "Guide",
-      text: "The monkey docks on the right edge. Drag it. This browser remembers the spot. The monkey hides while the menu is open. Open it to ask a question, use the microphone, or have a section read aloud."
+      title: "Diagrams",
+      selectors: ["#phone-bar a[href='diagrams.html']", "a.chip[href='diagrams.html']"],
+      body: "Diagrams are the study drawings. Open one, then use Export if you want a copy of that room."
     },
     {
-      title: "Downloads",
-      text: "Every room and section has an Export button for PDF, HTML, DOCX, PPTX, and JSON, whichever of those fits that room. The Downloads page lists every file, plus Open app and View repo. Each file carries the disclaimer and stands on its own."
+      title: "Play and Listen",
+      selectors: ["#phone-bar a[href='practice.html']", "a.chip[href='practice.html']", "#phone-bar [data-phone='listen']", "[data-listen]"],
+      body: "Play is the practice page. Listen reads the page with this browser's voice. Both stay buttons you can tap. Speech stays off until you choose it."
     },
     {
-      title: "Light and sound",
-      text: "Aurora is the bright theme. Midnight is the dark one. You can reduce motion from the menu. A soft sound stays off until you tap once. One tap is enough to enable it.",
-      sound: true,
-      ok: true
+      title: "Downloads and the guide",
+      selectors: ["a.chip[href='downloads.html']", ".ba-monkey"],
+      body: "Downloads holds the sheets, the card deck, and the zip. The monkey is the guide. After this tour it greets you once in the middle, then sits on the right edge. You can drag it and close it."
     }
   ];
 
-  var overlay = document.createElement("div");
-  overlay.className = "ba-tour";
-  overlay.hidden = true;
-  overlay.setAttribute("role", "dialog");
-  overlay.setAttribute("aria-modal", "true");
-  overlay.setAttribute("aria-labelledby", "ba-tour-title");
-  overlay.innerHTML =
-    '<div class="ba-tour-card">' +
-    '<p class="ba-tour-step" id="ba-tour-step"></p>' +
-    '<h2 id="ba-tour-title"></h2>' +
-    '<p id="ba-tour-text"></p>' +
-    '<div class="ba-tour-actions"></div>' +
-    "</div>";
-  document.body.appendChild(overlay);
+  function ls(key, value) {
+    try {
+      if (value === undefined) return localStorage.getItem(key);
+      if (value === null) localStorage.removeItem(key);
+      else localStorage.setItem(key, value);
+    } catch (err) { return null; }
+    return null;
+  }
 
-  var stepNode = overlay.querySelector("#ba-tour-step");
-  var titleNode = overlay.querySelector("#ba-tour-title");
-  var textNode = overlay.querySelector("#ba-tour-text");
-  var actions = overlay.querySelector(".ba-tour-actions");
-  var index = 0;
+  function motionOff() {
+    if (document.documentElement.dataset.motion === "reduce") return true;
+    return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  }
+
+  function chime() {
+    if (!soundOn || reduce) return;
+    var Ctx = window.AudioContext || window.webkitAudioContext;
+    if (!Ctx) return;
+    if (!audio) audio = new Ctx();
+    audio.resume();
+    var osc = audio.createOscillator();
+    var gain = audio.createGain();
+    osc.type = "sine";
+    osc.frequency.value = 520;
+    gain.gain.setValueAtTime(0.0001, audio.currentTime);
+    gain.gain.exponentialRampToValueAtTime(0.03, audio.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.0001, audio.currentTime + 0.28);
+    osc.connect(gain);
+    gain.connect(audio.destination);
+    osc.start();
+    osc.stop(audio.currentTime + 0.3);
+  }
+
+  function visible(el) {
+    if (!el || el.closest("[hidden]")) return false;
+    var style = getComputedStyle(el);
+    if (style.display === "none" || style.visibility === "hidden") return false;
+    var rect = el.getBoundingClientRect();
+    return rect.width > 8 && rect.height > 8 && rect.bottom > 0 && rect.right > 0 && rect.top < window.innerHeight && rect.left < window.innerWidth;
+  }
+
+  function targets() {
+    var found = [];
+    var selectors = STEPS[step].selectors || [];
+    selectors.forEach(function (selector) {
+      document.querySelectorAll(selector).forEach(function (el) {
+        if (found.indexOf(el) !== -1 || !visible(el)) return;
+        var scroller = el.closest(".chip-rail");
+        if (scroller) {
+          var left = el.offsetLeft - 24;
+          if (left < scroller.scrollLeft || left > scroller.scrollLeft + scroller.clientWidth - 80) scroller.scrollLeft = Math.max(0, left);
+        }
+        found.push(el);
+      });
+    });
+    return found.slice(0, 3);
+  }
+
+  function paintSpots(nodes) {
+    layer.querySelectorAll(".ob-spot").forEach(function (spot) { spot.remove(); });
+    var low = false;
+    nodes.forEach(function (el) {
+      var rect = el.getBoundingClientRect();
+      if (rect.top > window.innerHeight * 0.55) low = true;
+      var spot = document.createElement("div");
+      spot.className = "ob-spot";
+      spot.style.top = Math.max(4, rect.top - 6) + "px";
+      spot.style.left = Math.max(4, rect.left - 6) + "px";
+      spot.style.width = Math.min(window.innerWidth - 8, rect.width + 12) + "px";
+      spot.style.height = rect.height + 12 + "px";
+      layer.appendChild(spot);
+    });
+    var card = layer.querySelector(".ob-card");
+    card.classList.toggle("is-high", low);
+    card.classList.toggle("is-low", !low);
+  }
+
+  function paint() {
+    var card = layer.querySelector(".ob-card");
+    var item = STEPS[step];
+    card.querySelector("[data-ob-num]").textContent = String(step + 1);
+    card.querySelector("h2").textContent = item.title;
+    card.querySelector(".ob-body").textContent = item.body;
+    card.querySelector("[data-ob-count]").textContent = (step + 1) + " of " + STEPS.length;
+    var next = card.querySelector("[data-ob-next]");
+    next.textContent = step === STEPS.length - 1 ? "OK" : "Next";
+    card.querySelector("[data-ob-back]").hidden = step === 0;
+    paintSpots(targets());
+  }
+
+  function close(finished) {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    document.body.classList.remove("onboard-open");
+    delete document.body.dataset.tour;
+    if (layer) layer.remove();
+    layer = null;
+    try { localStorage.setItem("ba-onboard", "done"); } catch (err) { /* ignore */ }
+    if (finished === "done") {
+      ls(KEY, "1");
+      document.dispatchEvent(new CustomEvent("canon-tour-finished"));
+      return;
+    }
+    if (finished === "skip") {
+      ls(KEY, "skip");
+      document.dispatchEvent(new CustomEvent("canon-tour-skipped"));
+    }
+  }
+
+  function open() {
+    if (layer) return;
+    reduce = motionOff();
+    document.body.classList.add("onboard-open");
+    document.body.dataset.tour = "open";
+    layer = document.createElement("div");
+    layer.className = "ob-layer" + (reduce ? " is-still" : "");
+    layer.setAttribute("role", "dialog");
+    layer.setAttribute("aria-modal", "true");
+    layer.setAttribute("aria-labelledby", "ob-title");
+    layer.innerHTML =
+      '<div class="ob-card"><p class="ob-count"><span class="ob-num" data-ob-num>1</span> <span data-ob-count></span></p><h2 id="ob-title"></h2><p class="ob-body"></p>' +
+      '<div class="ob-actions">' +
+      '<button type="button" data-ob-sound aria-pressed="false">Sound off</button>' +
+      '<button type="button" data-ob-back hidden>Back</button>' +
+      '<button type="button" data-ob-skip>Skip</button>' +
+      '<button type="button" data-ob-next>Next</button></div></div>';
+    document.body.appendChild(layer);
+    step = 0;
+    paint();
+    layer.querySelector("[data-ob-next]").focus();
+    layer.addEventListener("click", function (event) {
+      if (event.target.closest("[data-ob-sound]")) {
+        soundOn = !soundOn;
+        var button = layer.querySelector("[data-ob-sound]");
+        button.setAttribute("aria-pressed", soundOn ? "true" : "false");
+        button.textContent = soundOn ? "Sound on" : "Sound off";
+        try { localStorage.setItem("ba-sound", soundOn ? "on" : "off"); } catch (err) { /* ignore */ }
+        if (window.BA_SET_SOUND) window.BA_SET_SOUND(soundOn);
+        if (soundOn) chime();
+        return;
+      }
+      if (event.target.closest("[data-ob-back]")) {
+        if (step > 0) { step -= 1; paint(); }
+        return;
+      }
+      if (event.target.closest("[data-ob-skip]")) {
+        close("skip");
+        return;
+      }
+      if (event.target.closest("[data-ob-next]")) {
+        chime();
+        if (step >= STEPS.length - 1) close("done");
+        else { step += 1; paint(); }
+      }
+    });
+    layer.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") close("skip");
+    });
+    window.addEventListener("resize", function () {
+      if (layer) paintSpots(targets());
+    });
+  }
 
   function shouldShow() {
     var params = new URLSearchParams(location.search);
     if (params.get("tour") === "1") return true;
     if (navigator.webdriver) return false;
-    try {
-      if (localStorage.getItem("ba-onboard") === "done") return false;
-    } catch (err) { /* ignore */ }
-    return true;
+    return !ls(KEY);
   }
 
-  function speakGreeting() {
-    if (!window.speechSynthesis) {
-      textNode.textContent = STEPS[0].text + " This browser has no speech voice, so the greeting stays as text.";
-      return;
-    }
-    var utter = new SpeechSynthesisUtterance("Welcome to CypherMonkey Labs. I am the study guide. Voice stays off until you ask for it, and the soft sound stays off until you tap.");
-    utter.rate = 0.9;
-    utter.pitch = 0.96;
-    window.speechSynthesis.cancel();
-    window.speechSynthesis.speak(utter);
-  }
-
-  function enableSound() {
-    try { localStorage.setItem("ba-sound", "on"); } catch (err) { /* ignore */ }
-    if (window.BA_SET_SOUND) window.BA_SET_SOUND(true);
-  }
-
-  function finish(openGuide) {
-    try { localStorage.setItem("ba-onboard", "done"); } catch (err) { /* ignore */ }
-    if (window.speechSynthesis) window.speechSynthesis.cancel();
-    overlay.hidden = true;
-    delete document.body.dataset.tour;
-    if (openGuide) document.dispatchEvent(new CustomEvent("ba-open-guide"));
-  }
-
-  function button(label, className) {
-    var node = document.createElement("button");
-    node.type = "button";
-    node.className = className || "";
-    node.textContent = label;
-    return node;
-  }
-
-  function render() {
-    var step = STEPS[index];
-    stepNode.textContent = "Step " + (index + 1) + " of " + STEPS.length;
-    titleNode.textContent = step.title;
-    textNode.textContent = step.text;
-    actions.innerHTML = "";
-    if (step.voice) {
-      var hear = button("Hear the greeting");
-      hear.addEventListener("click", speakGreeting);
-      actions.appendChild(hear);
-    }
-    if (step.sound) {
-      var on = button("Enable soft sound");
-      on.addEventListener("click", function () {
-        enableSound();
-        on.textContent = "Soft sound on";
-      });
-      actions.appendChild(on);
-      var muted = button("Keep muted");
-      muted.addEventListener("click", function () {
-        try { localStorage.setItem("ba-sound", "off"); } catch (err) { /* ignore */ }
-        if (window.BA_SET_SOUND) window.BA_SET_SOUND(false);
-        muted.textContent = "Staying muted";
-      });
-      actions.appendChild(muted);
-    }
-    var skip = button("Skip");
-    skip.addEventListener("click", function () { finish(false); });
-    actions.appendChild(skip);
-    var next = button(step.ok ? "OK" : "Next", "primary");
-    next.addEventListener("click", function () {
-      if (step.ok || index >= STEPS.length - 1) finish(true);
-      else {
-        index += 1;
-        render();
-      }
-    });
-    actions.appendChild(next);
-    next.focus();
-  }
-
-  function show(start) {
-    index = start || 0;
-    overlay.hidden = false;
-    document.body.dataset.tour = "open";
-    render();
-  }
-
-  overlay.addEventListener("keydown", function (event) {
-    if (event.key === "Escape") {
-      event.preventDefault();
-      event.stopPropagation();
-      finish(false);
-      return;
-    }
-    if (event.key !== "Tab") return;
-    var nodes = overlay.querySelectorAll("button");
-    if (!nodes.length) return;
-    var first = nodes[0];
-    var last = nodes[nodes.length - 1];
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
+  document.addEventListener("click", function (event) {
+    if (!event.target.closest("[data-replay-onboard]")) return;
+    event.preventDefault();
+    ls(KEY, null);
+    open();
   });
 
-  window.BA_SHOW_TOUR = function () { show(0); };
+  window.BA_SHOW_TOUR = function () {
+    ls(KEY, null);
+    open();
+  };
 
-  function maybe() {
-    if (shouldShow()) show(0);
-  }
-  document.addEventListener("ba-ready", maybe);
-  if (window.BA_CATALOG) maybe();
+  if (shouldShow()) window.setTimeout(open, 500);
 })();
