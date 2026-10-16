@@ -36,7 +36,7 @@
     {
       title: "Downloads and the guide",
       selectors: ["a.chip[href='downloads.html']", ".ba-monkey"],
-      body: "Downloads holds the sheets, the card deck, and the zip. The monkey is the guide. After this tour it greets you once in the middle, then sits on the right edge. You can drag it and close it."
+      body: "Downloads holds the sheets, the card deck, and the zip. The monkey is the guide. On the home page it sits on the right and talks from there. You can drag it and close it. Collapse tucks this tour into a Tour button."
     }
   ];
 
@@ -130,12 +130,47 @@
     paintSpots(targets());
   }
 
+  var chip = null;
+  var resizeBound = false;
+
+  function removeChip() {
+    if (!chip) return;
+    chip.remove();
+    chip = null;
+  }
+
+  function showChip() {
+    if (chip || layer) return;
+    document.body.dataset.tour = "collapsed";
+    chip = document.createElement("button");
+    chip.type = "button";
+    chip.className = "ob-chip";
+    chip.textContent = "Tour";
+    chip.setAttribute("aria-expanded", "false");
+    chip.addEventListener("click", function () {
+      removeChip();
+      open();
+    });
+    document.body.appendChild(chip);
+  }
+
+  function collapse() {
+    if (window.speechSynthesis) window.speechSynthesis.cancel();
+    document.body.classList.remove("onboard-open");
+    if (layer) layer.remove();
+    layer = null;
+    ls(KEY, "collapsed");
+    try { localStorage.setItem("ba-onboard", "done"); } catch (err) { /* ignore */ }
+    showChip();
+  }
+
   function close(finished) {
     if (window.speechSynthesis) window.speechSynthesis.cancel();
     document.body.classList.remove("onboard-open");
     delete document.body.dataset.tour;
     if (layer) layer.remove();
     layer = null;
+    removeChip();
     try { localStorage.setItem("ba-onboard", "done"); } catch (err) { /* ignore */ }
     if (finished === "done") {
       ls(KEY, "1");
@@ -148,27 +183,33 @@
     }
   }
 
+  function onResize() {
+    if (layer && document.body.dataset.tour === "open") paintSpots(targets());
+  }
+
   function open() {
     if (layer) return;
+    removeChip();
     reduce = motionOff();
-    document.body.classList.add("onboard-open");
+    document.body.classList.remove("onboard-open");
     document.body.dataset.tour = "open";
+    if (ls(KEY) !== "1" && ls(KEY) !== "skip") ls(KEY, "shown");
     layer = document.createElement("div");
     layer.className = "ob-layer" + (reduce ? " is-still" : "");
     layer.setAttribute("role", "dialog");
-    layer.setAttribute("aria-modal", "true");
+    layer.setAttribute("aria-modal", "false");
     layer.setAttribute("aria-labelledby", "ob-title");
     layer.innerHTML =
       '<div class="ob-card"><p class="ob-count"><span class="ob-num" data-ob-num>1</span> <span data-ob-count></span></p><h2 id="ob-title"></h2><p class="ob-body"></p>' +
       '<div class="ob-actions">' +
       '<button type="button" data-ob-sound aria-pressed="false">Sound off</button>' +
       '<button type="button" data-ob-back hidden>Back</button>' +
+      '<button type="button" data-ob-collapse>Collapse</button>' +
       '<button type="button" data-ob-skip>Skip</button>' +
       '<button type="button" data-ob-next>Next</button></div></div>';
     document.body.appendChild(layer);
     step = 0;
     paint();
-    layer.querySelector("[data-ob-next]").focus();
     layer.addEventListener("click", function (event) {
       if (event.target.closest("[data-ob-sound]")) {
         soundOn = !soundOn;
@@ -184,6 +225,10 @@
         if (step > 0) { step -= 1; paint(); }
         return;
       }
+      if (event.target.closest("[data-ob-collapse]")) {
+        collapse();
+        return;
+      }
       if (event.target.closest("[data-ob-skip]")) {
         close("skip");
         return;
@@ -195,18 +240,12 @@
       }
     });
     layer.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") close("skip");
+      if (event.key === "Escape") collapse();
     });
-    window.addEventListener("resize", function () {
-      if (layer) paintSpots(targets());
-    });
-  }
-
-  function shouldShow() {
-    var params = new URLSearchParams(location.search);
-    if (params.get("tour") === "1") return true;
-    if (navigator.webdriver) return false;
-    return !ls(KEY);
+    if (!resizeBound) {
+      window.addEventListener("resize", onResize);
+      resizeBound = true;
+    }
   }
 
   document.addEventListener("click", function (event) {
@@ -221,5 +260,11 @@
     open();
   };
 
-  if (shouldShow()) window.setTimeout(open, 500);
+  var params = new URLSearchParams(location.search);
+  if (params.get("tour") === "1") open();
+  else if (!navigator.webdriver) {
+    var state = ls(KEY);
+    if (!state) window.setTimeout(open, 500);
+    else if (state === "shown" || state === "collapsed") showChip();
+  }
 })();

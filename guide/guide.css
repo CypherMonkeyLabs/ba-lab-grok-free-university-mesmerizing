@@ -9,15 +9,7 @@
   font-family: "Segoe UI", "Avenir Next", sans-serif;
   color: #1c1917;
 }
-.ba-guide.is-greeting {
-  left: 50%;
-  right: auto;
-  top: 42%;
-  width: 240px;
-  height: 284px;
-  transform: translate(-50%, -50%);
-  z-index: 74;
-}
+.ba-guide.is-greeting { z-index: 35; }
 body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-monkey {
   position: relative;
@@ -33,7 +25,7 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   box-shadow: none;
 }
 .ba-guide.is-greeting .ba-monkey,
-.ba-guide.is-greeting .ba-monkey svg { width: 240px; height: 284px; }
+.ba-guide.is-greeting .ba-monkey svg { width: 220px; height: 260px; }
 .ba-soft {
   position: absolute;
   z-index: 0;
@@ -62,12 +54,13 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   box-shadow: 0 12px 30px rgba(49, 10, 90, 0.28);
 }
 .ba-guide.is-greeting .ba-nudge {
-  position: fixed;
-  left: 50%;
-  right: auto;
+  position: absolute;
+  left: auto;
+  right: 0;
   bottom: auto;
-  top: calc(42% + 150px);
-  transform: translateX(-50%);
+  top: calc(100% + 8px);
+  transform: none;
+  width: 220px;
 }
 .ba-nudge p { margin: 0 0 0.45rem; }
 .ba-nudge-actions { display: flex; flex-wrap: wrap; gap: 0.35rem; }
@@ -172,10 +165,18 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 @media (max-width: 800px) {
   .ba-guide { top: auto; bottom: 5.7rem; width: 200px; height: 236px; }
   .ba-monkey, .ba-monkey svg { width: 200px; height: 236px; }
-  .ba-guide.is-greeting { width: 220px; height: 260px; }
+  .ba-guide.is-greeting { width: 200px; height: 236px; }
   .ba-guide.is-greeting .ba-monkey,
-  .ba-guide.is-greeting .ba-monkey svg { width: 220px; height: 260px; }
-  .ba-guide.is-greeting .ba-nudge { top: calc(42% + 138px); }
+  .ba-guide.is-greeting .ba-monkey svg { width: 200px; height: 236px; }
+  .ba-guide.is-greeting .ba-nudge {
+    position: fixed;
+    top: auto;
+    left: auto;
+    right: 0.45rem;
+    bottom: calc(4.6rem + 244px);
+    width: 200px;
+    transform: none;
+  }
   body:has(.ba-panel:not([hidden])) .ba-monkey { visibility: hidden; }
   .ba-panel {
     position: fixed;
@@ -226,3 +227,13 @@ html[data-motion="reduce"] .ba-head,
 html[data-motion="reduce"] .ba-soft,
 html[data-motion="reduce"] .is-reading { animation: none; }
 html[data-motion="reduce"] .is-reading { box-shadow: none; }
+@media (min-width: 801px) {
+  body[data-page="home"] .ba-nudge {
+    right: 0;
+    left: auto;
+    bottom: auto;
+    top: calc(100% + 8px);
+    width: 220px;
+    transform: none;
+  }
+}
