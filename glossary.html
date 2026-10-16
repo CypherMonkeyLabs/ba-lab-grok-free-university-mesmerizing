@@ -6,7 +6,40 @@
 <title>Glossary · Business Analyst Free University</title>
 <meta name="description" content="Short business analysis definitions.">
 <meta name="theme-color" content="#0f766e">
-<script src="assets/js/boot.js"></script>
+<script>
+/* Apply saved display settings before first paint. */
+(function () {
+  var root = document.documentElement;
+  var themes = {
+    aurora: 1,
+    midnight: 1,
+    neon: 1,
+    holographic: 1,
+    cyberpunk: 1,
+    sunset: 1,
+    light: 1,
+    contrast: 1
+  };
+  try {
+    var theme = localStorage.getItem("ba-theme") || "aurora";
+    if (!themes[theme]) theme = "aurora";
+    root.dataset.theme = theme;
+    var font = localStorage.getItem("ba-font") || "md";
+    if (font !== "sm" && font !== "md" && font !== "lg") font = "md";
+    root.dataset.font = font;
+    var motion = localStorage.getItem("ba-motion") || "";
+    if (motion === "reduce" || motion === "full") root.dataset.motion = motion;
+    var ink = localStorage.getItem("ba-ink") || "";
+    if (/^#[0-9a-fA-F]{6}$/.test(ink)) {
+      root.style.setProperty("--ink-custom", ink);
+      root.dataset.ink = "custom";
+    }
+  } catch (err) {
+    root.dataset.theme = "aurora";
+    root.dataset.font = "md";
+  }
+})();
+</script>
 <link rel="stylesheet" href="assets/css/lab.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -22,10 +55,28 @@
 <footer class="site-footer" id="site-footer"></footer>
 <nav class="phone-bar" id="phone-bar" aria-label="Quick actions"></nav>
 <div id="guide-mount"></div>
-<script src="assets/js/frame.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/onboard.js"></script>
-<script type="module" src="guide/guide.js"></script>
-<script src="assets/js/pwa.js"></script>
+<script>
+requestAnimationFrame(function () {
+  requestAnimationFrame(function () {
+  var sources = [
+    ["assets/js/frame.js"],
+    ["assets/js/app.js"],
+    ["guide/guide.js", "module"],
+    ["assets/js/onboard.js"],
+    ["assets/js/pwa.js"]
+  ];
+  function load(index) {
+    if (index >= sources.length) return;
+    var spec = sources[index];
+    var node = document.createElement("script");
+    if (spec[1]) node.type = spec[1];
+    node.src = spec[0];
+    node.onload = function () { load(index + 1); };
+    document.body.appendChild(node);
+  }
+  load(0);
+  });
+});
+</script>
 </body>
 </html>

@@ -67,23 +67,7 @@
     var steps = (data.course || []).map(function (step, index) {
       return "<li><a href=\"" + esc(step.href) + "\">" + esc(step.title) + "</a> · " + esc(step.minutes) + " min. " + esc(step.text) + "</li>";
     }).join("");
-    main.innerHTML =
-      '<section class="hero">' +
-      '<div>' +
-      '<p class="kicker">Business analysis · free study lab</p>' +
-      "<h1>Business Analyst Free University</h1>" +
-      "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>" +
-      '<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>' +
-      listenButton(data.narration) +
-      "</div>" +
-      '<div class="stage3d" aria-hidden="true">' +
-      '<div class="obj doc">📄<span>Brief</span></div>' +
-      '<div class="obj flow">🔀<span>Flow</span></div>' +
-      '<div class="obj card3">🗂️<span>Kanban</span></div>' +
-      '<div class="obj funnel">🔻<span>Funnel</span></div>' +
-      '<div class="obj bars">📊<span>Chart</span></div>' +
-      '<div class="obj gear">⚙️<span>Gear</span></div>' +
-      "</div></section>" +
+    var rest =
       '<section><h2>One-hour path</h2><ol class="path-list">' + steps + "</ol></section>" +
       studyBlock(data, "home") +
       '<section><h2>Rooms</h2><div class="room-grid">' +
@@ -91,6 +75,27 @@
         return '<a class="card" href="' + esc(s[2]) + '"><h3>' + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
       }).join("") +
       "</div></section>";
+    var mount = document.getElementById("home-rest");
+    if (mount) mount.innerHTML = rest;
+    else {
+      main.innerHTML =
+        '<section class="hero">' +
+        '<div>' +
+        '<p class="kicker">Business analysis · free study lab</p>' +
+        "<h1>Business Analyst Free University</h1>" +
+        "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>" +
+        '<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>' +
+        listenButton(data.narration) +
+        "</div>" +
+        '<div class="stage3d" aria-hidden="true">' +
+        '<div class="obj doc">📄<span>Brief</span></div>' +
+        '<div class="obj flow">🔀<span>Flow</span></div>' +
+        '<div class="obj card3">🗂️<span>Kanban</span></div>' +
+        '<div class="obj funnel">🔻<span>Funnel</span></div>' +
+        '<div class="obj bars">📊<span>Chart</span></div>' +
+        '<div class="obj gear">⚙️<span>Gear</span></div>' +
+        "</div></section>" + rest;
+    }
     bindListen(main, data.narration);
   }
 
@@ -626,14 +631,6 @@
       link.textContent = item.kind;
       menu.appendChild(link);
     });
-    button.addEventListener("click", function (event) {
-      event.stopPropagation();
-      var open = menu.hidden;
-      main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
-      main.querySelectorAll(".export-btn").forEach(function (node) { node.setAttribute("aria-expanded", "false"); });
-      menu.hidden = !open;
-      button.setAttribute("aria-expanded", open ? "true" : "false");
-    });
     wrap.appendChild(button);
     wrap.appendChild(menu);
     return wrap;
@@ -676,6 +673,20 @@
     careers: ["Careers", "Role names and interview practice. No salary figures. Sponsorship is an employer and legal question, not a promise."]
   };
 
+  if (main) {
+    main.addEventListener("click", function (event) {
+      var button = event.target.closest(".export-btn");
+      if (!button) return;
+      event.stopPropagation();
+      var menu = button.parentElement.querySelector(".export-menu");
+      if (!menu) return;
+      var open = menu.hidden;
+      main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
+      main.querySelectorAll(".export-btn").forEach(function (node) { node.setAttribute("aria-expanded", "false"); });
+      menu.hidden = !open;
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
   document.addEventListener("click", function () {
     if (!main) return;
     main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });

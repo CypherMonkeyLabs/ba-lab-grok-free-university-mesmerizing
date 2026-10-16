@@ -337,7 +337,7 @@
     footer.innerHTML =
       '<div class="footer-inner">' +
       '<div class="disclaimer-box"><p><span class="shield" aria-hidden="true">🛡️</span> ' + esc(DISCLAIMER).replace(
-        "https://cyphermonkeylabs.com/#contact",
+        "the contact form at https://cyphermonkeylabs.com/#contact",
         '<a href="https://cyphermonkeylabs.com/#contact">the contact form</a>'
       ) + "</p></div>" +
       "<p><strong>CypherMonkey Labs</strong></p>" +

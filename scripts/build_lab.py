@@ -998,8 +998,54 @@ PAGES = [
 ]
 
 
+HOME_HERO = """<section class="hero" id="static-hero">
+<div>
+<p class="kicker">Business analysis · free study lab</p>
+<h1>Business Analyst Free University <span class="export-pop"><button type="button" class="export-btn" aria-haspopup="true" aria-expanded="false" aria-label="Export this section">Export</button><span class="export-menu" hidden><a href="downloads/rooms/home.pdf">PDF</a><a href="downloads/rooms/home.html">HTML</a><a href="downloads/rooms/home.docx">DOCX</a><a href="downloads/rooms/home.pptx">PPTX</a><a href="downloads/rooms/home.json">JSON</a></span></span></h1>
+<p class="lede">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>
+<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>
+<p><button type="button" class="btn" data-listen>Listen</button> <span class="meta">Speech stays off until you press Listen.</span></p>
+<p class="listen-script meta">Welcome. This is a free study lab for business analysis. Start with what the work is, then the six knowledge areas, then a testable requirement. Prices are copied only from pages opened in October 2026. Anything missing is marked to be confirmed. Nothing here is sold, and this lab states no salaries.</p>
+</div>
+<div class="stage3d" aria-hidden="true">
+<div class="obj doc">📄<span>Brief</span></div>
+<div class="obj flow">🔀<span>Flow</span></div>
+<div class="obj card3">🗂️<span>Kanban</span></div>
+<div class="obj funnel">🔻<span>Funnel</span></div>
+<div class="obj bars">📊<span>Chart</span></div>
+<div class="obj gear">⚙️<span>Gear</span></div>
+</div>
+</section>
+<div id="home-rest"></div>"""
+
+
 def write_pages():
+    boot = (ROOT / "assets/js/boot.js").read_text(encoding="utf-8").strip()
+    loader = """<script>
+requestAnimationFrame(function () {
+  requestAnimationFrame(function () {
+  var sources = [
+    ["assets/js/frame.js"],
+    ["assets/js/app.js"],
+    ["guide/guide.js", "module"],
+    ["assets/js/onboard.js"],
+    ["assets/js/pwa.js"]
+  ];
+  function load(index) {
+    if (index >= sources.length) return;
+    var spec = sources[index];
+    var node = document.createElement("script");
+    if (spec[1]) node.type = spec[1];
+    node.src = spec[0];
+    node.onload = function () { load(index + 1); };
+    document.body.appendChild(node);
+  }
+  load(0);
+  });
+});
+</script>"""
     for page, filename, title, desc in PAGES:
+        hero = HOME_HERO if page == "home" else ""
         doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1008,7 +1054,9 @@ def write_pages():
 <title>{html.escape(title)} · Business Analyst Free University</title>
 <meta name="description" content="{html.escape(desc)}">
 <meta name="theme-color" content="#0f766e">
-<script src="assets/js/boot.js"></script>
+<script>
+{boot}
+</script>
 <link rel="stylesheet" href="assets/css/lab.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -1020,15 +1068,11 @@ def write_pages():
 <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><span></span><span></span><span></span></button>
 <div class="section-banner" id="section-banner"></div>
 </div>
-<main id="main" tabindex="-1"></main>
+<main id="main" tabindex="-1">{hero}</main>
 <footer class="site-footer" id="site-footer"></footer>
 <nav class="phone-bar" id="phone-bar" aria-label="Quick actions"></nav>
 <div id="guide-mount"></div>
-<script src="assets/js/frame.js"></script>
-<script src="assets/js/app.js"></script>
-<script src="assets/js/onboard.js"></script>
-<script type="module" src="guide/guide.js"></script>
-<script src="assets/js/pwa.js"></script>
+{loader}
 </body>
 </html>
 """

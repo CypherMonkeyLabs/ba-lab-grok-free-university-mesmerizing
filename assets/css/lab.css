@@ -745,7 +745,7 @@ body[data-menu="open"] .drawer { transform: translateX(0); }
 .choice-grid, .game-row { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 @media (max-width: 800px) {
   main { width: min(1120px, calc(100% - 1rem)); margin-left: auto; margin-right: auto; padding-right: 3.2rem; padding-bottom: 1.5rem; }
-  .site-footer { padding-right: 3.2rem; padding-bottom: 5.6rem; }
+  .site-footer { padding-right: 4.5rem; padding-bottom: 5.6rem; }
   td { padding-right: 0; }
   .wheel-tab { display: none; }
   .phone-bar {

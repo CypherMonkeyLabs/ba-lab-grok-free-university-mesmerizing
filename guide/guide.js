@@ -37,7 +37,9 @@ host.innerHTML =
   '<section class="ba-panel" id="ba-guide-panel" hidden role="dialog" aria-modal="false" aria-labelledby="ba-guide-title">' +
   '<header><div><h2 id="ba-guide-title">BA guide</h2><p class="ba-status">Voice is off</p></div>' +
   '<div class="ba-actions"><button type="button" data-hide>Hide</button><button type="button" data-close>Close</button></div></header>' +
+  '<div class="ba-scroll">' +
   '<div class="ba-log" role="log" aria-live="polite"></div>' +
+  '<div class="ba-choices"></div>' +
   '<div class="ba-voice">' +
   '<label>Voice <select data-voice-pick aria-label="Voice"></select></label>' +
   '<label>Rate <input data-rate type="range" min="0.7" max="1.15" step="0.05" value="0.9"></label>' +
@@ -47,7 +49,7 @@ host.innerHTML =
   '<button type="button" data-resume>Resume</button>' +
   '<button type="button" data-next-section>Next section</button>' +
   '<button type="button" data-stop>Stop</button>' +
-  "</div>" +
+  "</div></div>" +
   '<form class="ba-form"><input type="text" aria-label="Ask about this room" placeholder="Ask, or say take me to a room" autocomplete="off">' +
   '<button type="button" data-mic aria-label="Speak a question">Mic</button><button type="submit">Send</button></form>' +
   "</section>";
@@ -93,6 +95,14 @@ function monkeySvg() {
     "</svg>";
 }
 
+function reveal(node) {
+  var scroller = host.querySelector(".ba-scroll");
+  if (!scroller || !node) return;
+  var top = node.offsetTop;
+  if (top < scroller.scrollTop) scroller.scrollTop = top;
+  var bottom = top + node.offsetHeight;
+  if (bottom > scroller.scrollTop + scroller.clientHeight) scroller.scrollTop = bottom - scroller.clientHeight;
+}
 function say(text, who) {
   var bubble = document.createElement("p");
   bubble.className = "ba-bubble " + (who || "bot");
@@ -106,7 +116,7 @@ function say(text, who) {
     });
   }
   log.appendChild(bubble);
-  log.scrollTop = log.scrollHeight;
+  if (log.childElementCount > 1) reveal(bubble);
   if (who !== "me" && session.voice && !readState) speak(text, bubble);
   return bubble;
 }
@@ -243,14 +253,14 @@ var MORE = [
 function welcome() {
   log.innerHTML = "";
   pose("greeting");
-  var bubble = say("Welcome to CypherMonkey Labs. I am your BA guide. Pick a way to study. I will not speak unless you choose a path that reads aloud.");
-  var wrap = document.createElement("div");
-  wrap.className = "choice-grid";
+  say("Welcome to CypherMonkey Labs. I am your BA guide. Pick a way to study. I will not speak unless you choose a path that reads aloud.");
+  var wrap = host.querySelector(".ba-choices");
+  wrap.innerHTML = "";
   PRIMARY.forEach(function (pair) {
     var button = document.createElement("button");
     button.type = "button";
     button.textContent = pair[0];
-    button.addEventListener("click", function () { onChoice(pair[1], pair[0]); });
+    button.addEventListener("click", function () { onChoice(pair[1]); });
     wrap.appendChild(button);
   });
   var more = document.createElement("button");
@@ -262,12 +272,13 @@ function welcome() {
       var button = document.createElement("button");
       button.type = "button";
       button.textContent = pair[0];
-      button.addEventListener("click", function () { onChoice(pair[1], pair[0]); });
+      button.addEventListener("click", function () { onChoice(pair[1]); });
       wrap.appendChild(button);
     });
   });
   wrap.appendChild(more);
-  bubble.appendChild(wrap);
+  var scroller = host.querySelector(".ba-scroll");
+  if (scroller) scroller.scrollTop = 0;
 }
 function onChoice(id) {
   if (id === "mute") {
