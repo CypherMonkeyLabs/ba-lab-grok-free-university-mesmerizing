@@ -705,7 +705,6 @@ function onReady() {
   }
 }
 function applyDock() {
-  if (host.classList.contains("is-greeting")) return;
   if (typeof session.x === "number" && typeof session.y === "number") {
     var maxX = Math.max(0, window.innerWidth - host.offsetWidth);
     var maxY = Math.max(0, window.innerHeight - host.offsetHeight);
@@ -719,9 +718,13 @@ function applyDock() {
   }
   host.style.left = "auto";
   host.style.right = "8px";
+  host.style.transform = "none";
   if (window.matchMedia("(max-width: 800px)").matches) {
     host.style.top = "auto";
     host.style.bottom = "4.6rem";
+  } else if (document.body.dataset.page === "home") {
+    host.style.bottom = "auto";
+    host.style.top = "7.5rem";
   } else {
     host.style.bottom = "auto";
     host.style.top = "16%";
@@ -909,15 +912,16 @@ function beginGreet() {
   }
   greetClosed = false;
   host.classList.add("is-greeting");
-  host.style.right = "auto";
-  host.style.bottom = "auto";
-  host.style.left = "50%";
-  host.style.top = "46%";
-  host.style.transform = "translate(-50%, -50%)";
+  host.style.left = "";
+  host.style.top = "";
+  host.style.right = "";
+  host.style.bottom = "";
+  host.style.transform = "";
+  applyDock();
   pose("greeting");
   nudge.hidden = false;
   nudge.innerHTML = "<p>Welcome to CypherMonkey Labs. I am your BA guide. I only repeat the notes in this lab.</p>" +
-    '<div class="ba-nudge-actions"><button type="button" data-hear>Hear it</button><button type="button" data-dock>Dock on the right</button></div>';
+    '<div class="ba-nudge-actions"><button type="button" data-hear>Hear it</button><button type="button" data-dock>Close</button></div>';
   if (!force) window.setTimeout(function () { if (!greetClosed) endGreet(); }, 8000);
 }
 function schedulePoke() {
@@ -984,6 +988,7 @@ document.addEventListener("canon-tour-finished", beginGreet);
 document.addEventListener("canon-tour-skipped", schedulePoke);
 if (shotMode() === "greet") beginGreet();
 else if (shotMode() === "poke") showPoke();
+else if (document.body.dataset.page === "home" && storedFlag("ba-greet-done") !== "1") beginGreet();
 else if (storedFlag("canon-tour-done") === "1" && storedFlag("ba-greet-done") !== "1") beginGreet();
 else if (storedFlag("canon-tour-done")) schedulePoke();
 try {
