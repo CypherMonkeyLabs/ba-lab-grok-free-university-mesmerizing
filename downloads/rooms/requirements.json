@@ -1,0 +1,207 @@
+{
+  "title": "Requirements",
+  "page": "requirements.html",
+  "summary": "Elicitation, stories, acceptance criteria, and traceability.",
+  "five": "A requirement is a usable representation of a need. Give it an identifier, a source, an owner, and a test. A user story names a role, a capability, and an outcome. Given, When, and Then, from the Gherkin reference, turn the outcome into a scenario. Trace the scenario to a test. Untraced text is a rumor.",
+  "example": [
+    "As a returns clerk, I want to see why an item was returned, so that I can offer the right next step.",
+    "Given a scanned item with a reason code, when the clerk opens the return, then the reason and the allowed next steps are on screen. Unhappy path: the code is missing, and the clerk must capture it before finishing."
+  ],
+  "notes": [
+    {
+      "title": "Elicitation methods",
+      "summary": "Choose a method for the question. Interviews go deep with one person. Workshops align a group. Observation checks real work. Surveys reach many people with thin answers. Document analysis starts from what is already written. Say why you picked the method."
+    },
+    {
+      "title": "Stakeholder grid",
+      "summary": "A simple grid places influence on one axis and interest on the other. High influence and high interest people need close work. High influence and low interest people need concise updates. The grid is a hypothesis. Test it."
+    },
+    {
+      "title": "Story and outcome",
+      "summary": "Write the role, the capability, and the outcome. Then add acceptance criteria. Atlassian's user-story material is a public explanation of this shape. A story without a test is a wish."
+    },
+    {
+      "title": "Acceptance criteria in Gherkin",
+      "summary": "Cucumber's Gherkin reference describes scenarios with Given, When, and Then. Given is context. When is the action. Then is the observable result. One scenario, one behavior. Keep the language in the business's words."
+    },
+    {
+      "title": "Traceability",
+      "summary": "Trace a requirement to the need it serves, the design that satisfies it, and the test that demonstrates it. The life-cycle tasks include tracing and assessing change. When a rule changes, the trace tells you what else moves."
+    },
+    {
+      "title": "Traceability matrix",
+      "summary": "A requirements traceability matrix is a table of those links. Columns that help: identifier, statement, source, owner, priority, design reference, test reference, status. A matrix that is not updated is a historical document. Say so."
+    },
+    {
+      "title": "User acceptance",
+      "summary": "Acceptance is a decision by the people who will live with the result, against criteria written earlier. It is not the first time anyone sees the system. Defects found here are either missed criteria or a changed need. Record which."
+    },
+    {
+      "title": "From criteria to tests",
+      "summary": "Each acceptance criterion should suggest at least one test, including the unhappy path. A business analyst does not have to execute every test. They do have to notice when a criterion cannot be tested."
+    },
+    {
+      "title": "Must, should, could, won't",
+      "summary": "Must, should, could, and won't are priority words. Must means the change fails its purpose without it. Won't means not in this scope, on purpose. The DSDM page that documents MoSCoW did not open in the October 2026 check, so it is not linked."
+    },
+    {
+      "title": "Quality requirements you can test",
+      "summary": "Pair every quality word with a threshold, a method, and a context. Accessibility can point at WCAG 2.2's quick reference. Do not write 'secure' and walk away."
+    },
+    {
+      "title": "Change control",
+      "summary": "A change request names what moved, why, the impact on scope and tests, and who approved. Assess requirements changes is a life-cycle task. Verbal agreement in a hallway is not a baseline."
+    },
+    {
+      "title": "Baseline and versions",
+      "summary": "A baseline is an agreed version you can compare against later. Keep the previous version. Diff the words. Teams lose arguments when the only copy is the latest edit."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "Given, When, and Then are how you:",
+      "choices": [
+        "Hide a gap",
+        "Write a scenario",
+        "Set a salary",
+        "Skip the source"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Gherkin",
+      "url": "https://cucumber.io/docs/gherkin/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Agile",
+      "url": "https://www.atlassian.com/agile",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Community",
+      "url": "https://community.atlassian.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "ISO/IEC/IEEE 29148",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Software requirements specification",
+      "url": "https://en.wikipedia.org/wiki/Software_requirements_specification",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

@@ -41,6 +41,10 @@
     if (!btn) return;
     var utter = null;
     btn.addEventListener("click", function () {
+      if (window.BA_READ_ALONG) {
+        window.BA_READ_ALONG();
+        return;
+      }
       if (!window.speechSynthesis) {
         btn.textContent = "Speech is not available in this browser";
         return;
@@ -67,35 +71,76 @@
     var steps = (data.course || []).map(function (step, index) {
       return "<li><a href=\"" + esc(step.href) + "\">" + esc(step.title) + "</a> · " + esc(step.minutes) + " min. " + esc(step.text) + "</li>";
     }).join("");
-    main.innerHTML =
-      '<section class="hero">' +
-      '<div>' +
-      '<p class="kicker">Business analysis · free study lab</p>' +
-      "<h1>Business Analyst Free University</h1>" +
-      "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>" +
-      '<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>' +
-      listenButton(data.narration) +
-      "</div>" +
-      '<div class="stage3d" aria-hidden="true">' +
-      '<div class="obj doc">📄<span>Brief</span></div>' +
-      '<div class="obj flow">🔀<span>Flow</span></div>' +
-      '<div class="obj card3">🗂️<span>Kanban</span></div>' +
-      '<div class="obj funnel">🔻<span>Funnel</span></div>' +
-      '<div class="obj bars">📊<span>Chart</span></div>' +
-      '<div class="obj gear">⚙️<span>Gear</span></div>' +
-      "</div></section>" +
+    var tiles = ["#99f6e4", "#bfdbfe", "#fde68a", "#fecdd3", "#ddd6fe", "#d9f99d", "#fed7aa", "#f5d0fe", "#a5f3fc", "#fbcfe8"];
+    var counts = data.counts || {};
+    var stats = [
+      [counts.notes, "notes"],
+      [counts.diagrams, "diagrams"],
+      [counts.flows, "flows"],
+      [counts.cards, "cards"]
+    ].filter(function (pair) { return pair[0] != null; }).map(function (pair) {
+      return '<div class="stat"><b>' + esc(pair[0]) + "</b><span>" + esc(pair[1]) + "</span></div>";
+    }).join("");
+    var rooms = (window.BA_FRAME ? window.BA_FRAME.sections : []).filter(function (s) { return s[0] !== "home" && s[0] !== "search"; });
+    var rest =
       '<section><h2>One-hour path</h2><ol class="path-list">' + steps + "</ol></section>" +
+      (stats ? '<div class="stat-row" aria-label="Library size">' + stats + "</div>" : "") +
+      studyBlock(data, "home") +
       '<section><h2>Rooms</h2><div class="room-grid">' +
-      (window.BA_FRAME ? window.BA_FRAME.sections : []).filter(function (s) { return s[0] !== "home"; }).map(function (s) {
-        return '<a class="card" href="' + esc(s[2]) + '"><h3>' + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
+      rooms.map(function (s, index) {
+        var icon = window.BA_FRAME && window.BA_FRAME.icon ? window.BA_FRAME.icon(s[3]) : "";
+        return '<a class="room-tile" style="--tile:' + tiles[index % tiles.length] + '" href="' + esc(s[2]) + '"><span class="tile-ico">' + icon + "</span><h3>" + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
       }).join("") +
       "</div></section>";
+    var mount = document.getElementById("home-rest");
+    if (mount) mount.innerHTML = rest;
+    else {
+      main.innerHTML =
+        '<section class="hero">' +
+        '<div>' +
+        '<p class="kicker">Business analysis · free study lab</p>' +
+        "<h1>Business Analyst Free University</h1>" +
+        "<p class=\"lede\">Notes from fundamentals through modeling, delivery, data, and credentials. Lucky is a student sharing what he is learning about systems, contact centers, and AI omni-channel work. This lab is not a vendor course and it is not for sale.</p>" +
+        '<p class="actions"><a class="btn primary" href="start.html">Start here</a><a class="btn ghost" href="babok.html">BABOK map</a><a class="btn ghost" href="practice.html">Practice</a><a class="btn ghost" href="downloads.html">Downloads</a></p>' +
+        listenButton(data.narration) +
+        "</div>" +
+        '<div class="stage3d" aria-hidden="true">' +
+        '<div class="obj doc">📄<span>Brief</span></div>' +
+        '<div class="obj flow">🔀<span>Flow</span></div>' +
+        '<div class="obj card3">🗂️<span>Kanban</span></div>' +
+        '<div class="obj funnel">🔻<span>Funnel</span></div>' +
+        '<div class="obj bars">📊<span>Chart</span></div>' +
+        '<div class="obj gear">⚙️<span>Gear</span></div>' +
+        "</div></section>" + rest;
+    }
     bindListen(main, data.narration);
   }
 
+  function studyBlock(data, section) {
+    var study = (data.study || {})[section];
+    if (!study) return "";
+    var diagram = (data.diagrams || []).filter(function (item) { return item.id === study.visual; })[0];
+    var visual = diagram
+      ? '<figure class="diagram-frame"><img src="' + esc(diagram.file) + '" alt="' + esc(diagram.alt) + '"><figcaption>' + esc(diagram.caption) + "</figcaption></figure>"
+      : "";
+    var example = (study.example || []).map(function (line) { return "<p>" + esc(line) + "</p>"; }).join("");
+    return '<section class="five"><h2>Learn it in 5 minutes</h2><p>' + esc(study.five || "") + "</p></section>" +
+      visual +
+      '<section class="callout"><h2>' + esc(study.exampleTitle || "Worked example") + "</h2>" + example + "</section>";
+  }
+  function roomQuiz(data, section, host) {
+    if (!host) return;
+    var quizzes = (data.quizzes || []).filter(function (item) { return item.section === section; });
+    if (!quizzes.length) quizzes = (data.quizzes || []).slice(0, 1);
+    renderQuiz(data, host, quizzes, "ba-quiz-" + section);
+  }
   function renderNotes(data, section, title, lede) {
     var items = bySection(data, section).map(card).join("");
-    main.innerHTML = "<h1>" + esc(title) + "</h1><p class=\"lede\">" + esc(lede) + "</p><div class=\"card-grid\">" + items + "</div>";
+    main.innerHTML = "<h1>" + esc(title) + "</h1><p class=\"lede\">" + esc(lede) + "</p>" +
+      studyBlock(data, section) +
+      '<div class="card-grid">' + items + "</div>" +
+      '<section><h2>Check yourself</h2><div data-room-quiz></div></section>';
+    roomQuiz(data, section, main.querySelector("[data-room-quiz]"));
   }
 
   function renderStart(data) {
@@ -105,12 +150,13 @@
     main.innerHTML =
       "<h1>Start here</h1>" +
       "<p class=\"lede\">About one hour if you read the path and skip the long rooms. Come back for the diagrams, games, and downloads.</p>" +
+      studyBlock(data, "start") +
       listenButton(data.narration) +
       '<div class="card-grid">' + steps + "</div>" +
       '<section class="callout"><h2>How to use the lab</h2><ul>' +
-      "<li>The top rail and the left wheel open the same rooms.</li>" +
-      "<li>Text size, theme, text color, and motion stay in this browser.</li>" +
-      "<li>The monkey at the lower right is a study companion. Voice is off until you turn it on.</li>" +
+      "<li>The top-left menu slides in. Text size, theme, text color, motion, and search live there.</li>" +
+      "<li>The banner is one row. Arrows move it.</li>" +
+      "<li>The monkey is a study companion. Voice is off until you ask it to speak.</li>" +
       "<li>If a fee or rule is marked to be confirmed, the public page did not show it on the check date.</li></ul></section>";
     bindListen(main, data.narration);
   }
@@ -124,7 +170,11 @@
         (cert.tbd ? '<p class="tbd">To be confirmed: ' + esc(cert.tbd) + "</p>" : "") +
         sourceLine(cert) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Certifications</h1><p class=\"lede\">Fees below are copied from pages opened on 16 October 2026. They are in US dollars and IIBA says they can change. This lab does not repeat salary claims from vendor marketing.</p><div class=\"card-grid\">" + blocks + "</div>";
+    main.innerHTML = "<h1>Certifications</h1><p class=\"lede\">Fees below are copied from pages opened on 16 October 2026. They are in US dollars and IIBA says they can change. This lab does not repeat salary claims from vendor marketing.</p>" +
+      studyBlock(data, "certs") +
+      '<div class="card-grid">' + blocks + "</div>" +
+      '<section><h2>Check yourself</h2><div data-room-quiz></div></section>';
+    roomQuiz(data, "certs", main.querySelector("[data-room-quiz]"));
   }
 
   function renderGlossary(data) {
@@ -139,7 +189,7 @@
       }).join("");
       list.innerHTML = '<table><tbody>' + rows + "</tbody></table>";
     }
-    main.innerHTML = "<h1>Glossary</h1><p class=\"lede\">Short study definitions. They are not a substitute for the cited standard.</p>";
+    main.innerHTML = "<h1>Glossary</h1><p class=\"lede\">Short study definitions. They are not a substitute for the cited standard.</p>" + studyBlock(data, "glossary");
     var input = document.createElement("input");
     input.type = "search";
     input.setAttribute("aria-label", "Filter glossary");
@@ -154,14 +204,55 @@
     var rows = (data.resources || []).map(function (item) {
       return "<tr><td><a href=\"" + esc(item.url) + "\">" + esc(item.title) + "</a></td><td>" + esc(item.note) + "</td><td>" + esc(item.asOf) + "</td></tr>";
     }).join("");
-    main.innerHTML = "<h1>Resources</h1><p class=\"lede\">Every link in this table was requested on the date shown. A page that did not open is omitted, and the related note says so.</p><table><thead><tr><th>Link</th><th>Why it is here</th><th>Checked</th></tr></thead><tbody>" + rows + "</tbody></table>";
+    main.innerHTML = "<h1>Resources</h1><p class=\"lede\">Every link in this table was requested on the date shown. A page that did not open is omitted, and the related note says so.</p>" + studyBlock(data, "resources") + "<table><thead><tr><th>Link</th><th>Why it is here</th><th>Checked</th></tr></thead><tbody>" + rows + "</tbody></table>";
   }
 
   function renderDownloads(data) {
     var rows = (data.downloads || []).map(function (item) {
       return "<tr><td><a href=\"" + esc(item.file) + "\">" + esc(item.title) + "</a></td><td>" + esc(item.kind) + "</td><td>" + esc(sizeLabel(item.bytes)) + "</td></tr>";
     }).join("");
-    main.innerHTML = "<h1>Downloads</h1><p class=\"lede\">Cheat sheets and templates. Each file carries the same disclaimer and owner line as the site footer.</p><table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody>" + rows + "</tbody></table>";
+    main.innerHTML = "<h1>Downloads</h1>" + studyBlock(data, "downloads") +
+      "<p class=\"lede\">Each file stands alone and carries the disclaimer. Every room also has PDF, HTML, DOCX, PPTX, and JSON under downloads/rooms. Filter by kind.</p>" +
+      '<p class="actions"><a class="btn primary" href="index.html">Open app</a><a class="btn ghost" href="https://github.com/CypherMonkeyLabs/ba-lab-grok-free-university-mesmerizing">View repo</a></p>' +
+      '<div class="filters" data-kind-filters><button type="button" data-kind="all" aria-pressed="true">All</button></div>' +
+      '<table><thead><tr><th>File</th><th>Kind</th><th>Size</th></tr></thead><tbody data-download-rows>' + rows + "</tbody></table>" +
+      "<h2>Headless download checks</h2><div data-download-tests><p>Loading the test table.</p></div>";
+    fetch("assets/data/download-tests.json").then(function (response) {
+      if (!response.ok) throw new Error("tests");
+      return response.json();
+    }).then(function (report) {
+      var host = main.querySelector("[data-download-tests]");
+      if (!host) return;
+      var body = (report.rows || []).map(function (row) {
+        return "<tr><td>" + esc(row.file) + "</td><td>" + esc(row.kind) + "</td><td>" + esc(row.check) + "</td><td>" + (row.pass ? "Pass" : "Fail") + "</td></tr>";
+      }).join("");
+      host.innerHTML = "<p>" + esc(report.summary || "") + "</p><table><thead><tr><th>File</th><th>Kind</th><th>Check</th><th>Result</th></tr></thead><tbody>" + body + "</tbody></table>";
+    }).catch(function () {
+      var host = main.querySelector("[data-download-tests]");
+      if (host) host.innerHTML = "<p>The test table is not in this copy yet. Run the download check to write it.</p>";
+    });
+    var kinds = {};
+    (data.downloads || []).forEach(function (item) { kinds[item.kind] = true; });
+    var filters = main.querySelector("[data-kind-filters]");
+    Object.keys(kinds).sort().forEach(function (kind) {
+      var button = document.createElement("button");
+      button.type = "button";
+      button.setAttribute("data-kind", kind);
+      button.textContent = kind;
+      filters.appendChild(button);
+    });
+    filters.addEventListener("click", function (event) {
+      var button = event.target.closest("[data-kind]");
+      if (!button) return;
+      var kind = button.getAttribute("data-kind");
+      filters.querySelectorAll("button").forEach(function (node) {
+        node.setAttribute("aria-pressed", node === button ? "true" : "false");
+      });
+      main.querySelectorAll("[data-download-rows] tr").forEach(function (row) {
+        var cell = row.children[1] ? row.children[1].textContent : "";
+        row.hidden = kind !== "all" && cell !== kind;
+      });
+    });
   }
 
   function renderTemplates(data) {
@@ -169,14 +260,14 @@
       var lines = (item.lines || []).map(function (line) { return "<li>" + esc(line) + "</li>"; }).join("");
       return '<article class="item"><h3>' + esc(item.title) + "</h3><p>" + esc(item.summary) + "</p><ul>" + lines + "</ul><p><a href=\"downloads.html\">Download the set</a></p></article>";
     }).join("");
-    main.innerHTML = "<h1>Templates</h1><p class=\"lede\">Outlines you can copy into your own notes. They are study scaffolds, not a company's official form.</p><div class=\"card-grid\">" + blocks + "</div>";
+    main.innerHTML = "<h1>Templates</h1><p class=\"lede\">Outlines you can copy into your own notes. They are study scaffolds, not a company's official form.</p>" + studyBlock(data, "templates") + '<div class="card-grid">' + blocks + "</div>";
   }
 
   function renderDiagrams(data) {
     var blocks = (data.diagrams || []).map(function (item) {
       return '<article class="item"><h3>' + esc(item.title) + '</h3><div class="diagram-frame"><img src="' + esc(item.file) + '" alt="' + esc(item.alt) + '"></div><p>' + esc(item.caption) + "</p>" + sourceLine(item) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Diagrams</h1><p class=\"lede\">Drawings made for this lab. They illustrate the notes. They are not copies of a vendor's figure.</p>" + blocks;
+    main.innerHTML = "<h1>Diagrams</h1><p class=\"lede\">Drawings made for this lab. They illustrate the notes. They are not copies of a vendor's figure.</p>" + studyBlock(data, "diagrams") + blocks;
   }
 
   function renderFlows(data) {
@@ -186,7 +277,7 @@
       }).join("");
       return '<article class="item"><h3>' + esc(flow.title) + "</h3><p>" + esc(flow.caption) + "</p>" + steps + sourceLine(flow) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Flows</h1><p class=\"lede\">Each track is a sequence, not a timer from a real project. On a phone, or with reduced motion, the moving dot stays still.</p>" + blocks;
+    main.innerHTML = "<h1>Flows</h1><p class=\"lede\">Each track is a sequence, not a timer from a real project. On a phone, or with reduced motion, the moving dot stays still.</p>" + studyBlock(data, "flows") + blocks;
   }
 
   function renderCharts(data) {
@@ -198,19 +289,25 @@
       }).join("");
       return '<article class="item"><h3>' + esc(chart.title) + "</h3>" + rows + sourceLine(chart) + "</article>";
     }).join("");
-    main.innerHTML = "<h1>Charts</h1><p class=\"lede\">Blueprint percentages come from the cited exam pages. Repository counts are the files in this lab, not a market statistic.</p>" + blocks;
+    main.innerHTML = "<h1>Charts</h1><p class=\"lede\">Blueprint percentages come from the cited exam pages. Repository counts are the files in this lab, not a market statistic.</p>" + studyBlock(data, "charts") + blocks;
   }
 
   function renderPractice(data) {
     main.innerHTML =
       "<h1>Practice</h1>" +
       "<p class=\"lede\">Scores stay in this browser. Questions were written for this lab. They are not retired exam items.</p>" +
+      studyBlock(data, "practice") +
       '<div class="filters" role="tablist">' +
       '<button type="button" data-tab="cards" aria-pressed="true">Flashcards</button>' +
       '<button type="button" data-tab="quiz" aria-pressed="false">Quiz</button>' +
       '<button type="button" data-tab="game" aria-pressed="false">Sort game</button>' +
-      '<button type="button" data-tab="daily" aria-pressed="false">Daily challenge</button></div>' +
-      '<div data-panel="cards"></div><div data-panel="quiz" hidden></div><div data-panel="game" hidden></div><div data-panel="daily" hidden></div>';
+      '<button type="button" data-tab="daily" aria-pressed="false">Daily</button>' +
+      '<button type="button" data-tab="match" aria-pressed="false">Match</button>' +
+      '<button type="button" data-tab="interview" aria-pressed="false">Interview</button>' +
+      '<button type="button" data-tab="triage" aria-pressed="false">Triage</button>' +
+      '<button type="button" data-tab="bpmn" aria-pressed="false">BPMN</button></div>' +
+      '<div data-panel="cards"></div><div data-panel="quiz" hidden></div><div data-panel="game" hidden></div><div data-panel="daily" hidden></div>' +
+      '<div data-panel="match" hidden></div><div data-panel="interview" hidden></div><div data-panel="triage" hidden></div><div data-panel="bpmn" hidden></div>';
     main.querySelector(".filters").addEventListener("click", function (event) {
       var btn = event.target.closest("[data-tab]");
       if (!btn) return;
@@ -225,6 +322,10 @@
     renderQuiz(data, main.querySelector('[data-panel="quiz"]'), data.quizzes, "ba-quiz");
     renderGame(main.querySelector('[data-panel="game"]'));
     renderDaily(data, main.querySelector('[data-panel="daily"]'));
+    renderMatch(data, main.querySelector('[data-panel="match"]'));
+    renderInterview(data, main.querySelector('[data-panel="interview"]'));
+    renderTriage(data, main.querySelector('[data-panel="triage"]'));
+    renderBpmn(data, main.querySelector('[data-panel="bpmn"]'));
   }
 
   function renderCards(data, host) {
@@ -278,6 +379,7 @@
       }
       host.innerHTML = blocks + '<p><button type="button" data-score>Score</button></p><p class="score" data-score-out>' +
         (done ? score + " / " + list.length : "") + "</p>";
+      decorate(window.BA_CATALOG);
       if (done) {
         host.querySelectorAll(".quiz-option").forEach(function (btn) {
           var qi = Number(btn.getAttribute("data-q"));
@@ -366,12 +468,38 @@
     renderQuiz(data, wrap, [item], "ba-daily");
   }
 
+  function renderCredits(data) {
+    var blocks = (data.credits || []).map(function (item) {
+      return '<article class="item"><h3>' + esc(item.name) + "</h3><p>" + esc(item.note) + "</p><p class=\"meta\">" + esc(item.license) + "</p></article>";
+    }).join("");
+    main.innerHTML = "<h1>Legal and credits</h1>" + studyBlock(data, "credits") +
+      '<section class="callout"><h2>Disclaimer</h2><p>Independent, free, learning-only student project. Respects every company and vendor. Nothing is sold. This lab does not give legal, immigration, medical, or financial advice, and it promises no visa, job, or salary.</p></section>' +
+      '<section class="callout"><h2>Copyright</h2><p>© 2026 CypherMonkeyLabs. The study notes, diagrams, games, and guide in this repository are original unless a source line names another work. Summaries are not the text of the BABOK Guide or any standard.</p></section>' +
+      '<section class="callout"><h2>Trademarks</h2><p>Trademarks belong to their owners. CypherMonkey Labs is not affiliated with, endorsed by, or speaking for IIBA, PMI, Scrum Alliance, Scaled Agile, Atlassian, Microsoft, or any other organization named in a citation.</p></section>' +
+      '<section class="callout"><h2>Third-party licences</h2><p>Web Speech and speech recognition are platform features. No speech audio is redistributed. The soft sound is a tone generated in the browser. three.js is not included. Cited pages stay on their own sites.</p><div class="card-grid">' + blocks + "</div></section>" +
+      '<section class="callout"><h2>Privacy</h2><p>There is no account. Preferences, quiz scores, the guide position, and the tour flag stay in this browser. When you turn voice or the microphone on, the browser vendor handles that audio. This lab does not receive it.</p></section>' +
+      '<section class="callout"><h2>Accessibility</h2><p>The menu changes text size, text color, and theme, and it can reduce motion. A custom text color warns when contrast is below 4.5 to 1. A skip link is the first control. Buttons are sized for a fingertip. Read-along highlights the spoken sentence and can be paused.</p></section>' +
+      '<section class="callout"><h2>Removal request</h2><p>Concerns are removed or corrected through the contact section on the lab website: <a href="https://cyphermonkeylabs.com/#contact">the contact form</a>.</p></section>';
+  }
+  function renderHelp(data) {
+    main.innerHTML = "<h1>Help</h1><p class=\"lede\">A short map of the menu, the course, the guide, and the downloads. The tour can be opened again from this page.</p>" +
+      studyBlock(data, "help") +
+      '<p><button type="button" class="btn primary" id="replay-tour">Replay the tour</button></p>' +
+      '<section class="callout"><h2>Menu</h2><p>Use the top-left button. The drawer slides in. Text size, theme, text color, reduced motion, and search are inside it. Escape or a tap on the dimmed page closes it. On a phone the same menu is the Menu button in the bottom bar.</p></section>' +
+      '<section class="callout"><h2>Course</h2><p>Start here is the short path. The guide can also offer Finish in 10 minutes, Full course, or Just download. Full course reads a room, then opens the next room in the path.</p></section>' +
+      '<section class="callout"><h2>Guide</h2><p>The first visit walks Home, Menu, Learn, Diagrams, Play, Listen, Downloads, and the guide, with Next, Back, and Skip. After OK, the monkey greets once in the middle, then docks on the right. Drag it and this browser keeps the spot. It hides while the menu is open. A quiet offer may appear after a few idle minutes. Not now waits, and Stop offering remembers. Voice and the soft sound stay off until you choose them.</p></section>' +
+      '<section class="callout"><h2>Downloads</h2><p>Export on a room or a section offers PDF, HTML, DOCX, PPTX, and JSON for that room. The Downloads page lists every file, with Open app and View repo. Each file is meant to open on its own and includes the disclaimer.</p></section>';
+    var replay = document.getElementById("replay-tour");
+    if (replay) replay.addEventListener("click", function () {
+      if (window.BA_SHOW_TOUR) window.BA_SHOW_TOUR();
+    });
+  }
   function renderSearch(data) {
     var params = new URLSearchParams(location.search);
     var q = (params.get("q") || "").trim().toLowerCase();
     var input = '<form class="search-form" action="search.html"><input type="search" name="q" value="' + esc(params.get("q") || "") + '" aria-label="Search the lab"><button type="submit">Search</button></form>';
     if (!q) {
-      main.innerHTML = "<h1>Search</h1>" + input + "<p>Type a term such as traceability, CBAP, or BPMN.</p>";
+      main.innerHTML = "<h1>Search</h1>" + studyBlock(data, "search") + input + "<p>Type a term such as traceability, CBAP, or BPMN.</p>";
       return;
     }
     var hits = [];
@@ -387,6 +515,178 @@
     main.innerHTML = "<h1>Search</h1>" + input + "<p>" + hits.length + " matches for “" + esc(params.get("q") || "") + "”.</p><div class=\"card-grid\">" + hits.join("") + "</div>";
   }
 
+  function renderMatch(data, host) {
+    var pairs = ((data.games || {}).match) || [];
+    var rights = pairs.map(function (pair) { return pair[1]; });
+    host.innerHTML = "<h2>Match the term</h2><p>Pick the meaning that belongs to each term.</p>";
+    var chosen = {};
+    pairs.forEach(function (pair, index) {
+      var article = document.createElement("article");
+      article.className = "item";
+      article.innerHTML = "<h3>" + esc(pair[0]) + "</h3>" + rights.map(function (meaning) {
+        return '<button type="button" class="choice" data-i="' + index + '" data-v="' + esc(meaning) + '">' + esc(meaning) + "</button>";
+      }).join("");
+      host.appendChild(article);
+    });
+    var out = document.createElement("p");
+    var check = document.createElement("button");
+    check.type = "button";
+    check.textContent = "Check";
+    host.appendChild(check);
+    host.appendChild(out);
+    host.addEventListener("click", function (event) {
+      var button = event.target.closest(".choice");
+      if (button) {
+        chosen[button.getAttribute("data-i")] = button.getAttribute("data-v");
+        button.parentElement.querySelectorAll(".choice").forEach(function (node) {
+          node.setAttribute("aria-pressed", node === button ? "true" : "false");
+        });
+      }
+      if (event.target === check) {
+        var correct = 0;
+        pairs.forEach(function (pair, index) { if (chosen[index] === pair[1]) correct += 1; });
+        out.textContent = correct + " of " + pairs.length + " match.";
+        if (correct === pairs.length) addBadge("Match cleared");
+      }
+    });
+  }
+  function renderInterview(data, host) {
+    var rounds = ((data.games || {}).interview) || [];
+    var bank = (data.interviews || []).map(function (item) {
+      return "<article class=\"item\"><h3>" + esc(item.q) + "</h3><p>" + esc(item.star) + "</p></article>";
+    }).join("");
+    host.innerHTML = "<h2>Stakeholder interview</h2><p>These prompts are generic. They are not a biography and they claim no tool experience.</p>" +
+      rounds.map(function (item) {
+        return '<article class="item"><h3>' + esc(item.ask) + "</h3><p><strong>A useful shape.</strong> " + esc(item.better) + "</p><p><strong>A weaker shape.</strong> " + esc(item.weaker) + "</p></article>";
+      }).join("") +
+      "<h2>STAR bank</h2>" + bank;
+  }
+  function renderTriage(data, host) {
+    var items = ((data.games || {}).triage) || [];
+    host.innerHTML = "<h2>Requirements triage</h2><p>Now, later, or drop. This is a study key for a generic clinic, not a company policy.</p>";
+    var chosen = {};
+    items.forEach(function (pair, index) {
+      var article = document.createElement("article");
+      article.className = "item";
+      article.innerHTML = "<p>" + esc(pair[0]) + "</p>" + ["Now", "Later", "Drop"].map(function (lane) {
+        return '<button type="button" class="choice" data-i="' + index + '" data-v="' + lane + '">' + lane + "</button>";
+      }).join("");
+      host.appendChild(article);
+    });
+    var out = document.createElement("p");
+    var check = document.createElement("button");
+    check.type = "button";
+    check.textContent = "Check";
+    host.appendChild(check);
+    host.appendChild(out);
+    host.addEventListener("click", function (event) {
+      var button = event.target.closest(".choice");
+      if (button) {
+        chosen[button.getAttribute("data-i")] = button.getAttribute("data-v");
+        button.parentElement.querySelectorAll(".choice").forEach(function (node) {
+          node.setAttribute("aria-pressed", node === button ? "true" : "false");
+        });
+      }
+      if (event.target === check) {
+        var correct = 0;
+        items.forEach(function (pair, index) { if (chosen[index] === pair[1]) correct += 1; });
+        out.textContent = correct + " of " + items.length + " match the study key.";
+        if (correct === items.length) addBadge("Triage cleared");
+      }
+    });
+  }
+  function renderBpmn(data, host) {
+    var order = ((data.games || {}).bpmn) || [];
+    var pool = order.slice().reverse();
+    host.innerHTML = "<h2>BPMN builder</h2><p>Put the pieces in an order that can tell the return story. This is a study sequence, not a graded exam item.</p><div data-built></div><div data-pool></div><p data-bpmn-out></p>";
+    var built = [];
+    function draw() {
+      host.querySelector("[data-built]").innerHTML = "<p><strong>Your flow.</strong> " + (built.map(esc).join(" → ") || "Empty") + "</p>";
+      host.querySelector("[data-pool]").innerHTML = pool.map(function (token) {
+        return '<button type="button" class="choice" data-token="' + esc(token) + '">' + esc(token) + "</button>";
+      }).join(" ") + ' <button type="button" data-undo>Undo</button> <button type="button" data-bpmn-check>Check</button>';
+    }
+    host.addEventListener("click", function (event) {
+      var token = event.target.closest("[data-token]");
+      if (token) {
+        var name = token.getAttribute("data-token");
+        var index = pool.indexOf(name);
+        if (index >= 0) {
+          pool.splice(index, 1);
+          built.push(name);
+          draw();
+        }
+      }
+      if (event.target.closest("[data-undo]") && built.length) {
+        pool.unshift(built.pop());
+        draw();
+      }
+      if (event.target.closest("[data-bpmn-check]")) {
+        var ok = built.join("|") === order.join("|");
+        host.querySelector("[data-bpmn-out]").textContent = ok ? "That matches the study sequence." : "Not yet. Start, lookup, the question, then the two endings.";
+        if (ok) addBadge("BPMN sequence cleared");
+      }
+    });
+    draw();
+  }
+  function exportControls(files) {
+    var wrap = document.createElement("span");
+    wrap.className = "export-pop";
+    var button = document.createElement("button");
+    button.type = "button";
+    button.className = "export-btn";
+    button.textContent = "Export";
+    button.setAttribute("aria-haspopup", "true");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("aria-label", "Export this section");
+    var menu = document.createElement("span");
+    menu.className = "export-menu";
+    menu.hidden = true;
+    files.forEach(function (item) {
+      var link = document.createElement("a");
+      link.href = item.file;
+      link.textContent = item.kind;
+      menu.appendChild(link);
+    });
+    wrap.appendChild(button);
+    wrap.appendChild(menu);
+    return wrap;
+  }
+  function renderSources(payload) {
+    if (!main || !payload || main.querySelector(".sources-deeper")) return;
+    var entries = payload.entries || [];
+    if (!entries.length) return;
+    var checked = payload.checked || "";
+    var items = entries.map(function (entry) {
+      var kind = esc(entry.kind || "");
+      var when = "last checked " + esc(entry.checked || checked);
+      if (entry.status === "open" && entry.url) {
+        return "<li><a href=\"" + esc(entry.url) + "\">" + esc(entry.label) + "</a> <span class=\"meta\">(" + kind + ", " + when + ")</span></li>";
+      }
+      return "<li>" + esc(entry.label) + " <span class=\"meta\">(" + kind + ", confirm, " + when + ")</span></li>";
+    }).join("");
+    var section = document.createElement("section");
+    section.className = "sources-deeper";
+    section.setAttribute("data-read", "true");
+    section.innerHTML = "<h2>Sources and go deeper</h2><p>Last checked " + esc(checked) + ". A line marked confirm did not open, so it is not linked.</p><ul>" + items + "</ul>";
+    main.appendChild(section);
+  }
+  function decorate(data) {
+    if (!main || !data) return;
+    var id = document.body.dataset.page || "home";
+    var files = (data.downloads || []).filter(function (item) {
+      return item.file.indexOf("downloads/rooms/" + id + ".") === 0;
+    });
+    if (files.length && !main.querySelector(".export-corner")) {
+      var corner = document.createElement("div");
+      corner.className = "export-corner";
+      corner.appendChild(exportControls(files));
+      main.insertBefore(corner, main.firstChild);
+    }
+    main.querySelectorAll(".five, .callout, article.item, p.lede").forEach(function (node) {
+      node.setAttribute("data-read", "true");
+    });
+  }
   function addBadge(name) {
     try {
       var badges = JSON.parse(localStorage.getItem("ba-badges") || "[]");
@@ -410,6 +710,28 @@
     careers: ["Careers", "Role names and interview practice. No salary figures. Sponsorship is an employer and legal question, not a promise."]
   };
 
+  if (main) {
+    main.addEventListener("click", function (event) {
+      var button = event.target.closest(".export-btn");
+      if (!button) return;
+      event.stopPropagation();
+      var menu = button.parentElement.querySelector(".export-menu");
+      if (!menu) return;
+      var open = menu.hidden;
+      main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
+      main.querySelectorAll(".export-btn").forEach(function (node) { node.setAttribute("aria-expanded", "false"); });
+      menu.hidden = !open;
+      button.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+  }
+  document.addEventListener("click", function () {
+    if (!main) return;
+    main.querySelectorAll(".export-menu").forEach(function (node) { node.hidden = true; });
+    main.querySelectorAll(".export-btn[aria-expanded='true']").forEach(function (node) {
+      node.setAttribute("aria-expanded", "false");
+    });
+  });
+
   fetch("assets/data/catalog.json")
     .then(function (response) {
       if (!response.ok) throw new Error("catalog");
@@ -418,6 +740,19 @@
     .then(function (data) {
       window.BA_CATALOG = data;
       if (window.BA_SET_COUNTS && data.counts) window.BA_SET_COUNTS(data.counts);
+      window.BA_SPEAK = function () {
+        if (window.BA_READ_ALONG) {
+          window.BA_READ_ALONG();
+          return;
+        }
+        var text = data.narration || "";
+        if (!window.speechSynthesis) return;
+        if (speechSynthesis.speaking) {
+          speechSynthesis.cancel();
+          return;
+        }
+        speechSynthesis.speak(new SpeechSynthesisUtterance(text));
+      };
       if (page === "home") renderHome(data);
       else if (page === "start") renderStart(data);
       else if (page === "certs") renderCerts(data);
@@ -430,9 +765,19 @@
       else if (page === "charts") renderCharts(data);
       else if (page === "practice") renderPractice(data);
       else if (page === "search") renderSearch(data);
+      else if (page === "credits") renderCredits(data);
+      else if (page === "help") renderHelp(data);
       else if (TITLES[page]) renderNotes(data, page, TITLES[page][0], TITLES[page][1]);
       else main.innerHTML = "<h1>This room is not in the catalog.</h1>";
+      decorate(data);
       document.dispatchEvent(new CustomEvent("ba-ready"));
+      fetch("assets/data/sources/" + page + ".json")
+        .then(function (response) {
+          if (!response.ok) throw new Error("sources");
+          return response.json();
+        })
+        .then(renderSources)
+        .catch(function () { /* the room still reads without the deeper list */ });
     })
     .catch(function () {
       main.innerHTML = "<h1>The catalog did not load.</h1><p>Check that assets/data/catalog.json sits next to this page.</p>";

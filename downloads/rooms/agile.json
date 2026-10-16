@@ -1,0 +1,248 @@
+{
+  "title": "Agile",
+  "page": "agile.html",
+  "summary": "Scrum, Kanban, design thinking, and jobs to be done.",
+  "five": "The 2020 Scrum Guide names three accountabilities and five events, plus the product backlog, sprint backlog, and increment. A kanban board shows flow and limits work in progress. A design sprint is a different sequence: understand, sketch, decide, prototype, test. Do not mix those calendars. Course prices that did not render stay unknown.",
+  "example": [
+    "A generic backlog item is ready when the outcome, the acceptance scenario, and the out-of-scope line are written. It is not ready when it only names a screen.",
+    "Planning then chooses a slice that can be inspected at review. The review looks at the increment, not at a slide of intentions."
+  ],
+  "notes": [
+    {
+      "title": "Scrum, from the 2020 guide",
+      "summary": "The Scrum Guide lists three pillars: transparency, inspection, and adaptation. The team accountabilities are Developers, Product Owner, and Scrum Master. Events are the Sprint, Sprint Planning, Daily Scrum, Sprint Review, and Sprint Retrospective. Artifacts are the Product Backlog, the Sprint Backlog, and the Increment."
+    },
+    {
+      "title": "Product owner accountability",
+      "summary": "Treat the Product Owner as the person who orders the Product Backlog toward value. A business analyst can prepare options and evidence. If several people reorder the backlog, the team does not have a single accountability."
+    },
+    {
+      "title": "PSM and PSPO",
+      "summary": "Scrum.org publishes Professional Scrum assessments. The assessment pages did not open in the 16 October 2026 check, so this lab does not link them and does not state a fee."
+    },
+    {
+      "title": "CSPO",
+      "summary": "Scrum Alliance lists Certified Scrum Product Owner on its product owner track, alongside advanced and professional levels. The page opened, but the fee and the course-hour rules did not render in the static check. Do not budget from this lab."
+    },
+    {
+      "title": "SAFe POPM",
+      "summary": "Scaled Agile's site opened. The Product Owner / Product Manager course page returned HTTP 429 on 16 October 2026, so it is not linked and no price is copied. SAFe distinguishes product ownership at team level from product management across a larger train. Confirm the current split on their site."
+    },
+    {
+      "title": "Kanban",
+      "summary": "A kanban board makes work visible and limits how much is in progress. Miro publishes a Kanban page that opened. Kanban University's home title loaded on 16 October 2026, but course names and fees did not render, so that site is not linked and no price is copied."
+    },
+    {
+      "title": "Design thinking",
+      "summary": "IDEO's design thinking site opened. Use it as a reminder to spend time with the people who have the problem before you converge on a solution. It is a practice, not a certificate this lab can price."
+    },
+    {
+      "title": "Design sprint",
+      "summary": "Google's Design Sprint Kit opened. A design sprint is a short, structured cycle of understanding, sketching, deciding, prototyping, and testing. It is not the same thing as a Scrum sprint. Say which one you mean."
+    },
+    {
+      "title": "Jobs to be done",
+      "summary": "The Christensen Institute describes Jobs to Be Done as the progress a person is trying to make in a circumstance. Interview for the circumstance and the struggle, not for a feature list. A job story is a study form: when this situation, I want to make this progress, so I can reach this outcome."
+    },
+    {
+      "title": "OKRs",
+      "summary": "Google's re:Work guide introduces objectives and key results. An objective is the direction. Key results are measurable outcomes, not a task list. A business analyst can help a team tell an output from an outcome."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "The 2020 Scrum Guide's artifacts include:",
+      "choices": [
+        "Only a Gantt chart",
+        "Product Backlog, Sprint Backlog, and Increment",
+        "A pay band",
+        "A vendor score"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scrum Guides home",
+      "url": "https://scrumguides.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scrum.org copy of the Scrum Guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Certified Scrum Product Owner",
+      "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scaled Agile",
+      "url": "https://scaledagile.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Kanban University",
+      "url": "https://kanban.university/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Agile",
+      "url": "https://www.atlassian.com/agile",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Community",
+      "url": "https://community.atlassian.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Design Sprint community",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Prosci ADKAR",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "re:Work OKRs guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Objectives and key results",
+      "url": "https://en.wikipedia.org/wiki/OKR",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

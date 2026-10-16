@@ -1,40 +1,82 @@
 .ba-guide {
   position: fixed;
-  right: 0.75rem;
-  bottom: 1rem;
+  right: 8px;
+  top: 16%;
   z-index: 35;
+  width: 220px;
+  height: 260px;
+  overflow: visible;
   font-family: "Segoe UI", "Avenir Next", sans-serif;
   color: #1c1917;
 }
+.ba-guide.is-greeting {
+  left: 50%;
+  right: auto;
+  top: 42%;
+  width: 240px;
+  height: 284px;
+  transform: translate(-50%, -50%);
+  z-index: 74;
+}
 body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-monkey {
-  width: 64px;
-  height: 64px;
+  position: relative;
+  width: 220px;
+  height: 260px;
   border: 0;
-  border-radius: 50%;
+  border-radius: 0;
   padding: 0;
-  cursor: pointer;
-  background: radial-gradient(circle at 30% 30%, #fde68a, #f59e0b 55%, #fb7185);
-  box-shadow: 0 0 18px #fbbf24, 0 8px 20px rgba(0, 0, 0, 0.25);
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  background: transparent;
+  box-shadow: none;
 }
-.ba-monkey svg { width: 64px; height: 64px; display: block; }
+.ba-guide.is-greeting .ba-monkey,
+.ba-guide.is-greeting .ba-monkey svg { width: 240px; height: 284px; }
+.ba-soft {
+  position: absolute;
+  z-index: 0;
+  left: 12%;
+  right: 12%;
+  top: 28%;
+  bottom: 8%;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(167, 139, 250, 0.55), rgba(34, 211, 238, 0.22) 48%, transparent 72%);
+  filter: blur(14px);
+  pointer-events: none;
+}
+.ba-float { position: absolute; inset: 0; z-index: 1; animation: ba-float 3.2s ease-in-out infinite; }
+.ba-monkey svg { position: relative; z-index: 1; width: 220px; height: 260px; display: block; overflow: visible; }
+@keyframes ba-float { 50% { transform: translateY(-6px); } }
 .ba-nudge {
   position: absolute;
-  right: 72px;
-  bottom: 8px;
-  width: min(16rem, 70vw);
+  right: calc(100% + 12px);
+  bottom: 12px;
+  width: min(18rem, 36vw);
   background: #fff;
   color: #1c1917;
+  border: 2px solid #c4b5fd;
   border-radius: 14px;
   padding: 0.6rem 0.7rem;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 12px 30px rgba(49, 10, 90, 0.28);
 }
+.ba-guide.is-greeting .ba-nudge {
+  position: fixed;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  top: calc(42% + 150px);
+  transform: translateX(-50%);
+}
+.ba-nudge p { margin: 0 0 0.45rem; }
+.ba-nudge-actions { display: flex; flex-wrap: wrap; gap: 0.35rem; }
 .ba-nudge button { min-height: 44px; }
 .ba-panel {
-  position: absolute;
-  right: 0;
-  bottom: 72px;
-  width: min(22rem, calc(100vw - 1.5rem));
+  position: fixed;
+  right: 16rem;
+  top: 4.6rem;
+  width: min(22rem, calc(100vw - 18rem));
   max-height: min(32rem, 70vh);
   display: flex;
   flex-direction: column;
@@ -43,6 +85,7 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   border-radius: 18px;
   box-shadow: 0 16px 40px rgba(0, 0, 0, 0.28);
   overflow: hidden;
+  z-index: 34;
 }
 .ba-panel header {
   display: flex;
@@ -53,7 +96,9 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8);
 }
 .ba-panel h2 { margin: 0; font-size: 1rem; }
-.ba-panel header button, .ba-form button, .ba-chips button, .ba-nudge button {
+.ba-pick { display: flex; align-items: center; gap: 0.35rem; margin: 0.15rem 0 0; font-size: 0.78rem; font-weight: 700; }
+.ba-pick select { min-height: 36px; max-width: 11rem; border-radius: 999px; border: 1px solid #d6d3d1; background: #fff; color: #1c1917; }
+.ba-panel header button, .ba-form button, .ba-chips button, .ba-nudge button, .ba-voice button {
   min-height: 44px;
   min-width: 44px;
   border-radius: 999px;
@@ -63,14 +108,17 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   cursor: pointer;
 }
 .ba-log button { min-height: 44px; border-radius: 12px; border: 1px solid #d6d3d1; background: #fff; color: #1c1917; padding: 0.4rem 0.7rem; cursor: pointer; }
+.ba-scroll { flex: 1 1 auto; min-height: 0; overflow: auto; }
 .ba-log {
-  overflow: auto;
+  overflow: visible;
   padding: 0.6rem;
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
-  min-height: 8rem;
 }
+.ba-choices { display: flex; flex-direction: column; gap: 0.35rem; padding: 0 0.6rem 0.45rem; }
+.ba-choices button { min-height: 44px; border-radius: 12px; border: 1px solid #d6d3d1; background: #fff; color: #1c1917; padding: 0.4rem 0.7rem; cursor: pointer; }
+.ba-form { flex: 0 0 auto; background: #fff; }
 .ba-bubble {
   margin: 0;
   padding: 0.55rem 0.7rem;
@@ -82,10 +130,99 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-bubble.me { background: #dbeafe; align-self: flex-end; }
 .ba-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; padding: 0 0.6rem 0.4rem; }
 .ba-form { display: flex; gap: 0.35rem; padding: 0.45rem; border-top: 1px solid #e7e5e4; }
-.ba-form input { flex: 1; min-width: 0; min-height: 44px; border-radius: 12px; border: 1px solid #d6d3d1; padding: 0 0.6rem; }
-.ba-panel[hidden], .ba-nudge[hidden] { display: none; }
-@media (max-width: 800px) {
-  .ba-guide { right: 0.45rem; }
-  .ba-monkey, .ba-monkey svg { width: 52px; height: 52px; }
-  .ba-panel { max-height: 58vh; }
+.ba-form input { flex: 1; min-width: 0; min-height: 44px; border-radius: 12px; border: 1px solid #d6d3d1; padding: 0 0.6rem; color: #1c1917; background: #fff; }
+.ba-panel[hidden], .ba-nudge[hidden], .ba-guide[hidden] { display: none !important; }
+.ba-eye { transform-box: fill-box; transform-origin: center; animation: blink 4.8s infinite; }
+.ba-arm { transform-box: fill-box; transform-origin: center top; }
+.ba-head { transform-box: fill-box; transform-origin: center; }
+.ba-pop { opacity: 0; }
+.ba-guide[data-pose="greeting"] .ba-arm-right { animation: ba-wave-arm 0.7s ease-in-out infinite; }
+.ba-guide[data-pose="thinking"] .ba-head { transform: rotate(-8deg); }
+.ba-guide[data-pose="thinking"] .ba-arm-left { transform: rotate(58deg); }
+.ba-guide[data-pose="thinking"] .ba-float { animation: none; }
+.ba-guide[data-pose="listening"] .ba-arm-right { transform: rotate(-78deg); }
+.ba-guide[data-pose="listening"] .ba-ear { transform: scale(1.08); }
+.ba-guide[data-pose="celebrate"] .ba-arm-right { animation: ba-wave-arm 0.55s ease-in-out infinite; }
+.ba-guide[data-pose="celebrate"] .ba-arm-left { animation: ba-wave-arm-left 0.55s ease-in-out infinite; }
+.ba-guide[data-pose="celebrate"] .ba-pop { opacity: 1; }
+.ba-guide[data-pose="celebrate"] .ba-mouth { transform: scale(1.15); }
+.ba-guide[data-pose="encourage"] .ba-head { animation: ba-nod 1.3s ease-in-out infinite; }
+.ba-guide[data-pose="encourage"] .ba-arm-right { transform: rotate(-24deg); }
+.ba-guide[data-pose="encourage"] .ba-arm-left { transform: rotate(24deg); }
+@keyframes ba-wave-arm { 0%, 100% { transform: rotate(-148deg); } 50% { transform: rotate(-118deg); } }
+@keyframes ba-wave-arm-left { 0%, 100% { transform: rotate(148deg); } 50% { transform: rotate(118deg); } }
+@keyframes ba-nod { 0%, 100% { transform: rotate(0deg); } 50% { transform: rotate(7deg); } }
+.choice-grid { display: flex; flex-direction: column; gap: 0.35rem; margin-top: 0.5rem; }
+.choice-grid button, .ba-bubble button { min-height: 44px; margin: 0.15rem 0.15rem 0 0; }
+.ba-voice { display: grid; gap: 0.35rem; padding: 0.45rem 0.6rem 0.6rem; border-top: 1px solid #e7e5e4; }
+.ba-voice label { display: grid; grid-template-columns: 3.4rem minmax(0, 1fr); gap: 0.35rem; align-items: center; min-width: 0; }
+.ba-voice select, .ba-voice input[type="range"] { width: 100%; min-width: 0; min-height: 44px; }
+.sent.is-on, .read-sent.is-spoken { background: #fde68a; border-radius: 4px; }
+.is-reading {
+  outline: 3px solid #f59e0b;
+  border-radius: 16px;
+  box-shadow: 0 0 0 6px rgba(251, 191, 36, 0.45), 0 0 28px rgba(167, 139, 250, 0.9);
+  animation: ba-read-glow 1.3s ease-in-out infinite;
 }
+@keyframes ba-read-glow {
+  50% { box-shadow: 0 0 0 8px rgba(253, 224, 71, 0.55), 0 0 36px rgba(34, 211, 238, 0.85); }
+}
+.chip.is-live, .menu-link.is-live { box-shadow: 0 0 0 3px #f59e0b; }
+@keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 96% { transform: scaleY(0.12); } }
+@media (max-width: 800px) {
+  .ba-guide { top: auto; bottom: 5.7rem; width: 200px; height: 236px; }
+  .ba-monkey, .ba-monkey svg { width: 200px; height: 236px; }
+  .ba-guide.is-greeting { width: 220px; height: 260px; }
+  .ba-guide.is-greeting .ba-monkey,
+  .ba-guide.is-greeting .ba-monkey svg { width: 220px; height: 260px; }
+  .ba-guide.is-greeting .ba-nudge { top: calc(42% + 138px); }
+  body:has(.ba-panel:not([hidden])) .ba-monkey { visibility: hidden; }
+  .ba-panel {
+    position: fixed;
+    left: 0.45rem;
+    right: 0.45rem;
+    top: auto;
+    bottom: 5.35rem;
+    width: auto;
+    height: auto;
+    max-height: 30vh;
+    border-radius: 16px 16px 0 0;
+    z-index: 37;
+  }
+  .ba-panel header { padding: 0.2rem 0.4rem; }
+  .ba-panel h2 { font-size: 0.95rem; }
+  .ba-status { display: none; }
+  .ba-pick { font-size: 0.72rem; }
+  .ba-pick select { min-height: 32px; max-width: 8.2rem; }
+  .ba-scroll { overflow: auto; flex: 0 0 auto; max-height: 2.7rem; }
+  .ba-log { max-height: none; overflow: visible; padding: 0.12rem 0.35rem 0; gap: 0; }
+  .ba-bubble { padding: 0.12rem 0.4rem; font-size: 0.7rem; line-height: 1.15; }
+  .ba-choices {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.28rem;
+    padding: 0.15rem 0.4rem 0.28rem;
+  }
+  .ba-choices button { min-height: 38px; padding: 0.05rem 0.4rem; font-size: 0.8rem; }
+  .ba-panel header button, .ba-form input, .ba-form button { min-height: 38px; }
+  .ba-form { padding: 0.15rem 0.3rem; }
+  .ba-guide:not(.is-greeting) .ba-nudge {
+    position: fixed;
+    top: auto;
+    right: auto;
+    left: 0.45rem;
+    bottom: 6.3rem;
+    width: min(16rem, calc(100vw - 13.5rem));
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .ba-float, .ba-eye, .ba-arm, .ba-head, .ba-soft, .is-reading { animation: none; }
+  .is-reading { box-shadow: none; }
+}
+html[data-motion="reduce"] .ba-float,
+html[data-motion="reduce"] .ba-eye,
+html[data-motion="reduce"] .ba-arm,
+html[data-motion="reduce"] .ba-head,
+html[data-motion="reduce"] .ba-soft,
+html[data-motion="reduce"] .is-reading { animation: none; }
+html[data-motion="reduce"] .is-reading { box-shadow: none; }

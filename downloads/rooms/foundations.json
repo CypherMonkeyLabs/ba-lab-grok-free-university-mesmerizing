@@ -1,0 +1,165 @@
+{
+  "title": "Foundations",
+  "page": "foundations.html",
+  "summary": "What business analysis is and how the roles differ.",
+  "five": "Business analysis names a need and a change that has value for a named stakeholder. The public BABOK hub describes a core concept model: change, need, solution, stakeholder, value, and context. A tool name is a solution hypothesis. Write the need in a sentence that still makes sense if the tool changes. Say who decides.",
+  "example": [
+    "A generic clinic wants fewer missed lab results. The need is: patients with an abnormal result hear from the clinic the same day. The phone system is a solution idea, not the need.",
+    "Stakeholders: the nurse who calls, the patient, the lab, and the medical director who can approve a new step. Value for the patient is timely news. Value for the clinic is a closed loop. Context includes the hours the lab is open."
+  ],
+  "notes": [
+    {
+      "title": "What business analysis is",
+      "summary": "Business analysis is the work of understanding a need and recommending a change that has value. The BABOK Guide is IIBA's published standard for that practice. This lab summarizes the public structure. It does not replace the guide."
+    },
+    {
+      "title": "Who does the work",
+      "summary": "The guide's contents include a section on who a business analyst is. In practice the title varies: business analyst, business systems analyst, product owner, or consultant. The title is less important than whether someone is accountable for the need, the stakeholders, and the change."
+    },
+    {
+      "title": "Core concept model",
+      "summary": "The knowledge hub lists the Business Analysis Core Concept Model. Study it as six linked ideas: change, need, solution, stakeholder, value, and context. A sentence that names a solution but not the need is incomplete."
+    },
+    {
+      "title": "Requirements and designs",
+      "summary": "The guide treats requirements and designs as related, not as two sealed boxes. A requirement states a condition or capability. A design describes a solution. The same statement can be read as either, depending on who consumes it. Say which reading you intend."
+    },
+    {
+      "title": "Requirements classification",
+      "summary": "A useful study split, following the guide's classification schema, is business, stakeholder, solution, and transition. Solution requirements are often split again into functional behavior and non-functional quality. Label the class so reviewers know what 'done' means."
+    },
+    {
+      "title": "Business analyst and project manager",
+      "summary": "A project manager is accountable for the delivery plan: time, cost, and coordination. A business analyst is accountable for whether the change is worth making and whether the result meets the need. Teams combine the roles. They should not pretend the roles are the same decision."
+    },
+    {
+      "title": "Business analyst and product owner",
+      "summary": "The 2020 Scrum Guide places a Product Owner on the Scrum Team with Developers and a Scrum Master, and it lists the Product Backlog as an artifact. A business analyst may support that backlog or, in some teams, hold the Product Owner accountability. Holding both without saying so hides the decision rights."
+    },
+    {
+      "title": "Need before solution",
+      "summary": "Start from the outcome a stakeholder can observe. A tool name, a screen, or a vendor is a solution hypothesis. Write the need in a sentence that would still make sense if the tool changed."
+    },
+    {
+      "title": "Stakeholders",
+      "summary": "The guide lists stakeholders as a core topic. Map who is affected, who decides, who pays, and who can block. A person with high influence and low interest still needs a plan. Update the map when the change moves."
+    },
+    {
+      "title": "Scope in one paragraph",
+      "summary": "Scope is the boundary of the change: what is in, what is out, and what is unknown. Write the out-of-scope list. It prevents a later argument from being treated as a surprise."
+    },
+    {
+      "title": "Assumptions and constraints",
+      "summary": "An assumption is something you proceed with while it remains unproven. A constraint is a limit you do not get to choose, such as a law, a date, or a system you must keep. Review assumptions on a cadence. A false assumption is a risk."
+    },
+    {
+      "title": "Value is contextual",
+      "summary": "Value is not a single number. It depends on which stakeholder and which context you name. A faster call handling time can be value for an operations lead and a loss of care for a customer. State both."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "A tool name in a requirement is best treated as:",
+      "choices": [
+        "The need itself",
+        "A solution hypothesis",
+        "A salary",
+        "A certification"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "About IIBA",
+      "url": "https://www.iiba.org/about-iiba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

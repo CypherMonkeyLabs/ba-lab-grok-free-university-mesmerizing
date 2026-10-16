@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data</title>
+<style>
+body { margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; color: #1c1917; }
+main { width: min(42rem, calc(100% - 2rem)); margin: 1.5rem auto 2rem; }
+h1 { line-height: 1.2; }
+a { color: #1d4ed8; }
+.disclaimer-box { border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25); }
+.disclaimer-box a { color: #0f766e; }
+footer { padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }
+.badges a { display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }
+.sources-deeper { width: min(42rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; }
+.sources-deeper a { font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+<h1>Data</h1>
+<p>SQL, measures, and process mining for business analysts.</p>
+<ul>
+<li>A measure needs a question, a formula, a source, and an owner. HEART, from the cited Google Research paper, is a set of user-centered categories, not a benchmark. SQL, as the PostgreSQL tutorial introduces it, filters and groups rows. Process mining reconstructs paths from event logs you are allowed to use. Leave unknown numbers blank.</li>
+<li>Question: are same-day callbacks happening? Formula: abnormal results called the same calendar day, divided by abnormal results received that day. Source: the call log plus the lab file. Owner: the nurse lead. Act when the rate drops under the line the clinic sets.</li>
+<li>This lab does not invent the line. The clinic does.</li>
+<li>SQL for a question. PostgreSQL&#x27;s tutorial introduces SQL as the way to ask a database a question. Learn SELECT, filter, join, and group. You do not need to be the database administrator. You do need to know whether the column you were promised actually exists.</li>
+<li>Spreadsheets. A spreadsheet is often the current system. Before you replace it, learn its formulas, its hidden columns, and who repairs it on Fridays. This note is practice advice. A specific product manual is not cited because none was required for the habit.</li>
+<li>Conceptual, logical, physical. A conceptual model uses business words. A logical model adds keys and cardinality. A physical model adds types and indexes for one database. Do not start at the physical model with stakeholders who came to talk about orders.</li>
+<li>KPI definition sheet. For each indicator write the question it answers, the formula, the grain, the source system, the refresh, the owner, and the threshold for action. HEART, from the Google Research paper on user-centered metrics, is one way to group product measures: happiness, engagement, adoption, retention, and task success.</li>
+<li>HEART. The paper &#x27;Measuring the User Experience on a Large Scale: User-Centered Metrics for Web Applications&#x27; is the public source for the HEART categories. Use the categories as a checklist. Do not invent a benchmark number this lab did not measure.</li>
+<li>Measures and OKRs. A key result that counts tasks completed is usually an output. Prefer a result a customer or the operation can feel. Tie the measure back to the need in the business case.</li>
+<li>Power BI, as a study topic. Microsoft Learn has a page titled What is Power BI. On 16 October 2026 the readable body asked for authorization, so this lab does not describe product features from it. Lucky&#x27;s notes do not claim Power BI experience.</li>
+<li>Tableau, not linked. Tableau is a visual analytics product teams use for dashboards. Its public page did not open in the 16 October 2026 check, so it is not linked and no feature is described. This lab does not claim Tableau experience for Lucky.</li>
+<li>Process mining. The IEEE Task Force on Process Mining site opened. Process mining uses event logs to reconstruct how work actually flowed. It is evidence about the current state. It still needs a person to decide whether the flow is acceptable.</li>
+<li>Dashboards. A dashboard is a decision surface. Lead with the question, then the number, then the breakdown. If a chart does not change a decision, leave it off. Cite the definition of every figure.</li>
+<li>Question. A KPI without an owner is:</li>
+</ul>
+<p>Business Analyst Free University. Study sheet, October 2026.</p>
+</main>
+<footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> Independent, free, learning-only student project. Respects every company and vendor. Trademarks belong to their owners. Not affiliated or endorsed. Concerns are removed or corrected promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. Happy to volunteer for any organization.</p></div>
+<p><strong>CypherMonkey Labs</strong></p>
+<p class="badges"><a href="https://cyphermonkeylabs.com">Website</a>
+<a href="https://github.com/CypherMonkeyLabs">GitHub</a>
+<a href="https://linktr.ee/cypherMonkey">Profile</a></p>
+<p>© 2026 CypherMonkeyLabs 🐒</p>
+</footer>
+<section class="sources-deeper"><h2>Sources and go deeper</h2><p>Last checked 2026-10. A line marked confirm did not open, so it is not linked.</p><ul><li><a href="https://www.iiba.org/knowledgehub/">IIBA KnowledgeHub, including the BABOK Guide contents</a> <span>(standard, last checked 2026-10)</span></li>
+<li>BABOK Guide article on the IIBA knowledge hub <span>(standard, confirm, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/">IIBA home</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/">Manifesto for Agile Software Development</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/principles.html">Principles behind the Agile Manifesto</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/About-BPMN">OMG, about BPMN 2.0</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/PDF">BPMN 2.0 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0.2/About-BPMN">OMG, about BPMN 2.0.2</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/About-UML">OMG, about UML 2.5.1</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML 2.5.1 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/membership/">IIBA membership</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/communities/">OMG managed communities</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.postgresql.org/docs/current/tutorial-sql-intro.html">PostgreSQL, SQL introduction</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://www.postgresql.org/docs/current/tutorial-sql.html">PostgreSQL, the SQL language</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://www.tf-pm.org/">IEEE Task Force on Process Mining</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/">CBDA</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/">Google Research, user-centered metrics</a> <span>(official, last checked 2026-10)</span></li>
+<li>Microsoft Learn, What is Power BI? <span>(official, confirm, last checked 2026-10)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Microsoft_Power_BI">Microsoft Power BI</a> <span>(wikipedia, last checked 2026-10)</span></li>
+<li><a href="https://help.tableau.com/current/pro/desktop/en-us/gettingstarted_overview.htm">Tableau, Get Started</a> <span>(official, last checked 2026-10)</span></li>
+<li>re:Work OKRs guide <span>(official, confirm, last checked 2026-10)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/OKR">Objectives and key results</a> <span>(wikipedia, last checked 2026-10)</span></li></ul></section>
+</body>
+</html>

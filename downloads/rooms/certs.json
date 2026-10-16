@@ -1,0 +1,270 @@
+{
+  "title": "Certifications",
+  "page": "certs.html",
+  "summary": "IIBA, PMI-PBA, and adjacent credentials with cited fees.",
+  "five": "Read the fee cell and the eligibility FAQ before you pay. ECBA, CCBA, CBAP, AAC, and CBDA figures in this lab were copied from IIBA pages on 16 October 2026, including member and non-member lines as printed. PMI-PBA experience paths and the exam shape are cited. The exam fee was not on the page that loaded. Scrum.org and the SAFe POPM course page did not yield a fee. Confirm before you pay. This lab states no salaries.",
+  "example": [
+    "If you are new, read the ECBA eligibility line on the FAQ before you read a price. If you are experienced, read the CBAP hour rules and the blueprint, then the fee cell.",
+    "A study plan can start before you pay. Paying is optional and external to this lab."
+  ],
+  "notes": [],
+  "quizzes": [
+    {
+      "q": "Before you pay an IIBA fee you should:",
+      "choices": [
+        "Trust a memory of the price",
+        "Read the current fee page",
+        "Skip eligibility",
+        "Assume a salary return"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA certification fees",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-fees/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA certification FAQ",
+      "url": "https://www.iiba.org/business-analysis-certifications/certification-faq",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "ECBA",
+      "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "CCBA",
+      "url": "https://www.iiba.org/business-analysis-certifications/ccba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "CBAP",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA Agile Analysis Certification",
+      "url": "https://www.iiba.org/business-analysis-certifications/agile-analysis/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "CBDA",
+      "url": "https://www.iiba.org/business-analysis-certifications/business-data-analytics-certification/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "PMI-PBA certification page",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Project Management Institute",
+      "url": "https://en.wikipedia.org/wiki/Project_Management_Institute",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scrum Guides home",
+      "url": "https://scrumguides.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scrum.org copy of the Scrum Guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Certified Scrum Product Owner",
+      "url": "https://www.scrumalliance.org/get-certified/product-owner-track/certified-scrum-product-owner",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Scaled Agile",
+      "url": "https://scaledagile.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Kanban University",
+      "url": "https://kanban.university/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Agile",
+      "url": "https://www.atlassian.com/agile",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Atlassian Community",
+      "url": "https://community.atlassian.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Design Sprint community",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Prosci ADKAR",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "re:Work OKRs guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Objectives and key results",
+      "url": "https://en.wikipedia.org/wiki/OKR",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

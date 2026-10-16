@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Requirements</title>
+<style>
+body { margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; color: #1c1917; }
+main { width: min(42rem, calc(100% - 2rem)); margin: 1.5rem auto 2rem; }
+h1 { line-height: 1.2; }
+a { color: #1d4ed8; }
+.disclaimer-box { border: 2px solid #0f766e; background: #ecfdf5; color: #134e4a; border-radius: 16px; padding: 0.9rem 1rem; box-shadow: 0 0 0 4px rgba(14,165,233,.25); }
+.disclaimer-box a { color: #0f766e; }
+footer { padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }
+.badges a { display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }
+.sources-deeper { width: min(42rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; }
+.sources-deeper a { font-weight: 700; }
+</style>
+</head>
+<body>
+<main>
+<h1>Requirements</h1>
+<p>Elicitation, stories, acceptance criteria, and traceability.</p>
+<ul>
+<li>A requirement is a usable representation of a need. Give it an identifier, a source, an owner, and a test. A user story names a role, a capability, and an outcome. Given, When, and Then, from the Gherkin reference, turn the outcome into a scenario. Trace the scenario to a test. Untraced text is a rumor.</li>
+<li>As a returns clerk, I want to see why an item was returned, so that I can offer the right next step.</li>
+<li>Given a scanned item with a reason code, when the clerk opens the return, then the reason and the allowed next steps are on screen. Unhappy path: the code is missing, and the clerk must capture it before finishing.</li>
+<li>Elicitation methods. Choose a method for the question. Interviews go deep with one person. Workshops align a group. Observation checks real work. Surveys reach many people with thin answers. Document analysis starts from what is already written. Say why you picked the method.</li>
+<li>Stakeholder grid. A simple grid places influence on one axis and interest on the other. High influence and high interest people need close work. High influence and low interest people need concise updates. The grid is a hypothesis. Test it.</li>
+<li>Story and outcome. Write the role, the capability, and the outcome. Then add acceptance criteria. Atlassian&#x27;s user-story material is a public explanation of this shape. A story without a test is a wish.</li>
+<li>Acceptance criteria in Gherkin. Cucumber&#x27;s Gherkin reference describes scenarios with Given, When, and Then. Given is context. When is the action. Then is the observable result. One scenario, one behavior. Keep the language in the business&#x27;s words.</li>
+<li>Traceability. Trace a requirement to the need it serves, the design that satisfies it, and the test that demonstrates it. The life-cycle tasks include tracing and assessing change. When a rule changes, the trace tells you what else moves.</li>
+<li>Traceability matrix. A requirements traceability matrix is a table of those links. Columns that help: identifier, statement, source, owner, priority, design reference, test reference, status. A matrix that is not updated is a historical document. Say so.</li>
+<li>User acceptance. Acceptance is a decision by the people who will live with the result, against criteria written earlier. It is not the first time anyone sees the system. Defects found here are either missed criteria or a changed need. Record which.</li>
+<li>From criteria to tests. Each acceptance criterion should suggest at least one test, including the unhappy path. A business analyst does not have to execute every test. They do have to notice when a criterion cannot be tested.</li>
+<li>Must, should, could, won&#x27;t. Must, should, could, and won&#x27;t are priority words. Must means the change fails its purpose without it. Won&#x27;t means not in this scope, on purpose. The DSDM page that documents MoSCoW did not open in the October 2026 check, so it is not linked.</li>
+<li>Quality requirements you can test. Pair every quality word with a threshold, a method, and a context. Accessibility can point at WCAG 2.2&#x27;s quick reference. Do not write &#x27;secure&#x27; and walk away.</li>
+<li>Change control. A change request names what moved, why, the impact on scope and tests, and who approved. Assess requirements changes is a life-cycle task. Verbal agreement in a hallway is not a baseline.</li>
+<li>Baseline and versions. A baseline is an agreed version you can compare against later. Keep the previous version. Diff the words. Teams lose arguments when the only copy is the latest edit.</li>
+<li>Question. Given, When, and Then are how you:</li>
+</ul>
+<p>Business Analyst Free University. Study sheet, October 2026.</p>
+</main>
+<footer>
+<div class="disclaimer-box"><p><strong>Shield.</strong> Independent, free, learning-only student project. Respects every company and vendor. Trademarks belong to their owners. Not affiliated or endorsed. Concerns are removed or corrected promptly via the contact form at https://cyphermonkeylabs.com/#contact. Nothing is sold. Happy to volunteer for any organization.</p></div>
+<p><strong>CypherMonkey Labs</strong></p>
+<p class="badges"><a href="https://cyphermonkeylabs.com">Website</a>
+<a href="https://github.com/CypherMonkeyLabs">GitHub</a>
+<a href="https://linktr.ee/cypherMonkey">Profile</a></p>
+<p>© 2026 CypherMonkeyLabs 🐒</p>
+</footer>
+<section class="sources-deeper"><h2>Sources and go deeper</h2><p>Last checked 2026-10. A line marked confirm did not open, so it is not linked.</p><ul><li><a href="https://www.iiba.org/knowledgehub/">IIBA KnowledgeHub, including the BABOK Guide contents</a> <span>(standard, last checked 2026-10)</span></li>
+<li>BABOK Guide article on the IIBA knowledge hub <span>(standard, confirm, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/">IIBA home</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/">Manifesto for Agile Software Development</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://agilemanifesto.org/principles.html">Principles behind the Agile Manifesto</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/About-BPMN">OMG, about BPMN 2.0</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0/PDF">BPMN 2.0 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/BPMN/2.0.2/About-BPMN">OMG, about BPMN 2.0.2</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/About-UML">OMG, about UML 2.5.1</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/spec/UML/2.5.1/PDF">UML 2.5.1 specification PDF</a> <span>(standard, last checked 2026-10)</span></li>
+<li><a href="https://www.iiba.org/membership/">IIBA membership</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.omg.org/communities/">OMG managed communities</a> <span>(community, last checked 2026-10)</span></li>
+<li><a href="https://www.atlassian.com/agile/project-management/user-stories">Atlassian, user stories</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://cucumber.io/docs/gherkin/reference/">Gherkin reference</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://cucumber.io/docs/gherkin/">Gherkin</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://www.atlassian.com/agile">Atlassian Agile</a> <span>(official, last checked 2026-10)</span></li>
+<li><a href="https://community.atlassian.com/">Atlassian Community</a> <span>(community, last checked 2026-10)</span></li>
+<li>ISO/IEC/IEEE 29148 <span>(standard, confirm, last checked 2026-10)</span></li>
+<li><a href="https://en.wikipedia.org/wiki/Software_requirements_specification">Software requirements specification</a> <span>(wikipedia, last checked 2026-10)</span></li></ul></section>
+</body>
+</html>

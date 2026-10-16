@@ -1,0 +1,177 @@
+{
+  "title": "Domains",
+  "page": "domains.html",
+  "summary": "Healthcare, banking, insurance, retail, telecom, and contact centers.",
+  "five": "The moves stay the same: need, stakeholder, rule, test. The constraints change. Healthcare interoperability has a public overview in HL7 FHIR. Banking, insurance, retail, telecom, and contact centers add their own rules. If a rule was not on a page this lab opened, it is not stated as fact.",
+  "example": [
+    "A contact reason and a clinical result both need a source, an owner, and a handoff. In the clinic, you do not guess the record rules. In the contact center, you do not guess the retention rules.",
+    "Write the constraint as unknown until someone who owns it confirms it."
+  ],
+  "notes": [
+    {
+      "title": "Healthcare",
+      "summary": "Healthcare changes often involve privacy, consent, and clinical safety. The HHS HIPAA pages did not open in this check, so they are not linked and the rule text is not paraphrased. HL7's FHIR overview did open. FHIR is a published interoperability standard. Confirm every privacy rule with the organization's compliance owner."
+    },
+    {
+      "title": "Banking",
+      "summary": "Banking analysis pays attention to identity, audit trails, segregation of duties, and retention. This lab does not cite a regulator because no regulator page was opened in the check. Do not invent a control number. Ask the compliance owner which rule applies."
+    },
+    {
+      "title": "Insurance",
+      "summary": "Insurance work turns on the policy, the claim, and the exception. Model those entities before you design a screen. Rating and reserve rules are specialist knowledge. Mark them as sourced from the carrier, not from this lab."
+    },
+    {
+      "title": "Retail",
+      "summary": "Retail changes often involve item, price, inventory, and the path from interest to purchase. Define the grain of 'a sale'. Online and store paths diverge. Write both if both are in scope."
+    },
+    {
+      "title": "Telecom",
+      "summary": "Telecom analysis meets orders, service activation, and faults. Separate the customer-facing promise from the network task. A public TM Forum page was not opened in this check, so it is not linked."
+    },
+    {
+      "title": "Contact center and CCaaS",
+      "summary": "A contact-center analyst looks at why people contact, which channel they use, how work is queued, and how quality is reviewed. Specify the data a agent or a person needs at the start of the conversation. Vendor product claims stay out unless a page was opened."
+    },
+    {
+      "title": "ERP and CRM",
+      "summary": "Salesforce's CRM page opened. Dynamics 365's implementation guide opened. Both are examples of systems that already contain processes. Fit-gap analysis asks what the product does, what you will configure, and what you will not change. A gap is not automatically a customization."
+    },
+    {
+      "title": "Regulation as a source",
+      "summary": "When a requirement comes from a rule, cite the rule and the version. If you cannot open the text, write 'source not yet attached' rather than a guessed clause. This lab would rather show a gap than a false citation."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "When a domain rule was not on an opened page, you:",
+      "choices": [
+        "Invent a plausible law",
+        "Leave it unknown",
+        "Copy a blog",
+        "Use a salary survey"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "HL7 FHIR overview",
+      "url": "https://www.hl7.org/fhir/overview.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "HL7 FHIR index",
+      "url": "https://www.hl7.org/fhir/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Salesforce CRM",
+      "url": "https://www.salesforce.com/crm/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IRS, independent contractor defined",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/independent-contractor-defined",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "WCAG 2.2 recommendation",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

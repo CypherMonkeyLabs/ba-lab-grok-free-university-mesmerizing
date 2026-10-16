@@ -1,0 +1,164 @@
+{
+  "title": "Modeling",
+  "page": "modeling.html",
+  "summary": "BPMN, UML, ERD, and C4 in plain language.",
+  "five": "Pick the question before the notation. BPMN is for flow: events, activities, gateways. UML is a family of sketches. An ERD names things and relationships. C4 steps from system context to container, component, and code. Stop at the level the audience can use. Draw the unhappy path.",
+  "example": [
+    "Start: a return arrives. Activity: look up the order. Gateway: is the item within the stated window? Yes path: refund. No path: explain the window and stop.",
+    "Both paths have an end. The window length is a business rule beside the drawing, so a policy change does not redraw the map."
+  ],
+  "notes": [
+    {
+      "title": "BPMN in brief",
+      "summary": "Object Management Group publishes BPMN 2.0. For study, learn events, activities, gateways, and sequence flow. A gateway is a decision, not a task. Label the outgoing paths with conditions a stranger can test."
+    },
+    {
+      "title": "Current state, then future",
+      "summary": "Draw how the work happens this week, including the spreadsheet and the rework. Then draw the proposed state. If you only draw the future, you will miss the step that actually takes the time."
+    },
+    {
+      "title": "UML, used sparingly",
+      "summary": "OMG publishes UML. Use the diagram that answers the question in the room. A use case diagram shows who wants what. An activity diagram shows flow. A sequence diagram shows messages over time. A class diagram shows structure. One diagram, one question."
+    },
+    {
+      "title": "Entity relationships",
+      "summary": "An entity is a thing you store. A relationship states how many of one relate to how many of another. Name the relationship from both directions. 'Customer places order' is clearer than a line with no verb."
+    },
+    {
+      "title": "C4, four levels",
+      "summary": "The C4 model site describes four abstractions: software system, container, component, and code. Start with a system context diagram: the system, the people, and the other systems. Go deeper only where the audience needs it."
+    },
+    {
+      "title": "SIPOC",
+      "summary": "Supplier, input, process, output, customer is a one-page boundary. It is enough to see whether you are looking at the right process before you draw thirty boxes. This is a study scaffold, not a claimed standard text."
+    },
+    {
+      "title": "States",
+      "summary": "State models help when a thing has a life: draft, submitted, approved, rejected. Name the event that causes each move and who may cause it. The technique list includes state modelling."
+    },
+    {
+      "title": "Decisions apart from flow",
+      "summary": "If a gateway contains a policy, lift the policy into a decision with inputs and outputs. The process then stays stable when the policy changes. Decision modelling is on the technique list."
+    },
+    {
+      "title": "Interfaces",
+      "summary": "Interface analysis asks what crosses a boundary: data, a document, or a handoff. For each crossing, name the producer, the consumer, the trigger, and what happens when it fails."
+    },
+    {
+      "title": "Story map",
+      "summary": "A story map places user activities across the top and breaks releases downward. The first horizontal slice should be a thin outcome someone can use, not a layer of database tables."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "An unlabeled BPMN path is:",
+      "choices": [
+        "A finished decision",
+        "An argument waiting",
+        "A C4 container",
+        "A fee cell"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "C4 model",
+      "url": "https://c4model.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Lucid BPMN tutorial",
+      "url": "https://lucid.co/diagram/bpmn/tutorial",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

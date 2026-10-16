@@ -1,16 +1,22 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 878 306" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 878 330" role="img">
 <title>Requirement classes</title>
+<style>
+@keyframes baPulse { 50% { opacity: 0.78 } }
+.ba-box { animation: baPulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@media (prefers-reduced-motion: reduce) { .ba-box { animation: none } }
+</style>
 <rect width="100%" height="100%" rx="24" fill="#0b1220"/>
 <text x="36" y="46" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700">Requirement classes</text>
-<rect x="36" y="78" width="250" height="64" rx="16" fill="#99f6e4"/>
+<rect class="ba-box" x="36" y="78" width="250" height="64" rx="16" fill="#99f6e4"/>
 <text x="52" y="115.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Business</text>
-<rect x="314" y="78" width="250" height="64" rx="16" fill="#c7d2fe"/>
+<rect class="ba-box" x="314" y="78" width="250" height="64" rx="16" fill="#c7d2fe"/>
 <text x="330" y="115.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Stakeholder</text>
-<rect x="592" y="78" width="250" height="64" rx="16" fill="#fbcfe8"/>
+<rect class="ba-box" x="592" y="78" width="250" height="64" rx="16" fill="#fbcfe8"/>
 <text x="608" y="115.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Solution, functional</text>
-<rect x="36" y="164" width="250" height="64" rx="16" fill="#fde68a"/>
+<rect class="ba-box" x="36" y="164" width="250" height="64" rx="16" fill="#fde68a"/>
 <text x="52" y="201.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Solution, quality</text>
-<rect x="314" y="164" width="250" height="64" rx="16" fill="#bbf7d0"/>
+<rect class="ba-box" x="314" y="164" width="250" height="64" rx="16" fill="#bbf7d0"/>
 <text x="330" y="201.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">Transition</text>
-<text x="36" y="278" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">A study split of the classification schema.</text>
+<text x="36" y="284" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">A study split of the classification schema.</text>
+<text x="36" y="308" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="13">Independent study drawing. Not affiliated.</text>
 </svg>

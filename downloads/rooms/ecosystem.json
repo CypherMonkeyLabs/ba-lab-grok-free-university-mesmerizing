@@ -1,0 +1,133 @@
+{
+  "title": "Ecosystem",
+  "page": "ecosystem.html",
+  "summary": "Glossary links, sister roles, and future hooks.",
+  "five": "The same techniques show up in product ownership, project delivery, data work, and change. Shared techniques do not mean shared authority. Ask who decides the need, who decides the date, and who accepts the result. This lab uses the BABOK hub as the core public map and cites neighbors only where a page opened.",
+  "example": [
+    "A generic retailer wants a clearer return. The analyst writes the need and the acceptance checks. A project manager sequences the work. A product owner orders the backlog.",
+    "If one person holds two of those, write that down. Hidden decision rights cause the meeting after the meeting."
+  ],
+  "notes": [
+    {
+      "title": "Where the practice sits",
+      "summary": "Business analysis touches product ownership, project delivery, process improvement, data analysis, architecture, and change management. The BABOK Guide is the core reference in this lab. Neighboring guides are cited only where a page opened."
+    },
+    {
+      "title": "Sister roles",
+      "summary": "Product manager, product owner, project manager, process analyst, data analyst, business architect, and quality analyst share techniques with business analysis. Ask which decisions each role owns on this initiative. Shared techniques do not mean shared authority."
+    },
+    {
+      "title": "Bridges to other labs",
+      "summary": "Contact-center work needs the same elicitation and acceptance habits, plus queue, channel, and quality measures. AI agent work needs a human review step on any requirement the model drafted. This lab links those topics. It does not claim a vendor implementation."
+    },
+    {
+      "title": "Future hooks",
+      "summary": "Useful next studies are decision modeling, process mining, and evaluation of AI-assisted analysis. Each is introduced here only as far as a public source opened. Deeper vendor features stay marked to be confirmed."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "Shared techniques across roles mean:",
+      "choices": [
+        "Shared authority",
+        "You still name who decides",
+        "The project manager owns the need",
+        "No one owns the test"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "About IIBA",
+      "url": "https://www.iiba.org/about-iiba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

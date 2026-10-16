@@ -1,0 +1,4098 @@
+{
+  "title": "Flashcards",
+  "cards": [
+    {
+      "front": "Business analysis",
+      "back": "The practice of understanding a need and shaping a valuable change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Business analyst",
+      "back": "A person who performs business analysis, whatever the job title.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Need",
+      "back": "A problem or opportunity to be addressed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Stakeholder",
+      "back": "A person or group with a relationship to the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Requirement",
+      "back": "A usable representation of a need, ready for further work.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Design",
+      "back": "A usable representation of a solution.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Constraint",
+      "back": "A limit on the solution that the team does not choose.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Assumption",
+      "back": "A belief treated as true for now, still to be confirmed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Scope",
+      "back": "The boundary of what is in and out of the change.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Elicitation",
+      "back": "Drawing out information from stakeholders and other sources.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Workshop",
+      "back": "A facilitated session with a purpose and a record.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Baseline",
+      "back": "An agreed version used for later comparison.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Traceability",
+      "back": "A link from a need to requirements, designs, and tests.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "RTM",
+      "back": "A requirements traceability matrix: a table of those links.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "UAT",
+      "back": "User acceptance testing: a decision against agreed criteria.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "User story",
+      "back": "A short statement of role, capability, and outcome.",
+      "source": "Atlassian, user stories",
+      "url": "https://www.atlassian.com/agile/project-management/user-stories",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Acceptance criteria",
+      "back": "The conditions that show a story or requirement is met.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Gherkin",
+      "back": "A language for scenarios using Given, When, and Then.",
+      "source": "Gherkin reference",
+      "url": "https://cucumber.io/docs/gherkin/reference/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "BPMN",
+      "back": "Business Process Model and Notation, published by OMG.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Gateway",
+      "back": "A BPMN decision point that splits or joins flow.",
+      "source": "OMG BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "UML",
+      "back": "Unified Modeling Language, published by OMG.",
+      "source": "OMG UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "ERD",
+      "back": "A drawing of entities and the relationships between them.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "C4",
+      "back": "A model with system, container, component, and code views.",
+      "source": "C4 model",
+      "url": "https://c4model.com/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "KPI",
+      "back": "A key performance indicator tied to a decision.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "HEART",
+      "back": "Happiness, engagement, adoption, retention, and task success.",
+      "source": "Google Research, user-centered metrics paper",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "OKR",
+      "back": "An objective plus measurable key results.",
+      "source": "re:Work OKRs guide",
+      "url": "https://rework.withgoogle.com/guides/set-goals-with-okrs/steps/introduction/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Product backlog",
+      "back": "The ordered list of what is known to be needed in the product.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Increment",
+      "back": "A concrete step toward the product goal, in Scrum.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Product owner",
+      "back": "An accountability on the Scrum Team for the backlog and value.",
+      "source": "The 2020 Scrum Guide",
+      "url": "https://scrumguides.org/scrum-guide.html",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "RACI",
+      "back": "A matrix of responsible, accountable, consulted, and informed.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "SWOT",
+      "back": "Strengths, weaknesses, opportunities, and threats.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "ADKAR",
+      "back": "Awareness, desire, knowledge, ability, and reinforcement.",
+      "source": "Prosci ADKAR model",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Business case",
+      "back": "A recommendation that shows why a course of action is worth it.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Fit-gap",
+      "back": "A comparison of what a product already does and what the need still requires.",
+      "source": "Dynamics 365 implementation guide",
+      "url": "https://learn.microsoft.com/en-us/dynamics365/guidance/implementation-guide/overview",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Process mining",
+      "back": "Reconstructing a process from event logs.",
+      "source": "IEEE Task Force on Process Mining",
+      "url": "https://www.tf-pm.org/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "Non-functional requirement",
+      "back": "A quality attribute such as speed, security, or availability.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "CBAP",
+      "back": "Certified Business Analysis Professional, an IIBA credential.",
+      "source": "IIBA CBAP page",
+      "url": "https://www.iiba.org/business-analysis-certifications/cbap/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "ECBA",
+      "back": "Entry Certificate in Business Analysis, an IIBA credential.",
+      "source": "IIBA ECBA page",
+      "url": "https://www.iiba.org/business-analysis-certifications/ecba/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "PMI-PBA",
+      "back": "PMI's Professional in Business Analysis credential.",
+      "source": "PMI-PBA certification",
+      "url": "https://www.pmi.org/certifications/business-analysis-pba",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    },
+    {
+      "front": "BACCM",
+      "back": "The Business Analysis Core Concept Model in the BABOK Guide.",
+      "source": "BABOK Guide knowledge hub",
+      "url": "https://www.iiba.org/knowledgehub/business-analysis-body-of-knowledge-babok-guide/",
+      "asOf": "2026-10",
+      "sources": [
+        {
+          "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+          "url": "https://www.iiba.org/knowledgehub/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BABOK Guide article on the IIBA knowledge hub",
+          "url": "",
+          "kind": "standard",
+          "status": "confirm",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA home",
+          "url": "https://www.iiba.org/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Manifesto for Agile Software Development",
+          "url": "https://agilemanifesto.org/",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "Principles behind the Agile Manifesto",
+          "url": "https://agilemanifesto.org/principles.html",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0",
+          "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "BPMN 2.0 specification PDF",
+          "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about BPMN 2.0.2",
+          "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG, about UML 2.5.1",
+          "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "UML 2.5.1 specification PDF",
+          "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+          "kind": "standard",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "IIBA membership",
+          "url": "https://www.iiba.org/membership/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "OMG managed communities",
+          "url": "https://www.omg.org/communities/",
+          "kind": "community",
+          "status": "open",
+          "checked": "2026-10"
+        },
+        {
+          "label": "About IIBA",
+          "url": "https://www.iiba.org/about-iiba/",
+          "kind": "official",
+          "status": "open",
+          "checked": "2026-10"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "About IIBA",
+      "url": "https://www.iiba.org/about-iiba/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

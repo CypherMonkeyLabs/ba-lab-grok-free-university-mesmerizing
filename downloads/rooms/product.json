@@ -1,0 +1,210 @@
+{
+  "title": "Product craft",
+  "page": "product.html",
+  "summary": "Discovery, business case, change, risk, and vendors.",
+  "five": "Discovery restates the job before the feature. A business case lists options, including do nothing, and only the costs and benefits you can source. Change work names awareness, desire, knowledge, ability, and reinforcement, the words on the Prosci page. Vendor choice weights the criteria before the demos.",
+  "example": [
+    "Need: same-day notice of abnormal results. Options: do nothing, a checklist on paper, a work-queue screen. Costs you can source: staff time for the paper checklist. Benefits you can source: none yet, so the cell stays blank.",
+    "Recommendation: pilot the checklist for two weeks and measure. Unknown is a permitted recommendation."
+  ],
+  "notes": [
+    {
+      "title": "Discovery",
+      "summary": "Discovery is the work of testing whether you understand the problem. Use interviews, observation, and a small experiment. A discovery output is a clearer need, a rejected idea, or a decision to stop. All three are success."
+    },
+    {
+      "title": "Business case and return",
+      "summary": "List costs, benefits, the timing of each, and the assumptions. If you compute a return, show the formula and the inputs. Unknown inputs stay blank. The technique list includes business cases and financial analysis. This lab states no sample return."
+    },
+    {
+      "title": "Change and ADKAR",
+      "summary": "Prosci's ADKAR page opened and names Awareness, Desire, Knowledge, Ability, and Reinforcement. A requirement can be built and still fail if people do not know why it exists or cannot perform the new work. Plan the enablement with the solution, not after the outage."
+    },
+    {
+      "title": "Ethics",
+      "summary": "IIBA's certification FAQ says candidates agree to a code of ethical conduct. In daily work that means you do not hide a risk, you do not invent a number, and you say when you are unsure. This lab is not legal advice."
+    },
+    {
+      "title": "Estimation",
+      "summary": "Estimation is on the technique list. Estimate analysis work separately from build work. Give a range and what would change it. A single point estimate pretends certainty you do not have."
+    },
+    {
+      "title": "Risk and response",
+      "summary": "Write probability only if you have a basis. Otherwise use a simple high, medium, or low and say it is a judgment. Assign a response: avoid, reduce, transfer, or accept. Accepted risks need an owner."
+    },
+    {
+      "title": "RFP and vendor selection",
+      "summary": "A request for proposal should be traceable to requirements. Weight the criteria before you see the responses. Keep a record of questions and answers sent to every bidder. Vendor assessment is the related technique."
+    },
+    {
+      "title": "Build, buy, or configure",
+      "summary": "The design-options task asks you to compare ways to satisfy the need. Include doing nothing. A demo is an input, not a decision. Record why the other options lost."
+    },
+    {
+      "title": "Success measures",
+      "summary": "Define measures before build, so the team cannot move the goal after the result is known. Include a measure that would tell you to roll back."
+    },
+    {
+      "title": "Working backwards",
+      "summary": "Amazon's leadership principles page opened. A press-release-and-FAQ habit is associated with Amazon in public writing, but the book and the internal template were not opened in this check, so the steps are not copied. Use the principles page for what Amazon publishes, and mark any PR/FAQ outline you did not read as unknown."
+    },
+    {
+      "title": "Operational requirements",
+      "summary": "The Google SRE book introduction treats running the system as part of the engineering problem. Availability, on-call, and failure communication are requirements when a person depends on the service. Write them with the functional behavior."
+    }
+  ],
+  "quizzes": [
+    {
+      "q": "A business case may recommend:",
+      "choices": [
+        "Only build",
+        "Unknown, if the numbers are not sourced",
+        "A salary",
+        "Skipping options"
+      ],
+      "answer": 1
+    }
+  ],
+  "sources": [
+    {
+      "label": "IIBA KnowledgeHub, including the BABOK Guide contents",
+      "url": "https://www.iiba.org/knowledgehub/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BABOK Guide article on the IIBA knowledge hub",
+      "url": "",
+      "kind": "standard",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA home",
+      "url": "https://www.iiba.org/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Manifesto for Agile Software Development",
+      "url": "https://agilemanifesto.org/",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Principles behind the Agile Manifesto",
+      "url": "https://agilemanifesto.org/principles.html",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0",
+      "url": "https://www.omg.org/spec/BPMN/2.0/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "BPMN 2.0 specification PDF",
+      "url": "https://www.omg.org/spec/BPMN/2.0/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about BPMN 2.0.2",
+      "url": "https://www.omg.org/spec/BPMN/2.0.2/About-BPMN",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG, about UML 2.5.1",
+      "url": "https://www.omg.org/spec/UML/2.5.1/About-UML",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "UML 2.5.1 specification PDF",
+      "url": "https://www.omg.org/spec/UML/2.5.1/PDF",
+      "kind": "standard",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IIBA membership",
+      "url": "https://www.iiba.org/membership/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "OMG managed communities",
+      "url": "https://www.omg.org/communities/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "IDEO Design Thinking",
+      "url": "https://designthinking.ideo.com/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Jobs to Be Done",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Prosci ADKAR",
+      "url": "https://www.prosci.com/methodology/adkar",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Amazon leadership principles",
+      "url": "https://www.amazon.jobs/content/en/our-workplace/leadership-principles",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Design Sprint community",
+      "url": "https://designsprintkit.withgoogle.com/",
+      "kind": "community",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Google Research, user-centered metrics",
+      "url": "https://research.google/pubs/measuring-the-user-experience-on-a-large-scale-user-centered-metrics-for-web-applications/",
+      "kind": "official",
+      "status": "open",
+      "checked": "2026-10"
+    },
+    {
+      "label": "re:Work OKRs guide",
+      "url": "",
+      "kind": "official",
+      "status": "confirm",
+      "checked": "2026-10"
+    },
+    {
+      "label": "Objectives and key results",
+      "url": "https://en.wikipedia.org/wiki/OKR",
+      "kind": "wikipedia",
+      "status": "open",
+      "checked": "2026-10"
+    }
+  ]
+}

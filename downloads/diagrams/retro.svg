@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 330" role="img">
+<title>Retro prompts</title>
+<style>
+@keyframes baPulse { 50% { opacity: 0.78 } }
+.ba-box { animation: baPulse 2.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@media (prefers-reduced-motion: reduce) { .ba-box { animation: none } }
+</style>
+<rect width="100%" height="100%" rx="24" fill="#0b1220"/>
+<text x="36" y="46" fill="#f8fafc" font-family="Segoe UI, sans-serif" font-size="26" font-weight="700">Retro prompts</text>
+<rect class="ba-box" x="36" y="78" width="250" height="64" rx="16" fill="#99f6e4"/>
+<text x="52" y="115.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">What helped the analysis</text>
+<rect class="ba-box" x="314" y="78" width="250" height="64" rx="16" fill="#c7d2fe"/>
+<text x="330" y="115.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">What we skipped confirming</text>
+<rect class="ba-box" x="36" y="164" width="250" height="64" rx="16" fill="#fbcfe8"/>
+<text x="52" y="190.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">One change to the way of</text>
+<text x="52" y="212.0" fill="#1c1917" font-family="Segoe UI, sans-serif" font-size="16">working</text>
+<text x="36" y="284" fill="#e2e8f0" font-family="Segoe UI, sans-serif" font-size="14">A retrospective is about the work system.</text>
+<text x="36" y="308" fill="#99f6e4" font-family="Segoe UI, sans-serif" font-size="13">Independent study drawing. Not affiliated.</text>
+<desc>Sources and go deeper. IIBA KnowledgeHub, including the BABOK Guide contents (standard). https://www.iiba.org/knowledgehub/ last checked 2026-10. BABOK Guide article on the IIBA knowledge hub (standard). confirm. last checked 2026-10. IIBA home (official). https://www.iiba.org/ last checked 2026-10. Manifesto for Agile Software Development (standard). https://agilemanifesto.org/ last checked 2026-10. Principles behind the Agile Manifesto (standard). https://agilemanifesto.org/principles.html last checked 2026-10. OMG, about BPMN 2.0 (standard). https://www.omg.org/spec/BPMN/2.0/About-BPMN last checked 2026-10. BPMN 2.0 specification PDF (standard). https://www.omg.org/spec/BPMN/2.0/PDF last checked 2026-10. OMG, about BPMN 2.0.2 (standard). https://www.omg.org/spec/BPMN/2.0.2/About-BPMN last checked 2026-10. OMG, about UML 2.5.1 (standard). https://www.omg.org/spec/UML/2.5.1/About-UML last checked 2026-10. UML 2.5.1 specification PDF (standard). https://www.omg.org/spec/UML/2.5.1/PDF last checked 2026-10. IIBA membership (community). https://www.iiba.org/membership/ last checked 2026-10. OMG managed communities (community). https://www.omg.org/communities/ last checked 2026-10. C4 model (official). https://c4model.com/ last checked 2026-10. Lucid BPMN tutorial (community). https://lucid.co/diagram/bpmn/tutorial last checked 2026-10. The 2020 Scrum Guide (official). https://scrumguides.org/scrum-guide.html last checked 2026-10.</desc></svg>

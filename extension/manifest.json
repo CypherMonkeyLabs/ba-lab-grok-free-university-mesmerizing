@@ -1,0 +1,9 @@
+{
+  "manifest_version": 3,
+  "name": "BA Lab draft",
+  "version": "0.0.0",
+  "description": "Prepared draft only. Not packaged, not submitted, and not a built extension.",
+  "action": {
+    "default_title": "BA Lab"
+  }
+}
