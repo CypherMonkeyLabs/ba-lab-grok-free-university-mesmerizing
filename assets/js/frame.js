@@ -374,5 +374,5 @@
     data[pageId()] = Date.now();
     localStorage.setItem(key, JSON.stringify(data));
   } catch (err) { /* ignore */ }
-  window.BA_FRAME = { sections: SECTIONS, socials: SOCIALS };
+  window.BA_FRAME = { sections: SECTIONS, socials: SOCIALS, icon: svg };
 })();

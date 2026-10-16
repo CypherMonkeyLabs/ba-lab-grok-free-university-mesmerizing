@@ -67,12 +67,25 @@
     var steps = (data.course || []).map(function (step, index) {
       return "<li><a href=\"" + esc(step.href) + "\">" + esc(step.title) + "</a> · " + esc(step.minutes) + " min. " + esc(step.text) + "</li>";
     }).join("");
+    var tiles = ["#99f6e4", "#bfdbfe", "#fde68a", "#fecdd3", "#ddd6fe", "#d9f99d", "#fed7aa", "#f5d0fe", "#a5f3fc", "#fbcfe8"];
+    var counts = data.counts || {};
+    var stats = [
+      [counts.notes, "notes"],
+      [counts.diagrams, "diagrams"],
+      [counts.flows, "flows"],
+      [counts.cards, "cards"]
+    ].filter(function (pair) { return pair[0] != null; }).map(function (pair) {
+      return '<div class="stat"><b>' + esc(pair[0]) + "</b><span>" + esc(pair[1]) + "</span></div>";
+    }).join("");
+    var rooms = (window.BA_FRAME ? window.BA_FRAME.sections : []).filter(function (s) { return s[0] !== "home" && s[0] !== "search"; });
     var rest =
       '<section><h2>One-hour path</h2><ol class="path-list">' + steps + "</ol></section>" +
+      (stats ? '<div class="stat-row" aria-label="Library size">' + stats + "</div>" : "") +
       studyBlock(data, "home") +
       '<section><h2>Rooms</h2><div class="room-grid">' +
-      (window.BA_FRAME ? window.BA_FRAME.sections : []).filter(function (s) { return s[0] !== "home"; }).map(function (s) {
-        return '<a class="card" href="' + esc(s[2]) + '"><h3>' + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
+      rooms.map(function (s, index) {
+        var icon = window.BA_FRAME && window.BA_FRAME.icon ? window.BA_FRAME.icon(s[3]) : "";
+        return '<a class="room-tile" style="--tile:' + tiles[index % tiles.length] + '" href="' + esc(s[2]) + '"><span class="tile-ico">' + icon + "</span><h3>" + esc(s[1]) + "</h3><p>" + esc(s[4]) + "</p></a>";
       }).join("") +
       "</div></section>";
     var mount = document.getElementById("home-rest");
@@ -641,11 +654,12 @@
     var files = (data.downloads || []).filter(function (item) {
       return item.file.indexOf("downloads/rooms/" + id + ".") === 0;
     });
-    main.querySelectorAll("h1, h2, article.item").forEach(function (node) {
-      if (!files.length || node.querySelector(".export-btn")) return;
-      var heading = node.matches("h1, h2") ? node : node.querySelector("h2, h3");
-      (heading || node).appendChild(exportControls(files));
-    });
+    if (files.length && !main.querySelector(".export-corner")) {
+      var corner = document.createElement("div");
+      corner.className = "export-corner";
+      corner.appendChild(exportControls(files));
+      main.insertBefore(corner, main.firstChild);
+    }
     main.querySelectorAll(".five, .callout, article.item, p.lede").forEach(function (node) {
       node.setAttribute("data-read", "true");
     });

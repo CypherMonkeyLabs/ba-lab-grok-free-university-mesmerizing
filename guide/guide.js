@@ -76,6 +76,7 @@ function save() {
 function page() { return document.body.dataset.page || "home"; }
 function pose(name) {
   monkey.dataset.pose = name;
+  host.dataset.pose = name;
   if (name === "greeting") monkey.dataset.mood = "wave";
   else if (name === "celebrate") monkey.dataset.mood = "cheer";
   else if (name === "encourage") monkey.dataset.mood = "wave";
@@ -83,18 +84,42 @@ function pose(name) {
 }
 
 function monkeySvg() {
-  return '<span class="ba-aura" aria-hidden="true"></span><span class="ba-glow" aria-hidden="true"></span>' +
-    '<svg viewBox="0 0 80 80" aria-hidden="true">' +
-    '<defs><radialGradient id="bafur" cx="40%" cy="32%" r="70%"><stop offset="0" stop-color="#ffe7a3"/><stop offset=".55" stop-color="#f6b73c"/><stop offset="1" stop-color="#c2410c"/></radialGradient></defs>' +
-    '<ellipse class="ear left" cx="16" cy="36" rx="11" ry="13"/>' +
-    '<ellipse class="ear right" cx="64" cy="36" rx="11" ry="13"/>' +
-    '<ellipse class="face" cx="40" cy="42" rx="24" ry="22"/>' +
-    '<ellipse class="muzzle" cx="40" cy="52" rx="13" ry="10"/>' +
-    '<g class="specs"><circle cx="31" cy="40" r="8"/><circle cx="49" cy="40" r="8"/><path d="M39 40h2"/><path d="M18 38l5 2M62 38l-5 2"/></g>' +
-    '<circle class="eye" cx="31" cy="40" r="2"/><circle class="eye" cx="49" cy="40" r="2"/>' +
-    '<path class="smile" d="M32 54c3 3 13 3 16 0"/>' +
-    '<path class="arm" d="M14 56c8 12 14 8 16-2"/>' +
-    "</svg>";
+  return '<span class="ba-soft" aria-hidden="true"></span>' +
+    '<span class="ba-float" aria-hidden="true"><svg viewBox="0 0 220 260" aria-hidden="true">' +
+    "<defs>" +
+    '<radialGradient id="bamfur" cx="38%" cy="30%" r="78%"><stop offset="0" stop-color="#ffe08a"/><stop offset=".48" stop-color="#f5a524"/><stop offset="1" stop-color="#c2410c"/></radialGradient>' +
+    '<radialGradient id="bammuz" cx="50%" cy="28%" r="80%"><stop offset="0" stop-color="#fff7dc"/><stop offset="1" stop-color="#f0c27a"/></radialGradient>' +
+    '<radialGradient id="bamear" cx="40%" cy="35%" r="75%"><stop offset="0" stop-color="#fecdd3"/><stop offset="1" stop-color="#e11d48"/></radialGradient>' +
+    '<linearGradient id="bamglass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset=".5" stop-color="#7c3aed"/><stop offset="1" stop-color="#f472b6"/></linearGradient>' +
+    '<linearGradient id="bamscarf" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#22d3ee"/><stop offset=".34" stop-color="#a78bfa"/><stop offset=".67" stop-color="#f472b6"/><stop offset="1" stop-color="#fbbf24"/></linearGradient>' +
+    "</defs>" +
+    '<ellipse cx="110" cy="248" rx="58" ry="8" fill="#1e1b4b" opacity=".2"/>' +
+    '<path class="ba-tail" d="M172 200c26 6 34 26 16 38-16 10-30-4-24-16" fill="none" stroke="#ea580c" stroke-width="12" stroke-linecap="round"/>' +
+    '<path d="M74 168c6 22 22 48 36 52s32-16 38-40c2 22-10 52-40 56s-46-20-34-68z" fill="url(#bamfur)"/>' +
+    '<path class="ba-scarf" d="M80 162h62c-2 16-16 24-32 24s-28-8-30-24z" fill="url(#bamscarf)"/>' +
+    '<g class="ba-head">' +
+    '<circle class="ba-ear" cx="46" cy="92" r="30" fill="url(#bamfur)"/><circle cx="46" cy="92" r="16" fill="url(#bamear)"/>' +
+    '<circle class="ba-ear" cx="174" cy="92" r="30" fill="url(#bamfur)"/><circle cx="174" cy="92" r="16" fill="url(#bamear)"/>' +
+    '<circle cx="110" cy="102" r="64" fill="url(#bamfur)"/>' +
+    '<ellipse cx="110" cy="122" rx="38" ry="30" fill="url(#bammuz)"/>' +
+    '<ellipse cx="76" cy="116" rx="11" ry="7" fill="#fb7185" opacity=".7"/>' +
+    '<ellipse cx="144" cy="116" rx="11" ry="7" fill="#fb7185" opacity=".7"/>' +
+    '<g class="ba-eye"><ellipse cx="86" cy="96" rx="14" ry="16" fill="#fff"/><circle cx="90" cy="98" r="7" fill="#1c1917"/><circle cx="93" cy="95" r="2.6" fill="#fff"/></g>' +
+    '<g class="ba-eye"><ellipse cx="134" cy="96" rx="14" ry="16" fill="#fff"/><circle cx="138" cy="98" r="7" fill="#1c1917"/><circle cx="141" cy="95" r="2.6" fill="#fff"/></g>' +
+    '<g class="ba-glasses" fill="none" stroke="url(#bamglass)" stroke-width="5" stroke-linecap="round">' +
+    '<circle cx="86" cy="96" r="20"/><circle cx="134" cy="96" r="20"/><path d="M106 96h12"/>' +
+    '<path d="M66 92c-10-2-16 4-16 10M154 92c10-2 16 4 16 10"/>' +
+    "</g>" +
+    '<ellipse cx="110" cy="120" rx="8" ry="5.5" fill="#9a3412"/>' +
+    '<path class="ba-mouth" d="M90 136c8 12 32 12 40 0" fill="none" stroke="#7c2d12" stroke-width="4" stroke-linecap="round"/>' +
+    "</g>" +
+    '<g class="ba-arm ba-arm-left"><path d="M76 172v40" fill="none" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>' +
+    '<circle cx="76" cy="218" r="14" fill="url(#bamfur)"/><circle cx="76" cy="218" r="7" fill="url(#bammuz)"/></g>' +
+    '<g class="ba-arm ba-arm-right"><path d="M146 172v40" fill="none" stroke="#ea580c" stroke-width="16" stroke-linecap="round"/>' +
+    '<circle cx="146" cy="218" r="14" fill="url(#bamfur)"/><circle cx="146" cy="218" r="7" fill="url(#bammuz)"/></g>' +
+    '<g class="ba-pop" aria-hidden="true"><path d="M186 36l2.2 6.2 6.4.2-5 4 1.8 6.2-5.4-3.6-5.4 3.6 1.8-6.2-5-4 6.4-.2z" fill="#fde047"/>' +
+    '<path d="M34 40l1.6 4.4 4.6.2-3.6 2.8 1.3 4.4-3.9-2.6-3.9 2.6 1.3-4.4-3.6-2.8 4.6-.2z" fill="#22d3ee"/></g>' +
+    "</svg></span>";
 }
 
 function reveal(node) {
@@ -688,9 +713,14 @@ function applyDock() {
     return;
   }
   host.style.left = "auto";
-  host.style.right = "0px";
-  host.style.bottom = "auto";
-  host.style.top = "38%";
+  host.style.right = "8px";
+  if (window.matchMedia("(max-width: 800px)").matches) {
+    host.style.top = "auto";
+    host.style.bottom = "4.6rem";
+  } else {
+    host.style.bottom = "auto";
+    host.style.top = "16%";
+  }
 }
 function listen() {
   var Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
