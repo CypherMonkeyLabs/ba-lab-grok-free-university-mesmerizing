@@ -1,0 +1,10 @@
+{
+  "name": "ba-lab-free-university",
+  "private": true,
+  "description": "Business Analyst Free University, a static study lab.",
+  "scripts": {
+    "start": "python3 -m http.server 8742",
+    "build": "python3 scripts/build_lab.py && node guide/build-kb.mjs",
+    "verify": "node scripts/verify.mjs"
+  }
+}
