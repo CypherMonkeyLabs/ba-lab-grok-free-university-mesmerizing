@@ -27,7 +27,6 @@ var paused = false;
 var readState = null;
 var audioCtx = null;
 var soundNodes = null;
-var drag = null;
 
 var host = document.createElement("div");
 host.className = "ba-guide";
@@ -705,30 +704,7 @@ function onReady() {
   }
 }
 function applyDock() {
-  if (typeof session.x === "number" && typeof session.y === "number") {
-    var maxX = Math.max(0, window.innerWidth - host.offsetWidth);
-    var maxY = Math.max(0, window.innerHeight - host.offsetHeight);
-    session.x = Math.min(Math.max(0, session.x), maxX);
-    session.y = Math.min(Math.max(0, session.y), maxY);
-    host.style.left = session.x + "px";
-    host.style.top = session.y + "px";
-    host.style.right = "auto";
-    host.style.bottom = "auto";
-    return;
-  }
-  host.style.left = "auto";
-  host.style.right = "8px";
-  host.style.transform = "none";
-  if (window.matchMedia("(max-width: 800px)").matches) {
-    host.style.top = "auto";
-    host.style.bottom = "4.6rem";
-  } else if (document.body.dataset.page === "home") {
-    host.style.bottom = "auto";
-    host.style.top = "7.5rem";
-  } else {
-    host.style.bottom = "auto";
-    host.style.top = "16%";
-  }
+  // Home spot lives in guide.css; guide/dragbot.js owns the dragged position.
 }
 function listen() {
   var Rec = window.SpeechRecognition || window.webkitSpeechRecognition;
@@ -768,10 +744,6 @@ function listen() {
 monkey.addEventListener("click", function () {
   if (host.classList.contains("is-greeting")) {
     endGreet();
-    return;
-  }
-  if (monkey.dataset.dragged === "true") {
-    monkey.dataset.dragged = "false";
     return;
   }
   if (panel.hidden) openPanel(false);
@@ -826,36 +798,9 @@ if (window.speechSynthesis) {
 window.addEventListener("resize", applyDock);
 applyDock();
 
-monkey.addEventListener("pointerdown", function (event) {
-  if (event.button != null && event.button !== 0) return;
-  var rect = host.getBoundingClientRect();
-  drag = { x: event.clientX, y: event.clientY, left: rect.left, top: rect.top, moved: false, id: event.pointerId };
-  try { monkey.setPointerCapture(event.pointerId); } catch (err) { /* ignore */ }
-});
-window.addEventListener("pointermove", function (event) {
-  if (!drag || (drag.id != null && event.pointerId !== drag.id)) return;
-  var dx = event.clientX - drag.x;
-  var dy = event.clientY - drag.y;
-  if (Math.abs(dx) + Math.abs(dy) > 8) drag.moved = true;
-  if (!drag.moved) return;
-  var left = Math.max(0, Math.min(window.innerWidth - host.offsetWidth, drag.left + dx));
-  var top = Math.max(0, Math.min(window.innerHeight - host.offsetHeight, drag.top + dy));
-  host.style.left = left + "px";
-  host.style.top = top + "px";
-  host.style.right = "auto";
-  host.style.bottom = "auto";
-});
-window.addEventListener("pointerup", function (event) {
-  if (!drag || (drag.id != null && event.pointerId !== drag.id)) return;
-  if (drag.moved) {
-    monkey.dataset.dragged = "true";
-    var rect = host.getBoundingClientRect();
-    session.x = Math.round(rect.left);
-    session.y = Math.round(rect.top);
-    save();
-  }
-  drag = null;
-});
+var botScript = document.createElement("script");
+botScript.src = new URL("dragbot.js", base).href;
+document.body.appendChild(botScript);
 
 fetch(new URL("kb/index.json", base))
   .then(function (response) { return response.json(); })
@@ -892,10 +837,6 @@ function endGreet() {
   greetClosed = true;
   if (window.speechSynthesis) window.speechSynthesis.cancel();
   host.classList.remove("is-greeting");
-  host.style.left = "";
-  host.style.top = "";
-  host.style.right = "";
-  host.style.transform = "";
   hideNudge();
   pose("encourage");
   applyDock();
@@ -912,11 +853,6 @@ function beginGreet() {
   }
   greetClosed = false;
   host.classList.add("is-greeting");
-  host.style.left = "";
-  host.style.top = "";
-  host.style.right = "";
-  host.style.bottom = "";
-  host.style.transform = "";
   applyDock();
   pose("greeting");
   nudge.hidden = false;
