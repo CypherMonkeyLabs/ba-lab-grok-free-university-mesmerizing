@@ -1,7 +1,7 @@
 .ba-guide {
   position: fixed;
   right: 8px;
-  top: 16%;
+  bottom: 16px;
   z-index: 35;
   width: 220px;
   height: 260px;
@@ -10,7 +10,6 @@
   color: #1c1917;
 }
 .ba-guide.is-greeting { z-index: 35; }
-@media (min-width: 801px) { body[data-page="home"] .ba-guide { top: 7.5rem; } }
 body[data-menu="open"] .ba-guide { visibility: hidden; }
 .ba-monkey {
   position: relative;
@@ -58,8 +57,8 @@ body[data-menu="open"] .ba-guide { visibility: hidden; }
   position: absolute;
   left: auto;
   right: 0;
-  bottom: auto;
-  top: calc(100% + 8px);
+  top: auto;
+  bottom: calc(100% + 8px);
   transform: none;
   width: 220px;
 }
