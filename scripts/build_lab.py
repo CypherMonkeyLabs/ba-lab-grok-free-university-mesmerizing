@@ -1509,6 +1509,7 @@ def write_html_sheet(path: Path, title: str, summary: str, lines, sources=None):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <title>{html.escape(title)}</title>
 <style>
 body {{ margin: 0; font-family: "Segoe UI", sans-serif; background: #fbf7f1; color: #1c1917; }}
@@ -1519,7 +1520,7 @@ a {{ color: #1d4ed8; }}
 .disclaimer-box a {{ color: #0f766e; }}
 footer {{ padding: 1rem; background: linear-gradient(90deg, #99f6e4, #c7d2fe, #fbcfe8); color: #1c1917; }}
 .badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; border-radius: 12px; font-weight: 700; text-decoration: none; }}
-.sources-deeper {{ width: min(42rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; }}
+.sources-deeper {{ box-sizing: border-box; width: min(42rem, calc(100% - 2rem)); max-width: 100%; margin: 0 auto 2rem; padding: 1rem; border: 2px solid #0f766e; border-radius: 16px; background: #fff; overflow-wrap: break-word; }}
 .sources-deeper a {{ font-weight: 700; }}
 </style>
 </head>
@@ -1554,6 +1555,7 @@ def write_diagram_html(path: Path, title: str, svg_text: str, caption: str, sour
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <title>{html.escape(title)}</title>
 <style>
 body {{ margin: 0; font-family: "Segoe UI", sans-serif; background: #07111f; color: #f8fafc; }}
@@ -1563,7 +1565,7 @@ svg {{ width: 100%; height: auto; }}
 .disclaimer-box a {{ color: #0f766e; }}
 footer {{ padding: 1rem; }}
 .badges a {{ display: inline-block; min-width: 44px; min-height: 44px; margin: 0.25rem; padding: 0.6rem 0.8rem; background: #fff; color: #1c1917; border-radius: 12px; font-weight: 700; text-decoration: none; }}
-.sources-deeper {{ width: min(60rem, calc(100% - 2rem)); margin: 0 auto 2rem; padding: 1rem; border: 2px solid #5eead4; border-radius: 16px; background: #0f172a; color: #f8fafc; }}
+.sources-deeper {{ box-sizing: border-box; width: min(60rem, calc(100% - 2rem)); max-width: 100%; margin: 0 auto 2rem; padding: 1rem; border: 2px solid #5eead4; border-radius: 16px; background: #0f172a; color: #f8fafc; overflow-wrap: break-word; }}
 .sources-deeper a {{ color: #93c5fd; font-weight: 700; }}
 </style>
 </head>
