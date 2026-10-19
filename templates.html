@@ -2,44 +2,12 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; media-src 'self' blob: data:; font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Templates · Business Analyst Free University</title>
 <meta name="description" content="Outlines for BRD, FRD, SRS, stories, RACI, SWOT, and process maps.">
 <meta name="theme-color" content="#0f766e">
-<script>
-/* Apply saved display settings before first paint. */
-(function () {
-  var root = document.documentElement;
-  var themes = {
-    aurora: 1,
-    midnight: 1,
-    neon: 1,
-    holographic: 1,
-    cyberpunk: 1,
-    sunset: 1,
-    light: 1,
-    contrast: 1
-  };
-  try {
-    var theme = localStorage.getItem("ba-theme") || "aurora";
-    if (!themes[theme]) theme = "aurora";
-    root.dataset.theme = theme;
-    var font = localStorage.getItem("ba-font") || "md";
-    if (font !== "sm" && font !== "md" && font !== "lg") font = "md";
-    root.dataset.font = font;
-    var motion = localStorage.getItem("ba-motion") || "";
-    if (motion === "reduce" || motion === "full") root.dataset.motion = motion;
-    var ink = localStorage.getItem("ba-ink") || "";
-    if (/^#[0-9a-fA-F]{6}$/.test(ink)) {
-      root.style.setProperty("--ink-custom", ink);
-      root.dataset.ink = "custom";
-    }
-  } catch (err) {
-    root.dataset.theme = "aurora";
-    root.dataset.font = "md";
-  }
-})();
-</script>
+<script src="assets/js/boot.js"></script>
 <link rel="stylesheet" href="assets/css/lab.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -55,29 +23,6 @@
 <footer class="site-footer" id="site-footer"></footer>
 <nav class="phone-bar" id="phone-bar" aria-label="Quick actions"></nav>
 <div id="guide-mount"></div>
-<script>
-requestAnimationFrame(function () {
-  requestAnimationFrame(function () {
-  var sources = [
-    ["assets/js/brand.js"],
-    ["assets/js/frame.js"],
-    ["assets/js/app.js"],
-    ["guide/guide.js", "module"],
-    ["assets/js/onboard.js"],
-    ["assets/js/pwa.js"]
-  ];
-  function load(index) {
-    if (index >= sources.length) return;
-    var spec = sources[index];
-    var node = document.createElement("script");
-    if (spec[1]) node.type = spec[1];
-    node.src = spec[0];
-    node.onload = function () { load(index + 1); };
-    document.body.appendChild(node);
-  }
-  load(0);
-  });
-});
-</script>
+<script src="assets/js/load.js"></script>
 </body>
 </html>

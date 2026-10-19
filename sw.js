@@ -1,6 +1,6 @@
 /* Network-first. A small cache is only a fallback when the network fails. */
 var CACHE = "ba-lab-v4";
-var PRECACHE = ["./index.html", "./assets/css/lab.css", "./assets/js/boot.js", "./manifest.webmanifest"];
+var PRECACHE = ["./index.html", "./assets/css/lab.css", "./assets/js/boot.js", "./assets/js/load.js", "./manifest.webmanifest"];
 
 self.addEventListener("install", function (event) {
   event.waitUntil(caches.open(CACHE).then(function (cache) {

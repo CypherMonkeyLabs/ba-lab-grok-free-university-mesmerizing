@@ -8854,7 +8854,7 @@
       "file": "downloads/html/brd-outline.html",
       "title": "Business requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 5157
+      "bytes": 5465
     },
     {
       "file": "downloads/frd-outline.pdf",
@@ -8866,7 +8866,7 @@
       "file": "downloads/html/frd-outline.html",
       "title": "Functional requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 5053
+      "bytes": 5361
     },
     {
       "file": "downloads/srs-outline.pdf",
@@ -8878,7 +8878,7 @@
       "file": "downloads/html/srs-outline.html",
       "title": "Software requirements outline (HTML)",
       "kind": "HTML",
-      "bytes": 5037
+      "bytes": 5345
     },
     {
       "file": "downloads/user-story-card.pdf",
@@ -8890,7 +8890,7 @@
       "file": "downloads/html/user-story-card.html",
       "title": "User story card (HTML)",
       "kind": "HTML",
-      "bytes": 4977
+      "bytes": 5285
     },
     {
       "file": "downloads/raci-sheet.pdf",
@@ -8902,7 +8902,7 @@
       "file": "downloads/html/raci-sheet.html",
       "title": "RACI sheet (HTML)",
       "kind": "HTML",
-      "bytes": 5266
+      "bytes": 5574
     },
     {
       "file": "downloads/swot-sheet.pdf",
@@ -8914,7 +8914,7 @@
       "file": "downloads/html/swot-sheet.html",
       "title": "SWOT sheet (HTML)",
       "kind": "HTML",
-      "bytes": 5228
+      "bytes": 5536
     },
     {
       "file": "downloads/process-map-sheet.pdf",
@@ -8926,7 +8926,7 @@
       "file": "downloads/html/process-map-sheet.html",
       "title": "Process map checklist (HTML)",
       "kind": "HTML",
-      "bytes": 4375
+      "bytes": 4683
     },
     {
       "file": "downloads/cert-fee-notes.pdf",
@@ -8950,7 +8950,7 @@
       "file": "downloads/ba-html-sheets.zip",
       "title": "HTML sheets, zipped",
       "kind": "ZIP",
-      "bytes": 19283
+      "bytes": 20410
     },
     {
       "file": "downloads/diagrams/baccm.svg",
@@ -8962,7 +8962,7 @@
       "file": "downloads/diagrams/baccm.html",
       "title": "Core concept model HTML",
       "kind": "HTML",
-      "bytes": 6223
+      "bytes": 6531
     },
     {
       "file": "downloads/diagrams/areas.svg",
@@ -8974,7 +8974,7 @@
       "file": "downloads/diagrams/areas.html",
       "title": "Six knowledge areas HTML",
       "kind": "HTML",
-      "bytes": 6297
+      "bytes": 6605
     },
     {
       "file": "downloads/diagrams/classes.svg",
@@ -8986,7 +8986,7 @@
       "file": "downloads/diagrams/classes.html",
       "title": "Requirement classes HTML",
       "kind": "HTML",
-      "bytes": 5968
+      "bytes": 6276
     },
     {
       "file": "downloads/diagrams/elicitation.svg",
@@ -8998,7 +8998,7 @@
       "file": "downloads/diagrams/elicitation.html",
       "title": "Elicitation loop HTML",
       "kind": "HTML",
-      "bytes": 5945
+      "bytes": 6253
     },
     {
       "file": "downloads/diagrams/trace.svg",
@@ -9010,7 +9010,7 @@
       "file": "downloads/diagrams/trace.html",
       "title": "Trace chain HTML",
       "kind": "HTML",
-      "bytes": 5943
+      "bytes": 6251
     },
     {
       "file": "downloads/diagrams/grid.svg",
@@ -9022,7 +9022,7 @@
       "file": "downloads/diagrams/grid.html",
       "title": "Stakeholder grid HTML",
       "kind": "HTML",
-      "bytes": 6248
+      "bytes": 6556
     },
     {
       "file": "downloads/diagrams/bpmn.svg",
@@ -9034,7 +9034,7 @@
       "file": "downloads/diagrams/bpmn.html",
       "title": "BPMN pieces HTML",
       "kind": "HTML",
-      "bytes": 5836
+      "bytes": 6144
     },
     {
       "file": "downloads/diagrams/storymap.svg",
@@ -9046,7 +9046,7 @@
       "file": "downloads/diagrams/storymap.html",
       "title": "Story map HTML",
       "kind": "HTML",
-      "bytes": 5947
+      "bytes": 6255
     },
     {
       "file": "downloads/diagrams/c4.svg",
@@ -9058,7 +9058,7 @@
       "file": "downloads/diagrams/c4.html",
       "title": "C4 levels HTML",
       "kind": "HTML",
-      "bytes": 5618
+      "bytes": 5926
     },
     {
       "file": "downloads/diagrams/erd.svg",
@@ -9070,7 +9070,7 @@
       "file": "downloads/diagrams/erd.html",
       "title": "Small order model HTML",
       "kind": "HTML",
-      "bytes": 5963
+      "bytes": 6271
     },
     {
       "file": "downloads/diagrams/raci.svg",
@@ -9082,7 +9082,7 @@
       "file": "downloads/diagrams/raci.html",
       "title": "RACI roles HTML",
       "kind": "HTML",
-      "bytes": 5783
+      "bytes": 6091
     },
     {
       "file": "downloads/diagrams/swot.svg",
@@ -9094,7 +9094,7 @@
       "file": "downloads/diagrams/swot.html",
       "title": "SWOT quadrants HTML",
       "kind": "HTML",
-      "bytes": 5791
+      "bytes": 6099
     },
     {
       "file": "downloads/diagrams/heart.svg",
@@ -9106,7 +9106,7 @@
       "file": "downloads/diagrams/heart.html",
       "title": "HEART categories HTML",
       "kind": "HTML",
-      "bytes": 6120
+      "bytes": 6428
     },
     {
       "file": "downloads/diagrams/okr.svg",
@@ -9118,7 +9118,7 @@
       "file": "downloads/diagrams/okr.html",
       "title": "OKR shape HTML",
       "kind": "HTML",
-      "bytes": 5725
+      "bytes": 6033
     },
     {
       "file": "downloads/diagrams/dt.svg",
@@ -9130,7 +9130,7 @@
       "file": "downloads/diagrams/dt.html",
       "title": "Discover before converge HTML",
       "kind": "HTML",
-      "bytes": 5875
+      "bytes": 6183
     },
     {
       "file": "downloads/diagrams/jtbd.svg",
@@ -9142,7 +9142,7 @@
       "file": "downloads/diagrams/jtbd.html",
       "title": "Job story HTML",
       "kind": "HTML",
-      "bytes": 6029
+      "bytes": 6337
     },
     {
       "file": "downloads/diagrams/adkar.svg",
@@ -9154,7 +9154,7 @@
       "file": "downloads/diagrams/adkar.html",
       "title": "ADKAR HTML",
       "kind": "HTML",
-      "bytes": 5953
+      "bytes": 6261
     },
     {
       "file": "downloads/diagrams/case.svg",
@@ -9166,7 +9166,7 @@
       "file": "downloads/diagrams/case.html",
       "title": "Business case parts HTML",
       "kind": "HTML",
-      "bytes": 6263
+      "bytes": 6571
     },
     {
       "file": "downloads/diagrams/rtm.svg",
@@ -9178,7 +9178,7 @@
       "file": "downloads/diagrams/rtm.html",
       "title": "Matrix columns HTML",
       "kind": "HTML",
-      "bytes": 6088
+      "bytes": 6396
     },
     {
       "file": "downloads/diagrams/domains.svg",
@@ -9190,7 +9190,7 @@
       "file": "downloads/diagrams/domains.html",
       "title": "Domain lenses HTML",
       "kind": "HTML",
-      "bytes": 6400
+      "bytes": 6708
     },
     {
       "file": "downloads/diagrams/career.svg",
@@ -9202,7 +9202,7 @@
       "file": "downloads/diagrams/career.html",
       "title": "Career evidence HTML",
       "kind": "HTML",
-      "bytes": 6027
+      "bytes": 6335
     },
     {
       "file": "downloads/diagrams/ecosystem.svg",
@@ -9214,7 +9214,7 @@
       "file": "downloads/diagrams/ecosystem.html",
       "title": "Ecosystem map HTML",
       "kind": "HTML",
-      "bytes": 6379
+      "bytes": 6687
     },
     {
       "file": "downloads/diagrams/sprint.svg",
@@ -9226,7 +9226,7 @@
       "file": "downloads/diagrams/sprint.html",
       "title": "Scrum events HTML",
       "kind": "HTML",
-      "bytes": 5955
+      "bytes": 6263
     },
     {
       "file": "downloads/diagrams/ai.svg",
@@ -9238,7 +9238,7 @@
       "file": "downloads/diagrams/ai.html",
       "title": "AI draft loop HTML",
       "kind": "HTML",
-      "bytes": 5945
+      "bytes": 6253
     },
     {
       "file": "downloads/diagrams/verify-validate.svg",
@@ -9250,7 +9250,7 @@
       "file": "downloads/diagrams/verify-validate.html",
       "title": "Verify then validate HTML",
       "kind": "HTML",
-      "bytes": 5991
+      "bytes": 6299
     },
     {
       "file": "downloads/diagrams/priority.svg",
@@ -9262,7 +9262,7 @@
       "file": "downloads/diagrams/priority.html",
       "title": "Priority words HTML",
       "kind": "HTML",
-      "bytes": 6040
+      "bytes": 6348
     },
     {
       "file": "downloads/diagrams/accept.svg",
@@ -9274,7 +9274,7 @@
       "file": "downloads/diagrams/accept.html",
       "title": "Acceptance shape HTML",
       "kind": "HTML",
-      "bytes": 5806
+      "bytes": 6114
     },
     {
       "file": "downloads/diagrams/states.svg",
@@ -9286,7 +9286,7 @@
       "file": "downloads/diagrams/states.html",
       "title": "Requirement states HTML",
       "kind": "HTML",
-      "bytes": 5921
+      "bytes": 6229
     },
     {
       "file": "downloads/diagrams/workshop.svg",
@@ -9298,7 +9298,7 @@
       "file": "downloads/diagrams/workshop.html",
       "title": "Workshop roles HTML",
       "kind": "HTML",
-      "bytes": 5960
+      "bytes": 6268
     },
     {
       "file": "downloads/diagrams/interview.svg",
@@ -9310,7 +9310,7 @@
       "file": "downloads/diagrams/interview.html",
       "title": "Interview shape HTML",
       "kind": "HTML",
-      "bytes": 5951
+      "bytes": 6259
     },
     {
       "file": "downloads/diagrams/observe.svg",
@@ -9322,7 +9322,7 @@
       "file": "downloads/diagrams/observe.html",
       "title": "Observation HTML",
       "kind": "HTML",
-      "bytes": 6064
+      "bytes": 6372
     },
     {
       "file": "downloads/diagrams/rules.svg",
@@ -9334,7 +9334,7 @@
       "file": "downloads/diagrams/rules.html",
       "title": "Rules beside flow HTML",
       "kind": "HTML",
-      "bytes": 5883
+      "bytes": 6191
     },
     {
       "file": "downloads/diagrams/nfr.svg",
@@ -9346,7 +9346,7 @@
       "file": "downloads/diagrams/nfr.html",
       "title": "Quality with a number HTML",
       "kind": "HTML",
-      "bytes": 5753
+      "bytes": 6061
     },
     {
       "file": "downloads/diagrams/scope.svg",
@@ -9358,7 +9358,7 @@
       "file": "downloads/diagrams/scope.html",
       "title": "Scope box HTML",
       "kind": "HTML",
-      "bytes": 5679
+      "bytes": 5987
     },
     {
       "file": "downloads/diagrams/options.svg",
@@ -9370,7 +9370,7 @@
       "file": "downloads/diagrams/options.html",
       "title": "Options including stop HTML",
       "kind": "HTML",
-      "bytes": 5934
+      "bytes": 6242
     },
     {
       "file": "downloads/diagrams/risk.svg",
@@ -9382,7 +9382,7 @@
       "file": "downloads/diagrams/risk.html",
       "title": "Risk card HTML",
       "kind": "HTML",
-      "bytes": 5869
+      "bytes": 6177
     },
     {
       "file": "downloads/diagrams/persona.svg",
@@ -9394,7 +9394,7 @@
       "file": "downloads/diagrams/persona.html",
       "title": "Persona card HTML",
       "kind": "HTML",
-      "bytes": 5759
+      "bytes": 6067
     },
     {
       "file": "downloads/diagrams/journey.svg",
@@ -9406,7 +9406,7 @@
       "file": "downloads/diagrams/journey.html",
       "title": "Journey lanes HTML",
       "kind": "HTML",
-      "bytes": 5714
+      "bytes": 6022
     },
     {
       "file": "downloads/diagrams/context.svg",
@@ -9418,7 +9418,7 @@
       "file": "downloads/diagrams/context.html",
       "title": "Context diagram HTML",
       "kind": "HTML",
-      "bytes": 5801
+      "bytes": 6109
     },
     {
       "file": "downloads/diagrams/uml-set.svg",
@@ -9430,7 +9430,7 @@
       "file": "downloads/diagrams/uml-set.html",
       "title": "UML sketches HTML",
       "kind": "HTML",
-      "bytes": 5717
+      "bytes": 6025
     },
     {
       "file": "downloads/diagrams/gateway.svg",
@@ -9442,7 +9442,7 @@
       "file": "downloads/diagrams/gateway.html",
       "title": "Gateway habits HTML",
       "kind": "HTML",
-      "bytes": 5783
+      "bytes": 6091
     },
     {
       "file": "downloads/diagrams/happy-sad.svg",
@@ -9454,7 +9454,7 @@
       "file": "downloads/diagrams/happy-sad.html",
       "title": "Two paths HTML",
       "kind": "HTML",
-      "bytes": 5776
+      "bytes": 6084
     },
     {
       "file": "downloads/diagrams/backlog.svg",
@@ -9466,7 +9466,7 @@
       "file": "downloads/diagrams/backlog.html",
       "title": "Backlog order HTML",
       "kind": "HTML",
-      "bytes": 5845
+      "bytes": 6153
     },
     {
       "file": "downloads/diagrams/increment.svg",
@@ -9478,7 +9478,7 @@
       "file": "downloads/diagrams/increment.html",
       "title": "Increment HTML",
       "kind": "HTML",
-      "bytes": 5866
+      "bytes": 6174
     },
     {
       "file": "downloads/diagrams/roles-scrum.svg",
@@ -9490,7 +9490,7 @@
       "file": "downloads/diagrams/roles-scrum.html",
       "title": "Three accountabilities HTML",
       "kind": "HTML",
-      "bytes": 5794
+      "bytes": 6102
     },
     {
       "file": "downloads/diagrams/kanban-board.svg",
@@ -9502,7 +9502,7 @@
       "file": "downloads/diagrams/kanban-board.html",
       "title": "Board with a limit HTML",
       "kind": "HTML",
-      "bytes": 5740
+      "bytes": 6048
     },
     {
       "file": "downloads/diagrams/sprint-kit.svg",
@@ -9514,7 +9514,7 @@
       "file": "downloads/diagrams/sprint-kit.html",
       "title": "Design sprint days HTML",
       "kind": "HTML",
-      "bytes": 5995
+      "bytes": 6303
     },
     {
       "file": "downloads/diagrams/forces.svg",
@@ -9526,7 +9526,7 @@
       "file": "downloads/diagrams/forces.html",
       "title": "Switch forces HTML",
       "kind": "HTML",
-      "bytes": 5839
+      "bytes": 6147
     },
     {
       "file": "downloads/diagrams/double-diamond.svg",
@@ -9538,7 +9538,7 @@
       "file": "downloads/diagrams/double-diamond.html",
       "title": "Learn then choose HTML",
       "kind": "HTML",
-      "bytes": 5833
+      "bytes": 6141
     },
     {
       "file": "downloads/diagrams/kpi-card.svg",
@@ -9550,7 +9550,7 @@
       "file": "downloads/diagrams/kpi-card.html",
       "title": "KPI card HTML",
       "kind": "HTML",
-      "bytes": 6023
+      "bytes": 6331
     },
     {
       "file": "downloads/diagrams/sql-path.svg",
@@ -9562,7 +9562,7 @@
       "file": "downloads/diagrams/sql-path.html",
       "title": "One SQL question HTML",
       "kind": "HTML",
-      "bytes": 5834
+      "bytes": 6142
     },
     {
       "file": "downloads/diagrams/event-log.svg",
@@ -9574,7 +9574,7 @@
       "file": "downloads/diagrams/event-log.html",
       "title": "Event log fields HTML",
       "kind": "HTML",
-      "bytes": 5797
+      "bytes": 6105
     },
     {
       "file": "downloads/diagrams/jira-flow.svg",
@@ -9586,7 +9586,7 @@
       "file": "downloads/diagrams/jira-flow.html",
       "title": "Ticket hygiene HTML",
       "kind": "HTML",
-      "bytes": 5867
+      "bytes": 6175
     },
     {
       "file": "downloads/diagrams/conf-page.svg",
@@ -9598,7 +9598,7 @@
       "file": "downloads/diagrams/conf-page.html",
       "title": "Decision page HTML",
       "kind": "HTML",
-      "bytes": 5771
+      "bytes": 6079
     },
     {
       "file": "downloads/diagrams/ai-check.svg",
@@ -9610,7 +9610,7 @@
       "file": "downloads/diagrams/ai-check.html",
       "title": "Draft checklist HTML",
       "kind": "HTML",
-      "bytes": 5726
+      "bytes": 6034
     },
     {
       "file": "downloads/diagrams/prompt.svg",
@@ -9622,7 +9622,7 @@
       "file": "downloads/diagrams/prompt.html",
       "title": "Prompt parts HTML",
       "kind": "HTML",
-      "bytes": 5732
+      "bytes": 6040
     },
     {
       "file": "downloads/diagrams/handoff.svg",
@@ -9634,7 +9634,7 @@
       "file": "downloads/diagrams/handoff.html",
       "title": "Human handoff HTML",
       "kind": "HTML",
-      "bytes": 5967
+      "bytes": 6275
     },
     {
       "file": "downloads/diagrams/fhir-lens.svg",
@@ -9646,7 +9646,7 @@
       "file": "downloads/diagrams/fhir-lens.html",
       "title": "Healthcare lens HTML",
       "kind": "HTML",
-      "bytes": 5950
+      "bytes": 6258
     },
     {
       "file": "downloads/diagrams/a11y.svg",
@@ -9658,7 +9658,7 @@
       "file": "downloads/diagrams/a11y.html",
       "title": "Accessibility checks HTML",
       "kind": "HTML",
-      "bytes": 5807
+      "bytes": 6115
     },
     {
       "file": "downloads/diagrams/vendor.svg",
@@ -9670,7 +9670,7 @@
       "file": "downloads/diagrams/vendor.html",
       "title": "Same questions HTML",
       "kind": "HTML",
-      "bytes": 5908
+      "bytes": 6216
     },
     {
       "file": "downloads/diagrams/change-ctrl.svg",
@@ -9682,7 +9682,7 @@
       "file": "downloads/diagrams/change-ctrl.html",
       "title": "Change record HTML",
       "kind": "HTML",
-      "bytes": 5714
+      "bytes": 6022
     },
     {
       "file": "downloads/diagrams/release.svg",
@@ -9694,7 +9694,7 @@
       "file": "downloads/diagrams/release.html",
       "title": "Release note HTML",
       "kind": "HTML",
-      "bytes": 5763
+      "bytes": 6071
     },
     {
       "file": "downloads/diagrams/retro.svg",
@@ -9706,7 +9706,7 @@
       "file": "downloads/diagrams/retro.html",
       "title": "Retro prompts HTML",
       "kind": "HTML",
-      "bytes": 5727
+      "bytes": 6035
     },
     {
       "file": "downloads/diagrams/star.svg",
@@ -9718,7 +9718,7 @@
       "file": "downloads/diagrams/star.html",
       "title": "STAR card HTML",
       "kind": "HTML",
-      "bytes": 5858
+      "bytes": 6166
     },
     {
       "file": "downloads/diagrams/omni-parts.svg",
@@ -9730,7 +9730,7 @@
       "file": "downloads/diagrams/omni-parts.html",
       "title": "Journey map elements HTML",
       "kind": "HTML",
-      "bytes": 6273
+      "bytes": 6581
     },
     {
       "file": "downloads/diagrams/omni-channels.svg",
@@ -9742,7 +9742,7 @@
       "file": "downloads/diagrams/omni-channels.html",
       "title": "Channels named on the overview HTML",
       "kind": "HTML",
-      "bytes": 6220
+      "bytes": 6528
     },
     {
       "file": "downloads/diagrams/omni-blueprint.svg",
@@ -9754,7 +9754,7 @@
       "file": "downloads/diagrams/omni-blueprint.html",
       "title": "Journey then blueprint HTML",
       "kind": "HTML",
-      "bytes": 6207
+      "bytes": 6515
     },
     {
       "file": "downloads/diagrams/aht-parts.svg",
@@ -9766,7 +9766,7 @@
       "file": "downloads/diagrams/aht-parts.html",
       "title": "What this AHT adds HTML",
       "kind": "HTML",
-      "bytes": 6183
+      "bytes": 6491
     },
     {
       "file": "downloads/diagrams/sl-split.svg",
@@ -9778,7 +9778,7 @@
       "file": "downloads/diagrams/sl-split.html",
       "title": "Removed from queue inside X HTML",
       "kind": "HTML",
-      "bytes": 6262
+      "bytes": 6570
     },
     {
       "file": "downloads/diagrams/metric-owner.svg",
@@ -9790,7 +9790,7 @@
       "file": "downloads/diagrams/metric-owner.html",
       "title": "Before you publish a KPI HTML",
       "kind": "HTML",
-      "bytes": 6197
+      "bytes": 6505
     },
     {
       "file": "downloads/diagrams/migrate-streams.svg",
@@ -9802,7 +9802,7 @@
       "file": "downloads/diagrams/migrate-streams.html",
       "title": "Three migration workstreams HTML",
       "kind": "HTML",
-      "bytes": 6383
+      "bytes": 6691
     },
     {
       "file": "downloads/diagrams/migrate-pack.svg",
@@ -9814,7 +9814,7 @@
       "file": "downloads/diagrams/migrate-pack.html",
       "title": "Analysis pack for the move HTML",
       "kind": "HTML",
-      "bytes": 6454
+      "bytes": 6762
     },
     {
       "file": "downloads/diagrams/eco-mind.svg",
@@ -9826,7 +9826,7 @@
       "file": "downloads/diagrams/eco-mind.html",
       "title": "Contact-center mind map HTML",
       "kind": "HTML",
-      "bytes": 6475
+      "bytes": 6783
     },
     {
       "file": "downloads/diagrams/eco-sisters.svg",
@@ -9838,7 +9838,7 @@
       "file": "downloads/diagrams/eco-sisters.html",
       "title": "Sister technologies on the overview HTML",
       "kind": "HTML",
-      "bytes": 6313
+      "bytes": 6621
     },
     {
       "file": "downloads/diagrams/eco-integrate.svg",
@@ -9850,7 +9850,7 @@
       "file": "downloads/diagrams/eco-integrate.html",
       "title": "Integration sequence HTML",
       "kind": "HTML",
-      "bytes": 6239
+      "bytes": 6547
     },
     {
       "file": "downloads/flashcards.json",
@@ -9862,7 +9862,7 @@
       "file": "downloads/html/flashcards.html",
       "title": "Flashcards HTML",
       "kind": "HTML",
-      "bytes": 9906
+      "bytes": 10214
     },
     {
       "file": "downloads/flashcards.pdf",
@@ -9874,7 +9874,7 @@
       "file": "downloads/html/cheat-sheet.html",
       "title": "Cheat sheet HTML",
       "kind": "HTML",
-      "bytes": 4269
+      "bytes": 4577
     },
     {
       "file": "downloads/cheat-sheet.pdf",
@@ -9892,7 +9892,7 @@
       "file": "downloads/rooms/home.html",
       "title": "Business Analyst Free University HTML",
       "kind": "HTML",
-      "bytes": 5415
+      "bytes": 5723
     },
     {
       "file": "downloads/rooms/home.pdf",
@@ -9922,7 +9922,7 @@
       "file": "downloads/rooms/start.html",
       "title": "Start here HTML",
       "kind": "HTML",
-      "bytes": 4490
+      "bytes": 4798
     },
     {
       "file": "downloads/rooms/start.pdf",
@@ -9952,7 +9952,7 @@
       "file": "downloads/rooms/foundations.html",
       "title": "Foundations HTML",
       "kind": "HTML",
-      "bytes": 8182
+      "bytes": 8490
     },
     {
       "file": "downloads/rooms/foundations.pdf",
@@ -9982,7 +9982,7 @@
       "file": "downloads/rooms/ecosystem.html",
       "title": "Ecosystem HTML",
       "kind": "HTML",
-      "bytes": 10439
+      "bytes": 10747
     },
     {
       "file": "downloads/rooms/ecosystem.pdf",
@@ -10012,7 +10012,7 @@
       "file": "downloads/rooms/omni.html",
       "title": "Omnichannel journeys HTML",
       "kind": "HTML",
-      "bytes": 10277
+      "bytes": 10585
     },
     {
       "file": "downloads/rooms/omni.pdf",
@@ -10042,7 +10042,7 @@
       "file": "downloads/rooms/metrics.html",
       "title": "Contact-center metrics HTML",
       "kind": "HTML",
-      "bytes": 13235
+      "bytes": 13543
     },
     {
       "file": "downloads/rooms/metrics.pdf",
@@ -10072,7 +10072,7 @@
       "file": "downloads/rooms/migrate.html",
       "title": "Contact-center migration HTML",
       "kind": "HTML",
-      "bytes": 12323
+      "bytes": 12631
     },
     {
       "file": "downloads/rooms/migrate.pdf",
@@ -10102,7 +10102,7 @@
       "file": "downloads/rooms/babok.html",
       "title": "BABOK HTML",
       "kind": "HTML",
-      "bytes": 12247
+      "bytes": 12555
     },
     {
       "file": "downloads/rooms/babok.pdf",
@@ -10132,7 +10132,7 @@
       "file": "downloads/rooms/requirements.html",
       "title": "Requirements HTML",
       "kind": "HTML",
-      "bytes": 8495
+      "bytes": 8803
     },
     {
       "file": "downloads/rooms/requirements.pdf",
@@ -10162,7 +10162,7 @@
       "file": "downloads/rooms/modeling.html",
       "title": "Modeling HTML",
       "kind": "HTML",
-      "bytes": 7087
+      "bytes": 7395
     },
     {
       "file": "downloads/rooms/modeling.pdf",
@@ -10192,7 +10192,7 @@
       "file": "downloads/rooms/agile.html",
       "title": "Agile HTML",
       "kind": "HTML",
-      "bytes": 9101
+      "bytes": 9409
     },
     {
       "file": "downloads/rooms/agile.pdf",
@@ -10222,7 +10222,7 @@
       "file": "downloads/rooms/data.html",
       "title": "Data HTML",
       "kind": "HTML",
-      "bytes": 8716
+      "bytes": 9024
     },
     {
       "file": "downloads/rooms/data.pdf",
@@ -10252,7 +10252,7 @@
       "file": "downloads/rooms/tools.html",
       "title": "Tools HTML",
       "kind": "HTML",
-      "bytes": 8402
+      "bytes": 8710
     },
     {
       "file": "downloads/rooms/tools.pdf",
@@ -10282,7 +10282,7 @@
       "file": "downloads/rooms/ai.html",
       "title": "AI for business analysts HTML",
       "kind": "HTML",
-      "bytes": 6726
+      "bytes": 7034
     },
     {
       "file": "downloads/rooms/ai.pdf",
@@ -10312,7 +10312,7 @@
       "file": "downloads/rooms/domains.html",
       "title": "Domains HTML",
       "kind": "HTML",
-      "bytes": 7822
+      "bytes": 8130
     },
     {
       "file": "downloads/rooms/domains.pdf",
@@ -10342,7 +10342,7 @@
       "file": "downloads/rooms/product.html",
       "title": "Product craft HTML",
       "kind": "HTML",
-      "bytes": 8549
+      "bytes": 8857
     },
     {
       "file": "downloads/rooms/product.pdf",
@@ -10372,7 +10372,7 @@
       "file": "downloads/rooms/certs.html",
       "title": "Certifications HTML",
       "kind": "HTML",
-      "bytes": 7776
+      "bytes": 8084
     },
     {
       "file": "downloads/rooms/certs.pdf",
@@ -10402,7 +10402,7 @@
       "file": "downloads/rooms/careers.html",
       "title": "Careers HTML",
       "kind": "HTML",
-      "bytes": 8029
+      "bytes": 8337
     },
     {
       "file": "downloads/rooms/careers.pdf",
@@ -10432,7 +10432,7 @@
       "file": "downloads/rooms/practice.html",
       "title": "Practice HTML",
       "kind": "HTML",
-      "bytes": 4351
+      "bytes": 4659
     },
     {
       "file": "downloads/rooms/practice.pdf",
@@ -10462,7 +10462,7 @@
       "file": "downloads/rooms/diagrams.html",
       "title": "Diagrams HTML",
       "kind": "HTML",
-      "bytes": 4454
+      "bytes": 4762
     },
     {
       "file": "downloads/rooms/diagrams.pdf",
@@ -10492,7 +10492,7 @@
       "file": "downloads/rooms/flows.html",
       "title": "Flows HTML",
       "kind": "HTML",
-      "bytes": 4765
+      "bytes": 5073
     },
     {
       "file": "downloads/rooms/flows.pdf",
@@ -10522,7 +10522,7 @@
       "file": "downloads/rooms/charts.html",
       "title": "Charts HTML",
       "kind": "HTML",
-      "bytes": 5564
+      "bytes": 5872
     },
     {
       "file": "downloads/rooms/charts.pdf",
@@ -10552,7 +10552,7 @@
       "file": "downloads/rooms/glossary.html",
       "title": "Glossary HTML",
       "kind": "HTML",
-      "bytes": 5300
+      "bytes": 5608
     },
     {
       "file": "downloads/rooms/glossary.pdf",
@@ -10582,7 +10582,7 @@
       "file": "downloads/rooms/resources.html",
       "title": "Resources HTML",
       "kind": "HTML",
-      "bytes": 5281
+      "bytes": 5589
     },
     {
       "file": "downloads/rooms/resources.pdf",
@@ -10612,7 +10612,7 @@
       "file": "downloads/rooms/templates.html",
       "title": "Templates HTML",
       "kind": "HTML",
-      "bytes": 5102
+      "bytes": 5410
     },
     {
       "file": "downloads/rooms/templates.pdf",
@@ -10642,7 +10642,7 @@
       "file": "downloads/rooms/downloads.html",
       "title": "Downloads HTML",
       "kind": "HTML",
-      "bytes": 4597
+      "bytes": 4905
     },
     {
       "file": "downloads/rooms/downloads.pdf",
@@ -10672,7 +10672,7 @@
       "file": "downloads/rooms/search.html",
       "title": "Search HTML",
       "kind": "HTML",
-      "bytes": 4238
+      "bytes": 4546
     },
     {
       "file": "downloads/rooms/search.pdf",
@@ -10702,7 +10702,7 @@
       "file": "downloads/rooms/credits.html",
       "title": "Legal and credits HTML",
       "kind": "HTML",
-      "bytes": 4733
+      "bytes": 5041
     },
     {
       "file": "downloads/rooms/credits.pdf",
@@ -10732,7 +10732,7 @@
       "file": "downloads/rooms/help.html",
       "title": "Help HTML",
       "kind": "HTML",
-      "bytes": 4527
+      "bytes": 4835
     },
     {
       "file": "downloads/rooms/help.pdf",

@@ -1281,45 +1281,28 @@ HOME_HERO = """<section class="hero hero-vivid" id="static-hero">
 <div id="home-rest"></div>"""
 
 
+CSP_META = (
+    '<meta http-equiv="Content-Security-Policy" content="default-src \'self\'; '
+    "script-src 'self'; style-src 'self' 'unsafe-inline'; "
+    "img-src 'self' data: blob:; media-src 'self' blob: data:; "
+    "font-src 'self' data:; connect-src 'self'; worker-src 'self' blob:; "
+    "object-src 'none'; base-uri 'self'; form-action 'self'\">"
+)
+
+
 def write_pages():
-    boot = (ROOT / "assets/js/boot.js").read_text(encoding="utf-8").strip()
-    loader = """<script>
-requestAnimationFrame(function () {
-  requestAnimationFrame(function () {
-  var sources = [
-    ["assets/js/brand.js"],
-    ["assets/js/frame.js"],
-    ["assets/js/app.js"],
-    ["guide/guide.js", "module"],
-    ["assets/js/onboard.js"],
-    ["assets/js/pwa.js"]
-  ];
-  function load(index) {
-    if (index >= sources.length) return;
-    var spec = sources[index];
-    var node = document.createElement("script");
-    if (spec[1]) node.type = spec[1];
-    node.src = spec[0];
-    node.onload = function () { load(index + 1); };
-    document.body.appendChild(node);
-  }
-  load(0);
-  });
-});
-</script>"""
     for page, filename, title, desc in PAGES:
         hero = HOME_HERO if page == "home" else ""
         doc = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
+{CSP_META}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{html.escape(title)} · Business Analyst Free University</title>
 <meta name="description" content="{html.escape(desc)}">
 <meta name="theme-color" content="#0f766e">
-<script>
-{boot}
-</script>
+<script src="assets/js/boot.js"></script>
 <link rel="stylesheet" href="assets/css/lab.css">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="manifest" href="manifest.webmanifest">
@@ -1335,7 +1318,7 @@ requestAnimationFrame(function () {
 <footer class="site-footer" id="site-footer"></footer>
 <nav class="phone-bar" id="phone-bar" aria-label="Quick actions"></nav>
 <div id="guide-mount"></div>
-{loader}
+<script src="assets/js/load.js"></script>
 </body>
 </html>
 """
@@ -1508,6 +1491,7 @@ def write_html_sheet(path: Path, title: str, summary: str, lines, sources=None):
 <html lang="en">
 <head>
 <meta charset="utf-8">
+{CSP_META}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <title>{html.escape(title)}</title>
@@ -1554,6 +1538,7 @@ def write_diagram_html(path: Path, title: str, svg_text: str, caption: str, sour
 <html lang="en">
 <head>
 <meta charset="utf-8">
+{CSP_META}
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <title>{html.escape(title)}</title>
